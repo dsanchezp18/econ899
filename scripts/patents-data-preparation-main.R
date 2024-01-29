@@ -12,3 +12,7 @@
 library(readr)
 library(dplyr)
 library(janitor)
+
+# Load the data 
+
+patents_main1 <- read_csv("data/patents/PT_Main_1.csv")

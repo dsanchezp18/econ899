@@ -14,6 +14,8 @@ library(dplyr)
 library(openxlsx)
 library(janitor)
 
+# Prepare the data dictionary -----------------------------------------------------------
+
 # Load all the sheets in the downloaded data dictionary from the IP Horizons website
 
 # Get the names of all sheets in the Excel file
