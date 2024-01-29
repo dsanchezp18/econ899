@@ -128,10 +128,8 @@ patents_main %>%
   mutate(pct = n / sum(n)) %>%
   arrange(desc(n))
 
-# Filter the data ---------------------------------------------------------
+# Exporting the data ------------------------------------------------------
 
-# Filter the data to only include patents granted in Canada
+# Export the data as an RDS file, which is faster to load than a CSV
 
-patents_main_processed <- 
-  patents_main %>%
-  filter(country_publication == "CA")
+saveRDS(patents_main, "data/patents/processed/patents_main.rds")
