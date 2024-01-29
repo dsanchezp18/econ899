@@ -3,7 +3,7 @@
 # Daniel Sanchez
 # Spring 2024 
 
-# This script prepares the patents main data file for later processing.
+# This script prepares the patents main data files for later processing.
 
 # Preliminaries -----------------------------------------------------------
 
