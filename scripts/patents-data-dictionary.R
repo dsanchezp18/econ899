@@ -3,7 +3,7 @@
 # Daniel Sanchez
 # Spring 2024 
 
-# This script creates a joint data dictionary for the patents data.
+# This script creates a joint (flat) data dictionary for the patents data.
 
 # Preliminaries -----------------------------------------------------------
 
@@ -57,5 +57,5 @@ patents_data_dictionary <-
 
 # Save the data dictionary as an Excel file
 
-write.xlsx(patents_data_dictionary, "data/patents/patents-data-dictionary.xlsx", rowNames = FALSE, sheet )
+write.xlsx(patents_data_dictionary, "data/patents/metadata/patents-data-dictionary.xlsx", rowNames = FALSE, sheet )
     
