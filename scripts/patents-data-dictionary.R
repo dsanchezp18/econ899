@@ -3,7 +3,7 @@
 # Daniel Sanchez
 # Spring 2024 
 
-# This script creates a joint data dictionary for the patents data.
+# This script creates a joint (flat) data dictionary for the patents data.
 
 # Preliminaries -----------------------------------------------------------
 
@@ -14,15 +14,17 @@ library(dplyr)
 library(openxlsx)
 library(janitor)
 
+# Prepare the data dictionary -----------------------------------------------------------
+
 # Load all the sheets in the downloaded data dictionary from the IP Horizons website
 
 # Get the names of all sheets in the Excel file
 
-sheet_names <- excel_sheets("data/patents/PT_Data Dictionary.xlsx")
+sheet_names <- excel_sheets("data/patents/metadata/PT_Data Dictionary.xlsx")
 
 # Use lapply to read each sheet into a separate data frame
 list_of_sheets <- lapply(sheet_names, function(sheet) {
-        read_excel("data/patents/PT_Data Dictionary.xlsx", sheet = sheet, skip = 1)
+        read_excel("data/patents/metadata/PT_Data Dictionary.xlsx", sheet = sheet, skip = 1)
 })
 
 # Assign each data frame to a separate object in the global environment
@@ -32,7 +34,7 @@ for(i in seq_along(list_of_sheets)) {
 
 # Use lapply to read each sheet into a separate data frame and add a new column 'sheet'
 list_of_sheets <- lapply(sheet_names, function(sheet) {
-        df <- readxl::read_excel("data/patents/PT_Data Dictionary.xlsx", sheet = sheet, skip = 1)
+        df <- readxl::read_excel("data/patents/metadata/PT_Data Dictionary.xlsx", sheet = sheet, skip = 1)
         df$sheet <- sheet
         df
 })
@@ -57,5 +59,5 @@ patents_data_dictionary <-
 
 # Save the data dictionary as an Excel file
 
-write.xlsx(patents_data_dictionary, "data/patents/patents-data-dictionary.xlsx", rowNames = FALSE, sheet )
+write.xlsx(patents_data_dictionary, "data/patents/metadata/patents-data-dictionary-flat.xlsx", rowNames = FALSE, sheet )
     
