@@ -26,7 +26,7 @@ max_date <- ymd("2021-12-31") # As defined by the "official" documentation, thou
 
 # Determining column types and selecting which to load, those which are not needed are defined as "skip"
 
-main_columns <- c('patent_number'= 'integer',
+main_columns <- c('patent_number'= 'i',
                   'filing_date' = 'D',
                   'grant_date' = 'D',
                   'application_status_code' = 'c',
@@ -50,7 +50,7 @@ main_columns <- c('patent_number'= 'integer',
                   'publication_kind' = 'c',
                   'printed_as_amended_country' = 'c')
 
-column_names <- names(main_columns)
+main_column_names <- names(main_columns)
 
 # Load the data 
 
@@ -58,7 +58,7 @@ patents_main1 <- read_delim("data/patents/raw/PT_main_1_to_2000000_2023-06-13.cs
                             skip = 1,
                             delim = "|",
                             col_types = main_columns,
-                            col_names = column_names,
+                            col_names = main_column_names,
                             locale = locale(encoding = "UTF-8"))
 
 patents_main2 <- read_delim("data/patents/raw/PT_main_2000001_to_4000000_2023-06-13.csv",
