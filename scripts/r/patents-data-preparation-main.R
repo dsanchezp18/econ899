@@ -12,6 +12,13 @@
 library(readr)
 library(dplyr)
 library(janitor)
+library(lubridate)
+library(ggplot2)
+library(scales)
+
+# Define the maximum date to take into account for the patents
+
+max_date <- ymd("2021-12-31") # As defined by the "official" documentation, though it seems they do report some data for 2022
 
 # Loading the data --------------------------------------------------------
 
@@ -67,6 +74,8 @@ patents_main <- bind_rows(patents_main1, patents_main2)
 
 # EDA ---------------------------------------------------------------------
 
+# Some exploratory data analysis to understand the main data file
+
 # Application status code
 
 patents_main %>%
@@ -120,13 +129,56 @@ patents_main %>%
 
 # Most don't have a parent
 
-# PCT publication country
+# PCT publication country 
 
 patents_main %>%
   group_by(pct_publication_country) %>%
   summarise(n = n()) %>%
   mutate(pct = n / sum(n)) %>%
   arrange(desc(n))
+
+# Chart the distribution of the number of patents by month-year of filing date
+
+patents_filed_per_month <-
+  patents_main %>%
+  mutate(filing_month_year = floor_date(filing_date, "month")) %>%
+  filter(filing_month_year <= max_date)  %>% 
+  group_by(filing_month_year) %>%
+  summarise(n = n())  %>% 
+  ungroup()  %>%
+  arrange(desc(filing_month_year))
+
+patents_filed_per_month_fig <-
+  patents_filed_per_month %>% 
+  ggplot(aes(x = filing_month_year, y = n)) +
+  geom_line() +
+  labs(title = "Number of patents filed in Canada by filing date",
+       subtitle = "Grouped at the monthly level",
+       x = "Filing date period",
+       y = "Number of patents filed",
+       caption = "Note: Data obtained from Innovation, Science and Economic Development Canada (ISED).") +
+  scale_x_date(date_breaks = "20 years",
+               date_labels = "%Y") +
+  scale_y_continuous(labels = comma, 
+                     limits = c(0, 5000)) +
+  theme_minimal() +
+  theme(text = element_text(size = 10, family = 'serif'),
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        axis.line.x = element_line(colour = "black"),
+        plot.background = element_rect(fill = "white"),
+        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+        plot.caption = element_text(hjust = 0),
+        panel.grid.major = element_line(linetype = "dashed"),
+        panel.grid.minor = element_line(linetype = "dashed"))
+
+patents_filed_per_month_fig
+
+ggsave(filename = "figures/patents_filed_per_month_fig.png", 
+       plot = patents_filed_per_month_fig,
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
 
 # Exporting the data ------------------------------------------------------
 
