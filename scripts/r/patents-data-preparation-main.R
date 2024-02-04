@@ -1,4 +1,4 @@
-# # ECON899 MA Paper 
+# ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
@@ -17,7 +17,7 @@ library(janitor)
 
 # Load the main data file, defining loading parameters for the read_csv function
 
-# Column types (and selecting which to load, those which are not needed are "skip")
+# Determining column types and selecting which to load, those which are not needed are defined as "skip"
 
 main_columns <- c('patent_number'= 'integer',
                   'filing_date' = 'D',
