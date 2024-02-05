@@ -17,4 +17,4 @@ library(dplyr)
 
 readRDS("data/patents/processed/patents_main.rds")
 
-readRDS("data/patents/processed/patents-interested-parties.rds")
+readRDS("data/patents/processed/patents_interested_parties.rds")
