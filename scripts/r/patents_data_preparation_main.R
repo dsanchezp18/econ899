@@ -40,13 +40,13 @@ main_columns <- c('patent_number'= 'i',
                   'filing_country' = 'c',
                   'filing_language' = 'c',
                   'willing_to_sell' = 'integer',
-                  'prop_application_number' = 'c',
-                  'prop_publication_number' = 'c',
-                  'prop_publication_date' = 'D',
+                  'pct_application_number' = 'c',
+                  'pct_publication_number' = 'c',
+                  'pct_publication_date' = 'D',
                   'parent_application_number' = 'integer',
-                  'prop_article' = 'skip',
-                  'prop_section' = 'skip',
-                  'prop_publication_country' = 'c',
+                  'pct_article' = 'skip',
+                  'pct_section' = 'skip',
+                  'pct_publication_country' = 'c',
                   'publication_kind' = 'c',
                   'printed_as_amended_country' = 'c')
 
@@ -141,7 +141,7 @@ patents_main %>%
 # prop publication country 
 
 patents_main %>%
-  group_by(prop_publication_country) %>%
+  group_by(pct_publication_country) %>%
   summarise(n = n()) %>%
   mutate(prop = n / sum(n)) %>%
   arrange(desc(n))

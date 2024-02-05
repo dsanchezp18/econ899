@@ -21,4 +21,14 @@ patents_interested_parties <- readRDS("data/patents/processed/patents_interested
 
 # Prepare the data ---------------------------------------------------------
 
-# 
+# Do the joining for one patent
+
+example_main_patent_and_parties <-
+    patents_main  %>% 
+    slice(1)  %>% 
+    select(patent_number, 
+           filing_date, 
+           grant_date, 
+           patent_title = patent_title_en, 
+           filing_country, )  %>%
+    left_join(patents_interested_parties, by = "patent_number") 
