@@ -255,6 +255,8 @@ agents_per_patent <-
 
 # Save the data ------------------------------------------------------------
 
+# All interested parties
+
 patents_interested_parties <- 
     parties_int %>%
     select(patent_number, 
@@ -269,3 +271,21 @@ patents_interested_parties <-
            party_postal_code)
 
 write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
+
+# Agents only 
+
+agents_only <- 
+    parties_int %>%
+    filter(interested_party_type_code == "AGNT") %>%
+    select(patent_number, 
+           party_type = interested_party_type_code,
+           party_name,
+           party_country_code,
+           party_country,
+           party_province_code,
+           party_province,
+           country_mapped_to_province,
+           party_city,
+           party_postal_code)
+
+write_rds(agents_only, "data/patents/processed/agents_only.rds")
