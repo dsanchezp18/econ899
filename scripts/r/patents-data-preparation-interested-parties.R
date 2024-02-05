@@ -97,7 +97,7 @@ parties_int <-
     mutate(party_country = party_country %>% recode("Unknown" = NA_character_, "Country Unknown" = NA_character_),
            applicant_type = applicant_type  %>% na_if("-2"),
            party_province_code = party_province_code %>% na_if("-1"))  %>% 
-    left_join(state_province_codebook  %>% select(province_code_wipo, country), by = c("party_province_code" = "province_code_wipo")) 
+    left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province), by = c("party_province_code" = "province_code_wipo")) 
 
 # EDA ---------------------------------------------------------------------
 
@@ -142,16 +142,15 @@ parties_by_province <-
   mutate(prop = n / sum(n)) %>%
   arrange(desc(prop))
 
-# Only about 7% belong to a province.
+# Only about 7% belong to a province in Canada. The rest are either unknown or belong to the US. Let's see this in more detail using the province code below. 
 
 # Look at province codes of each interested party
 
-parties_by_province_code <-
+parties_by_country_mapped_to_province <-
     parties_int %>%
-    group_by(party_province_code) %>%
+    group_by(country_mapped_to_province) %>%
     summarise(n = n()) %>%
-    mutate(prop = n / sum(n)) %>%
-    ungroup()  %>% 
-    left_join(province_codebook  %>% select(province_code_wipo, country), by = c("party_province_code" = "province_code_wipo")) %>%
-    filter(country == 'Canada')  %>% 
-    arrange(desc(prop)) 
+    mutate(prop = n / sum(n)) 
+
+# 7% of parties are Canadian, 10.1 are from the US. The rest are from elsewhere. Actually unknown are just 25%. 
+
