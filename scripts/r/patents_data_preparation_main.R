@@ -65,12 +65,21 @@ patents_main2 <- read_delim("data/patents/raw/PT_main_2000001_to_4000000_2023-06
                             skip = 1,
                             delim = "|",
                             col_types = main_columns,
-                            col_names = column_names,
+                            col_names = main_column_names,
                             locale = locale(encoding = "UTF-8"))
 
 # Combine the two data frames
 
-patents_main <- bind_rows(patents_main1, patents_main2)
+patents_main_raw <- 
+  bind_rows(patents_main1, patents_main2)
+
+# Clean the data ------------------------------------------------------------
+
+# Clean the data 
+
+patents_main <- 
+  patents_main_raw  %>% 
+  arrange(desc(filing_date))
 
 # EDA ---------------------------------------------------------------------
 

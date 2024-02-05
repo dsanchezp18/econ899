@@ -173,6 +173,3 @@ patents_interested_parties <-
            party_postal_code)
 
 write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
-
-
-

@@ -15,6 +15,10 @@ library(dplyr)
 
 # Load all the processed patents data
 
-readRDS("data/patents/processed/patents_main.rds")
+patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
-readRDS("data/patents/processed/patents_interested_parties.rds")
+patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
+
+# Prepare the data ---------------------------------------------------------
+
+# 
