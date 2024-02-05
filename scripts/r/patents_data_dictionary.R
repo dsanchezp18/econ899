@@ -59,5 +59,5 @@ patents_data_dictionary <-
 
 # Save the data dictionary as an Excel file
 
-write.xlsx(patents_data_dictionary, "data/patents/metadata/patents-data-dictionary-flat.xlsx", rowNames = FALSE, sheet )
+write.xlsx(patents_data_dictionary, "data/patents/metadata/patents_data_dictionary_flat.xlsx", rowNames = FALSE)
     

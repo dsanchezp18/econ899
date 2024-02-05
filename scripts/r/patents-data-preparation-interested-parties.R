@@ -1,4 +1,4 @@
-# # ECON899 MA Paper 
+# ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
@@ -121,6 +121,7 @@ parties_by_party_code <-
     arrange(desc(prop))
 
 # Most are inventors, then the patent owners. 
+# None are missing. 
 
 # Countries of each interested party
 
@@ -153,4 +154,25 @@ parties_by_country_mapped_to_province <-
     mutate(prop = n / sum(n)) 
 
 # 7% of parties are Canadian, 10.1 are from the US. The rest are from elsewhere. Actually unknown are just 25%. 
+
+# Save the data ------------------------------------------------------------
+
+# Save the data
+
+patents_interested_parties <- 
+    parties_int %>%
+    select(patent_number, 
+           party_type = interested_party_type_code,
+           party_name,
+           party_country_code,
+           party_country,
+           party_province_code,
+           party_province,
+           country_mapped_to_province,
+           party_city,
+           party_postal_code)
+
+write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
+
+
 
