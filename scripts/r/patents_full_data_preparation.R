@@ -19,16 +19,17 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
 
-# Prepare the data ---------------------------------------------------------
+# Join the interested parties with the main patents data ------------------
 
-# Do the joining for one patent
+# Join by patent number and by selecting only main patents
 
-example_main_patent_and_parties <-
+main_patents_and_applicants <-
     patents_main  %>% 
-    slice(1)  %>% 
     select(patent_number, 
            filing_date, 
            grant_date, 
            patent_title = patent_title_en, 
-           filing_country, )  %>%
-    left_join(patents_interested_parties, by = "patent_number") 
+           filing_country)  %>%
+    left_join(patents_interested_parties %>% filter(party_type == 'APPL')  %>% select(patent_number, party_name, party_country_code, party_province),
+              by = "patent_number")
+

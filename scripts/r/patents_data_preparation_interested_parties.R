@@ -95,13 +95,15 @@ parties_int_raw <- bind_rows(parties_int1, parties_int2)
 parties_int <- 
     parties_int_raw %>%
     mutate(party_country = party_country %>% recode("Unknown" = NA_character_, "Country Unknown" = NA_character_),
-           applicant_type = applicant_type  %>% na_if("-2"),
+           applicant_type = applicant_type %>% na_if("-2"),
            party_province_code = party_province_code %>% na_if("-1"))  %>% 
     left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province), by = c("party_province_code" = "province_code_wipo")) 
 
 # EDA ---------------------------------------------------------------------
 
-# Look at patents by applicant type 
+## Applicants ----------------------------------------------------------------
+
+# Look at patents by applicant type (it only includes applicants or agents)
 
 parties_by_applicant_type <-
     parties_int %>%
@@ -110,6 +112,8 @@ parties_by_applicant_type <-
     mutate(prop = n / sum(n))
 
 # Most interested parties are not applicants (makes sense)
+
+## Interested party code -----------------------------------------------------
 
 # Look at patents by interested party code
 
@@ -120,10 +124,12 @@ parties_by_party_code <-
     mutate(prop = n / sum(n)) %>%
     arrange(desc(prop))
 
+# There are 12 million entries in this dataset, meaning that there have been 12 million interested parties in the patents in this dataset.
 # Most are inventors, then the patent owners. 
-# None are missing. 
+# No entries in this dataset are missing
+# However, it is yet to be seen if there are patents not featured in this dataset (as per patent code)
 
-# Countries of each interested party
+## Interested party country -----------------------------------------------------
 
 parties_by_country <-
   parties_int %>%
@@ -134,7 +140,7 @@ parties_by_country <-
 
 # Most interested parties are from the US, followed by Canada (without NAs)
 
-# Look at provinces of each interested party
+## Provinces  -----------------------------------------------------
 
 parties_by_province <-
   parties_int %>%
@@ -145,7 +151,7 @@ parties_by_province <-
 
 # Only about 7% belong to a province in Canada. The rest are either unknown or belong to the US. Let's see this in more detail using the province code below. 
 
-# Look at province codes of each interested party
+# Look at province codes of each interested party (as mapped manually to their province)
 
 parties_by_country_mapped_to_province <-
     parties_int %>%
@@ -155,9 +161,99 @@ parties_by_country_mapped_to_province <-
 
 # 7% of parties are Canadian, 10.1 are from the US. The rest are from elsewhere. Actually unknown are just 25%. 
 
-# Save the data ------------------------------------------------------------
+# Interested parties per patent -----------------------------------------------------
 
-# Save the data
+## Total interested parties per patent -----------------------------------------------------
+
+# Count how many interested parties per patent
+
+parties_per_patent <- 
+    parties_int %>% 
+    group_by(patent_number) %>% 
+    summarise(n_parties = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_parties))
+
+# There are in total 2,228,679 patents which have at least one interested party.
+# There are about 2,514,038 patents in the main dataset. We lose about 300,000 observations (not too much)
+
+## Inventors per patent -----------------------------------------------------
+
+# Filter the interested parties to only include inventors and count how many inventors per patent
+
+inventors_per_patent <- 
+    parties_int %>%
+    filter(interested_party_type_code == "INVT") %>%
+    group_by(patent_number) %>%
+    summarise(n_inventors = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_inventors))
+
+# About half of patents have only one inventor. It can get to up to 100 inventors per patent
+
+## Applicants per patent -----------------------------------------------------
+
+# Filter the interested parties to only include applicants and count how many applicants per patent
+
+applicants_per_patent <- 
+    parties_int %>%
+    filter(interested_party_type_code == "APPL") %>%
+    group_by(patent_number) %>%
+    summarise(n_applicants = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_applicants))
+
+# In total, there are 1,046,381 patents with at least one applicant.
+# Some patents do not have an applicant.
+# If we restrict to only patents with at least one applicant, we only have 969,565 patents.
+
+## Applicant type per patent -----------------------------------------------------
+
+# Count how many different applicant types per patent (of the other columnn there is about applicants)
+
+applicant_types_per_patent <- 
+    parties_int %>%
+    filter(!is.na(applicant_type)) %>%
+    group_by(patent_number) %>%
+    summarise(n_applicants = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_applicants))
+
+# There is about 1.5 million patents with at least one applicant type in this column (a bit more than above)
+
+## Owners per patent -----------------------------------------------------
+
+# Filter the interested parties to only include owners and count how many owners per patent
+
+owners_per_patent <- 
+    parties_int %>%
+    filter(interested_party_type_code == "OWNR") %>%
+    group_by(patent_number) %>%
+    summarise(n_owners = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_owners))
+
+# There's more than one owner per patent
+# About 2 million patents have at least one owner
+# 1.3 million patents have only one owner
+
+## Agents per patent -----------------------------------------------------
+
+# Filter the interested parties to only include agents and count how many agents per patent
+
+agents_per_patent <- 
+    parties_int %>%
+    filter(interested_party_type_code == "AGNT") %>%
+    group_by(patent_number) %>%
+    summarise(n_agents = n())  %>% 
+    ungroup()  %>% 
+    arrange(desc(n_agents))
+
+# All patents only have one agent.
+# 1.5 million patents have only one agent
+# Lose 1 million patents if we restrict to only patents with at least one agent
+
+# Save the data ------------------------------------------------------------
 
 patents_interested_parties <- 
     parties_int %>%
