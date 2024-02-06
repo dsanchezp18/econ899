@@ -79,7 +79,8 @@ patents_main_raw <-
 
 patents_main <- 
   patents_main_raw  %>% 
-  arrange(desc(filing_date))
+  mutate(filing_month_year = floor_date(filing_date, "month")) %>% 
+  arrange(desc(filing_month_year))
 
 # EDA ---------------------------------------------------------------------
 
@@ -150,7 +151,6 @@ patents_main %>%
 
 patents_filed_per_month <-
   patents_main %>%
-  mutate(filing_month_year = floor_date(filing_date, "month")) %>%
   filter(filing_month_year <= max_date)  %>% 
   group_by(filing_month_year) %>%
   summarise(n = n())  %>% 

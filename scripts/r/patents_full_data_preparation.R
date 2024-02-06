@@ -21,6 +21,14 @@ patents_interested_parties <- readRDS("data/patents/processed/patents_interested
 
 patents_agents <- readRDS("data/patents/processed/patents_agents.rds")
 
-# Join the interested parties with the main patents data ------------------
+# Join patents to agents --------------------------------------------------
 
-# Join by patent number and by selecting only main patents
+patents_main_and_agents <- 
+       patents_main  %>% 
+       select(patent_number,
+              filing_date,
+              grant_date)  %>% 
+       left_join(patents_agents  %>% select(patent_number, party_country_code, party_province, party_province_code),
+                 by = "patent_number")
+
+# Only one agent per patent, so the mapping to province is perfectly done. 
