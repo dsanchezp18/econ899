@@ -33,12 +33,15 @@ patents_main_and_agents <-
 
 # Only one agent per patent, so the mapping to province is perfectly done. 
 
-## Patents by province, using the agent's province -------------------------
+## Province-month panel, using the agent's province -------------------------
 
-# Group patents at the province level, filtering out non-Canadian patents and patents before 
+# Build a province-month panel, using the agent's province and filtering out non-Canadian patents
 
-patents_by_province <- 
+patents_province_month_agent <-
        patents_main_and_agents  %>% 
-       group_by(party_province_code)  %>% 
+       filter(party_country_code == "CA")  %>% 
+       mutate(grant_month = floor_date(grant_date, "month"))  %>% 
+       group_by(party_province, grant_month)  %>% 
        summarise(patents = n())  %>% 
-       arrange(desc(patents))
+       ungroup()  %>% 
+       arrange(party_province, desc(grant_month))

@@ -96,7 +96,8 @@ parties_int <-
     parties_int_raw %>%
     mutate(party_country = party_country %>% recode("Unknown" = NA_character_, "Country Unknown" = NA_character_),
            applicant_type = applicant_type %>% na_if("-2"),
-           party_province_code = party_province_code %>% na_if("-1"))  %>% 
+           party_province_code = party_province_code %>% na_if("-1"),
+           party_province = party_province %>% na_if("Unknown"))  %>% 
     left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province), by = c("party_province_code" = "province_code_wipo")) 
 
 # EDA ---------------------------------------------------------------------
@@ -252,6 +253,7 @@ agents_per_patent <-
 # All patents only have one agent.
 # 1.5 million patents have only one agent
 # Lose 1 million patents if we restrict to only patents with at least one agent
+# Agents do not have any kind of province mapped to them. 
 
 # Save the data ------------------------------------------------------------
 
@@ -272,20 +274,3 @@ patents_interested_parties <-
 
 write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
 
-# Agents only 
-
-agents_only <- 
-    parties_int %>%
-    filter(interested_party_type_code == "AGNT") %>%
-    select(patent_number, 
-           party_type = interested_party_type_code,
-           party_name,
-           party_country_code,
-           party_country,
-           party_province_code,
-           party_province,
-           country_mapped_to_province,
-           party_city,
-           party_postal_code)
-
-write_rds(agents_only, "data/patents/processed/agents_only.rds")

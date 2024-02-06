@@ -75,7 +75,8 @@ patents_main_raw <-
 
 # Clean the data ------------------------------------------------------------
 
-# Clean the data 
+# Clean the data by adding a column with the filing month-year
+# Also filter out patents filed after the maximum date (2021-12-31)
 
 patents_main <- 
   patents_main_raw  %>% 
