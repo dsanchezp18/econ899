@@ -32,3 +32,13 @@ patents_main_and_agents <-
                  by = "patent_number")
 
 # Only one agent per patent, so the mapping to province is perfectly done. 
+
+## Patents by province, using the agent's province -------------------------
+
+# Group patents at the province level, filtering out non-Canadian patents and patents before 
+
+patents_by_province <- 
+       patents_main_and_agents  %>% 
+       group_by(party_province_code)  %>% 
+       summarise(patents = n())  %>% 
+       arrange(desc(patents))
