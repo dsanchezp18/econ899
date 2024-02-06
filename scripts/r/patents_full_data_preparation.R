@@ -19,29 +19,7 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
 
-patents_agents <- readRDS("data/patents/processed/patents_agents.rds")
+# Join interested parties and main patents data together --------------------
 
-# Join patents to agents --------------------------------------------------
+## Join them together by the number of appearances of a party in a patent application --------------------
 
-patents_main_and_agents <- 
-       patents_main  %>% 
-       select(patent_number,
-              filing_date,
-              grant_date)  %>% 
-       left_join(patents_agents  %>% select(patent_number, party_country_code, party_province, party_province_code),
-                 by = "patent_number")
-
-# Only one agent per patent, so the mapping to province is perfectly done. 
-
-## Province-month panel, using the agent's province -------------------------
-
-# Build a province-month panel, using the agent's province and filtering out non-Canadian patents
-
-patents_province_month_agent <-
-       patents_main_and_agents  %>% 
-       filter(party_country_code == "CA")  %>% 
-       mutate(grant_month = floor_date(grant_date, "month"))  %>% 
-       group_by(party_province, grant_month)  %>% 
-       summarise(patents = n())  %>% 
-       ungroup()  %>% 
-       arrange(party_province, desc(grant_month))
