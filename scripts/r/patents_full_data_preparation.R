@@ -19,8 +19,6 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
 
-province_codebook 
-
 # Join interested parties and main patents data together -----------------------------------------------------------
 
 ## Interested parties and main data (dependent variable redefinition) --------------------------------------------
@@ -47,16 +45,20 @@ interested_parties_province_month <-
 
 ## Interested parties per province and month ---------------------------------------------------------------------
 
-# Plot the number of interested parties per province and month. Consider only patents after 1950
+# Plot the number of interested parties per province and month. Consider only patents after 1950 and largest Canadian provinces
 
 interested_parties_province_month_fig <-
        interested_parties_province_month %>% 
-       filter(filing_month_year > as.Date("1950-01-01")) %>% 
+       filter(filing_month_year > as.Date("1950-01-01"),
+              province_code_clean %in% c("AB", "QC", "ON", "BC")) %>% 
        ggplot(aes(x = filing_month_year, y = n_interested_parties, group = province_code_clean, color = province_code_clean)) +
        geom_line() +
        labs(title = "Number of interested parties per province and month",
+            subtitle = "Largest Canadian provinces",
             x = "Patent filing date",
-            y = "Number of interested parties in the patent") +
+            y = "Number of interested parties in the patent",
+            colour = "Province",
+            caption = "Note: Data obtained from Innovation, Science and Economic Development Canada.") +
        scale_x_date(date_breaks = "20 year", 
                     date_labels = "%Y") +
        scale_y_continuous(labels = comma) +
@@ -68,7 +70,8 @@ interested_parties_province_month_fig <-
               panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
               plot.caption = element_text(hjust = 0),
               panel.grid.major = element_line(linetype = "dashed"),
-              panel.grid.minor = element_line(linetype = "dashed"))
+              panel.grid.minor = element_line(linetype = "dashed"),
+              legend.pos = "bottom")
 
 interested_parties_province_month_fig
 
