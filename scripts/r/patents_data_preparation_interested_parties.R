@@ -19,7 +19,7 @@ library(stringr)
 province_codebook <- tibble(
   province_code = c("AB", "BC", "MB", "NB", "NL", "NS", "NT", "NU", "ON", "PE", "QC", "SK", "YT"),
   province = c("Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Nova Scotia", "Northwest Territories", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"),
-  province_code_wipo = c("A1", "B1", "M1", "N3", "N1","N2","N4", "N5", "O1", "Q1", "Q2", "S1", "Y1"),
+  province_code_wipo = c("A1", "B1", "M1", "N3", "N1","N2","N4", "N5", "O1", "P1", "Q1", "S1", "Y1"),
   country_mapped_to_province = c("Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada", "Canada")
 )
 
@@ -98,7 +98,7 @@ parties_int <-
            applicant_type = applicant_type %>% na_if("-2"),
            party_province_code = party_province_code %>% na_if("-1"),
            party_province = party_province %>% na_if("Unknown"))  %>% 
-    left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province), by = c("party_province_code" = "province_code_wipo")) 
+    left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province, province_code_clean = province_code), by = c("party_province_code" = "province_code_wipo")) 
 
 # EDA ---------------------------------------------------------------------
 
@@ -257,7 +257,7 @@ agents_per_patent <-
 
 # Save the data ------------------------------------------------------------
 
-# All interested parties
+## All interested parties ------------------------------------------------------------
 
 patents_interested_parties <- 
     parties_int %>%
@@ -268,9 +268,15 @@ patents_interested_parties <-
            party_country,
            party_province_code,
            party_province,
+           province_code_clean,
            country_mapped_to_province,
            party_city,
            party_postal_code)
 
 write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
 
+## Other data ------------------------------------------------------------
+
+# Save the province codebook (Canada) ------------------------------------------------------------
+
+write_csv(province_codebook, "data/other/province_codebook.csv")

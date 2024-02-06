@@ -1,0 +1,14 @@
+province_code,province,province_code_wipo,country_mapped_to_province
+AB,Alberta,A1,Canada
+BC,British Columbia,B1,Canada
+MB,Manitoba,M1,Canada
+NB,New Brunswick,N3,Canada
+NL,Newfoundland and Labrador,N1,Canada
+NS,Nova Scotia,N2,Canada
+NT,Northwest Territories,N4,Canada
+NU,Nunavut,N5,Canada
+ON,Ontario,O1,Canada
+PE,Prince Edward Island,P1,Canada
+QC,Quebec,Q1,Canada
+SK,Saskatchewan,S1,Canada
+YT,Yukon,Y1,Canada
