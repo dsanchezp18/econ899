@@ -19,9 +19,7 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
 
-# Join interested parties and main patents data together -----------------------------------------------------------
-
-## Interested parties and main data (dependent variable redefinition) --------------------------------------------
+# Interested parties and main data (dependent variable redefinition) --------------------------------------------
 
 # Add the dates of filing and grant of application to the interested parties data from the main dataset.
 
@@ -40,6 +38,17 @@ interested_parties_province_month <-
        summarise(n_interested_parties = n()) %>%
        ungroup()  %>% 
        arrange(province_code_clean, desc(filing_month_year))
+
+# filter between 1998 and 2021
+
+interested_parties_province_month <- 
+       interested_parties_province_month %>% 
+       filter(filing_month_year > as.Date("1998-01-01"),
+              filing_month_year < as.Date("2021-01-01"))
+
+# Joining the interested parties data with the main data through applicants --------------------------------------------------------
+
+# Join the interested parties data with the main data through the applicants. Drop patents which have more than one applicant.
 
 # Data visualization -------------------------------------------------------------------------------------------
 
