@@ -43,10 +43,20 @@ interested_parties_province_month <-
        ungroup()  %>% 
        arrange(province_code_clean, desc(filing_month_year)) 
 
+
+# Full dataset preparation --------------------------------------------------------------------------------------
+
+# Finalize the dataset by merging all of the work done before
+
+df <-
+       interested_parties_province_month
+
 # Export the data --------------------------------------------------------------------------------------
 
 # Save the data to an RDS file
 
 saveRDS(interested_parties_province_month, "data/patents/processed/interested_parties_province_month.rds")
 
+# Save the final dataset to an RDS file
 
+saveRDS(df, "data/full_dataset.rds")
