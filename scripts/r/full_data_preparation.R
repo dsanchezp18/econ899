@@ -11,6 +11,13 @@
 # Load packages
 
 library(dplyr)
+library(forcats)
+library(lubridate)
+
+# Define a treatment date (month-year the AITC was passed)
+
+treatment_date <- as.Date("2016-08-01")
+treatment_group <- "AB"
 
 # Load the data -----------------------------------------------------------
 
@@ -43,13 +50,17 @@ interested_parties_province_month <-
        ungroup()  %>% 
        arrange(province_code_clean, desc(filing_month_year)) 
 
-
 # Full dataset preparation --------------------------------------------------------------------------------------
 
-# Finalize the dataset by merging all of the work done before
+# Finalize the dataset by merging all of the work done before and defining treatment groups and periods
+# Also create any transformations of variables required for the analysis
 
 df <-
-       interested_parties_province_month
+       interested_parties_province_month  %>% 
+       mutate(ln_parties = log(n_interested_parties),
+              ln_parties_1 = log(n_interested_parties + 1),
+              treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control")  %>% as_factor(),
+              post = if_else(filing_month_year >= treatment_date , 1, 0))
 
 # Export the data --------------------------------------------------------------------------------------
 

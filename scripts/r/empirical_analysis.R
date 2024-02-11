@@ -16,3 +16,8 @@ library(fixest)
 # Load data
 
 df <- readRDS("data/full_dataset.rds")
+
+
+# Difference-in-Differences (DiD) -----------------------------------------------------------
+
+# 
