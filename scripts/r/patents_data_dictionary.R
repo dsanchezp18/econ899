@@ -1,9 +1,10 @@
+# R Script: Patents Data Dictionary Preparation
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This script creates a joint (flat) data dictionary for the patents data.
+# This script creates a joint flat data dictionary for the patents data.
 
 # Preliminaries -----------------------------------------------------------
 

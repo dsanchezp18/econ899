@@ -1,3 +1,4 @@
+# R Script: Patent Interested Parties Data Preparation 
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez

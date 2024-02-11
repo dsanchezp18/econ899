@@ -1,9 +1,10 @@
+# R Script: Full Dataset Preparation
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This script prepares the full patents 
+# This dataset prepares the full dataset for the empirical analysis.
 
 # Preliminaries -----------------------------------------------------------
 

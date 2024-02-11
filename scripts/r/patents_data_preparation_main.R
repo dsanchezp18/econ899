@@ -1,9 +1,10 @@
+# R Script: Main Patent Data Preparation 
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This script prepares the patents main data files for later processing.
+# This script prepares the patents main data files (as downloaded from IP Horizons) for later processing.
 
 # Preliminaries -----------------------------------------------------------
 

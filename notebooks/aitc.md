@@ -2,8 +2,10 @@
 
 
 The Alberta Investor Tax Credit (AITC) offers a 30 per cent tax credit to qualified individuals or corporations who invest in eligible Alberta small businesses doing research, development or commercialization of new technology, new products or new processes; or to those engaged in interactive digital media development, video post-production, digital animation or tourism.
-An investor can either invest directly in an Eligible Business Corporation (EBC) or in a Venture Capital Corporation (VCC) that has successfully registered with the program.
-Tax credit certificates are issued on a first-come, first-served basis until the annual budget is expended. Investors can view the remaining budget available for tax credits at: www.alberta.ca/alberta-investor-tax-credit.aspx.
+
+An investor can either invest directly in an Eligible Business Corporation (EBC) or in a Venture Capital Corporation (VCC) that has successfully registered with the program. Tax credit certificates are issued on a first-come, first-served basis until the annual budget is expended. Investors can view the remaining budget available for tax credits at: www.alberta.ca/alberta-investor-tax-credit.aspx.
+
+This program started in August 2016. 
 
 Source: https://www.alberta.ca/alberta-investor-tax-credit
 
