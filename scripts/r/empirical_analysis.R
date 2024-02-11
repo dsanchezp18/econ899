@@ -11,4 +11,8 @@
 # Load packages
 
 library(dplyr)
-library()
+library(fixest)
+
+# Load data
+
+df <- readRDS("data/full_dataset.rds")
