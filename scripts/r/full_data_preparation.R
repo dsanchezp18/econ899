@@ -54,13 +54,17 @@ interested_parties_province_month <-
 
 # Finalize the dataset by merging all of the work done before and defining treatment groups and periods
 # Also create any transformations of variables required for the analysis
+# I also redefine the reference level of the factors to be the control group and the pre-treatment period
 
 df <-
        interested_parties_province_month  %>% 
-       mutate(ln_parties = log(n_interested_parties),
-              ln_parties_1 = log(n_interested_parties + 1),
-              treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control")  %>% as_factor(),
-              post = if_else(filing_month_year >= treatment_date , 1, 0))
+       transmute(province = as_factor(province_code_clean),
+                 filing_month_year,
+                 patent_parties = n_interested_parties,
+                 ln_parties = log(n_interested_parties),
+                 ln_parties_1 = log(n_interested_parties + 1),
+                 treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control")  %>% as_factor()  %>% fct_relevel("Control"),
+                 post = if_else(filing_month_year >= treatment_date , "Post", "Pre")  %>% as_factor() %>% fct_relevel("Pre"))
 
 # Export the data --------------------------------------------------------------------------------------
 
