@@ -16,7 +16,7 @@ library(lubridate)
 
 # Define a treatment date (month-year the AITC was passed)
 
-treatment_date <- as.Date("2016-08-01")
+treatment_start_date <- ymd("2016-08-01")
 treatment_group <- "AB"
 
 # Load the data -----------------------------------------------------------
@@ -53,18 +53,21 @@ interested_parties_province_month <-
 # Full dataset preparation --------------------------------------------------------------------------------------
 
 # Finalize the dataset by merging all of the work done before and defining treatment groups and periods
+# The periods will be defined as a centered time variable: the number of months since the treatment date.
+# t = 0 is the treatment date, t < 0 is the pre-treatment period, and t > 0 is the post-treatment period.
 # Also create any transformations of variables required for the analysis
 # I also redefine the reference level of the factors to be the control group and the pre-treatment period
 
 df <-
        interested_parties_province_month  %>% 
        transmute(province = as_factor(province_code_clean),
-                     filing_month_year,
-                     patent_parties = n_interested_parties,
-                     ln_parties = log(n_interested_parties),
-                     ln_parties_1 = log(n_interested_parties + 1),
-                     treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control")  %>% as_factor()  %>% fct_relevel("Control"),
-                     post = if_else(filing_month_year >= treatment_date , "Post", "Pre")  %>% as_factor() %>% fct_relevel("Pre"))
+                 filing_month_year,
+                 periods = interval(treatment_start_date, filing_month_year)/months(1),
+                 patent_parties = n_interested_parties,
+                 ln_parties = log(n_interested_parties),
+                 ln_parties_1 = log(n_interested_parties + 1),
+                 treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor()  %>% relevel("Control"),
+                 post = if_else(filing_month_year >= treatment_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))
 
 # Export the data --------------------------------------------------------------------------------------
 

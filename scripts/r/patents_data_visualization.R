@@ -34,6 +34,43 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 ## Interested parties per province and month ---------------------------------------------------------------------
 
+# Plot the number of interested parties per province and month. Consider only largest Canadian provinces and all available periods
+
+interested_parties_province_month_fig_all_dates <-
+       interested_parties_province_month %>% 
+       filter(province_code_clean %in% c("AB", "QC", "ON", "BC")) %>% 
+       ggplot(aes(x = filing_month_year, y = n_interested_parties, group = province_code_clean, color = province_code_clean)) +
+       geom_line() +
+       labs(title = "Number of interested parties per province and month",
+            subtitle = "Largest Canadian provinces",
+            x = "Patent filing date",
+            y = "Number of interested parties in the patent",
+            colour = "Province",
+            caption = "Note: Data obtained from Innovation, Science and Economic Development Canada.") +
+       scale_x_date(date_breaks = "2 year", 
+                    date_labels = "%Y") +
+       scale_y_continuous(labels = comma,
+                          limits = c(0, 2500)) +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+              axis.text.x = element_text(angle = 90, hjust = 1),
+              axis.line.x = element_line(colour = "black"),
+              plot.background = element_rect(fill = "white"),
+              panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+              plot.caption = element_text(hjust = 0),
+              panel.grid.major = element_line(linetype = "dashed"),
+              panel.grid.minor = element_line(linetype = "dashed"),
+              legend.pos = "bottom")
+
+interested_parties_province_month_fig_all_dates
+
+ggsave("figures/interested_parties_province_month_largest_provinces_all_dates.png", 
+       plot = interested_parties_province_month_fig_all_dates, 
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
 # Plot the number of interested parties per province and month. Consider only patents between 1980 and 2021 and largest Canadian provinces
 
 interested_parties_province_month_fig <-
