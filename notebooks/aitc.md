@@ -41,3 +41,5 @@ Details: https://open.alberta.ca/dataset/483a9010-a557-414a-a12c-2bea3be9acce/re
 - Probably doesn't affect IP because it's for film and television.
 
 - AITC also only applies to small businesses, so it's unlikely that the two would be confounded.
+
+## [Innovation Employment Grant](https://www.alberta.ca/innovation-employment-grant)
