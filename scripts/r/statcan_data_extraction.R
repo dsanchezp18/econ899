@@ -34,13 +34,13 @@ lfs_lfc_prov_monthly <-
 
 # Prepare working age population estimates (province-month). Consider total pop and also females males. All age groups. 
 
-lfs_pop_prov_monthly_all_genders <- 
+lfs_pop_province_monthly <- 
     lfs_lfc_prov_monthly  %>%
     filter(labour_force_characteristics == "Population",
            age_group == "15 years and over",
            data_type == "Seasonally adjusted")  %>% 
-    select(date = ref_date, 
-           geo,
+    select(month_year = ref_date, 
+           province = geo,
            scale = scalar_factor, 
            value,
            sex)  %>%
@@ -49,6 +49,6 @@ lfs_pop_prov_monthly_all_genders <-
                 names_prefix = "pop")  %>% 
     clean_names() %>% 
     rename(total_pop = pop_both_sexes)  %>% 
-    left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
-    relocate(province_code, .after = geo)  %>%
-    arrange(desc(date), geo)
+    left_join(provinces %>% select(province, province_code), by = "province" )  %>%
+    relocate(province_code, .after = province)  %>%
+    arrange(desc(month_year), geo)

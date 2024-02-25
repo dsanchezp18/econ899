@@ -60,7 +60,7 @@ interested_parties_province_month <-
 
 df <-
        interested_parties_province_month  %>% 
-       transmute(province = as_factor(province_code_clean),
+       transmute(province_code = as_factor(province_code_clean),
                  filing_month_year,
                  periods = interval(treatment_start_date, filing_month_year)/months(1),
                  patent_parties = n_interested_parties,
@@ -68,7 +68,7 @@ df <-
                  ln_parties_1 = log(n_interested_parties + 1),
                  treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor()  %>% relevel("Control"),
                  post = if_else(filing_month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))  %>% 
-       arrange(province, filing_month_year)
+       arrange(province_code, filing_month_year)
 
 # Export the data --------------------------------------------------------------------------------------
 

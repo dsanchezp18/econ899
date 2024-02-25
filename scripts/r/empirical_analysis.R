@@ -23,7 +23,7 @@ df <- readRDS("data/full_dataset.rds")
 
 # Define a treatment date (month-year the AITC was passed)
 
-treatment_date <- ymd("2016-08-01")
+treatment_start_date <- ymd("2016-08-01")
 treatment_group <- "AB"
 
 # Define "relevant" periods, which are periods for which there is there is relevant data 
@@ -72,9 +72,9 @@ df_twfe <-
 # Estimate the TWFE model
 
 model_twfe <- 
-    feols(ln_parties ~ treated | province + filing_month_year, 
+    feols(ln_parties ~ treated | province_code + filing_month_year, 
           data = df_twfe,
-          cluster = ~ province + filing_month_year)
+          cluster = ~ province_code + filing_month_year)
 
 summary(model_twfe)
 
@@ -86,9 +86,9 @@ df_twfe_relevant <-
 
 model_twfe_relevant <-
     feols(ln_parties ~ treated,
-          fixef = c("province", "filing_month_year"),
+          fixef = c("province_code", "filing_month_year"),
           data = df_twfe_relevant,
-          cluster = ~ province + filing_month_year)
+          cluster = ~ province_code + filing_month_year)
 
 summary(model_twfe_relevant)
 
@@ -136,9 +136,9 @@ df_twfe_relevant <-
 # Estimate the event study specification
 
 model_event_study <-
-    feols(ln_parties ~ i(periods, treatment_dummy, ref = -1) | province + filing_month_year,
+    feols(ln_parties ~ i(periods, treatment_dummy, ref = -1) | province_code + filing_month_year,
           data = df_twfe_relevant,
-          cluster = ~ province + filing_month_year)
+          cluster = ~ province_code + filing_month_year)
 
 # Do the coefplot
 
