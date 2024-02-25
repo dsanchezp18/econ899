@@ -124,3 +124,10 @@ lfs_emp_rate_province_monthly <-
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
 
+## Employee wages -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names 
+
+lfs_wages_industry_prov_monthly <- 
+    statcan_download_data("14-10-0063-01", "eng")  %>% 
+    clean_names()
