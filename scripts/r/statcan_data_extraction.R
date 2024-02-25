@@ -38,9 +38,10 @@ lfs_pop_province_monthly <-
     lfs_lfc_prov_monthly  %>%
     filter(labour_force_characteristics == "Population",
            age_group == "15 years and over",
-           data_type == "Seasonally adjusted")  %>% 
+           data_type == "Seasonally adjusted",
+           geo != "Canada")  %>% 
     select(month_year = ref_date, 
-           province = geo,
+           geo,
            scale = scalar_factor, 
            value,
            sex)  %>%
@@ -49,6 +50,6 @@ lfs_pop_province_monthly <-
                 names_prefix = "pop")  %>% 
     clean_names() %>% 
     rename(total_pop = pop_both_sexes)  %>% 
-    left_join(provinces %>% select(province, province_code), by = "province" )  %>%
-    relocate(province_code, .after = province)  %>%
-    arrange(desc(month_year), geo)
+    left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+    relocate(province_code, .after = geo)  %>%
+    arrange(month_year, geo)
