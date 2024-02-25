@@ -35,6 +35,8 @@
 
 -   It was passed January 2008 and phased out in March 2020, along with the Alberta Investor Tax Credit, Community Economic Development Corporation Tax Credit, Capital Investment Tax Credit, and Interactive Digital Media Tax Credit.
 
+-   Also part of the Corporate Income Tax.
+
 # [Alberta Agri-processing Investment Tax Credit](https://www.alberta.ca/agri-processing-investment-tax-credit.aspx)
 
 -   Could be a confounder with AITC, but it started in 2023
