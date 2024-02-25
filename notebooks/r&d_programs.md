@@ -37,41 +37,44 @@
 
 -   Also part of the Corporate Income Tax.
 
-# [Alberta Agri-processing Investment Tax Credit](https://www.alberta.ca/agri-processing-investment-tax-credit.aspx)
+# [BC SR&ED Tax Credit Program](https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/credits/scientific-research-development)
 
--   Could be a confounder with AITC, but it started in 2023
+- The British Columbia SR&ED Tax Credit Program is designed to encourage research and development in British Columbia that will lead to new, improved, or technologically advanced products or processes. 
 
-[Capital Investment Tax Credit](https://www.alberta.ca/capital-investment-tax-credit.aspx)
+- The program, which came into effect on September 1, 1999, provides tax credits to qualifying corporations that carry on SR&ED in British Columbia.
 
--   *The Capital Investment Tax Credit (CITC) program encourages companies to make timely capital investments by returning a percentage of the company’s costs*
+# [MB R&D Tax Credit](https://www.gov.mb.ca/finance/business/print,ccredits.html)
 
--   To be eligible, a corporation must:
+-   The R&D Tax Credit is a refundable tax credit for eligible research and development activities conducted in Manitoba. 
 
-    -   be incorporated, continued or registered in Alberta under the Business Corporations Act;
+- Started in March 11, 1992 and is still active.
 
-    -   be involved in the business activities of manufacturing or processing goods for sale or lease, or be providing or operating tourism infrastructure in specific NAICS categories in Alberta for at least 120 consecutive days in a 12-month period;
+- Regulations: https://web2.gov.mb.ca/laws/statutes/1992/c05292e.php#P4
 
-    -   be making a total program eligible investment value of at least \$1 million; and
+# [NB R&D Tax Credit](https://www2.gnb.ca/content/gnb/en/services/services_renderer.4676.Tax_Credits_-_Research_and_Development_Tax_Credit.html)
 
-    -   satisfy any conditions for eligibility set out in the Investing in a Diversified Alberta Economy Act and the Alberta Capital Investment Tax Credit Regulation
+- This is a fully refundable tax credit for New Brunswick corporations to help fund their research activity. It is applied to Scientific Research and Experimental Development (SR&ED) expenditures as defined by the Federal Income Tax Act. The credit is administered by the Canada Revenue Agency (CRA).
 
-    -   Elegible business activities:
+- Available since February 25, 1995. (Amendment found in CanLII)
 
-        -   Manufacturing or processing goods for sale or lease, The manufacturing of goods normally involves the creation of something (e.g., making or assembling machines, clothing, soup) or the shaping, stamping or forming of an object out of materials (e.g. making steel rails, wire nails, rubber balls, wood moulding). Manufacturing and processing for the purposes of the CITC is defined as described in the federal Income Tax Act Section 125.1(3).
-        -   Resorts (NAICS 721113)
-        -   Skiing facilities (NAICS 713920)
-        -   All other amusement and recreation industries (NAICS 713990)
-        -   Recreational vehicle (RV) parks and campgrounds (NAICS 721211)
-        -   Recreational and Vacation Camps (NAICS 721213)
-        -   Hunting and fishing camps (NAICS 721212)
-        -   Scenic and sightseeing transportation (NAICS 487)
+# [NL R&D Tax Credit](https://www.gov.nl.ca/fin/tax-programs-incentives/business/scientificresearch/)
 
--   Phased out in 2019.
+- Available since 1995 (Jan 1st). https://www.assembly.nl.ca/legislation/sr/annualstatutes/1996/9603.chp.htm
 
-# [Film and Television Tax Credit](https://www.alberta.ca/film-television-tax-credit)
+# [NS R&D Tax Credit](https://novascotia.ca/finance/en/home/taxation/tax101/businesstax/corporateincometax/researchanddevelopmenttax.aspx.html)
 
--   Tax credit to support medium and large-scale productions filming in Alberta.
+- 1994. 
 
--   Probably doesn't affect IP because it's for film and television.
+# [ON R&D Tax Credit]
 
--   AITC also only applies to small businesses, so it's unlikely that the two would be confounded.
+- Since 1988, still ongoing.
+
+# [QC R&D Tax Credit] 
+
+- Since 1988, still ongoing.
+
+# [SK R&D Tax Credit](https://www.saskatchewan.ca/business/taxes-licensing-and-reporting/tax-credits/research-and-development-tax-credit)
+
+April 1998. 
+
+# [YK R&D Tax Credit]
