@@ -67,7 +67,8 @@ df <-
                  ln_parties = log(n_interested_parties),
                  ln_parties_1 = log(n_interested_parties + 1),
                  treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor()  %>% relevel("Control"),
-                 post = if_else(filing_month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))
+                 post = if_else(filing_month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))  %>% 
+       arrange(province, filing_month_year)
 
 # Export the data --------------------------------------------------------------------------------------
 

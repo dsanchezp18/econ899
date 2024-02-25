@@ -17,10 +17,6 @@ library(lubridate)
 library(ggplot2)
 library(scales)
 
-# Define the maximum date to take into account for the patents
-
-max_date <- ymd("2021-12-31") # As defined by the "official" documentation, though it seems they do report some data for 2022
-
 # Loading the data --------------------------------------------------------
 
 # Load the main data file, defining loading parameters for the read_csv function
@@ -82,7 +78,6 @@ patents_main_raw <-
 patents_main <- 
   patents_main_raw  %>% 
   mutate(filing_month_year = floor_date(filing_date, "month")) %>% 
-  filter(filing_date <= max_date)  %>%
   arrange(desc(filing_month_year))
 
 # EDA ---------------------------------------------------------------------
