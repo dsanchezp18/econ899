@@ -300,3 +300,55 @@ lfs_usual_total_hours_worked_prov <-
     arrange(month_year, geo)
 
 # Employment Insurance (EI) -----------------------------------------------------------
+
+## Claims by province, monthly, seasonally adjusted -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+ei_claims_prov_monthly_table <- 
+    statcan_download_data("14-10-0005-01", "eng")  %>% 
+    clean_names()
+
+# Get month-province claims 
+
+ei_claims_prov_monthly <- 
+    ei_claims_prov_monthly_table %>%
+    filter(geo != "Canada",
+           type_of_claim == "Initial and renewal claims, seasonally adjusted",
+           claim_detail == "Received",
+           uom == "Claims", ) %>%
+    select(month_year = ref_date, 
+           geo,
+           scale = scalar_factor,
+           value) %>%
+    clean_names() %>%
+    left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+    relocate(province_code, .after = geo) %>%
+    arrange(month_year, geo)
+
+# Consumer Price Index (CPI) -----------------------------------------------------------
+
+## CPI, by province, monthly, not seasonally adjusted -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+cpi_prov_monthly_table <- 
+    statcan_download_data("18-10-0004-01", "eng")  %>% 
+    clean_names()
+    
+# All items, province-month (eliminating CMAs)
+
+cpi_all_items_prov_monthly <- 
+    cpi_prov_monthly_table %>%
+    filter(geo != "Canada",
+           products_and_product_groups == "All-items") %>%
+    select(month_year = ref_date, 
+           base_year = uom,
+           geo,
+           scale = scalar_factor,
+           value) %>%
+    clean_names() %>%
+    left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+    relocate(province_code, .after = geo) %>%
+    filter(!is.na(province_code)) %>% 
+    arrange(month_year, geo)
