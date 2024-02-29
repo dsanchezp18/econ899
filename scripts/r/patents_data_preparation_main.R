@@ -150,3 +150,4 @@ patents_main %>%
 # Export the data as an RDS file, which is faster to load than a CSV
 
 saveRDS(patents_main, "data/patents/processed/patents_main.rds")
+

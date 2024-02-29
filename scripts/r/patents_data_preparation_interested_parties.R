@@ -276,7 +276,24 @@ patents_interested_parties <-
 
 write_rds(patents_interested_parties, "data/patents/processed/patents_interested_parties.rds")
 
-## Other data ------------------------------------------------------------
+## Only inventors ------------------------------------------------------------
+
+patents_inventors <- 
+    parties_int %>%
+    filter(interested_party_type_code == "INVT") %>%
+    select(patent_number, 
+           party_type = interested_party_type_code,
+           party_name,
+           party_country_code,
+           party_country,
+           party_province_code,
+           party_province,
+           province_code_clean,
+           country_mapped_to_province,
+           party_city,
+           party_postal_code)
+
+write_rds(patents_inventors, "data/patents/processed/patents_inventors.rds")
 
 # Save the province codebook (Canada) ------------------------------------------------------------
 

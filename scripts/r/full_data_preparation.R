@@ -27,6 +27,8 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds")
 
+patents_inventors <- readRDS("data/patents/processed/patents_inventors.rds")
+
 # Interested parties and main data (dependent variable redefinition) --------------------------------------------
 
 # Add the dates of filing and grant of application to the interested parties data from the main dataset. 
@@ -35,6 +37,13 @@ patents_interested_parties <- readRDS("data/patents/processed/patents_interested
 
 interested_parties_with_dates <-  
        patents_interested_parties %>%
+       left_join(patents_main %>% select(patent_number, filing_month_year), 
+                 by = "patent_number")
+
+# Do the same thing for the inventors data
+
+inventors_with_dates <-  
+       patents_inventors %>%
        left_join(patents_main %>% select(patent_number, filing_month_year), 
                  by = "patent_number")
 
@@ -50,6 +59,16 @@ interested_parties_province_month <-
        ungroup()  %>% 
        arrange(province_code_clean, desc(filing_month_year)) 
 
+# Count the number of inventors per province and month. Filter out non-Canadian provinces.
+
+inventors_province_month <-
+       inventors_with_dates %>%
+       filter(country_mapped_to_province == 'Canada') %>%
+       group_by(province_code_clean, filing_month_year) %>%
+       summarise(n_inventors = n()) %>%
+       ungroup()  %>% 
+       arrange(province_code_clean, desc(filing_month_year))
+
 # Full dataset preparation --------------------------------------------------------------------------------------
 
 # Finalize the dataset by merging all of the work done before and defining treatment groups and periods
@@ -60,12 +79,16 @@ interested_parties_province_month <-
 
 df <-
        interested_parties_province_month  %>% 
+       left_join(inventors_province_month, by = c("province_code_clean", "filing_month_year")) %>% 
        transmute(province_code = as_factor(province_code_clean),
                  filing_month_year,
                  periods = interval(treatment_start_date, filing_month_year)/months(1),
                  patent_parties = n_interested_parties,
+                 inventors = n_inventors,
                  ln_parties = log(n_interested_parties),
                  ln_parties_1 = log(n_interested_parties + 1),
+                 ln_inventors = log(n_inventors),
+                 ln_inventors_1 = log(n_inventors + 1),
                  treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor()  %>% relevel("Control"),
                  post = if_else(filing_month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))  %>% 
        arrange(province_code, filing_month_year)
@@ -79,3 +102,7 @@ saveRDS(interested_parties_province_month, "data/patents/processed/interested_pa
 # Save the final dataset to an RDS file
 
 saveRDS(df, "data/full_dataset.rds")
+
+# Save the final dataset to a CSV file, for other software
+
+write_csv(df, "data/full_dataset.csv")
