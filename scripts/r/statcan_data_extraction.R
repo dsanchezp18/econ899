@@ -279,7 +279,7 @@ lfs_usual_total_hours_worked_prov <-
 
 # Average hours worked, province-month
 
-lfs_usual_total_hours_worked_prov <- 
+lfs_usual_avg_hours_worked_prov <- 
     lfs_usual_hours_worked_prov_monthly %>%
     filter(geo != "Canada",
            usual_hours_worked == "Average usual hours",
@@ -320,7 +320,7 @@ ei_claims_prov_monthly <-
     select(month_year = ref_date, 
            geo,
            scale = scalar_factor,
-           value) %>%
+           ei_claims = value) %>%
     clean_names() %>%
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
     relocate(province_code, .after = geo) %>%
@@ -346,9 +346,184 @@ cpi_all_items_prov_monthly <-
            base_year = uom,
            geo,
            scale = scalar_factor,
-           value) %>%
+           cpi = value) %>%
     clean_names() %>%
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
     relocate(province_code, .after = geo) %>%
     filter(!is.na(province_code)) %>% 
     arrange(month_year, geo)
+
+# Industry sales -----------------------------------------------------------
+
+## Retrail trade sales -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+retail_trade_sales_prov_monthly_table <- 
+    statcan_download_data("20-10-0008-01", "eng")  %>% 
+    clean_names()
+
+# Retail trade sales, province-month panel 
+
+retail_trade_sales_prov_monthly <-
+       retail_trade_sales_prov_monthly_table %>%
+       filter(geo != "Canada",
+              north_american_industry_classification_system_naics == "Retail trade [44-45]",
+              adjustments == "Seasonally adjusted") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              retail_sales = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+## Wholesale trade sales -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names 
+
+wholesale_trade_sales_prov_monthly_table <- 
+    statcan_download_data("20-10-0074-01", "eng")  %>% 
+    clean_names()
+
+# Wholesale trade sales, province-month panel
+
+wholesale_trade_sales_prov_monthly <-
+       wholesale_trade_sales_prov_monthly_table %>%
+       filter(geo != "Canada",
+              north_american_industry_classification_system_naics == "Wholesale trade [41]",
+              adjustments == "Seasonally adjusted") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              wholesale_sales = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+## Manufacturing sales -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+manufacturing_sales_prov_monthly_table <- 
+    statcan_download_data("16-10-0048-01", "eng")  %>% 
+    clean_names()
+
+# Manufacturing sales, province-month panel
+
+manufacturing_sales_prov_monthly <-
+       manufacturing_sales_prov_monthly_table %>%
+       filter(geo != "Canada",
+              north_american_industry_classification_system_naics == "Manufacturing [31-33]",
+              seasonal_adjustment == "Seasonally adjusted") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              manufacturing_sales = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+## Monthly survey of food services and drinking places -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+food_services_sales_prov_monthly_table <- 
+    statcan_download_data("21-10-0019-01", "eng")  %>% 
+    clean_names()
+
+# Get sales (receipts) from food services and drinking places, province-month panel
+
+food_services_sales_prov_monthly <-
+       food_services_sales_prov_monthly_table %>%
+       filter(geo != "Canada",
+              north_american_industry_classification_system_naics == "Total, food services and drinking places",
+              seasonal_adjustment == "Seasonally adjusted",
+              service_detail == "Receipts") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              food_services_receipts = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# Mobility data -----------------------------------------------------------
+
+## International travellers entering Canada -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+international_travellers_canada_monthly_table <- 
+    statcan_download_data("24-10-0005-01", "eng")  %>% 
+    clean_names()
+
+# Get international travellers entering Canada, province-month panel
+
+international_travellers_canada_monthly <-
+       international_travellers_canada_monthly_table %>%
+       filter(geo != "Canada",
+              traveller_category == "Total non resident travellers") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              travellers = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+## Vehicles entering Canada -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+vehicles_entering_canada_monthly_table <- 
+    statcan_download_data("24-10-0052-01", "eng")  %>% 
+    clean_names()
+
+# Get vehicles entering Canada, province-month panel
+
+vehicles_entering_canada_monthly <-
+       vehicles_entering_canada_monthly_table %>%
+       filter(geo != "Canada",
+              vehicle_licence_plate == "Vehicles entering Canada",
+              vehicle_type == "Vehicles") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              vehicles = value) %>%
+       clean_names() %>%
+       inner_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# Joining monthly data together -----------------------------------------------------------
+
+# Join all monthly data together in a single dataframe
+
+statcan_monthly_df <-
+       lfs_pop_province_monthly %>% select(month_year, province_code, total_pop) %>%
+       left_join(lfs_emp_province_monthly %>% select(month_year, province_code, total_emp, emp_males, emp_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_full_emp_province_monthly %>% select(month_year, province_code, total_full_emp), by = c("month_year", "province_code")) %>%
+       left_join(lfs_part_emp_province_monthly %>% select(month_year, province_code, total_part_emp), by = c("month_year", "province_code")) %>%
+       left_join(lfs_unem_province_monthly %>% select(month_year, province_code, total_unem), by = c("month_year", "province_code")) %>%
+       left_join(lfs_emp_rate_province_monthly %>% select(month_year, province_code, total_emp_rate), by = c("month_year", "province_code")) %>%
+       left_join(lfs_total_wages_prov %>% select(month_year, province_code, total_wage, total_wage_males, total_wage_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_average_hourly_wage %>% select(month_year, province_code, total_avg_wage, avg_wage_males, avg_wage_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_median_hourly_wage %>% select(month_year, province_code, total_median_wage, median_wage_males, median_wage_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_usual_total_hours_worked_prov %>% select(month_year, province_code, total_hours), by = c("month_year", "province_code")) %>%
+       left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, total_average_hours, average_hours_males, average_hours_females), by = c("month_year", "province_code")) %>%
+       left_join(ei_claims_prov_monthly %>% select(month_year, province_code, ei_claims), by = c("month_year", "province_code")) %>%
+       left_join(cpi_all_items_prov_monthly %>% select(month_year, province_code, cpi), by = c("month_year", "province_code")) %>%
+       left_join(retail_trade_sales_prov_monthly %>% select(month_year, province_code, retail_sales), by = c("month_year", "province_code")) %>%
+       left_join(wholesale_trade_sales_prov_monthly %>% select(month_year, province_code, wholesale_sales), by = c("month_year", "province_code")) %>%
+       left_join(manufacturing_sales_prov_monthly %>% select(month_year, province_code, manufacturing_sales), by = c("month_year", "province_code")) %>%
+       left_join(food_services_sales_prov_monthly %>% select(month_year, province_code, food_services_receipts), by = c("month_year", "province_code")) %>%
+       left_join(international_travellers_canada_monthly %>% select(month_year, province_code, travellers), by = c("month_year", "province_code")) %>%
+       left_join(vehicles_entering_canada_monthly %>% select(month_year, province_code, vehicles), by = c("month_year", "province_code")) %>%
+       arrange(month_year, province_code)
+
