@@ -101,3 +101,7 @@ insolvency_prov_month <-
                 values_from = insolvencies) %>%
     clean_names() %>% 
     select(-province)
+
+# Export the data ----------------------------------------------------------------
+
+write_csv(insolvency_prov_month, "data/goc/processed_insolvency_prov_month.csv")
