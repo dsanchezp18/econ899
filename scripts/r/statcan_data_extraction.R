@@ -15,6 +15,7 @@ library(readr)
 library(statcanR)
 library(janitor)
 library(tidyr)
+library(stringr)
 
 # Load province codebook
 
@@ -501,6 +502,136 @@ vehicles_entering_canada_monthly <-
        relocate(province_code, .after = geo) %>%
        arrange(month_year, geo)
 
+# Electric power generation -----------------------------------------------------------
+
+## Electric power generation, by province, monthly, seasonally adjusted -----------------------------------------------------------
+
+# First table from 1950 to 2007
+
+electric_power_generation_prov_monthly_table_1 <- 
+    statcan_download_data("25-10-0001-01", "eng") %>% 
+    clean_names()
+
+# Create a panel with electric power generation, province-month
+
+electric_power_generation_prov_monthly_1 <-
+       electric_power_generation_prov_monthly_table_1 %>%
+       filter(geo != "Canada",
+              electric_power_components == "Overall total generation") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              electric_power_generation = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)    
+
+# Second table from 2008 to present 
+
+electric_power_generation_prov_monthly_table_2 <- 
+    statcan_download_data("25-10-0015-01", "eng") %>% 
+    clean_names()
+
+# Create a panel with electric power generation, province-month
+
+electric_power_generation_prov_monthly_2 <-
+       electric_power_generation_prov_monthly_table_2 %>%
+       filter(geo != "Canada",
+              class_of_electricity_producer == "Total all classes of electricity producer",
+              type_of_electricity_generation == "Total all types of electricity generation") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              electric_power_generation = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# Horizontally bind electric power generation tables
+
+electric_power_generation_prov_monthly <- 
+    bind_rows(electric_power_generation_prov_monthly_1, electric_power_generation_prov_monthly_2)
+
+# Experimental economic activity -----------------------------------------------------------
+
+## Experimental indexes of econ activity by province -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+experimental_econ_activity_prov_monthly_table <- 
+    statcan_download_data("36-10-0633-01", "eng")  %>% 
+    clean_names()
+
+# Get experimental indexes of economic activity, province-month panel
+
+experimental_econ_activity_prov_monthly <-
+       experimental_econ_activity_prov_monthly_table %>%
+       filter(geo != "Canada",
+              activity_index == "Simple economic activity index") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              value) %>%
+       clean_names() %>%
+       mutate(geo = str_remove_all(geo, "Â") %>% str_trim()) %>% 
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# International trade -----------------------------------------------------------
+
+## Total international merchandise trade -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+international_merchandise_trade_monthly_table <- 
+    statcan_download_data("12-10-0175-01", "eng")  %>% 
+    clean_names()
+
+# Get total international merchandise imports, province-month panel
+
+international_merchandise_imports_prov_monthly <-
+       international_merchandise_trade_monthly_table %>%
+       filter(geo != "Canada",
+              trade == "Import",
+              north_american_product_classification_system_napcs == "Total of all merchandise",
+              principal_trading_partners == "All countries") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              international_merchandise_imports = value) %>%
+       clean_names() %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# Housing -----------------------------------------------------------
+
+## New housing price index -----------------------------------------------------------
+
+# Extract the table using statcanR and clean names
+
+new_housing_price_index_monthly_table <- 
+    statcan_download_data("18-10-0205-01", "eng")  %>% 
+    clean_names()
+
+# Get new housing price index, province-month panel
+
+new_housing_price_index_prov_monthly <-
+       new_housing_price_index_monthly_table %>%
+       filter(geo != "Canada",
+              new_housing_price_indexes == "Total (house and land)") %>%
+       select(month_year = ref_date, 
+              geo,
+              scale = scalar_factor,
+              new_housing_price_index = value) %>%
+       clean_names() %>%
+       inner_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
 # Joining monthly data together -----------------------------------------------------------
 
 # Join all monthly data together in a single dataframe
@@ -525,5 +656,8 @@ statcan_monthly_df <-
        left_join(food_services_sales_prov_monthly %>% select(month_year, province_code, food_services_receipts), by = c("month_year", "province_code")) %>%
        left_join(international_travellers_canada_monthly %>% select(month_year, province_code, travellers), by = c("month_year", "province_code")) %>%
        left_join(vehicles_entering_canada_monthly %>% select(month_year, province_code, vehicles), by = c("month_year", "province_code")) %>%
+       left_join(electric_power_generation_prov_monthly %>% select(month_year, province_code, electric_power_generation), by = c("month_year", "province_code")) %>% 
+       left_join(experimental_econ_activity_prov_monthly %>% select(month_year, province_code, value), by = c("month_year", "province_code")) %>%
+       left_join(international_merchandise_imports_prov_monthly %>% select(month_year, province_code, international_merchandise_imports), by = c("month_year", "province_code")) %>%
+       left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
        arrange(month_year, province_code)
-
