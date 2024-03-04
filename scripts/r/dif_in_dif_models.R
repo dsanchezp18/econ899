@@ -74,10 +74,57 @@ baseline_twfe_inventors <-
 
 summary(baseline_twfe_inventors)
 
-# Present preliminary simple results with modelsummary -----------------------------------------------------------
+# Present baseline results with modelsummary -----------------------------------------------------------
 
 # List of models
 
 baseline_did_models <- list(baseline_ls, baseline_ls_inventors, baseline_twfe, baseline_twfe_inventors)
 
 modelsummary(baseline_did_models, stars = stars)
+
+# Models with explanatory variables -----------------------------------------------------------
+
+# Estimate the models with the explanatory variables included.
+
+# Define a formula object with the summation of all explanatory variables to be included in the models
+
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_average_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index"  %>% 
+                    as.formula()
+
+## Least squares (LS/OLS) -----------------------------------------------------------
+
+# Estimate the model with explanatory variables, all parties
+
+model_ls <-
+    model_ls <- lm(update(explanatory_vars, ln_parties ~ treatment * post + .), data = df)
+
+summary(model_ls)
+
+# Repeat with inventors only
+
+model_ls_inventors <-
+    model_ls_inventors <- lm(update(explanatory_vars, ln_inventors ~ treatment * post + .), data = df)
+
+summary(model_ls_inventors)
+
+## Two-way fixed effects (TWFE) -----------------------------------------------------------
+
+# Estimate the same model but with two-way fixed effects (using the same explanatory variables and DID dummy).
+
+# All parties
+
+model_twfe <-
+    feols(update(explanatory_vars, ln_parties ~ treated + .), 
+          data = df_twfe,
+          cluster = ~ province_code + filing_month_year)
+
+summary(model_twfe)
+
+# Repeat with inventors only
+
+model_twfe_inventors <-
+    feols(update(explanatory_vars, ln_inventors ~ treated + .), 
+          data = df_twfe,
+          cluster = ~ province_code + filing_month_year)
+
+summary(model_twfe_inventors)

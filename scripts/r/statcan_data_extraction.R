@@ -573,7 +573,7 @@ experimental_econ_activity_prov_monthly <-
        select(month_year = ref_date, 
               geo,
               scale = scalar_factor,
-              value) %>%
+              exp_index_econ_activity = value) %>%
        clean_names() %>%
        mutate(geo = str_remove_all(geo, "Â") %>% str_trim()) %>% 
        left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
@@ -657,7 +657,7 @@ statcan_province_month_panel_df <-
        left_join(international_travellers_canada_monthly %>% select(month_year, province_code, travellers), by = c("month_year", "province_code")) %>%
        left_join(vehicles_entering_canada_monthly %>% select(month_year, province_code, vehicles), by = c("month_year", "province_code")) %>%
        left_join(electric_power_generation_prov_monthly %>% select(month_year, province_code, electric_power_generation), by = c("month_year", "province_code")) %>% 
-       left_join(experimental_econ_activity_prov_monthly %>% select(month_year, province_code, value), by = c("month_year", "province_code")) %>%
+       left_join(experimental_econ_activity_prov_monthly %>% select(month_year, province_code, exp_index_econ_activity), by = c("month_year", "province_code")) %>%
        left_join(international_merchandise_imports_prov_monthly %>% select(month_year, province_code, international_merchandise_imports), by = c("month_year", "province_code")) %>%
        left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
        arrange(month_year, province_code)

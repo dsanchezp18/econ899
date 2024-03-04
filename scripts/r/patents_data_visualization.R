@@ -1,4 +1,4 @@
-# R Script: Data Visualization
+# R Script: Data Visualization for Patents Data
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
@@ -29,6 +29,10 @@ treatment_starts <- as.Date("2016-08-01")
 interested_parties_province_month <- readRDS("data/patents/processed/interested_parties_province_month.rds")
 
 patents_main <- readRDS("data/patents/processed/patents_main.rds")
+
+# Load the final dataset
+
+df <- readRDS("data/full_dataset.rds")
 
 # Interested parties -----------------------------------------------------------
 
@@ -263,6 +267,87 @@ patents_filed_per_month_fig
 
 ggsave(filename = "figures/patents_filed_per_month_fig.png", 
        plot = patents_filed_per_month_fig,
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
+# Final dataset (df) data visualization -----------------------------------------------------------
+
+## Interested parties, total treatment and control ----------------------------------------------------------------
+
+# Plot the total number of interested parties in filed patents by treatment and control groups
+
+interested_parties_total_trends_fig <-
+       df %>% 
+       filter(filing_month_year %>% between(start_date, end_date)) %>%
+       group_by(filing_month_year, periods, treatment) %>%
+       summarise(patent_parties = sum(patent_parties, na.rm = T)) %>%
+       ungroup() %>% 
+       ggplot(aes(x = periods, y = log(patent_parties), group = treatment, color = treatment)) +
+       geom_vline(xintercept = 0, linetype = "dashed", color = "#56589e") +
+       geom_line() +
+       scale_y_continuous(labels = comma) +
+       scale_x_continuous(breaks = seq(min(df$periods), max(df$periods), by = 50)) +
+       scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
+       labs(title = "Time series of the number of interested parties in filed patents",
+            subtitle = "Natural log of the number of interested parties in filed patents",
+            color = "Group",
+            x = "Periods before AITC was passed",
+            y = "Natural log of the number of interested parties in filed patents",
+            caption = "Note: Data obtained from Innovation, Science and Economic Development Canada (ISED).") +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.position = c(0.92, 0.15))
+
+ggsave("figures/interested_parties_total_trends_fig.png", 
+       plot = interested_parties_total_trends_fig, 
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
+# The same but with the number of inventors
+
+inventors_total_trends_fig <-
+       df %>% 
+       filter(filing_month_year %>% between(start_date, end_date)) %>%
+       group_by(filing_month_year, periods, treatment) %>%
+       summarise(inventors = sum(inventors, na.rm = T)) %>%
+       ungroup() %>% 
+       ggplot(aes(x = periods, y = log(inventors), group = treatment, color = treatment)) +
+       geom_vline(xintercept = 0, linetype = "dashed", color = "#56589e") +
+       geom_line() +
+       scale_y_continuous(labels = comma) +
+       scale_x_continuous(breaks = seq(min(df$periods), max(df$periods), by = 50)) +
+       scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
+       labs(title = "Time series of the number of inventors in filed patents",
+            subtitle = "Natural log of the number of inventors in filed patents",
+            color = "Group",
+            x = "Periods before AITC was passed",
+            y = "Natural log of the number of inventors in filed patents",
+            caption = "Note: Data obtained from Innovation, Science and Economic Development Canada (ISED).") +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.position = c(0.92, 0.15))
+
+
+ggsave("figures/inventors_total_trends_fig.png", 
+       plot = inventors_total_trends_fig, 
        width = 17, 
        height = 10, 
        units = "cm",
