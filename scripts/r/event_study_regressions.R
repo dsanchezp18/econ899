@@ -13,6 +13,9 @@ library(fixest)
 library(lubridate)
 library(modelsummary)
 library(forcats)
+library(gridExtra)
+library(ggplot2)
+library(patchwork)
 
 # Load data
 
@@ -104,16 +107,16 @@ explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) 
 
 event_study_covariates <-
     feols(update(explanatory_vars, ln_parties ~ i(periods, treatment_dummy, ref = -1) + .), 
-          data = df_event_study %>% filter(periods > -236),
+          data = (df_event_study %>% filter(periods > -236)),
           cluster = ~ province_code + periods)
 
 summary(event_study_covariates)
 
-    iplot(event_study_covariates, 
-          main = "Event Study Plot",
-          xlab = "Periods",
-          ylab = "Interaction term coefficients with 95% C.I.",
-          sub = "All parties involved in patent applications")
+iplot(event_study_covariates, 
+        main = "Event Study Plot",
+        xlab = "Periods",
+        ylab = "Interaction term coefficients with 95% C.I.",
+        sub = "All parties involved in patent applications")
 
 # Save the chart
 
