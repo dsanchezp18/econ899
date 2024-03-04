@@ -36,12 +36,12 @@ lfs_lfc_prov_monthly <-
 # Prepare working age population estimates (province-month). Consider total pop and also females males. Does not disaggregate by age group (15+ age group)
 
 lfs_pop_province_monthly <- 
-    lfs_lfc_prov_monthly  %>%
+    lfs_lfc_prov_monthly %>%
     filter(labour_force_characteristics == "Population",
            age_group == "15 years and over",
            data_type == "Seasonally adjusted",
            geo != "Canada",
-           statistics == "Estimate")  %>% 
+           statistics == "Estimate") %>% 
     select(month_year = ref_date, 
            geo,
            scale = scalar_factor, 
@@ -49,11 +49,11 @@ lfs_pop_province_monthly <-
            sex)  %>%
     pivot_wider(names_from = sex,
                 values_from = value,
-                names_prefix = "pop")  %>% 
+                names_prefix = "pop") %>% 
     clean_names() %>% 
-    rename(total_pop = pop_both_sexes)  %>% 
-    left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
-    relocate(province_code, .after = geo)  %>%
+    rename(total_pop = pop_both_sexes) %>% 
+    left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+    relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
 
 # Employment, both part-time and full-time
@@ -636,7 +636,7 @@ new_housing_price_index_prov_monthly <-
 
 # Join all monthly data together in a single dataframe
 
-statcan_monthly_df <-
+statcan_province_month_panel_df <-
        lfs_pop_province_monthly %>% select(month_year, province_code, total_pop) %>%
        left_join(lfs_emp_province_monthly %>% select(month_year, province_code, total_emp, emp_males, emp_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_full_emp_province_monthly %>% select(month_year, province_code, total_full_emp), by = c("month_year", "province_code")) %>%
@@ -661,3 +661,9 @@ statcan_monthly_df <-
        left_join(international_merchandise_imports_prov_monthly %>% select(month_year, province_code, international_merchandise_imports), by = c("month_year", "province_code")) %>%
        left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
        arrange(month_year, province_code)
+
+# Exporting province-month data -----------------------------------------------------------
+
+# Export the province-month data to a csv file 
+
+write_csv(statcan_province_month_panel_df, "data/statcan/statcan_data_province_month_panel.csv")
