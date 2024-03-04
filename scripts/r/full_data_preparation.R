@@ -24,7 +24,6 @@ valid_date <- ymd("2021-12-31")
 treatment_start_date <- ymd("2016-08-01")
 treatment_group <- "AB"
 
-
 # Load the data -----------------------------------------------------------
 
 # Explained/Dependent variables -----------------------------------------------------------
@@ -112,7 +111,7 @@ df <-
                  ln_inventors_1 = log(n_inventors + 1),
                  ln_other_parties = log(other_parties),
                  ln_other_parties_1 = log(other_parties + 1),
-                 treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor()  %>% relevel("Control"),
+                 treatment = if_else(province_code_clean == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
                  post = if_else(filing_month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))  %>% 
        arrange(province_code, filing_month_year) %>% 
        left_join(statcan_province_month_panel_df, by = c("province_code", "filing_month_year" = "month_year")) %>% # Statistics Canada data
