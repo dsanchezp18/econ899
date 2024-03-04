@@ -1,10 +1,10 @@
-# R Script: Office of the Superintendent of Bankruptcy Canada Data (Insolvency Statistics)
+# R Script: Extract and Prepare Other Data from the Government of Canada (GOC)
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This dataset prepares the insolvency statistics data for the empirical analysis.
+# This dataset extracts and prepares other data from the Government of Canada (GOC) for the empirical analysis.
 
 # Preliminaries -----------------------------------------------------------
 
