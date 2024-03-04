@@ -14,7 +14,10 @@ library(dplyr)
 library(lubridate)
 library(readxl)
 library(openxlsx)
+library(readr)
 library(tidyr)
+library(stringr)
+library(janitor)
 library(rgovcan) # Needs to be installed with remotes::install_github("vlucet/rgovcan")
 
 # Load province codebook
@@ -79,11 +82,8 @@ insolvency_monthly_data <-
      mutate(province = str_extract(province, "^[^/]+"),
             type_of_insolvency = str_extract(type_of_insolvency, "^[^/]+")) %>% 
      pivot_longer(cols = -c(province, type_of_insolvency), 
-                  names_to = "period", 
+                  names_to = "month_year", 
                   values_to = "insolvencies") %>% 
-     mutate(month_year = ceiling_date(as.Date(period), unit = "month") - days(1)) %>%
-     relocate(month_year, .after = period) %>% 
-     select(-period) %>%
      filter(province != "Canada") %>% 
      left_join(provinces %>% select(province, province_code), by = "province") %>%
      relocate(province_code, .before = province) %>%
