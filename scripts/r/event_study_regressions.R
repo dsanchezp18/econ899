@@ -61,7 +61,7 @@ png("figures/event_study_baseline.png",
     units = "cm",
     res = 800)
 
-iplot(model_event_study)
+iplot(baseline_event_study_iplot)
 
 dev.off()
 
@@ -79,7 +79,7 @@ iplot(baseline_event_study_inventors)
 # Save the chart
 
 png("figures/event_study_baseline_inventors.png", 
-    width = 17, 
+    width = 20, 
     height = 10, 
     units = "cm",
     res = 800)
@@ -113,7 +113,7 @@ iplot(event_study_covariates)
 # Save the chart
 
 png("figures/event_study_covariates.png", 
-    width = 17, 
+    width = 20, 
     height = 10, 
     units = "cm",
     res = 800)

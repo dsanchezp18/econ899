@@ -15,6 +15,7 @@ library(fixest)
 library(lubridate)
 library(modelsummary)
 library(forcats)
+library(tibble)
 
 # Load data
 
@@ -95,14 +96,14 @@ explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) 
 
 # Estimate the model with explanatory variables, all parties
 
-model_ls <-
+model_explanatory_ls <-
     model_ls <- lm(update(explanatory_vars, ln_parties ~ treatment * post + .), data = df)
 
 summary(model_ls)
 
 # Repeat with inventors only
 
-model_ls_inventors <-
+model_explanatory_ls_inventors <-
     model_ls_inventors <- lm(update(explanatory_vars, ln_inventors ~ treatment * post + .), data = df)
 
 summary(model_ls_inventors)
@@ -113,7 +114,7 @@ summary(model_ls_inventors)
 
 # All parties
 
-model_twfe <-
+model_explanatory_twfe <-
     feols(update(explanatory_vars, ln_parties ~ treated + .), 
           data = df_twfe,
           cluster = ~ province_code + filing_month_year)
@@ -122,9 +123,53 @@ summary(model_twfe)
 
 # Repeat with inventors only
 
-model_twfe_inventors <-
+model_explanatory_twfe_inventors <-
     feols(update(explanatory_vars, ln_inventors ~ treated + .), 
           data = df_twfe,
           cluster = ~ province_code + filing_month_year)
 
 summary(model_twfe_inventors)
+
+# Export results ----------------------------------------------------------------
+
+# List of models (only TWFE with explanatory)
+did_models_explanatory <- list(model_explanatory_twfe, 
+                               model_explanatory_twfe_inventors)
+
+# Create a dataframe with the extra columns for the models
+
+rows <- tibble(
+    term = "Explained variable",
+    v1 = "ln(All interested parties)",
+    v2 = "ln(Inventors only)"
+)
+
+# Change the position to the top of the table
+
+attr(rows, 'position') <- 0
+
+# Coefficient names to be included in the table
+
+coef_names <- 
+    c("(Intercept)" = "Intercept",
+      "treated" = "Treatment x Post", 
+      "log(total_pop)" = "Log(Total Population)", 
+      "log(total_emp)" = "Log(Total Employment)", 
+      "log(total_median_wage)" = "Log(Median Employee Wage)", 
+      "log(total_average_hours)" = "Log(Average Hours)", 
+      "log(ei_claims)" = "Log(EI Claims)", 
+      "cpi" = "CPI Level", 
+      "log(retail_sales)" = "Log(Retail Sales)", 
+      "log(wholesale_sales)" = "Log(Wholesale Sales)", 
+      "log(manufacturing_sales)" = "Log(Manufacturing Sales)", 
+      "log(international_merchandise_imports)" = "Log(International Merchandise Imports)", 
+      "new_housing_price_index" = "New Housing Price Index")
+
+## Export results to a Word document -----------------------------------------------------------
+
+modelsummary(did_models_explanatory, 
+             stars = stars,
+             add_rows = rows,
+             coef_map = coef_names,
+             gof_omit = "AIC|BIC|RMSE",
+             output = "output/results/did_models_twfe.docx")
