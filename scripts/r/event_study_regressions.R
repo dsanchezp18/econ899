@@ -12,6 +12,7 @@ library(dplyr)
 library(fixest)
 library(lubridate)
 library(modelsummary)
+library(forcats)
 
 # Load data
 
@@ -108,16 +109,55 @@ event_study_covariates <-
 
 summary(event_study_covariates)
 
-iplot(event_study_covariates)
+    iplot(event_study_covariates, 
+          main = "Event Study Plot",
+          xlab = "Periods",
+          ylab = "Interaction term coefficients with 95% C.I.",
+          sub = "All parties involved in patent applications")
 
 # Save the chart
 
 png("figures/event_study_covariates.png", 
-    width = 20, 
-    height = 10, 
+    width = 25, 
+    height = 15, 
     units = "cm",
     res = 800)
 
-iplot(event_study_covariates)
+iplot(event_study_covariates, 
+        main = "Event Study Plot",
+        xlab = "Periods",
+        ylab = "Interaction term coefficients with 95% C.I.",
+        sub = "All parties involved in patent applications")
+
+dev.off()
+
+# With inventors only
+
+event_study_covariates_inventors <-
+    feols(update(explanatory_vars, ln_inventors ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = (df_event_study %>% filter(periods > -236)),
+          cluster = ~ province_code + periods)
+
+summary(event_study_covariates_inventors)
+
+iplot(event_study_covariates_inventors, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "Inventors involved in patent applications")
+
+# Save the chart
+
+png("figures/event_study_covariates_inventors.png", 
+    width = 25, 
+    height = 15, 
+    units = "cm",
+    res = 800)
+
+iplot(event_study_covariates_inventors, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "Inventors involved in patent applications")
 
 dev.off()
