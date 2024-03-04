@@ -280,7 +280,7 @@ ggsave(filename = "figures/patents_filed_per_month_fig.png",
 
 interested_parties_total_trends_fig <-
        df %>% 
-       filter(filing_month_year %>% between(start_date, end_date)) %>%
+       filter(periods %>% between(start_date, end_date)) %>%
        group_by(filing_month_year, periods, treatment) %>%
        summarise(patent_parties = sum(patent_parties, na.rm = T)) %>%
        ungroup() %>% 
@@ -352,3 +352,29 @@ ggsave("figures/inventors_total_trends_fig.png",
        height = 10, 
        units = "cm",
        dpi = 800)
+
+  df %>% 
+       group_by(filing_month_year, periods, treatment) %>%
+       summarise(patent_parties = sum(patent_parties, na.rm = T)) %>%
+       ungroup() %>% 
+       ggplot(aes(x = periods, y = log(patent_parties), group = treatment, color = treatment)) +
+       geom_line() +
+       scale_y_continuous(labels = comma) +
+       scale_x_continuous(breaks = seq(min(df$periods), max(df$periods), by = 25)) +
+       scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
+       labs(title = "Time series of the number of interested parties in filed patents",
+            subtitle = "Natural log of the number of interested parties in filed patents",
+            color = "Group",
+            x = "Periods before AITC was passed",
+            y = "Natural log of the number of interested parties in filed patents",
+            caption = "Note: Data obtained from Innovation, Science and Economic Development Canada (ISED).") +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.position = c(0.92, 0.15))
