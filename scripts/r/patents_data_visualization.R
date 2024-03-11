@@ -58,14 +58,14 @@ interested_parties_province_month_fig_all_dates <-
                           limits = c(0, 2500)) +
        theme_minimal() +
        theme(text = element_text(size = 10, family = 'serif'),
-              axis.text.x = element_text(angle = 90, hjust = 1),
-              axis.line.x = element_line(colour = "black"),
-              plot.background = element_rect(fill = "white"),
-              panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
-              plot.caption = element_text(hjust = 0),
-              panel.grid.major = element_line(linetype = "dashed"),
-              panel.grid.minor = element_line(linetype = "dashed"),
-              legend.pos = "bottom")
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.pos = "bottom")
 
 interested_parties_province_month_fig_all_dates
 
