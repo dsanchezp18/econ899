@@ -36,6 +36,12 @@ patents_interested_parties <- readRDS("data/patents/processed/patents_interested
 
 patents_inventors <- readRDS("data/patents/processed/patents_inventors.rds") # Only inventors data, prepared from the interested parties tables downloaded from IP Horizons
 
+patents_owners <- readRDS("data/patents/processed/patents_owners.rds") # Only owners data, prepared from the interested parties tables downloaded from IP Horizons
+
+patents_applicants <- readRDS("data/patents/processed/patents_applicants.rds") # Only applicants data, prepared from the interested parties tables downloaded from IP Horizons
+
+patent_province_mapping <- readRDS("data/patents/processed/patent_province_mapping.rds") # Mapping of patents to provinces based on % of interested parties
+
 # Explanatory variables/Regressors -----------------------------------------------------------
 
 # Load Statistics Canada prepared datasets
@@ -45,6 +51,29 @@ statcan_province_month_panel_df <- read_csv("data/statcan/statcan_data_province_
 # Load other data from the Government of Canada (GOC)
 
 insolvency_province_month <- read_csv("data/goc/processed_insolvency_prov_month.csv", show_col_types = F)
+
+# Main patent data --------------------------------------------------------------------------------------
+
+# Get the number of patents per province and month based on my mapping of patents to provinces
+# First do them based on filing date, I will later do them based on grant date
+
+patents_per_province_month_filing <- 
+       patents_main %>% 
+       left_join(patent_province_mapping, by = "patent_number") %>% 
+       group_by(province_code_clean, filing_month_year) %>% 
+       summarise(n_patents = n()) %>% 
+       ungroup() %>% 
+       arrange(province_code_clean, desc(filing_month_year))
+
+# Get the number of patents per province and month based on grant date
+
+patents_per_province_month_grant <- 
+       patents_main %>% 
+       left_join(patent_province_mapping, by = "patent_number") %>% 
+       group_by(province_code_clean, grant_month_year) %>% 
+       summarise(n_patents = n()) %>% 
+       ungroup() %>% 
+       arrange(province_code_clean, desc(grant_month_year))
 
 # Interested parties and main data (dependent variable redefinition) --------------------------------------------
 

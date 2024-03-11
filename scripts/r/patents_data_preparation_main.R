@@ -77,7 +77,8 @@ patents_main_raw <-
 
 patents_main <- 
   patents_main_raw  %>% 
-  mutate(filing_month_year = floor_date(filing_date, "month")) %>% 
+  mutate(filing_month_year = floor_date(filing_date, "month"),
+         grant_month_year = floor_date(grant_date, "month")) %>% 
   arrange(desc(filing_month_year))
 
 # EDA ---------------------------------------------------------------------
@@ -150,4 +151,3 @@ patents_main %>%
 # Export the data as an RDS file, which is faster to load than a CSV
 
 saveRDS(patents_main, "data/patents/processed/patents_main.rds")
-
