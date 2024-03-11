@@ -345,7 +345,7 @@ parties_per_patent_province_percent_long_max <-
 
 patent_province_mapping <- 
     parties_per_patent_province_percent_long_max %>% 
-    select(patent_number, province_code_clean)
+    select(patent_number, province_code_clean, foreign_patents)
 
 # Save the data ------------------------------------------------------------
 
@@ -373,7 +373,7 @@ patents_inventors <-
     parties_int %>%
     filter(interested_party_type_code == "INVT") %>%
     select(patent_number, 
-           party_type = interested_party_type_code,9
+           party_type = interested_party_type_code,
            party_name,
            party_country_code,
            party_country,

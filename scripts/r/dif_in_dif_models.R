@@ -46,6 +46,20 @@ baseline_ls_inventors <-
 
 summary(baseline_ls_inventors)
 
+# Repeat with applicants only
+
+baseline_ls_applicants <-
+    lm(ln_applicants ~ treatment * post, data = df)
+
+summary(baseline_ls_applicants)
+
+# Repeat with owners only
+
+baseline_ls_owners <-
+    lm(ln_owners ~ treatment * post, data = df)
+
+summary(baseline_ls_owners)
+
 ## Two-way fixed effects (TWFE) -----------------------------------------------------------
 
 # Estimate the same model but with two-way fixed effects.
@@ -60,26 +74,44 @@ df_twfe <-
 # Estimate the baseline TWFE model with all interested parties
 
 baseline_twfe <-
-    feols(ln_parties ~ treated | province_code + filing_month_year, 
+    feols(ln_parties ~ treated | province_code + month_year, 
           data = df_twfe,
-          cluster = ~ province_code + filing_month_year)
+          cluster = ~ province_code + month_year)
 
 summary(baseline_twfe)
 
 # Repeat with inventors only
 
 baseline_twfe_inventors <-
-    feols(ln_inventors ~ treated | province_code + filing_month_year, 
+    feols(ln_inventors ~ treated | province_code + month_year, 
           data = df_twfe,
-          cluster = ~ province_code + filing_month_year)
+          cluster = ~ province_code + month_year)
 
 summary(baseline_twfe_inventors)
 
-# Present baseline results with modelsummary -----------------------------------------------------------
+# Repeat with applicants only
+
+baseline_twfe_applicants <-
+    feols(ln_applicants ~ treated | province_code + month_year, 
+          data = df_twfe,
+          cluster = ~ province_code + month_year)
+
+summary(baseline_twfe_applicants)
+
+# Repeat with owners only
+
+baseline_twfe_owners <-
+    feols(ln_owners ~ treated | province_code + month_year, 
+          data = df_twfe,
+          cluster = ~ province_code + month_year)
+
+summary(baseline_twfe_owners)
+
+## Present baseline results with modelsummary -----------------------------------------------------------
 
 # List of models
 
-baseline_did_models <- list(baseline_ls, baseline_ls_inventors, baseline_twfe, baseline_twfe_inventors)
+baseline_did_models <- list(baseline_ls, baseline_ls_inventors, baseline_ls_applicants, baseline_ls_owners, baseline_twfe, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners)
 
 modelsummary(baseline_did_models, stars = stars)
 
@@ -87,7 +119,7 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Estimate the models with the explanatory variables included.
 
-# Define a formula object with the summation of all explanatory variables to be included in the models
+# Define a formula object with the summation of all explanatory variables to be included in the models 
 
 explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_average_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index"  %>% 
                     as.formula()
@@ -108,6 +140,16 @@ model_explanatory_ls_inventors <-
 
 summary(model_ls_inventors)
 
+# Repeat with applicants only
+
+model_explanatory_ls_applicants <-
+    model_ls_applicants <- lm(update(explanatory_vars, ln_applicants ~ treatment * post + .), data = df)
+
+# Repeat with owners only
+
+model_explanatory_ls_owners <-
+    model_ls_owners <- lm(update(explanatory_vars, ln_owners ~ treatment * post + .), data = df)
+
 ## Two-way fixed effects (TWFE) -----------------------------------------------------------
 
 # Estimate the same model but with two-way fixed effects (using the same explanatory variables and DID dummy).
@@ -117,24 +159,69 @@ summary(model_ls_inventors)
 model_explanatory_twfe <-
     feols(update(explanatory_vars, ln_parties ~ treated + .), 
           data = df_twfe,
-          cluster = ~ province_code + filing_month_year)
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
 
-summary(model_twfe)
+summary(model_explanatory_twfe)
 
 # Repeat with inventors only
 
 model_explanatory_twfe_inventors <-
     feols(update(explanatory_vars, ln_inventors ~ treated + .), 
           data = df_twfe,
-          cluster = ~ province_code + filing_month_year)
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+    
+summary(model_explanatory_twfe_inventors)
 
-summary(model_twfe_inventors)
+# Repeat with applicants only
+
+model_explanatory_twfe_applicants <-
+    feols(update(explanatory_vars, ln_applicants ~ treated + .), 
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Repeat with owners only
+
+model_explanatory_twfe_owners <-
+    feols(update(explanatory_vars, ln_owners ~ treated + .), 
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Models with patents as dependent variable -----------------------------------------------------------
+
+## Baseline models without explanatory variables (TWFE only) -----------------------------------------------------------
+
+# Estimate baseline models without explanatory variables, all periods available for the data
+
+# Use the same formula, just updating it with the new dependent variable and a new control which is number of foreign interested parties
+
+model_baseline_twfe_patents <-
+    feols(update(explanatory_vars, ln_patents_filed ~ treated + ln_foreign_parties + .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+        
+summary(model_baseline_twfe_patents)
+
+## Present explanatory model results with modelsummary -----------------------------------------------------------
+
+# List of models with explanatory variables
+
+did_models_explanatory <- list(model_explanatory_ls, model_explanatory_ls_inventors, model_explanatory_ls_applicants, model_explanatory_ls_owners,
+                               model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners)
 
 # Export results ----------------------------------------------------------------
 
 # List of models (only TWFE with explanatory)
-did_models_explanatory <- list(model_explanatory_twfe, 
-                               model_explanatory_twfe_inventors)
+
+did_models_explanatory <- list(model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners)
+
+# Quick modelsummary with stars
+
+modelsummary(did_models_explanatory, stars = stars)
 
 # Create a dataframe with the extra columns for the models
 
