@@ -13,6 +13,7 @@
 library(readr)
 library(dplyr)
 library(janitor)
+library(tidyr)
 library(stringr)
 
 # Define the province codes for Canada (as per WIPO ST.3)
@@ -99,7 +100,8 @@ parties_int <-
            applicant_type = applicant_type %>% na_if("-2"),
            party_province_code = party_province_code %>% na_if("-1"),
            party_province = party_province %>% na_if("Unknown"))  %>% 
-    left_join(state_province_codebook  %>% select(province_code_wipo, country_mapped_to_province, province_code_clean = province_code), by = c("party_province_code" = "province_code_wipo")) 
+    left_join(state_province_codebook %>% select(province_code_wipo, country_mapped_to_province, province_code_clean = province_code), 
+              by = c("party_province_code" = "province_code_wipo")) 
 
 # EDA ---------------------------------------------------------------------
 
@@ -256,6 +258,95 @@ agents_per_patent <-
 # Lose 1 million patents if we restrict to only patents with at least one agent
 # Agents do not have any kind of province mapped to them. 
 
+# Mapping patents to provinces based on % of interested parties per province ------------------------------------------------------------
+
+# Count interested parties per patent and country
+
+parties_per_patent_country <- 
+    parties_int %>% 
+    group_by(patent_number, party_country) %>% 
+    summarise(n_parties = n())  %>% 
+    ungroup()  %>% 
+    arrange(patent_number, desc(n_parties))
+
+# Count the number of interested parties per patent, country, and province
+
+parties_per_patent_province <- 
+    parties_int %>% 
+    group_by(patent_number, party_country, party_province, province_code_clean) %>% 
+    summarise(n_parties = n())  %>% 
+    ungroup()  %>% 
+    mutate(province_code_clean_with_foreign = case_when(
+        party_country == "Canada" & is.na(province_code_clean) ~ NA_character_,
+        is.na(party_country) ~ NA_character_,
+        party_country != "Canada" ~ "Foreign",
+        !is.na(province_code_clean) ~ province_code_clean,
+        TRUE ~ NA_character_
+    )) %>%
+    filter(!is.na(province_code_clean_with_foreign))  %>%
+    group_by(patent_number, province_code_clean_with_foreign) %>%
+    summarise(n_parties = sum(n_parties))  %>%
+    ungroup()  %>%
+    arrange(patent_number, province_code_clean_with_foreign, desc(n_parties))
+
+
+# Get percentages of interested parties coming from each province per patent
+
+parties_per_patent_province_percent <- 
+    parties_per_patent_province %>% 
+    pivot_wider(names_from = province_code_clean_with_foreign, 
+                values_from = n_parties,
+                values_fill = 0,
+                names_prefix = "patents_") %>%
+    clean_names() %>%
+    rename(foreign_patents = patents_foreign)  %>%
+    mutate(total = rowSums(across(-patent_number))) %>% 
+    mutate(across(starts_with("patents_"), ~ . / total))
+
+# Reshape back to long format
+
+parties_per_patent_province_percent_long <- 
+    parties_per_patent_province_percent %>% 
+    pivot_longer(cols = starts_with("patents_"), 
+                 names_to = "province_code_clean", 
+                 values_to = "prop") %>% 
+    filter(prop > 0)  %>% 
+    arrange(patent_number, desc(prop))
+
+# Get the province with the highest percentage of interested parties per patent
+
+parties_per_patent_province_percent_long_max <- 
+    parties_per_patent_province_percent_long %>% 
+    group_by(patent_number) %>% 
+    filter(prop == max(prop))  %>% 
+    ungroup()  %>% 
+    transmute(patent_number,
+              total,
+              foreign_patents,
+              prop,
+              province_code_clean = str_remove(province_code_clean, "patents_") %>% str_to_upper())
+
+# Find duplicates ("ties")
+
+duplicates_parties_per_patent_province_percent <- 
+    parties_per_patent_province_percent_long_max %>% 
+    group_by(patent_number) %>%
+    summarise(count = n()) %>% 
+    filter(count > 1)
+
+# Use an anti-join to remove duplicates
+
+parties_per_patent_province_percent_long_max <- 
+    parties_per_patent_province_percent_long_max %>% 
+    anti_join(duplicates_parties_per_patent_province_percent, by = "patent_number")
+
+# This will be the province mapping for the patents
+# I keep the foreign patents as a separate variable to keep track of them as a covariate
+
+patent_province_mapping <- 
+    parties_per_patent_province_percent_long_max %>% 
+    select(patent_number, province_code_clean)
+
 # Save the data ------------------------------------------------------------
 
 ## All interested parties ------------------------------------------------------------
@@ -295,7 +386,6 @@ patents_inventors <-
 
 write_rds(patents_inventors, "data/patents/processed/patents_inventors.rds")
 
-
 ## Only applicants ------------------------------------------------------------
 
 patents_applicants <- 
@@ -333,6 +423,10 @@ patents_owners <-
            party_postal_code)
 
 write_rds(patents_owners, "data/patents/processed/patents_owners.rds")
+
+# Patent province mapping ------------------------------------------------------------
+
+write_rds(patent_province_mapping, "data/patents/processed/patent_province_mapping.rds")
 
 # Save the province codebook (Canada) ------------------------------------------------------------
 
