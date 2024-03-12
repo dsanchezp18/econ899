@@ -92,6 +92,29 @@ iplot(baseline_event_study_inventors)
 
 dev.off()
 
+# Repeat with applicants only
+
+baseline_event_study_applicants <-
+    feols(ln_applicants ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
+          data = df_event_study,
+          cluster = ~ province_code + periods)
+
+summary(baseline_event_study_applicants)
+
+iplot(baseline_event_study_applicants)
+
+
+# Repeat with owners only
+
+baseline_event_study_owners <-
+    feols(ln_owners ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
+          data = df_event_study,
+          cluster = ~ province_code + periods)
+
+summary(baseline_event_study_owners)
+
+iplot(baseline_event_study_owners)
+
 # Event studies with additional controls -----------------------------------------------------------
 
 # Repeat the event study specifications, but now with additional controls.
@@ -108,6 +131,7 @@ explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) 
 event_study_covariates <-
     feols(update(explanatory_vars, ln_parties ~ i(periods, treatment_dummy, ref = -1) + .), 
           data = (df_event_study %>% filter(periods > -236)),
+          fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
 
 summary(event_study_covariates)
@@ -139,6 +163,7 @@ dev.off()
 event_study_covariates_inventors <-
     feols(update(explanatory_vars, ln_inventors ~ i(periods, treatment_dummy, ref = -1) + .), 
           data = (df_event_study %>% filter(periods > -236)),
+          fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
 
 summary(event_study_covariates_inventors)
@@ -164,3 +189,63 @@ iplot(event_study_covariates_inventors,
       sub = "Inventors involved in patent applications")
 
 dev.off()
+
+# With applicants only
+
+event_study_covariates_applicants <-
+    feols(update(explanatory_vars, ln_applicants ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = (df_event_study %>% filter(periods > -236)),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_covariates_applicants)
+
+iplot(event_study_covariates_applicants, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "Applicants involved in patent applications")
+
+# With owners only
+
+event_study_covariates_owners <-
+    feols(update(explanatory_vars, ln_owners ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = (df_event_study %>% filter(periods > -236)),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_covariates_owners)
+
+iplot(event_study_covariates_owners, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "Owners involved in patent applications")
+    
+
+# Using patents as dependent variable -----------------------------------------------------------
+
+# Repeat the event study specifications, but now with patents as the dependent variable.
+
+# Same specification as before, but with patents as dependent variable
+
+event_study_patents <-
+    feols(update(explanatory_vars, ln_patents_filed ~ i(periods, treatment_dummy, ref = -1) + ln_foreign_parties + .), 
+          data = (df_event_study %>% filter(periods > -236)),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_patents)
+
+iplot(event_study_patents, 
+      main = "Event Study Plot - Patents filed as the dependent variable",
+      xlab = "Periods before the AITC was passed",
+      ylab = "Interaction term coefficients with 95% C.I.")
+
+# Save the chart
+
+png("figures/event_study_patents.png", 
+    width = 25, 
+    height = 15, 
+    units = "cm",
+    res = 800)
