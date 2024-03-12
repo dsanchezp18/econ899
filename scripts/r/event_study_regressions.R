@@ -249,3 +249,11 @@ png("figures/event_study_patents.png",
     height = 15, 
     units = "cm",
     res = 800)
+
+iplot(event_study_patents, 
+      main = "Event Study Plot - Patents filed as the dependent variable",
+      xlab = "Periods before the AITC was passed",
+      ylab = "Interaction term coefficients with 95% C.I.")
+
+dev.off()
+
