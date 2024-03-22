@@ -9,6 +9,7 @@
 # R environment files
 .RData
 .Ruserdata
+.Rhistory
 
 # Heavy data files
 

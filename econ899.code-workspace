@@ -5,6 +5,9 @@
 		}
 	],
 	"settings": {
-		"r.bracketedPaste": true
+		"r.bracketedPaste": true,
+		"r.alwaysUseActiveTerminal": true,
+		"r.removeLeadingComments": true,
+		"r.rterm.windows": "C:\\Program Files\\R\\R-4.3.2\\bin\\R.exe",
 	}
 }

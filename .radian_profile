@@ -4,6 +4,11 @@ options(
         list(key = "-", value = " <- "))
 )
 
+options(    
+    radian.ctrl_key_map = list(
+        list(key = "right", value = " %>% ")
+    ))
+
 # Color scheme
 
 options(radian.color_scheme = "monokai")
