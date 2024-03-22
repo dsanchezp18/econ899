@@ -1,0 +1,22 @@
+# Escaping keys
+options(
+    radian.escape_key_map = list(
+        list(key = "-", value = " <- "))
+)
+
+# Color scheme
+
+options(radian.color_scheme = "monokai")
+
+# auto indentation for new line and curly braces
+options(radian.tab_size = 4)
+
+# This is supposed to fix the random characters at the end of the terminal execution
+options(radian.auto_match = FALSE)
+options(radian.insert_new_line = FALSE)
+
+# timeout in seconds to cancel completion if it takes too long
+# set it to 0 to disable it
+options(radian.completion_timeout = 0.05)
+
+
