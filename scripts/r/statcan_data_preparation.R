@@ -34,7 +34,7 @@ statcan_raw_data_files <- list.files("data/statcan/raw", recursive = T, full.nam
 
 # Use fread and lapply to load all raw data tables at once with lapply
 
-statcan_raw_data <- lapply(statcan_raw_data_files, read_csv, show_col_types = F)
+statcan_raw_data <- lapply(statcan_raw_data_files, data.table::fread)
 
 # Load the file names without the full path
 
