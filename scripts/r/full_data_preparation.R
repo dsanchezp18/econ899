@@ -45,13 +45,9 @@ patent_province_mapping <- readRDS("data/patents/processed/patent_province_mappi
 
 ## Explanatory variables/Regressors -----------------------------------------------------------
 
-# Load Statistics Canada prepared datasets
+# Load explanatory variables panel dataset
 
-statcan_province_month_panel_df <- read_csv("data/statcan/statcan_data_province_month_panel.csv", show_col_types = F)
-
-# Load other data from the Government of Canada (GOC)
-
-insolvency_province_month <- read_csv("data/goc/processed_insolvency_prov_month.csv", show_col_types = F)
+explanatory_province_month_panel_df <- read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F)
 
 ## Other data --------------------------------------------------------------------------------------
 
@@ -178,15 +174,13 @@ applicants_province_month <-
 # Also create any transformations of variables required for the analysis
 # I also redefine the reference level of the factors to be the control group and the pre-treatment period
 
-
 df <-
        patents_per_province %>%
        left_join(interested_parties_province_month, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>% # All interested parties
        left_join(inventors_province_month, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%  # Only inventors
        left_join(owners_province_month, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%  # Only owners
        left_join(applicants_province_month, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%  # Only applicants
-       left_join(statcan_province_month_panel_df, by = c("province_code", "month_year")) %>% # Statistics Canada data
-       left_join(insolvency_province_month, by = c("province_code", "month_year")) %>% # Insolvency data
+       left_join(explanatory_province_month_panel_df, by = c("province_code", "month_year")) %>% # Statistics Canada data
        mutate(province_code = as_factor(province_code),
               periods = interval(treatment_start_date, month_year)/months(1),
               ln_patents_filed = log(patents_filed + 1),

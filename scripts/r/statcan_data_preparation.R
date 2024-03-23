@@ -10,14 +10,14 @@
 
 # Load packages
 
-library(readr)
-library(statcanR)
-library(janitor)
-library(tidyr)
-library(dplyr)
-library(stringr)
-library(readxl)
-library(lubridate)
+library(readr, warn.conflicts = F)
+library(statcanR, warn.conflicts = F)
+library(janitor, warn.conflicts = F)
+library(tidyr, warn.conflicts = F)
+library(dplyr, warn.conflicts = F)
+library(stringr, warn.conflicts = F)
+library(readxl, warn.conflicts = F)
+library(lubridate, warn.conflicts = F)
 
 # Load province codebook
 
