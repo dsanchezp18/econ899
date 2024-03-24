@@ -121,7 +121,7 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Define a formula object with the summation of all explanatory variables to be included in the models 
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(average_actual_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index + log(food_services_receipts)+ log(travellers) + log(building_permits) + log(total_insolvencies)"  %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_avg_tenure) + log(retail_sales) + log(international_merchandise_imports) + cpi + new_housing_price_index"  %>% 
                     as.formula()
 
 ## Least squares (LS/OLS) -----------------------------------------------------------
@@ -245,50 +245,100 @@ summary(model_baseline_twfe_patents)
 
 modelsummary(list(baseline_ls_patents, model_baseline_twfe_patents, model_explanatory_twfe_patents), stars = stars)
 
-# Export results ----------------------------------------------------------------
+# Export main results ----------------------------------------------------------------
 
-# List of models (only TWFE with explanatory)
+# Main results are the TWFE models with explanatory variables for all interested parties, inventors only, applicants only, and owners only, as well as the patent model with explanatory variables.
 
-did_models_explanatory <- list(model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners)
+# List the models
 
-# Quick modelsummary with stars
+main_did_models <- list(model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners, model_explanatory_twfe_patents)
 
-modelsummary(did_models_explanatory, stars = stars)
+# Create a dataframe with the explained variable names to be added to the model
 
-# Create a dataframe with the extra columns for the models
-
-rows <- tibble(
-    term = "Explained variable",
-    v1 = "ln(All interested parties)",
-    v2 = "ln(Inventors only)"
+explained_vars <- tibble(
+                term = "Explained variable (Ln)",
+                v1 = "All parties",
+                v2 = "Inventors",
+                v3 = "Applicants",
+                v4 = "Owners",
+                v5 = "Patents filed"
 )
 
 # Change the position to the top of the table
 
-attr(rows, 'position') <- 0
+attr(explained_vars, 'position') <- 0
 
 # Coefficient names to be included in the table
 
-coef_names <- 
-    c("(Intercept)" = "Intercept",
-      "treated" = "Treatment x Post", 
-      "log(total_pop)" = "Log(Total Population)", 
-      "log(total_emp)" = "Log(Total Employment)", 
-      "log(total_median_wage)" = "Log(Median Employee Wage)", 
-      "log(total_average_hours)" = "Log(Average Hours)", 
-      "log(ei_claims)" = "Log(EI Claims)", 
-      "cpi" = "CPI Level", 
-      "log(retail_sales)" = "Log(Retail Sales)", 
-      "log(wholesale_sales)" = "Log(Wholesale Sales)", 
-      "log(manufacturing_sales)" = "Log(Manufacturing Sales)", 
-      "log(international_merchandise_imports)" = "Log(International Merchandise Imports)", 
-      "new_housing_price_index" = "New Housing Price Index")
+# coef_names <- 
+#     c("(Intercept)" = "Intercept",
+#       "treated" = "Treatment x Post", 
+#       "log(total_pop)" = "Log(Total Population)", 
+#       "log(total_emp)" = "Log(Total Employment)", 
+#       "log(total_median_wage)" = "Log(Median Employee Wage)", 
+#       "log(total_average_hours)" = "Log(Average Hours)", 
+#       "log(ei_claims)" = "Log(EI Claims)", 
+#       "cpi" = "CPI Level", 
+#       "log(retail_sales)" = "Log(Retail Sales)", 
+#       "log(wholesale_sales)" = "Log(Wholesale Sales)", 
+#       "log(manufacturing_sales)" = "Log(Manufacturing Sales)", 
+#       "log(international_merchandise_imports)" = "Log(International Merchandise Imports)", 
+#       "new_housing_price_index" = "New Housing Price Index")
 
-## Export results to a Word document -----------------------------------------------------------
+## Display results -----------------------------------------------------------
 
-modelsummary(did_models_explanatory, 
+modelsummary(main_did_models,
              stars = stars,
-             add_rows = rows,
-             coef_map = coef_names,
+             add_rows = explained_vars,
+             #coef_map = coef_names,
              gof_omit = "AIC|BIC|RMSE",
-             output = "output/results/did_models_twfe.docx")
+             #output = "output/results/did_models_twfe.docx"
+)
+
+# Main models with ln+1 -----------------------------------------------------------
+
+# Define the formula which I will update
+
+formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(total_median_wage) + log(average_actual_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index + log(food_services_receipts)+ log(travellers) + log(building_permits) + log(total_insolvencies)"  %>% 
+                     as.formula()
+
+# Run the models, for all parties, inventors, applicants, owners, and patents filed
+# Update the formula with the new dependent variable which is Log of the variable + 1
+
+model_explanatory_twfe_ln_1 <-
+    feols(update(formula_for_ln_1, ln_parties_1 ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+model_explanatory_twfe_inventors_ln_1 <-
+    feols(update(formula_for_ln_1, ln_inventors_1 ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+model_explanatory_twfe_applicants_ln_1 <-
+    feols(update(formula_for_ln_1, ln_applicants_1 ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+    
+model_explanatory_twfe_owners_ln_1 <-
+    feols(update(formula_for_ln_1, ln_owners_1 ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+model_explanatory_twfe_patents_ln_1 <-
+    feols(update(formula_for_ln_1, ln_patents_filed_1 ~ ln_foreign_parties + .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Present results with modelsummary
+
+modelsummary(list(model_explanatory_twfe_ln_1, model_explanatory_twfe_inventors_ln_1, model_explanatory_twfe_applicants_ln_1, model_explanatory_twfe_owners_ln_1, model_explanatory_twfe_patents_ln_1), stars = stars)
+
+
+
+

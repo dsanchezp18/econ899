@@ -752,6 +752,7 @@ explanatory_vars_province_month_panel <-
        left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, average_usual_hours, average_usual_hours_males, average_usual_hours_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_actual_total_hours_worked_prov %>% select(month_year, province_code, total_actual_hours), by = c("month_year", "province_code")) %>%
        left_join(lfs_actual_avg_hours_worked_prov %>% select(month_year, province_code, average_actual_hours, average_actual_hours_males, average_actual_hours_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_avg_job_tenure_prov_monthly %>% select(month_year, province_code, total_avg_tenure), by = c("month_year", "province_code")) %>% 
        left_join(ei_claims_prov_monthly %>% select(month_year, province_code, ei_claims), by = c("month_year", "province_code")) %>%
        left_join(cpi_all_items_prov_monthly %>% select(month_year, province_code, cpi), by = c("month_year", "province_code")) %>%
        left_join(retail_trade_sales_prov_monthly %>% select(month_year, province_code, retail_sales), by = c("month_year", "province_code")) %>%
