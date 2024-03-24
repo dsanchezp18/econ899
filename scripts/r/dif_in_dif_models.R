@@ -121,7 +121,8 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Define a formula object with the summation of all explanatory variables to be included in the models 
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_avg_tenure) + log(retail_sales) + log(international_merchandise_imports) + cpi + new_housing_price_index"  %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(retail_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + 
+cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1)"  %>% 
                     as.formula()
 
 ## Least squares (LS/OLS) -----------------------------------------------------------
@@ -132,6 +133,8 @@ model_explanatory_ls <-
     model_ls <- lm(update(explanatory_vars, ln_parties ~ treatment * post + .), data = df)
 
 summary(model_ls)
+
+# Do the same thing without the update
 
 # Repeat with inventors only
 
@@ -292,14 +295,17 @@ modelsummary(main_did_models,
              add_rows = explained_vars,
              #coef_map = coef_names,
              gof_omit = "AIC|BIC|RMSE",
+             vcov = ~ province_code + month_year, # Cluster by province and month, shows nicely in the table
              #output = "output/results/did_models_twfe.docx"
 )
+
 
 # Main models with ln+1 -----------------------------------------------------------
 
 # Define the formula which I will update
 
-formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(total_median_wage) + log(average_actual_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index + log(food_services_receipts)+ log(travellers) + log(building_permits) + log(total_insolvencies)"  %>% 
+formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(total_median_wage) + log(retail_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + 
+cpi + log(business_insolvencies) + log(travellers) + log(new_housing_price_index) + log(electric_power_generation)"  %>% 
                      as.formula()
 
 # Run the models, for all parties, inventors, applicants, owners, and patents filed

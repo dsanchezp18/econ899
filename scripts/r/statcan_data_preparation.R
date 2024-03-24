@@ -558,7 +558,7 @@ electric_power_generation_prov_monthly_1 <-
               scale = scalar_factor,
               electric_power_generation = value) %>%
        clean_names() %>%
-       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       inner_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
        relocate(province_code, .after = geo) %>%
        arrange(month_year, geo)    
 
