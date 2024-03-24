@@ -869,8 +869,8 @@ explanatory_vars_province_month_panel <-
        left_join(vehicles_entering_canada_monthly %>% select(month_year, province_code, vehicles), by = c("month_year", "province_code")) %>%
        left_join(electric_power_generation_prov_monthly %>% select(month_year, province_code, electric_power_generation), by = c("month_year", "province_code")) %>% 
        left_join(experimental_econ_activity_prov_monthly %>% select(month_year, province_code, exp_index_econ_activity), by = c("month_year", "province_code")) %>%
-       left_join(international_merchandise_imports_prov_monthly %>% select(-geo, scale), by = c("month_year", "province_code")) %>%
-       left_join(international_merchandise_exports_prov_monthly %>% select(-geo, scale), by = c("month_year", "province_code")) %>%
+       left_join(international_merchandise_imports_prov_monthly %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
+       left_join(international_merchandise_exports_prov_monthly %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
        left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
        left_join(building_permits_prov_monthly %>% select(month_year, province_code, building_permits), by = c("month_year", "province_code")) %>%
        left_join(insolvency_prov_month, by = c("month_year", "province_code")) %>%
