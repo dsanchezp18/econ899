@@ -11,7 +11,6 @@
 # Load packages
 
 library(readr, warn.conflicts = F)
-library(statcanR, warn.conflicts = F)
 library(janitor, warn.conflicts = F)
 library(tidyr, warn.conflicts = F)
 library(dplyr, warn.conflicts = F)
@@ -23,6 +22,11 @@ library(lubridate, warn.conflicts = F)
 
 provinces <- read_csv("data/other/province_codebook.csv", 
                        show_col_types = F)
+
+# Load industry name mapping
+
+industry_names <- read_csv("data/other/industry_name_mapping.csv", 
+                           show_col_types = F)
 
 # Load raw data tables -----------------------------------------------------------
 
@@ -202,6 +206,30 @@ lfs_emp_rate_province_monthly <-
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
 
+### Employment by industry -----------------------------------------------------------
+
+# Employment by industry, province-month
+
+lfs_emp_industry_prov_monthly <- 
+    lfs_employment_industry_monthly %>% 
+    filter(north_american_industry_classification_system_naics != "Total employed, all industries",
+           geo != "Canada",
+           statistics == "Estimate",
+           data_type == "Unadjusted") %>% 
+    left_join(industry_names %>% select(north_american_industry_classification_system_naics, short_names), by = "north_american_industry_classification_system_naics") %>%
+    select(month_year = ref_date,
+           geo,
+           scale = scalar_factor,
+           employment = value,
+           industry = short_names) %>% 
+   pivot_wider(names_from = industry,
+               values_from = employment,
+               names_prefix = "emp_") %>%
+   clean_names() %>% 
+   left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+   relocate(province_code, .after = geo) %>%
+   arrange(month_year, geo)
+
 ### Employee wages -----------------------------------------------------------
 
 # Total wages paid, province-month
@@ -269,6 +297,33 @@ lfs_median_hourly_wage <-
                 names_prefix = "median_wage") %>%
     clean_names() %>%
     rename(total_median_wage = median_wage_both_sexes) %>%
+    left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+    relocate(province_code, .after = geo) %>%
+    arrange(month_year, geo)
+
+# Median wage by industry, province-month
+# Extract only the name of the industry, not the NAICS
+# Only males
+
+lfs_median_wage_industry_prov <- 
+    lfs_wages_industry_prov_monthly %>% 
+    filter(wages == "Median hourly wage rate",
+           type_of_work == "Both full- and part-time employees",
+           age_group == "15 years and over",
+           north_american_industry_classification_system_naics != "Total employees, all industries",
+           geo != "Canada",
+           sex == "Both sexes") %>% 
+    select(month_year = ref_date,
+           geo,
+           scale = scalar_factor,
+           median_wage = value,
+           north_american_industry_classification_system_naics) %>% 
+    left_join(industry_names %>% select(north_american_industry_classification_system_naics, short_names), by = "north_american_industry_classification_system_naics") %>%
+    select(-north_american_industry_classification_system_naics) %>%
+    pivot_wider(names_from = short_names,
+                values_from = median_wage,
+                names_prefix = "median_wage_") %>%
+    clean_names() %>% 
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
@@ -768,9 +823,11 @@ explanatory_vars_province_month_panel <-
        left_join(lfs_part_emp_province_monthly %>% select(month_year, province_code, total_part_emp), by = c("month_year", "province_code")) %>%
        left_join(lfs_unem_province_monthly %>% select(month_year, province_code, total_unem), by = c("month_year", "province_code")) %>%
        left_join(lfs_emp_rate_province_monthly %>% select(month_year, province_code, total_emp_rate), by = c("month_year", "province_code")) %>%
+       left_join(lfs_emp_industry_prov_monthly %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
        left_join(lfs_total_wages_prov %>% select(month_year, province_code, total_wage, total_wage_males, total_wage_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_average_hourly_wage %>% select(month_year, province_code, total_avg_wage, avg_wage_males, avg_wage_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_median_hourly_wage %>% select(month_year, province_code, total_median_wage, median_wage_males, median_wage_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_median_wage_industry_prov %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
        left_join(lfs_usual_total_hours_worked_prov %>% select(month_year, province_code, total_usual_hours), by = c("month_year", "province_code")) %>%
        left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, average_usual_hours, average_usual_hours_males, average_usual_hours_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_actual_total_hours_worked_prov %>% select(month_year, province_code, total_actual_hours), by = c("month_year", "province_code")) %>%

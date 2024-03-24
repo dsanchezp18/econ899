@@ -29,6 +29,12 @@ lfs_lfc_prov_monthly <-
     statcan_download_data("14-10-0287-03", "eng")  %>% 
     clean_names()
 
+# Employment by industry, monthly, seasonally unadjusted
+
+lfs_employment_industry_monthly <- 
+    statcan_download_data("14-10-0355-01", "eng")  %>% 
+    clean_names()
+
 # Employee wages by industry 
 
 lfs_wages_industry_prov_monthly <- 
@@ -160,6 +166,8 @@ building_permits_monthly_table_2 <-
 # Export the data to csv files for later processing ------------------------------------
 
 write_csv(lfs_lfc_prov_monthly, "data/statcan/raw/lfs_lfc_prov_monthly.csv")
+
+write_csv(lfs_employment_industry_monthly, "data/statcan/raw/lfs_employment_industry_monthly.csv")
 
 write_csv(lfs_wages_industry_prov_monthly, "data/statcan/raw/lfs_wages_industry_prov_monthly.csv")
 
