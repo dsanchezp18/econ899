@@ -18,9 +18,12 @@ library(forcats)
 library(tibble)
 library(sandwich)
 
-# Load data and eliminate the territories
+# Load data and create an employment variable for "industries which are likely to patent"
 
-df <- readRDS("data/full_dataset.rds")
+df <- 
+    readRDS("data/full_dataset.rds") %>% 
+    mutate(emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_other,
+           wage_patenting_ind = median_wage_manufacturing + median_wage_wholesale_and_retail + median_wage_media + median_wage_professional + median_wage_other)
 
 # Define parameters for modelsummary 
 
@@ -122,8 +125,8 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Define a formula object with the summation of all explanatory variables to be included in the models 
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(retail_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + 
-cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1)"  %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(retail_sales) + log(manufacturing_sales) + log(imports_all_countries) + 
+cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + log(median_wage_healthcare)"  %>% 
                     as.formula()
 
 ## Least squares (LS/OLS) -----------------------------------------------------------
