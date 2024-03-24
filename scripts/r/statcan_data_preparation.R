@@ -36,6 +36,14 @@ statcan_raw_data_files <- list.files("data/statcan/raw", recursive = T, full.nam
 
 statcan_raw_data <- lapply(statcan_raw_data_files, data.table::fread)
 
+# Convert all to tibbles and turn all ref_date columns to date formats with lubridate
+
+statcan_raw_data <- lapply(statcan_raw_data, as_tibble) %>% 
+    lapply(function(x) {
+        x %>% 
+            mutate(ref_date = ymd(ref_date))
+    })
+
 # Load the file names without the full path
 
 statcan_object_names <- list.files("data/statcan/raw", recursive = T)
@@ -282,9 +290,9 @@ lfs_usual_total_hours_worked_prov <-
            value) %>% 
     pivot_wider(names_from = sex,
                 values_from = value,
-                names_prefix = "total_hours") %>%
+                names_prefix = "total_usual_hours") %>%
     clean_names() %>%
-    rename(total_hours = total_hours_both_sexes) %>%
+    rename(total_usual_hours = total_usual_hours_both_sexes) %>%
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
@@ -304,9 +312,9 @@ lfs_usual_avg_hours_worked_prov <-
            value) %>% 
     pivot_wider(names_from = sex,
                 values_from = value,
-                names_prefix = "average_hours") %>%
+                names_prefix = "average_usual_hours") %>%
     clean_names() %>%
-    rename(total_average_hours = "average_hours_both_sexes") %>%
+    rename(average_usual_hours = "average_usual_hours_both_sexes") %>%
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
@@ -328,9 +336,9 @@ lfs_actual_total_hours_worked_prov <-
            value) %>%
     pivot_wider(names_from = sex,
                 values_from = value,
-                names_prefix = "total_hours") %>%
+                names_prefix = "total_actual_hours") %>%
     clean_names() %>%
-    rename(total_hours = "total_hours_both_sexes") %>% 
+    rename(total_actual_hours = "total_actual_hours_both_sexes") %>% 
     left_join(provinces %>% select(province, province_code), by = c("geo" = "province"))  %>%
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
@@ -350,9 +358,9 @@ lfs_actual_avg_hours_worked_prov <-
            value) %>%
        pivot_wider(names_from = sex,
                    values_from = value,
-                   names_prefix = "average_hours") %>%
+                   names_prefix = "average_actual_hours") %>%
        clean_names() %>%
-       rename(total_average_hours = "average_hours_both_sexes") %>%
+       rename(average_actual_hours = "average_actual_hours_both_sexes") %>%
        left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
        relocate(province_code, .after = geo) %>%
        arrange(month_year, geo)
@@ -740,9 +748,10 @@ explanatory_vars_province_month_panel <-
        left_join(lfs_total_wages_prov %>% select(month_year, province_code, total_wage, total_wage_males, total_wage_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_average_hourly_wage %>% select(month_year, province_code, total_avg_wage, avg_wage_males, avg_wage_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_median_hourly_wage %>% select(month_year, province_code, total_median_wage, median_wage_males, median_wage_females), by = c("month_year", "province_code")) %>%
-       left_join(lfs_usual_total_hours_worked_prov %>% select(month_year, province_code, total_hours), by = c("month_year", "province_code")) %>%
-       left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, total_average_hours, average_hours_males, average_hours_females), by = c("month_year", "province_code")) %>%
-       left_join(lfs_actual_total_hours_worked_prov %>% select(month_year, province_code, total_hours), by = c("month_year", "province_code")) %>%
+       left_join(lfs_usual_total_hours_worked_prov %>% select(month_year, province_code, total_usual_hours), by = c("month_year", "province_code")) %>%
+       left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, average_usual_hours, average_usual_hours_males, average_usual_hours_females), by = c("month_year", "province_code")) %>%
+       left_join(lfs_actual_total_hours_worked_prov %>% select(month_year, province_code, total_actual_hours), by = c("month_year", "province_code")) %>%
+       left_join(lfs_actual_avg_hours_worked_prov %>% select(month_year, province_code, average_actual_hours, average_actual_hours_males, average_actual_hours_females), by = c("month_year", "province_code")) %>%
        left_join(ei_claims_prov_monthly %>% select(month_year, province_code, ei_claims), by = c("month_year", "province_code")) %>%
        left_join(cpi_all_items_prov_monthly %>% select(month_year, province_code, cpi), by = c("month_year", "province_code")) %>%
        left_join(retail_trade_sales_prov_monthly %>% select(month_year, province_code, retail_sales), by = c("month_year", "province_code")) %>%
