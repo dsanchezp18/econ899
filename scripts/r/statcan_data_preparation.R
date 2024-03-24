@@ -613,14 +613,37 @@ international_merchandise_imports_prov_monthly <-
        international_merchandise_trade_monthly_table %>%
        filter(geo != "Canada",
               trade == "Import",
-              north_american_product_classification_system_napcs == "Total of all merchandise",
-              principal_trading_partners == "All countries") %>%
+              north_american_product_classification_system_napcs == "Total of all merchandise") %>%
        select(month_year = ref_date,
               geo,
               scale = scalar_factor,
-              international_merchandise_imports = value) %>%
+              international_merchandise_imports = value,
+              countries = principal_trading_partners) %>%
+       pivot_wider(names_from = countries,
+                   values_from = international_merchandise_imports,
+                   names_prefix = "imports_") %>%
        clean_names() %>%
-       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       inner_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+# Get total international merchandise exports, province-month panel
+
+international_merchandise_exports_prov_monthly <-
+       international_merchandise_trade_monthly_table %>%
+       filter(geo != "Canada",
+              trade == "Domestic export",
+              north_american_product_classification_system_napcs == "Total of all merchandise") %>%
+       select(month_year = ref_date,
+              geo,
+              scale = scalar_factor,
+              international_merchandise_exports = value,
+              countries = principal_trading_partners) %>%
+       pivot_wider(names_from = countries,
+                   values_from = international_merchandise_exports,
+                   names_prefix = "exports_") %>%
+       clean_names() %>%
+       inner_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
        relocate(province_code, .after = geo) %>%
        arrange(month_year, geo)
 
@@ -763,7 +786,8 @@ explanatory_vars_province_month_panel <-
        left_join(vehicles_entering_canada_monthly %>% select(month_year, province_code, vehicles), by = c("month_year", "province_code")) %>%
        left_join(electric_power_generation_prov_monthly %>% select(month_year, province_code, electric_power_generation), by = c("month_year", "province_code")) %>% 
        left_join(experimental_econ_activity_prov_monthly %>% select(month_year, province_code, exp_index_econ_activity), by = c("month_year", "province_code")) %>%
-       left_join(international_merchandise_imports_prov_monthly %>% select(month_year, province_code, international_merchandise_imports), by = c("month_year", "province_code")) %>%
+       left_join(international_merchandise_imports_prov_monthly %>% select(-geo, scale), by = c("month_year", "province_code")) %>%
+       left_join(international_merchandise_exports_prov_monthly %>% select(-geo, scale), by = c("month_year", "province_code")) %>%
        left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
        left_join(building_permits_prov_monthly %>% select(month_year, province_code, building_permits), by = c("month_year", "province_code")) %>%
        left_join(insolvency_prov_month, by = c("month_year", "province_code")) %>%

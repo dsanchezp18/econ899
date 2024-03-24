@@ -16,8 +16,9 @@ library(lubridate)
 library(modelsummary)
 library(forcats)
 library(tibble)
+library(sandwich)
 
-# Load data
+# Load data and eliminate the territories
 
 df <- readRDS("data/full_dataset.rds")
 
@@ -299,13 +300,12 @@ modelsummary(main_did_models,
              #output = "output/results/did_models_twfe.docx"
 )
 
-
 # Main models with ln+1 -----------------------------------------------------------
 
 # Define the formula which I will update
 
 formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(total_median_wage) + log(retail_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + 
-cpi + log(business_insolvencies) + log(travellers) + log(new_housing_price_index) + log(electric_power_generation)"  %>% 
+cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1)"  %>% 
                      as.formula()
 
 # Run the models, for all parties, inventors, applicants, owners, and patents filed
@@ -340,6 +340,27 @@ model_explanatory_twfe_patents_ln_1 <-
           data = df_twfe,
           fixef =  c("province_code", "month_year"),
           cluster = ~ province_code + month_year)
+
+# Bootstrap standard errors for main models -----------------------------------------------------------
+
+# Use the sandwich package to bootstrap standard errors for the main models
+
+B <- 1000
+
+# All parties with booststrap
+
+# Bootstrap
+
+model_explanatory_twfe_boot <- 
+    vcovBS(model_explanatory_ls, cluster = ~province_code + month_year, R = B)
+
+model_explanatory_twfe <-
+    feols(update(explanatory_vars, ln_parties ~ treated + .), 
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          vcov = model_explanatory_twfe_boot)
+
+summary(model_explanatory_twfe)
 
 # Present results with modelsummary
 
