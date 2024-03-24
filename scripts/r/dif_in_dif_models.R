@@ -68,7 +68,7 @@ summary(baseline_ls_owners)
 # Create the DID dummy in a modified dataframe
 
 df_twfe <- 
-    df  %>% 
+    df %>% 
     mutate(treated = fixest::i(treatment,post, ref = "Control", ref2 = "Pre")) # Using the interaction operator i from the fixest package
 
 # Estimate the baseline TWFE model with all interested parties
@@ -121,7 +121,7 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Define a formula object with the summation of all explanatory variables to be included in the models 
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_average_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index"  %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(average_actual_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index + log(food_services_receipts)+ log(travellers) + log(building_permits) + log(total_insolvencies)"  %>% 
                     as.formula()
 
 ## Least squares (LS/OLS) -----------------------------------------------------------
@@ -182,6 +182,8 @@ model_explanatory_twfe_applicants <-
           fixef =  c("province_code", "month_year"),
           cluster = ~ province_code + month_year)
 
+summary(model_explanatory_twfe_applicants)
+
 # Repeat with owners only
 
 model_explanatory_twfe_owners <-
@@ -190,15 +192,46 @@ model_explanatory_twfe_owners <-
           fixef =  c("province_code", "month_year"),
           cluster = ~ province_code + month_year)
 
+summary(model_explanatory_twfe_owners)
+
+# Present explanatory model results with modelsummary -----------------------------------------------------------
+
+# List of models with explanatory variables
+
+did_models_explanatory <- list(model_explanatory_ls, model_explanatory_ls_inventors, model_explanatory_ls_applicants, model_explanatory_ls_owners,
+                               model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners)
+
+# Present with modelsummary 
+
+modelsummary(did_models_explanatory, stars = stars)
+
 # Models with patents as dependent variable -----------------------------------------------------------
 
-## Baseline models without explanatory variables (TWFE only) -----------------------------------------------------------
+## Baseline models without explanatory variables -----------------------------------------------------------
 
 # Estimate baseline models without explanatory variables, all periods available for the data
 
-# Use the same formula, just updating it with the new dependent variable and a new control which is number of foreign interested parties
+# Estimate the baseline LS model with patents filed as dependent variable
+
+baseline_ls_patents <-
+    lm(ln_patents_filed ~ treatment * post, data = df)
+
+summary(baseline_ls_patents)
+
+# Estimate the baseline TWFE model with patents filed as dependent variable
 
 model_baseline_twfe_patents <-
+    feols(ln_patents_filed ~ treated | province_code + month_year, 
+          data = df_twfe,
+          cluster = ~ province_code + month_year)
+
+summary(model_baseline_twfe_patents)
+
+## Models with explanatory variables -----------------------------------------------------------
+
+# Use the same formula, just updating it with the new dependent variable and a new control which is number of foreign interested parties
+
+model_explanatory_twfe_patents <-
     feols(update(explanatory_vars, ln_patents_filed ~ treated + ln_foreign_parties + .),
           data = df_twfe,
           fixef =  c("province_code", "month_year"),
@@ -206,12 +239,11 @@ model_baseline_twfe_patents <-
         
 summary(model_baseline_twfe_patents)
 
-## Present explanatory model results with modelsummary -----------------------------------------------------------
+## Present results with modelsummary -----------------------------------------------------------
 
-# List of models with explanatory variables
+# Present results of the patent models with modelsummary
 
-did_models_explanatory <- list(model_explanatory_ls, model_explanatory_ls_inventors, model_explanatory_ls_applicants, model_explanatory_ls_owners,
-                               model_explanatory_twfe, model_explanatory_twfe_inventors, model_explanatory_twfe_applicants, model_explanatory_twfe_owners)
+modelsummary(list(baseline_ls_patents, model_baseline_twfe_patents, model_explanatory_twfe_patents), stars = stars)
 
 # Export results ----------------------------------------------------------------
 
