@@ -14,6 +14,7 @@ library(dplyr)
 library(fixest)
 library(ggplot2)
 library(lubridate)
+library(kableExtra)
 library(modelsummary)
 library(forcats)
 library(tibble)
@@ -205,12 +206,19 @@ attr(explained_vars, 'position') <- 0
 
 ## Display results -----------------------------------------------------------
 
-modelsummary(main_did_models,
-             stars = stars,
-             add_rows = explained_vars,
-             gof_omit = "AIC|BIC|RMSE",
-             vcov = ~ province_code + month_year, # Cluster by province and month, shows nicely in the table
-)
+dd_results_explanatory <-
+    modelsummary(main_did_models,
+                stars = stars,
+                add_rows = explained_vars,
+                gof_omit = "AIC|BIC|RMSE",
+                output = "kableExtra",
+                vcov = ~ province_code + month_year, # Cluster by province and month, shows nicely in the table           
+    ) %>% 
+    row_spec(2, bold = T)
+
+dd_results_explanatory
+
+save_kable(dd_results_explanatory, "output/dd_results_explanatory.html")
 
 # Main models with ln+1 -----------------------------------------------------------
 
