@@ -14,7 +14,7 @@ library(readr)
 library(dplyr)
 library(janitor)
 library(lubridate)
-library(ggplot2)
+
 library(scales)
 
 # Loading the data --------------------------------------------------------

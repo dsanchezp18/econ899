@@ -15,6 +15,7 @@ library(readr)
 library(forcats)
 library(lubridate)
 library(tidyr)
+library(janitor)
 
 # Define the valid date for the IP Horizons data (December 2021)
 
@@ -43,7 +44,9 @@ patents_applicants <- readRDS("data/patents/processed/patents_applicants.rds") #
 
 patent_province_mapping <- readRDS("data/patents/processed/patent_province_mapping.rds") # Mapping of patents to provinces based on % of interested parties
 
-## Explanatory variables/Regressors -----------------------------------------------------------
+patents_ipc_sections <- readRDS("data/patents/processed/patents_ipc_sections.rds") # IPC sections data, prepared from the IPC classification tables downloaded from IP Horizons
+
+## Explanatory variables/regressors -----------------------------------------------------------
 
 # Load explanatory variables panel dataset
 
@@ -55,19 +58,28 @@ explanatory_province_month_panel_df <- read_csv("data/explanatory_vars_province_
 
 province_codes <- read_csv("data/other/province_codebook.csv", show_col_types = F)
 
-# Main patent data --------------------------------------------------------------------------------------
+# Patent data --------------------------------------------------------------------------------------
 
 # Get the number of patents per province and month based on my mapping of patents to provinces
 # First do them based on filing date, I will later do them based on grant date
 
 patents_per_province_month_filing <- 
-       patents_main %>% 
+       patents_main %>%
+       left_join(patents_ipc_sections, by = "patent_number") %>%  
        left_join(patent_province_mapping, by = "patent_number") %>% 
-       group_by(province_code_clean, filing_month_year) %>% 
+       group_by(province_code_clean, filing_month_year, ipc_section_code) %>% 
        summarise(patents_filed = n(),
                  foreign_parties = sum(foreign_patents)) %>% 
        ungroup() %>% 
-       arrange(province_code_clean, desc(filing_month_year))
+       arrange(province_code_clean, desc(filing_month_year)) %>% 
+       replace_na(list(ipc_section_code = "None assigned")) %>%
+       pivot_wider(names_from = ipc_section_code, 
+                   values_from = patents_filed, 
+                   names_prefix = "patents_filed_",
+                   values_fill = 0) %>%
+       clean_names() %>% 
+       mutate(patents_filed = rowSums(select(., -c(province_code_clean, filing_month_year, foreign_parties))) %>% as.integer()) %>% 
+       relocate(patents_filed, .after = foreign_parties)
 
 # Get the number of patents per province and month based on grant date
 
@@ -204,7 +216,7 @@ df <-
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
               post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
               emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_other + emp_healthcare,
-              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_other + wages_paid_healthcare)  %>%
+              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_other + wages_paid_healthcare) %>%
        arrange(province_code, month_year) 
 
 # Export the data --------------------------------------------------------------------------------------

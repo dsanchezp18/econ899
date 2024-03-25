@@ -872,9 +872,16 @@ explanatory_vars_province_month_panel <-
        left_join(international_merchandise_imports_prov_monthly %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
        left_join(international_merchandise_exports_prov_monthly %>% select(-geo, -scale), by = c("month_year", "province_code")) %>%
        left_join(new_housing_price_index_prov_monthly %>% select(month_year, province_code, new_housing_price_index), by = c("month_year", "province_code")) %>% 
-       left_join(building_permits_prov_monthly %>% select(month_year, province_code, building_permits), by = c("month_year", "province_code")) %>%
+       #left_join(building_permits_prov_monthly %>% select(month_year, province_code, building_permits), by = c("month_year", "province_code")) %>%
        left_join(insolvency_prov_month, by = c("month_year", "province_code")) %>%
        arrange(month_year, province_code)
+
+# Check for duplicates
+
+explanatory_vars_province_month_panel %>% 
+    group_by(month_year, province_code) %>% 
+    filter(n() > 1) %>% 
+    ungroup()
 
 # Exporting province-month data -----------------------------------------------------------
 
