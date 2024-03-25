@@ -39,7 +39,7 @@ df_cor <-
     df %>% 
     select(patent_parties, patents_granted, inventors, owners, applicants, emp_patenting_ind, wages_paid_patenting_ind, 
            starts_with("exports"), starts_with("imports"), starts_with("total"), starts_with("emp"), starts_with("avg"), starts_with("median"), starts_with("new"), starts_with("wages_paid"),
-           starts_with("average"), contains("sales"))
+           starts_with("average"), contains("sales"), contains("business"), contains("insolvencies"))
 
 # Export to csv
 
@@ -115,8 +115,8 @@ modelsummary(baseline_did_models, stars = stars)
 
 # Define a formula object with the summation of all explanatory variables to be included in the models 
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
-log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries)" %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(average_actual_hours) + log(total_median_wage) + cpi + log(business_insolvencies) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
+log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries) + log(manufacturing_sales) + log(wholesale_sales) + log(retail_sales)" %>% 
                     as.formula()
 
 ## Two-way fixed effects (TWFE) -----------------------------------------------------------
@@ -209,8 +209,8 @@ modelsummary(main_did_models,
 
 # Define the formula which I will update
 
-formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(total_median_wage) + cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
-log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries)"  %>% 
+formula_for_ln_1 <- "~ treated + log(total_pop) + log(total_emp) + log(average_actual_hours) + log(total_median_wage) + cpi + log(business_insolvencies) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
+log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries) + log(manufacturing_sales) + log(wholesale_sales) + log(retail_sales)"  %>% 
                      as.formula()
 
 # Run the models, for all parties, inventors, applicants, owners, and patents filed

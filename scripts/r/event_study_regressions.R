@@ -48,8 +48,8 @@ df_event_study <-
 
 # Define a formula object with the summation of all explanatory variables to be included in the models
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
-log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries)" %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(average_actual_hours) + log(total_median_wage) + cpi + log(business_insolvencies) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
+log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries) + log(manufacturing_sales) + log(wholesale_sales) + log(retail_sales)" %>% 
                     as.formula()
 
 # Estimate the models with the explanatory variables included.
@@ -99,6 +99,8 @@ event_study_plot_all_parties <-
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 event_study_plot_all_parties
+
+ggsave("figures/event-studies/event_study_plot_all_parties.png", event_study_plot_all_parties, width = 20, height = 6, units = "in", dpi = 800)
 
 ## With inventors only -----------------------------------------------------------
 
