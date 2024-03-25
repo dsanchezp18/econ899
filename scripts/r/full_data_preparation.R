@@ -65,21 +65,19 @@ province_codes <- read_csv("data/other/province_codebook.csv", show_col_types = 
 
 patents_per_province_month_filing <- 
        patents_main %>%
-       left_join(patents_ipc_sections, by = "patent_number") %>%  
        left_join(patent_province_mapping, by = "patent_number") %>% 
-       group_by(province_code_clean, filing_month_year, ipc_section_code) %>% 
+       group_by(province_code_clean, filing_month_year) %>% 
        summarise(patents_filed = n(),
                  foreign_parties = sum(foreign_patents)) %>% 
        ungroup() %>% 
-       arrange(province_code_clean, desc(filing_month_year)) %>% 
-       replace_na(list(ipc_section_code = "None assigned")) %>%
-       pivot_wider(names_from = ipc_section_code, 
-                   values_from = patents_filed, 
-                   names_prefix = "patents_filed_",
-                   values_fill = 0) %>%
-       clean_names() %>% 
-       mutate(patents_filed = rowSums(select(., -c(province_code_clean, filing_month_year, foreign_parties))) %>% as.integer()) %>% 
-       relocate(patents_filed, .after = foreign_parties)
+       arrange(province_code_clean, desc(filing_month_year)) 
+
+# Check for duplicates
+
+patents_per_province_month_filing %>% 
+       group_by(province_code_clean, filing_month_year) %>% 
+       summarise(n = n()) %>% 
+       filter(n > 1) 
 
 # Get the number of patents per province and month based on grant date
 
@@ -97,11 +95,48 @@ months <- seq.Date(from = min(patents_main$filing_month_year, na.rm = T), to = v
 
 provinces <- province_codes$province_code
 
-patents_per_province <-
+patents_per_province_only <-
        expand_grid(province_code = provinces, month_year = months) %>% 
        left_join(patents_per_province_month_filing, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>% 
        left_join(patents_per_province_month_grant, by = c("province_code" = "province_code_clean", "month_year" = "grant_month_year")) %>% 
        replace_na(list(patents_filed = 0, patents_granted = 0, foreign_parties = 0)) 
+
+# Check for duplicates
+
+patents_per_province %>% 
+       group_by(province_code, month_year) %>% 
+       summarise(n = n()) %>% 
+       filter(n > 1)
+
+# Adding IPC sections --------------------------------------------------------------------------------------
+
+patents_per_province_month_section <- 
+       patents_main %>%
+       left_join(patent_province_mapping, by = "patent_number") %>% 
+       left_join(patents_ipc_sections, by = "patent_number") %>%
+       select(province_code_clean, filing_month_year, ipc_section_code) %>%
+       group_by(province_code_clean, filing_month_year, ipc_section_code) %>%
+       summarise(n = n()) %>%
+       ungroup() %>% 
+       filter(!is.na(ipc_section_code), !is.na(province_code_clean)) %>% 
+       pivot_wider(names_from = ipc_section_code,
+                   names_prefix = "patents_section_", 
+                   values_from = n, 
+                   values_fill = 0)
+
+# Join the IPC sections data to the main dataset
+
+patents_per_province <-
+       patents_per_province_only %>%
+       left_join(patents_per_province_month_section, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>% 
+       replace_na(list(patents_section_A = 0, patents_section_B = 0, patents_section_C = 0, patents_section_D = 0, patents_section_E = 0, patents_section_F = 0, patents_section_G = 0, patents_section_H = 0))
+
+# Check for duplicates
+
+patents_per_province %>% 
+       group_by(province_code, month_year) %>% 
+       summarise(n = n()) %>% 
+       filter(n > 1)
 
 # Interested parties  --------------------------------------------------------------------------------------
 
@@ -217,7 +252,14 @@ df <-
               post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
               emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_healthcare,
               wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_healthcare) %>%
-       arrange(province_code, month_year) 
+       arrange(province_code, month_year)
+
+# Check for duplicates
+
+df %>% 
+       group_by(province_code, month_year) %>% 
+       summarise(n = n()) %>% 
+       filter(n > 1)
 
 # Export the data --------------------------------------------------------------------------------------
 
