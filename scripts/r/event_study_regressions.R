@@ -32,6 +32,18 @@ treatment_group <- "AB"
 start_date <- ymd("1990-01-01")
 end_date <- ymd("2022-12-31")
 
+# Define a dictionary with the periods
+
+months <- seq.Date(from = min(df$month_year), to = max(df$month_year) , by = "month")
+
+# Get the index of the months vector based on the periods variable
+
+periods <- seq(from = min(df$periods), to = max(df$periods), by = 1)
+
+# Create the dictionary with the periods
+
+names(months) <- periods
+
 # Data preparation -----------------------------------------------------------
 
 # Create a dataframe which has the treatment dummy, equal to 1 whenever the treatment group is Alberta, and the period dummies.
@@ -70,14 +82,13 @@ summary(event_study_covariates_all_parties)
 #       ylab = "Interaction term coefficients with 95% C.I.",
 #       sub = "All parties involved in patent applications")
 
-
 event_study_plot_all_parties <-
       ggiplot(event_study_covariates_all_parties, 
               geom_style= "errorbar",
               ci.width = 1.2,
               col = "#0D3692") + 
       scale_x_continuous(limits = c(-237,80)) +
-      theme_minimal() + 
+      theme_bw() + 
       labs(title = "Event Study Plot",
       x = "Periods",
       y = "Interaction term coefficients with 95% C.I.",
@@ -109,7 +120,7 @@ event_study_plot_inventors <-
               ci.width = 1.2,
               col = "#0D3692") + 
       scale_x_continuous(limits = c(-237,80)) +
-      theme_minimal() + 
+      theme_bw() + 
       labs(title = "Event Study Plot",
       x = "Periods",
       y = "Interaction term coefficients with 95% C.I.",
@@ -141,7 +152,7 @@ event_study_plot_applicants <-
               ci.width = 1.2,
               col = "#0D3692") + 
       scale_x_continuous(limits = c(-237,80)) +
-      theme_minimal() + 
+      theme_bw() + 
       labs(title = "Event Study Plot",
       x = "Periods",
       y = "Interaction term coefficients with 95% C.I.",
@@ -163,7 +174,23 @@ summary(event_study_covariates_owners)
 #       main = "Event Study Plot",
 #       xlab = "Periods",
 #       ylab = "Interaction term coefficients with 95% C.I.",
-#       sub = "Owners involved in patent applications")  
+#       sub = "Owners involved in patent applications")
+
+# With ggfixest
+
+event_study_plot_owners <-
+      ggiplot(event_study_covariates_owners, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(-237,80)) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Owners involved in patent applications")
+
+event_study_plot_owners
 
 ## Patents filed -----------------------------------------------------------
 
@@ -188,7 +215,7 @@ event_study_plot_patents <-
               ci.width = 1.2,
               col = "#0D3692") + 
       scale_x_continuous(limits = c(-237,80)) +
-      theme_minimal() + 
+      theme_bw() + 
       labs(title = "Event Study Plot",
       x = "Periods",
       y = "Interaction term coefficients with 95% C.I.",
@@ -200,20 +227,20 @@ event_study_plot_patents
 
 ## All parties ----------------------------------------------------------------
 
-ggsave("charts/event_study_plot_all_parties.png", event_study_plot_all_parties, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_all_parties.png", event_study_plot_all_parties, width = 20, height = 6, units = "in", dpi = 800)
 
 ## Inventors ----------------------------------------------------------------
 
-ggsave("charts/event_study_plot_inventors.png", event_study_plot_inventors, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_inventors.png", event_study_plot_inventors, width = 20, height = 6, units = "in", dpi = 800)
 
 ## Applicants ----------------------------------------------------------------
 
-ggsave("charts/event_study_plot_applicants.png", event_study_plot_applicants, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_applicants.png", event_study_plot_applicants, width = 20, height = 6, units = "in", dpi = 800)
 
 ## Owners ----------------------------------------------------------------
 
-ggsave("charts/event_study_plot_owners.png", event_study_plot_owners, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_owners.png", event_study_plot_owners, width = 20, height = 6, units = "in", dpi = 800)
 
 ## Patents filed ----------------------------------------------------------------
 
-ggsave("charts/event_study_plot_patents.png", event_study_plot_patents, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_patents.png", event_study_plot_patents, width = 20, height = 6, units = "in", dpi = 800)
