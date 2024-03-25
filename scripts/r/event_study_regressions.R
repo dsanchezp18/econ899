@@ -16,6 +16,7 @@ library(forcats)
 library(gridExtra)
 library(ggplot2)
 library(patchwork)
+library(ggfixest)
 
 # Load data
 
@@ -57,17 +58,29 @@ log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countri
 
 event_study_covariates_all_parties <-
     feols(update(explanatory_vars, ln_parties ~ i(periods, treatment_dummy, ref = -1) + .), 
-          data = df_event_study %>% filter(periods > -236),
+          data = df_event_study,
           fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
 
 summary(event_study_covariates_all_parties)
 
-iplot(event_study_covariates_all_parties, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "All parties involved in patent applications")
+# iplot(event_study_covariates_all_parties, 
+#       main = "Event Study Plot",
+#       xlab = "Periods",
+#       ylab = "Interaction term coefficients with 95% C.I.",
+#       sub = "All parties involved in patent applications")
+
+
+ggiplot(event_study_covariates_all_parties, 
+        geom_style= "errorbar",
+        ci.width = 1.2,
+        col = "#0D3692") + 
+scale_x_continuous(limits = c(-237,80)) +
+theme_minimal() + 
+labs(title = "Event Study Plot",
+     x = "Periods",
+     y = "Interaction term coefficients with 95% C.I.",
+     subtitle = "All parties involved in patent applications")
 
 ## With inventors only -----------------------------------------------------------
 

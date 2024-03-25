@@ -25,7 +25,7 @@ options(timeout = 300)
 
 url <- "https://opic-cipo.ca/cipo/client_downloads/IP_Horizon_Resources/PT_Data_Dictionary.zip"
 
-download.file(url, destfile = "data/patents/raw/zip/PT_Data_Dictionary.zip")
+download.file(url, destfile = "data/patents/raw/zip/PT_Data_Dictionary.zip", mode = "wb", method = "libcurl", extra = "--remote-time")
 
 # 2. Main
 
@@ -47,3 +47,5 @@ url<- c("https://opic-cipo.ca/cipo/client_downloads/patent_CSV_2023_06_16/PT_IPC
         "https://opic-cipo.ca/cipo/client_downloads/patent_CSV_2023_06_16/PT_IPC_classification_2000001_to_4000000_2023-06-13.zip")
 
 mapply(download.file, url, destfile = file.path("data/patents/raw/zip", basename(url)))
+
+
