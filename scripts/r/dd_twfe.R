@@ -12,11 +12,13 @@
 
 library(dplyr)
 library(fixest)
+library(ggplot2)
 library(lubridate)
 library(modelsummary)
 library(forcats)
 library(tibble)
 library(sandwich)
+library(corrplot)
 
 # Load data
 
@@ -27,10 +29,21 @@ df <- readRDS("data/full_dataset.rds")
 source("scripts/r/modelsummary/stars.R")
 source("scripts/r/modelsummary/coef_mappings.R")
 
-# Baseline models -----------------------------------------------------------
+# Exploratory data analysis -----------------------------------------------------------
 
-# Estimate baseline models without explanatory variables, all periods available for the data
-# I will use both all parties and inventors only, and compare
+## Correlations -----------------------------------------------------------
+
+# Calculate the correlation matrix for the variables of interest (parties against control variables)
+
+df_cor <-
+    df %>% 
+    select(patent_parties, patents_granted, inventors, owners, applicants, emp_patenting_ind, wages_paid_patenting_ind, 
+           starts_with("exports"), starts_with("imports"), starts_with("total"), starts_with("emp"), starts_with("avg"), starts_with("median"), starts_with("new"), starts_with("wages_paid"),
+           starts_with("average"), contains("sales"))
+
+# Export to csv
+
+datasummary_correlation(df_cor, output = "data/correlation_matrix.csv")
 
 ## Two-way fixed effects (TWFE) -----------------------------------------------------------
 
