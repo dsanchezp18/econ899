@@ -351,32 +351,304 @@ event_study_relevant <-
       theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
 
-# Export the charts ----------------------------------------------------------------
+# Section codes ----------------------------------------------------------------
 
-## All parties ----------------------------------------------------------------
+# Reimplement event studies with the patents per section code
 
-ggsave("figures/event-studies/event_study_plot_all_parties.png", event_study_plot_all_parties, width = 20, height = 6, units = "in", dpi = 800)
+# Same formula, but ln_patents_A
 
-## Inventors ----------------------------------------------------------------
+event_study_A <-
+    feols(update(explanatory_vars, ln_patents_A ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
 
-ggsave("figures/event-studies/event_study_plot_inventors.png", event_study_plot_inventors, width = 20, height = 6, units = "in", dpi = 800)
+summary(event_study_A)
 
-## Applicants ----------------------------------------------------------------
+periods_vector <- seq(-236, 70, by = 12)
 
-ggsave("figures/event-studies/event_study_plot_applicants.png", event_study_plot_applicants, width = 20, height = 6, units = "in", dpi = 800)
+# Find the months in df which correspond to the periods
 
-## Owners ----------------------------------------------------------------
+months_in_df <- 
+      df_event_study %>% 
+      select(month_year, periods) %>% 
+      filter(periods %in% periods_vector) %>%
+      distinct(month_year) %>% 
+      pull(month_year) %>%
+      format("%b-%Y")
 
-ggsave("figures/event-studies/event_study_plot_owners.png", event_study_plot_owners, width = 20, height = 6, units = "in", dpi = 800)
+event_study_plot_A <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code A") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-## Patents filed ----------------------------------------------------------------
+event_study_plot_A
 
-ggsave("figures/event-studies/event_study_plot_patents.png", event_study_plot_patents, width = 20, height = 6, units = "in", dpi = 800)
+ggsave("figures/event-studies/event_study_plot_A.png", event_study_plot_A, width = 20, height = 6, units = "in", dpi = 800)
 
-## Faceted chart ----------------------------------------------------------------
+# Same formula, but ln_patents_B
 
-ggsave("figures/event-studies/event_study_faceted_plot.png", event_study_all, width = 20, height = 20, units = "in", dpi = 800)
+event_study_B <-
+    feols(update(explanatory_vars, ln_patents_B ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
 
-## Relevant faceted chart ----------------------------------------------------------------
+summary(event_study_B)
 
-ggsave("figures/event-studies/event_study_relevant_faceted_plot.png", event_study_relevant, width = 20, height = 20, units = "in", dpi = 800)
+event_study_plot_B <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code B") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_B
+
+ggsave("figures/event-studies/event_study_plot_B.png", event_study_plot_B, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_C
+
+event_study_C <-
+    feols(update(explanatory_vars, ln_patents_C ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_C)
+
+event_study_plot_C <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code C") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_C
+
+ggsave("figures/event-studies/event_study_plot_C.png", event_study_plot_C, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_D
+
+event_study_D <-
+    feols(update(explanatory_vars, ln_patents_D ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_D)
+
+event_study_plot_D <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code D") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_D
+
+ggsave("figures/event-studies/event_study_plot_D.png", event_study_plot_D, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_E
+
+event_study_E <-
+    feols(update(explanatory_vars, ln_patents_E ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_E)
+
+event_study_plot_E <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code E") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_E
+
+ggsave("figures/event-studies/event_study_plot_E.png", event_study_plot_E, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_F
+
+event_study_F <-
+    feols(update(explanatory_vars, ln_patents_F ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_F)
+
+event_study_plot_F <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code F") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_F
+
+ggsave("figures/event-studies/event_study_plot_F.png", event_study_plot_F, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_G
+
+event_study_G <-
+    feols(update(explanatory_vars, ln_patents_G ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_G)
+
+event_study_plot_G <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code G") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_G
+
+ggsave("figures/event-studies/event_study_plot_G.png", event_study_plot_G, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_H
+
+event_study_H <-
+    feols(update(explanatory_vars, ln_patents_H ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_H)
+
+event_study_plot_H <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code H") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_H
+
+ggsave("figures/event-studies/event_study_plot_H.png", event_study_plot_H, width = 20, height = 6, units = "in", dpi = 800)
+
+# Same formula, but ln_patents_M
+
+event_study_M <-
+    feols(update(explanatory_vars, ln_patents_M ~ i(periods, treatment_dummy, ref = -1) + .), 
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+summary(event_study_M)
+
+event_study_plot_M <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents with section code M") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+event_study_plot_M
+
+ggsave("figures/event-studies/event_study_plot_M.png", event_study_plot_M, width = 20, height = 6, units = "in", dpi = 800)
+
+# Faceted chart with all of the event studies with sections --------------------------------
+
+# List of the event study regressions -----------------------------------------------------------
+
+event_studies_section_codes <- list(event_study_A, 
+                                    event_study_B, 
+                                    event_study_C, 
+                                    event_study_E, 
+                                    event_study_F, 
+                                    event_study_G, 
+                                    event_study_H, 
+                                    event_study_M)
+
+event_study_all_sections <-
+      ggiplot(event_studies_section_codes, 
+              geom_style= "errorbar",
+              multi_style = "facet",
+              ci.width = 0,
+              pt.pch = 1,
+              col = rep("#0D3692",9),
+              facet_args = list(ncol = 2, scales = "free_y")) +
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+           x = "Periods",
+           y = "Interaction term coefficients with 95% C.I.") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")
+
+event_study_all_sections
+
+ggsave("figures/event-studies/event_study_all_sections.png", event_study_all_sections, width = 20, height = 20, units = "in", dpi = 800)
+

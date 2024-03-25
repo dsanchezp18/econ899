@@ -44,7 +44,7 @@ patents_applicants <- readRDS("data/patents/processed/patents_applicants.rds") #
 
 patent_province_mapping <- readRDS("data/patents/processed/patent_province_mapping.rds") # Mapping of patents to provinces based on % of interested parties
 
-patents_ipc_sections <- readRDS("data/patents/processed/patents_ipc_sections.rds") # IPC sections data, prepared from the IPC classification tables downloaded from IP Horizons
+patents_ipc_sections <- readRDS("data/patents/processed/patent_ipc_sections.rds") # IPC sections data, prepared from the IPC classification tables downloaded from IP Horizons
 
 ## Explanatory variables/regressors -----------------------------------------------------------
 
@@ -121,15 +121,14 @@ patents_per_province_month_section <-
        filter(!is.na(ipc_section_code), !is.na(province_code_clean)) %>% 
        pivot_wider(names_from = ipc_section_code,
                    names_prefix = "patents_section_", 
-                   values_from = n, 
+                   values_from = n,
                    values_fill = 0)
 
 # Join the IPC sections data to the main dataset
 
 patents_per_province <-
        patents_per_province_only %>%
-       left_join(patents_per_province_month_section, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>% 
-       replace_na(list(patents_section_A = 0, patents_section_B = 0, patents_section_C = 0, patents_section_D = 0, patents_section_E = 0, patents_section_F = 0, patents_section_G = 0, patents_section_H = 0))
+       left_join(patents_per_province_month_section, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year"))
 
 # Check for duplicates
 
@@ -251,7 +250,16 @@ df <-
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
               post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
               emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_healthcare,
-              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_healthcare) %>%
+              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_healthcare,
+              ln_patents_A = log(patents_section_A),
+              ln_patents_B = log(patents_section_B),
+              ln_patents_C = log(patents_section_C),
+              ln_patents_D = log(patents_section_D),
+              ln_patents_E = log(patents_section_E),
+              ln_patents_F = log(patents_section_F),
+              ln_patents_G = log(patents_section_G),
+              ln_patents_H = log(patents_section_H),
+              ln_patents_M = log(patents_section_Multiple)) %>%
        arrange(province_code, month_year)
 
 # Check for duplicates
@@ -260,6 +268,17 @@ df %>%
        group_by(province_code, month_year) %>% 
        summarise(n = n()) %>% 
        filter(n > 1)
+
+# Check where does ln_patents not NA
+
+df %>% 
+       select(starts_with("ln_patents_")) %>% 
+       mutate_all(~is.na(.)) %>% 
+       summarise_all(sum)
+
+# Count number of values (either NA or non NA) for each variable
+
+df  %>% nrow()
 
 # Export the data --------------------------------------------------------------------------------------
 

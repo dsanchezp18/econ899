@@ -107,7 +107,7 @@ multiple_section_patents <-
       patent_sections_count %>% 
       filter(n_sections > 1) %>% 
       arrange(desc(n_sections)) %>% 
-      mutate(ipc_section = "Multiple") %>% 
+      mutate(ipc_section = "Multiple", ipc_section_code = "Multiple") %>% 
       ungroup()
 
 # Number of patents with multiple sections

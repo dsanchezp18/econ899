@@ -265,3 +265,109 @@ model_explanatory_twfe_patents_ln_1 <-
 
 modelsummary(list(model_explanatory_twfe_ln_1, model_explanatory_twfe_inventors_ln_1, model_explanatory_twfe_applicants_ln_1, model_explanatory_twfe_owners_ln_1, model_explanatory_twfe_patents_ln_1), stars = stars)
 
+# Models with patents from different sections as the dependent variable -----------------------------------------------------------
+
+# Run the formula from above, but for ln_patents_A
+
+model_explanatory_twfe_patents_A <-
+    feols(update(formula_for_ln_1, ln_patents_A ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_B
+
+model_explanatory_twfe_patents_B <-
+    feols(update(formula_for_ln_1, ln_patents_B ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_C
+
+model_explanatory_twfe_patents_C <-
+    feols(update(formula_for_ln_1, ln_patents_C ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_D
+
+model_explanatory_twfe_patents_D <-
+    feols(update(formula_for_ln_1, ln_patents_D ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_E
+
+model_explanatory_twfe_patents_E <-
+    feols(update(formula_for_ln_1, ln_patents_E ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_F
+
+model_explanatory_twfe_patents_F <-
+    feols(update(formula_for_ln_1, ln_patents_F ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_G
+
+model_explanatory_twfe_patents_G <-
+    feols(update(formula_for_ln_1, ln_patents_G ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_H
+
+model_explanatory_twfe_patents_H <-
+    feols(update(formula_for_ln_1, ln_patents_H ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+
+# Run the formula from above, but for ln_patents_M
+
+model_explanatory_twfe_patents_M <-
+    feols(update(formula_for_ln_1, ln_patents_M ~ .),
+          data = df_twfe,
+          fixef =  c("province_code", "month_year"),
+          cluster = ~ province_code + month_year)
+    
+# Present results with modelsummary
+
+explained_vars_patents <- tibble(
+                term = "Explained variable (Ln)",
+                v1 = "Patents A",
+                v2 = "Patents B",
+                v3 = "Patents C",
+                v4 = "Patents D",
+                v5 = "Patents E",
+                v6 = "Patents F",
+                v7 = "Patents G",
+                v8 = "Patents H",
+                v9 = "Patents M(ultiple)"
+)
+
+# Change the position to the top of the table
+
+attr(explained_vars_patents, 'position') <- 0
+
+# Create a list of the models
+
+patents_models <- list(model_explanatory_twfe_patents_A, model_explanatory_twfe_patents_B, model_explanatory_twfe_patents_C, model_explanatory_twfe_patents_D, model_explanatory_twfe_patents_E, model_explanatory_twfe_patents_F, model_explanatory_twfe_patents_G, model_explanatory_twfe_patents_H, model_explanatory_twfe_patents_M )
+
+# Present the results
+
+patent_sections_models <- 
+    modelsummary(patents_models, stars = stars, add_rows = explained_vars_patents, output = "kableExtra") %>% 
+    row_spec(2, bold = T)
+
+patent_sections_models
+
+save_kable(patent_sections_models, "output/patent_sections_models.html")
