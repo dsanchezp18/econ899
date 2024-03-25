@@ -71,16 +71,19 @@ summary(event_study_covariates_all_parties)
 #       sub = "All parties involved in patent applications")
 
 
-ggiplot(event_study_covariates_all_parties, 
-        geom_style= "errorbar",
-        ci.width = 1.2,
-        col = "#0D3692") + 
-scale_x_continuous(limits = c(-237,80)) +
-theme_minimal() + 
-labs(title = "Event Study Plot",
-     x = "Periods",
-     y = "Interaction term coefficients with 95% C.I.",
-     subtitle = "All parties involved in patent applications")
+event_study_plot_all_parties <-
+      ggiplot(event_study_covariates_all_parties, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(-237,80)) +
+      theme_minimal() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "All parties involved in patent applications")
+
+event_study_plot_all_parties
 
 ## With inventors only -----------------------------------------------------------
 
@@ -92,11 +95,27 @@ event_study_covariates_inventors <-
 
 summary(event_study_covariates_inventors)
 
-iplot(event_study_covariates_inventors, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Inventors involved in patent applications")
+# iplot(event_study_covariates_inventors, 
+#       main = "Event Study Plot",
+#       xlab = "Periods",
+#       ylab = "Interaction term coefficients with 95% C.I.",
+#       sub = "Inventors involved in patent applications")
+
+# With ggfixest
+
+event_study_plot_inventors <-
+      ggiplot(event_study_covariates_inventors, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(-237,80)) +
+      theme_minimal() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Inventors involved in patent applications")
+
+event_study_plot_inventors
 
 ## With applicants only -----------------------------------------------------------
 
@@ -108,13 +127,29 @@ event_study_covariates_applicants <-
 
 summary(event_study_covariates_applicants)
 
-iplot(event_study_covariates_applicants, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Applicants involved in patent applications")
+# iplot(event_study_covariates_applicants, 
+#       main = "Event Study Plot",
+#       xlab = "Periods",
+#       ylab = "Interaction term coefficients with 95% C.I.",
+#       sub = "Applicants involved in patent applications")
 
-# With owners only
+# With ggfixest
+
+event_study_plot_applicants <-
+      ggiplot(event_study_covariates_applicants, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(-237,80)) +
+      theme_minimal() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Applicants involved in patent applications")
+
+event_study_plot_applicants
+
+## With owners only -----------------------------------------------------------
 
 event_study_covariates_owners <-
     feols(update(explanatory_vars, ln_owners ~ i(periods, treatment_dummy, ref = -1) + .), 
@@ -124,11 +159,11 @@ event_study_covariates_owners <-
 
 summary(event_study_covariates_owners)
 
-iplot(event_study_covariates_owners, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Owners involved in patent applications")  
+# iplot(event_study_covariates_owners, 
+#       main = "Event Study Plot",
+#       xlab = "Periods",
+#       ylab = "Interaction term coefficients with 95% C.I.",
+#       sub = "Owners involved in patent applications")  
 
 ## Patents filed -----------------------------------------------------------
 
@@ -140,45 +175,45 @@ event_study_patents <-
 
 summary(event_study_patents)
 
-iplot(event_study_patents, 
-      main = "Event Study Plot - Patents filed as the dependent variable",
-      xlab = "Periods before the AITC was passed",
-      ylab = "Interaction term coefficients with 95% C.I.")
+# iplot(event_study_patents, 
+#       main = "Event Study Plot - Patents filed as the dependent variable",
+#       xlab = "Periods before the AITC was passed",
+#       ylab = "Interaction term coefficients with 95% C.I.")
+
+# With ggfixest
+
+event_study_plot_patents <-
+      ggiplot(event_study_patents, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(-237,80)) +
+      theme_minimal() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents filed as the dependent variable")
+
+event_study_plot_patents
 
 # Export the charts ----------------------------------------------------------------
 
 ## All parties ----------------------------------------------------------------
 
-# Save the chart
-
-png("figures/event_study_covariates_all_parties.png", 
-    width = 25, 
-    height = 15, 
-    units = "cm",
-    res = 800)
-
-iplot(event_study_covariates_all_parties, 
-        main = "Event Study Plot",
-        xlab = "Periods",
-        ylab = "Interaction term coefficients with 95% C.I.",
-        sub = "All parties involved in patent applications")
-
-dev.off()
+ggsave("charts/event_study_plot_all_parties.png", event_study_plot_all_parties, width = 20, height = 6, units = "in", dpi = 800)
 
 ## Inventors ----------------------------------------------------------------
 
-# Save the chart
+ggsave("charts/event_study_plot_inventors.png", event_study_plot_inventors, width = 20, height = 6, units = "in", dpi = 800)
 
-png("figures/event_study_covariates_inventors.png", 
-    width = 25, 
-    height = 15, 
-    units = "cm",
-    res = 800)
+## Applicants ----------------------------------------------------------------
 
-iplot(event_study_covariates_inventors, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Inventors involved in patent applications")
+ggsave("charts/event_study_plot_applicants.png", event_study_plot_applicants, width = 20, height = 6, units = "in", dpi = 800)
 
-dev.off()
+## Owners ----------------------------------------------------------------
+
+ggsave("charts/event_study_plot_owners.png", event_study_plot_owners, width = 20, height = 6, units = "in", dpi = 800)
+
+## Patents filed ----------------------------------------------------------------
+
+ggsave("charts/event_study_plot_patents.png", event_study_plot_patents, width = 20, height = 6, units = "in", dpi = 800)
