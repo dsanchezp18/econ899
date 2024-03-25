@@ -18,11 +18,9 @@ library(forcats)
 library(tibble)
 library(sandwich)
 
-# Load data and create an employment variable for "industries which are likely to patent"
+# Load data
 
-df <- 
-    readRDS("data/full_dataset.rds") %>% 
-    mutate(emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_other)
+df <- readRDS("data/full_dataset.rds")
 
 # Define parameters for modelsummary 
 

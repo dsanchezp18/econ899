@@ -202,7 +202,9 @@ df <-
               ln_applicants = log(n_applicants),
               ln_applicants_1 = log(n_applicants + 1),
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
-              post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"))  %>%
+              post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
+              emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_other + emp_healthcare,
+              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_other + wages_paid_healthcare)  %>%
        arrange(province_code, month_year) 
 
 # Export the data --------------------------------------------------------------------------------------

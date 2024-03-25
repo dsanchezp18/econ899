@@ -31,134 +31,45 @@ treatment_group <- "AB"
 start_date <- ymd("1990-01-01")
 end_date <- ymd("2022-12-31")
 
-# Baseline event study specifications -----------------------------------------------------------
-
-# Implement event study specifications by interacting the treatment dummy (being Alberta) with all period dummies except one period before the post period started. 
-# Baseline models will be estimated with fixed effects only, no other controls. 
-# Estimate with all periods available for the data, and with all parties and only inventors as well
+# Data preparation -----------------------------------------------------------
 
 # Create a dataframe which has the treatment dummy, equal to 1 whenever the treatment group is Alberta, and the period dummies.
 
 df_event_study <- 
     df %>% 
-    filter(periods %>% between(-487, 70)) %>% 
     mutate(period_dummies = as_factor(periods) %>% fct_relevel("-1"),
            event_study_dummies = fixest::i(period_dummies, treatment, ref = "-1", ref2 = "Control"),
            treatment_dummy = (treatment == "Treatment"))
 
-# Do it again, but with a iplot-friendly specification
+# Event studies with controls -----------------------------------------------------------
 
-baseline_event_study_iplot <-
-    feols(ln_parties ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
-          data = df_event_study,
-          cluster = ~ province_code + periods)
-
-summary(baseline_event_study_iplot)
-
-iplot(baseline_event_study_iplot)
-
-# Save the chart
-
-png("figures/event_study_baseline.png", 
-    width = 17, 
-    height = 10, 
-    units = "cm",
-    res = 800)
-
-iplot(baseline_event_study_iplot)
-
-dev.off()
-
-# Repeat with inventors only
-
-baseline_event_study_inventors <-
-    feols(ln_inventors ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
-          data = df_event_study,
-          cluster = ~ province_code + periods)
-
-summary(baseline_event_study_inventors)
-
-iplot(baseline_event_study_inventors)
-
-# Save the chart
-
-png("figures/event_study_baseline_inventors.png", 
-    width = 20, 
-    height = 10, 
-    units = "cm",
-    res = 800)
-
-iplot(baseline_event_study_inventors)
-
-dev.off()
-
-# Repeat with applicants only
-
-baseline_event_study_applicants <-
-    feols(ln_applicants ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
-          data = df_event_study,
-          cluster = ~ province_code + periods)
-
-summary(baseline_event_study_applicants)
-
-iplot(baseline_event_study_applicants)
-
-
-# Repeat with owners only
-
-baseline_event_study_owners <-
-    feols(ln_owners ~ i(periods, treatment_dummy, ref = -1) | province_code + periods,
-          data = df_event_study,
-          cluster = ~ province_code + periods)
-
-summary(baseline_event_study_owners)
-
-iplot(baseline_event_study_owners)
-
-# Event studies with additional controls -----------------------------------------------------------
-
-# Repeat the event study specifications, but now with additional controls.
+# Implement event study specifications by interacting the treatment dummy (being Alberta) with all period dummies except one period before the post period started. 
 
 # Define a formula object with the summation of all explanatory variables to be included in the models
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + log(total_average_hours) + log(ei_claims) + cpi + log(retail_sales) + log(wholesale_sales) + log(manufacturing_sales) + log(international_merchandise_imports) + new_housing_price_index"  %>% 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(total_median_wage) + cpi + log(business_insolvencies+1) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
+log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries)" %>% 
                     as.formula()
 
 # Estimate the models with the explanatory variables included.
 
-# With all parties
+# With all parties -----------------------------------------------------------
 
-event_study_covariates <-
+event_study_covariates_all_parties <-
     feols(update(explanatory_vars, ln_parties ~ i(periods, treatment_dummy, ref = -1) + .), 
-          data = (df_event_study %>% filter(periods > -236)),
+          data = df_event_study %>% filter(periods > -236),
           fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
 
-summary(event_study_covariates)
+summary(event_study_covariates_all_parties)
 
-iplot(event_study_covariates, 
-        main = "Event Study Plot",
-        xlab = "Periods",
-        ylab = "Interaction term coefficients with 95% C.I.",
-        sub = "All parties involved in patent applications")
+iplot(event_study_covariates_all_parties, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "All parties involved in patent applications")
 
-# Save the chart
-
-png("figures/event_study_covariates.png", 
-    width = 25, 
-    height = 15, 
-    units = "cm",
-    res = 800)
-
-iplot(event_study_covariates, 
-        main = "Event Study Plot",
-        xlab = "Periods",
-        ylab = "Interaction term coefficients with 95% C.I.",
-        sub = "All parties involved in patent applications")
-
-dev.off()
-
-# With inventors only
+## With inventors only -----------------------------------------------------------
 
 event_study_covariates_inventors <-
     feols(update(explanatory_vars, ln_inventors ~ i(periods, treatment_dummy, ref = -1) + .), 
@@ -174,23 +85,7 @@ iplot(event_study_covariates_inventors,
       ylab = "Interaction term coefficients with 95% C.I.",
       sub = "Inventors involved in patent applications")
 
-# Save the chart
-
-png("figures/event_study_covariates_inventors.png", 
-    width = 25, 
-    height = 15, 
-    units = "cm",
-    res = 800)
-
-iplot(event_study_covariates_inventors, 
-      main = "Event Study Plot",
-      xlab = "Periods",
-      ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Inventors involved in patent applications")
-
-dev.off()
-
-# With applicants only
+## With applicants only -----------------------------------------------------------
 
 event_study_covariates_applicants <-
     feols(update(explanatory_vars, ln_applicants ~ i(periods, treatment_dummy, ref = -1) + .), 
@@ -220,14 +115,9 @@ iplot(event_study_covariates_owners,
       main = "Event Study Plot",
       xlab = "Periods",
       ylab = "Interaction term coefficients with 95% C.I.",
-      sub = "Owners involved in patent applications")
-    
+      sub = "Owners involved in patent applications")  
 
-# Using patents as dependent variable -----------------------------------------------------------
-
-# Repeat the event study specifications, but now with patents as the dependent variable.
-
-# Same specification as before, but with patents as dependent variable
+## Patents filed -----------------------------------------------------------
 
 event_study_patents <-
     feols(update(explanatory_vars, ln_patents_filed ~ i(periods, treatment_dummy, ref = -1) + ln_foreign_parties + .), 
@@ -242,18 +132,40 @@ iplot(event_study_patents,
       xlab = "Periods before the AITC was passed",
       ylab = "Interaction term coefficients with 95% C.I.")
 
+# Export the charts ----------------------------------------------------------------
+
+## All parties ----------------------------------------------------------------
+
 # Save the chart
 
-png("figures/event_study_patents.png", 
+png("figures/event_study_covariates_all_parties.png", 
     width = 25, 
     height = 15, 
     units = "cm",
     res = 800)
 
-iplot(event_study_patents, 
-      main = "Event Study Plot - Patents filed as the dependent variable",
-      xlab = "Periods before the AITC was passed",
-      ylab = "Interaction term coefficients with 95% C.I.")
+iplot(event_study_covariates_all_parties, 
+        main = "Event Study Plot",
+        xlab = "Periods",
+        ylab = "Interaction term coefficients with 95% C.I.",
+        sub = "All parties involved in patent applications")
 
 dev.off()
 
+## Inventors ----------------------------------------------------------------
+
+# Save the chart
+
+png("figures/event_study_covariates_inventors.png", 
+    width = 25, 
+    height = 15, 
+    units = "cm",
+    res = 800)
+
+iplot(event_study_covariates_inventors, 
+      main = "Event Study Plot",
+      xlab = "Periods",
+      ylab = "Interaction term coefficients with 95% C.I.",
+      sub = "Inventors involved in patent applications")
+
+dev.off()

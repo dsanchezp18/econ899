@@ -47,9 +47,8 @@ df %>%
 
 # Time series plot of national electric power generation
 
-
-
 df %>%
        filter(month_year %>% between(start_date, end_date)) %>%
        group_by(month_year) %>% 
-       summarise(total_generation = sum(electric_power_generation)) %>%
+       summarise(total_generation = sum(electric_power_generation))
+

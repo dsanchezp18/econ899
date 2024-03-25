@@ -17,9 +17,9 @@ library(patchwork)
 
 # Define relevant dates
 
-start_date <- as.Date("1980-01-01")
+start_date <- as.Date("1976-01-01")
 
-end_date <- as.Date("2021-12-31")
+end_date <- as.Date("2021-12-01")
 
 treatment_starts <- as.Date("2016-08-01")
 
@@ -368,3 +368,24 @@ ggsave("figures/joint_trends_figure.png",
        height = 10, 
        units = "cm",
        dpi = 800)
+
+## Period numbers and years ----------------------------------------------------------------
+
+# What period numbers are the most important years? I can are about 1980, 1990, 2000, 2010, 2016, 2020.
+# Do a line plot which shows the date in the x-axis and in the labels I see the periods
+
+df %>%
+       filter(month_year %>% between(start_date, end_date)) %>%
+       group_by(month_year, periods) %>%
+       summarise(total_generation = sum(patents_filed)) %>% 
+       ggplot(aes(x = month_year, y = total_generation)) +
+       geom_line() +
+       geom_text(data = . %>% filter(periods %in% c(-480, -450, -400, -360, -340, -240, -120, 0, 5, 30, 40, 50)), aes(label = periods), hjust = 0, vjust = 0, nudge_x = 10, nudge_y = 1000) +
+       geom_vline(xintercept = treatment_starts, linetype = "dashed", color = "#56589e") +
+       scale_x_date(date_labels = "%b%Y", date_breaks = "2 years") +
+       labs(title = "Patents",
+            subtitle = "Periods and dates",
+            x = "Date",
+            y = "Number of patents filed",
+            caption = "Note: Data obtained from the Canadian Intellectual Property Office (2023).") +
+       theme(axis.text.x = element_text(angle = 45, hjust = 1))

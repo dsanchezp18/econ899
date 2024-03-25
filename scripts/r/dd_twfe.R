@@ -18,12 +18,9 @@ library(forcats)
 library(tibble)
 library(sandwich)
 
-# Load data and create an employment variable for "industries which are likely to patent"
+# Load data
 
-df <- 
-    readRDS("data/full_dataset.rds") %>% 
-    mutate(emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_other + emp_healthcare,
-           wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_other + wages_paid_healthcare)
+df <- readRDS("data/full_dataset.rds")
 
 # Define parameters for modelsummary 
 
@@ -239,32 +236,4 @@ model_explanatory_twfe_patents_ln_1 <-
 # Present results with modelsummary
 
 modelsummary(list(model_explanatory_twfe_ln_1, model_explanatory_twfe_inventors_ln_1, model_explanatory_twfe_applicants_ln_1, model_explanatory_twfe_owners_ln_1, model_explanatory_twfe_patents_ln_1), stars = stars)
-
-# Bootstrap standard errors for main models -----------------------------------------------------------
-
-# Use the sandwich package to bootstrap standard errors for the main models
-
-B <- 1000
-
-# All parties with booststrap
-
-# Bootstrap
-
-model_explanatory_twfe_boot <- 
-    vcovBS(model_explanatory_ls, cluster = ~province_code + month_year, R = B)
-
-model_explanatory_twfe <-
-    feols(update(explanatory_vars, ln_parties ~ treated + .), 
-          data = df_twfe,
-          fixef =  c("province_code", "month_year"),
-          vcov = model_explanatory_twfe_boot)
-
-summary(model_explanatory_twfe)
-
-# Present results with modelsummary
-
-modelsummary(list(model_explanatory_twfe_ln_1, model_explanatory_twfe_inventors_ln_1, model_explanatory_twfe_applicants_ln_1, model_explanatory_twfe_owners_ln_1, model_explanatory_twfe_patents_ln_1), stars = stars)
-
-
-
 
