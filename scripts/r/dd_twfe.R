@@ -18,7 +18,6 @@ library(modelsummary)
 library(forcats)
 library(tibble)
 library(sandwich)
-library(corrplot)
 
 # Load data
 
@@ -30,6 +29,12 @@ source("scripts/r/modelsummary/stars.R")
 source("scripts/r/modelsummary/coef_mappings.R")
 
 # Exploratory data analysis -----------------------------------------------------------
+
+## Descriptive statistics -----------------------------------------------------------
+
+# Calculate descriptive stats with datasummary
+
+# datasummary_skim(df, output = "output/descriptive_stats.csv", histogram = F)
 
 ## Correlations -----------------------------------------------------------
 
@@ -43,7 +48,9 @@ df_cor <-
 
 # Export to csv
 
-datasummary_correlation(df_cor, output = "data/correlation_matrix.csv")
+datasummary_correlation(df_cor, output = "output/correlation_matrix.csv")
+
+# Baseline models (no controls) -----------------------------------------------------------
 
 ## Two-way fixed effects (TWFE) -----------------------------------------------------------
 
@@ -105,7 +112,7 @@ summary(baseline_twfe_patents)
 
 # List of models
 
-baseline_did_models <- list(baseline_twfe, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners)
+baseline_did_models <- list(baseline_twfe, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners, baseline_twfe_patents)
 
 modelsummary(baseline_did_models, stars = stars)
 
