@@ -48,7 +48,7 @@ df_event_study <-
 
 # Define a formula object with the summation of all explanatory variables to be included in the models
 
-explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(average_actual_hours) + log(total_median_wage) + cpi + log(business_insolvencies) + log(travellers) + new_housing_price_index + log(electric_power_generation + 1) + 
+explanatory_vars <- "~ log(total_pop) + log(total_emp) + log(average_actual_hours) + log(total_median_wage) + cpi + log(business_insolvencies) + log(travellers) + log(vehicles) + new_housing_price_index + log(electric_power_generation + 1) + 
 log(wages_paid_patenting_ind) + log(emp_patenting_ind) + log(exports_all_countries) + log(imports_all_countries) + log(manufacturing_sales) + log(wholesale_sales) + log(retail_sales)" %>% 
                     as.formula()
 
