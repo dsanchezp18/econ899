@@ -24,6 +24,7 @@ data/patents/processed/patents_owners.rds
 data/patents/processed/patents_applicants.rds
 data/patents/processed/patent_province_mapping.rds
 data/explanatory_vars_province_month_panel.csv
+data/patents/raw/zip
 
 # All raw data from statcan
 
