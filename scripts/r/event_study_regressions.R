@@ -32,18 +32,6 @@ treatment_group <- "AB"
 start_date <- ymd("1990-01-01")
 end_date <- ymd("2022-12-31")
 
-# Define a dictionary with the periods
-
-months <- seq.Date(from = min(df$month_year), to = max(df$month_year) , by = "month")
-
-# Get the index of the months vector based on the periods variable
-
-periods <- seq(from = min(df$periods), to = max(df$periods), by = 1)
-
-# Create the dictionary with the periods
-
-names(months) <- periods
-
 # Data preparation -----------------------------------------------------------
 
 # Create a dataframe which has the treatment dummy, equal to 1 whenever the treatment group is Alberta, and the period dummies.
@@ -82,17 +70,33 @@ summary(event_study_covariates_all_parties)
 #       ylab = "Interaction term coefficients with 95% C.I.",
 #       sub = "All parties involved in patent applications")
 
+# Define a date sequence for the plot
+
+periods_vector <- seq(-236, 70, by = 12)
+
+# Find the months in df which correspond to the periods
+
+months_in_df <- 
+      df_event_study %>% 
+      select(month_year, periods) %>% 
+      filter(periods %in% periods_vector) %>%
+      distinct(month_year) %>% 
+      pull(month_year) %>%
+      format("%b-%Y")
+
 event_study_plot_all_parties <-
       ggiplot(event_study_covariates_all_parties, 
               geom_style= "errorbar",
               ci.width = 1.2,
-              col = "#0D3692") + 
-      scale_x_continuous(limits = c(-237,80)) +
+              col = "#0D3692",
+              pt.pch = 0) + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
       theme_bw() + 
       labs(title = "Event Study Plot",
       x = "Periods",
       y = "Interaction term coefficients with 95% C.I.",
-      subtitle = "All parties involved in patent applications")
+      subtitle = "All parties involved in patent applications") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 event_study_plot_all_parties
 
@@ -223,6 +227,33 @@ event_study_plot_patents <-
 
 event_study_plot_patents
 
+# Faceted chart with all of the event studies --------------------------------
+
+# List of the event study regressions -----------------------------------------------------------
+
+event_studies <- list(event_study_covariates_all_parties, 
+                      event_study_covariates_inventors, 
+                      event_study_covariates_applicants, 
+                      event_study_covariates_owners, 
+                      event_study_patents)
+
+event_study_all <-
+      ggiplot(event_studies, 
+              geom_style= "errorbar",
+              multi_style = "facet",
+              ci.width = 0,
+              pt.pch = 0,
+              facet_args = list(ncol = 1, scales = "free_y")) +
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+           x = "Periods",
+           y = "Interaction term coefficients with 95% C.I.") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1),
+            legend.position = "none")
+
+event_study_all
+
 # Export the charts ----------------------------------------------------------------
 
 ## All parties ----------------------------------------------------------------
@@ -244,3 +275,7 @@ ggsave("figures/event-studies/event_study_plot_owners.png", event_study_plot_own
 ## Patents filed ----------------------------------------------------------------
 
 ggsave("figures/event-studies/event_study_plot_patents.png", event_study_plot_patents, width = 20, height = 6, units = "in", dpi = 800)
+
+## Faceted chart ----------------------------------------------------------------
+
+ggsave("figures/event-studies/event_study_faceted_plot.png", event_study_all, width = 20, height = 20, units = "in", dpi = 800)
