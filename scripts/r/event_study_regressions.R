@@ -13,7 +13,10 @@ library(fixest)
 library(lubridate)
 library(modelsummary)
 library(forcats)
+library(tidyr)
 library(gridExtra)
+library(stringr)
+library(janitor)
 library(ggplot2)
 library(patchwork)
 library(ggfixest)
@@ -29,8 +32,19 @@ treatment_group <- "AB"
 
 # Define "relevant" periods, a shorter period where I don't see that much stuff happening before the treatment date
 
-start_date <- ymd("2006-01-01")
+start_date <- ymd("2011-12-01")
+
 end_date <- ymd("2021-12-01")
+
+# Calculate the time frame in years between the start and end date
+
+time_frame <- interval(start_date, end_date) %/% years(1)
+
+# Find the periods which correspond to these dates by substracting the treatment date from start date and end_date
+
+period_start_date <- interval(treatment_start_date, start_date) %/% months(1)
+
+period_end_date <- interval(treatment_start_date, end_date) %/% months(1)
 
 # Data preparation -----------------------------------------------------------
 
@@ -70,9 +84,26 @@ summary(event_study_covariates_all_parties)
 #       ylab = "Interaction term coefficients with 95% C.I.",
 #       sub = "All parties involved in patent applications")
 
-# Define a date sequence for the plot
+# Define a date sequence for the plot (will be the x axis)
 
-periods_vector <- seq(-236, 70, by = 12)
+# Pull the date for which I have data for all the variables in my model
+
+model_starts <-
+df_event_study %>% 
+      select(month_year, total_pop, total_emp, average_actual_hours, total_median_wage, cpi, business_insolvencies, travellers, vehicles, 
+             new_housing_price_index, electric_power_generation, wages_paid_patenting_ind, emp_patenting_ind, exports_all_countries, 
+             imports_all_countries, manufacturing_sales, wholesale_sales, retail_sales) %>%
+      drop_na() %>% 
+      pull(month_year) %>% 
+      min()
+
+# Get the number of periods which this date corresponds to by substracting from the treatment date
+
+periods_model_starts <- interval(treatment_start_date, model_starts) %/% months(1)
+
+# Define the period sequence for the plot by adding six months to both the model start and end date
+
+periods_vector <- seq(periods_model_starts + 6, period_end_date +6, by = 12)
 
 # Find the months in df which correspond to the periods
 
@@ -208,6 +239,31 @@ event_study_patents <-
 
 summary(event_study_patents)
 
+# Extract p values and coefficients
+# Also only keep coefficients with :treatment_dummy in it
+
+sequence_without_zero <- 
+      seq(periods_model_starts, period_end_date, by = 1)
+
+sequence_without_zero <- sequence_without_zero[sequence_without_zero != 0]
+
+event_study_patents_summary <-
+      coeftable(event_study_patents) %>%
+      as.data.frame() %>%
+      clean_names() %>% 
+      mutate(term = rownames(.)) %>% 
+      relocate(term) %>% 
+      filter(str_detect(term, ":treatment_dummy")) %>% 
+      mutate(period = sequence_without_zero) 
+
+rownames(event_study_patents_summary) <- NULL
+
+# Extract pvalues with periods less than zero and count how many pvalues are less than 0.05
+
+event_study_patents_summary %>% 
+      filter(period < 0) %>%
+      count(pr_t < 0.05) 
+
 # iplot(event_study_patents, 
 #       main = "Event Study Plot - Patents filed as the dependent variable",
 #       xlab = "Periods before the AITC was passed",
@@ -309,6 +365,33 @@ event_study_patents_relevant <-
           fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
 
+summary(event_study_patents_relevant)
+
+# Event study plot of patents filed with relevant periods
+
+periods_vector <- seq(period_start_date, period_end_date, by = 6)
+
+periods_length <- length(periods_vector)
+
+months_sequence <- seq(start_date, end_date , by = "6 months")
+
+months_length <- length(months_sequence)
+
+event_study_plot_patents_relevant <-
+      ggiplot(event_study_patents_relevant, 
+              geom_style= "errorbar",
+              ci.width = 1.2,
+              col = "#0D3692") + 
+      scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_sequence) +
+      theme_bw() + 
+      labs(title = "Event Study Plot",
+      x = "Periods",
+      y = "Interaction term coefficients with 95% C.I.",
+      subtitle = "Patents filed as the dependent variable") +
+      theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/event-studies/event_study_plot_patents_relevant.png", event_study_plot_patents_relevant, width = 20, height = 6, units = "in", dpi = 800)
+
 ## Event study charts for relevant periods -----------------------------------------------------------
 
 # List of the event study regressions -----------------------------------------------------------
@@ -321,9 +404,15 @@ event_studies_relevant <- list(event_study_covariates_all_parties_relevant,
 
 # Do it faceted
 
+# Redefine start date if needed
+
+start_date <- ymd("2011-08-01")
+
+period_start_date <- interval(treatment_start_date, start_date) %/% months(1)
+
 # Define a date sequence for the plot
 
-periods_vector <- seq(-126, 66, by = 12)
+periods_vector <- seq(period_start_date, period_end_date + 2, by = 12)
 
 # Find the months in df which correspond to the periods
 
@@ -333,7 +422,6 @@ months_in_df <-
       filter(periods %in% periods_vector) %>%
       distinct(month_year) %>% 
       pull(month_year) %>%
-      c(as.Date("2021-08-01")) %>% 
       format("%b-%Y")
 
 event_study_relevant <-
@@ -351,6 +439,8 @@ event_study_relevant <-
       theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
 
+ggsave("figures/event-studies/event_study_relevant.png", event_study_relevant, width = 20, height = 20, units = "in", dpi = 800)
+
 # Section codes ----------------------------------------------------------------
 
 # Reimplement event studies with the patents per section code
@@ -365,7 +455,7 @@ event_study_A <-
 
 summary(event_study_A)
 
-periods_vector <- seq(-236, 70, by = 12)
+periods_vector <- seq(periods_model_starts+1, period_end_date, by = 12)
 
 # Find the months in df which correspond to the periods
 
@@ -634,11 +724,10 @@ event_studies_section_codes <- list(event_study_A,
 
 event_study_all_sections <-
       ggiplot(event_studies_section_codes, 
-              geom_style= "errorbar",
+              geom_style= "ribbon",
               multi_style = "facet",
               ci.width = 0,
               pt.pch = 1,
-              col = rep("#0D3692",9),
               facet_args = list(ncol = 2, scales = "free_y")) +
       scale_x_continuous(limits = c(min(periods_vector),max(periods_vector)), breaks = periods_vector, labels = months_in_df) +
       theme_bw() + 
