@@ -12,11 +12,9 @@
 
 -  Otherwise, we can include an interaction of provinces and periods which had some sort of policy change. 
 
-
 ## To dos
 
 -  ln +1 
-
 
 - no controls
 - defendable controls
