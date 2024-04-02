@@ -273,6 +273,20 @@ ln1_parties_df <-
               ln1_owners = owners,
               ln1_applicants = applicants)
 
+# Log of all explanatory variables
+
+ln_explanatory_df <- 
+       explanatory_province_month_panel_df %>%
+       mutate(across(!c(month_year, province_code, cpi,), ~log(.))) %>% 
+       select(-cpi)
+
+# Log of all explanatory variables + 1
+
+ln1_explanatory_df <- 
+       explanatory_province_month_panel_df %>%
+       mutate(across(!c(month_year, province_code, cpi), ~log(. + 1))) %>% 
+       select(-cpi)
+
 # Final dataset
 
 df <- 
@@ -283,6 +297,8 @@ df <-
        left_join(ln_parties_df, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%
        left_join(ln1_parties_df, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>% 
        left_join(explanatory_province_month_panel_df, by = c("province_code", "month_year")) %>%
+       left_join(ln_explanatory_df, by = c("province_code", "month_year")) %>%
+       left_join(ln1_explanatory_df, by = c("province_code", "month_year")) %>%
        mutate(province_code = as_factor(province_code),
               periods = interval(treatment_start_date, month_year)/months(1),
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
@@ -304,10 +320,6 @@ df %>%
        select(starts_with("ln_patents_")) %>% 
        mutate_all(~is.na(.)) %>% 
        summarise_all(sum)
-
-# Count number of values (either NA or non NA) for each variable
-
-df %>% nrow()
 
 # Export the data --------------------------------------------------------------------------------------
 
