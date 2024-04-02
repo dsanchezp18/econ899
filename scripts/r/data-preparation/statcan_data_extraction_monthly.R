@@ -59,6 +59,14 @@ lfs_job_tenure_type_work_monthly <-
     statcan_download_data("14-10-0050-01", "eng")  %>% 
     clean_names()
 
+# Survey of Employment, Payrolls and Hours (SEPH) -----------------------------------------------------------
+
+# Employment and average weekly earnings (including overtime) for all employees by province and territory, monthly, seasonally adjusted
+
+seph_employment_avg_weekly_earnings_prov_monthly <- 
+    statcan_download_data("14-10-0223-01", "eng")  %>% 
+    clean_names()
+
 # Employment Insurance (EI) claims -----------------------------------------------------------
 
 # EI Claims by province, monthly, seasonally adjusted
@@ -176,6 +184,8 @@ write_csv(lfs_usual_hours_worked_prov_monthly, "data/statcan/raw/lfs_usual_hours
 write_csv(lfs_actual_hours_worked_prov_monthly, "data/statcan/raw/lfs_actual_hours_worked_prov_monthly.csv")
 
 write_csv(lfs_job_tenure_type_work_monthly, "data/statcan/raw/lfs_job_tenure_type_work_monthly.csv")
+
+write_csv(seph_employment_avg_weekly_earnings_prov_monthly, "data/statcan/raw/seph_employment_avg_weekly_earnings_prov_monthly.csv")
 
 write_csv(ei_claims_prov_monthly_table, "data/statcan/raw/ei_claims_prov_monthly_table.csv")
 

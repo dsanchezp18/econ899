@@ -469,6 +469,40 @@ lfs_avg_job_tenure_prov_monthly <-
     relocate(province_code, .after = geo) %>%
     arrange(month_year, geo)
 
+## Survey of Employment, Payrolls and Hours (SEPH) -----------------------------------------------------------
+
+### Employment by province and territory, monthly, seasonally adjusted -----------------------------------------------------------
+
+seph_employment_prov_monthly <- 
+       seph_employment_avg_weekly_earnings_prov_monthly %>% 
+       filter(geo != "Canada",
+              estimate == "Employment for all employees",
+              north_american_industry_classification_system_naics == "Industrial aggregate excluding unclassified businesses [11-91N]") %>% 
+       select(month_year = ref_date,
+              geo,
+              scale = scalar_factor,
+              employment_seph = value) %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+### Average weekly earnings by province and territory, monthly, seasonally adjusted -----------------------------------------------------------
+
+seph_avg_weekly_earnings_prov_monthly <- 
+       seph_employment_avg_weekly_earnings_prov_monthly %>% 
+       filter(geo != "Canada",
+              estimate == "Average weekly earnings including overtime for all employee",
+              north_american_industry_classification_system_naics == "Industrial aggregate excluding unclassified businesses [11-91N]") %>% 
+       select(month_year = ref_date,
+              geo,
+              scale = scalar_factor,
+              avg_weekly_earnings = value) %>%
+       left_join(provinces %>% select(province, province_code), by = c("geo" = "province")) %>%
+       relocate(province_code, .after = geo) %>%
+       arrange(month_year, geo)
+
+### Average weekly earnings by province and territory, monthly, seasonally adjusted -----------------------------------------------------------
+
 ## Employment Insurance (EI) -----------------------------------------------------------
 
 ### Claims by province, monthly, seasonally adjusted -----------------------------------------------------------
