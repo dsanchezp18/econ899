@@ -17,13 +17,12 @@ library(lubridate, warn.conflicts = F)
 library(tidyr, warn.conflicts = F)
 library(janitor, warn.conflicts = F)
 
-# Define the valid end date for the IP Horizons data (December 2021)
-
-valid_date <- ymd("2021-12-31")
-
 # Define a treatment date (month-year the AITC was passed)
 
 treatment_start_date <- ymd("2016-08-01")
+
+# Define a treatment period (Alberta)
+
 treatment_group <- "AB"
 
 # Load the data -----------------------------------------------------------
@@ -91,7 +90,7 @@ patents_per_province_month_grant <-
 
 # Create a panel of provinces and months for the main patent data with expand_grid
 
-months <- seq.Date(from = min(patents_main$filing_month_year, na.rm = T), to = valid_date, by = "month")
+months <- seq.Date(from = min(patents_main$filing_month_year, na.rm = T), to = max(patents_per_province_month_filing$filing_month_year, na.rm = T), by = "month")
 
 provinces <- province_codes$province_code
 
@@ -292,7 +291,8 @@ ln1_explanatory_df <-
 # Final dataset
 
 df <- 
-       patents_per_province %>% 
+       patents_per_province %>%
+       filter(!(province_code %in% c("YT", "NT", "NU"))) %>% 
        left_join(ln_patents_df, by = c("province_code", "month_year")) %>%
        left_join(ln1_patents_df, by = c("province_code", "month_year")) %>%
        left_join(parties_df, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%

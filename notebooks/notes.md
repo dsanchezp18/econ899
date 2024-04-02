@@ -29,3 +29,6 @@
 
 - quarter level study. 
 
+## Notes about missing data
+
+- No data for territories 
