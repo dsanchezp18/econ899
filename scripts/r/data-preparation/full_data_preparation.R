@@ -277,15 +277,17 @@ ln1_parties_df <-
 
 ln_explanatory_df <- 
        explanatory_province_month_panel_df %>%
-       mutate(across(!c(month_year, province_code, cpi,), ~log(.))) %>% 
-       select(-cpi)
+       mutate(across(!c(month_year, province_code, cpi, exp_index_econ_activity), ~log(.))) %>% 
+       select(-cpi,exp_index_econ_activity) %>% 
+       rename_if(is.numeric, ~paste0("ln_",.))
 
 # Log of all explanatory variables + 1
 
 ln1_explanatory_df <- 
        explanatory_province_month_panel_df %>%
        mutate(across(!c(month_year, province_code, cpi), ~log(. + 1))) %>% 
-       select(-cpi)
+       select(-cpi, exp_index_econ_activity) %>%
+       rename_if(is.numeric, ~paste0("ln1",.))
 
 # Final dataset
 
