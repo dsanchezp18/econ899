@@ -56,7 +56,8 @@ years_between_dates_end <- interval(treatment_start_date, end_date)/years(1)
 
 df <- 
     df_full %>%
-    filter(month_year %>% between(start_date, end_date))
+    filter(month_year %>% between(start_date, end_date), 
+           !(province_code %in% c("MB", "PE")))
 
 # Create the DID dummy in a modified dataframe
 # Using the interaction operator i from the fixest package
@@ -82,13 +83,38 @@ summary(baseline_twfe)
 
 ## Defendable controls -----------------------------------------------------------
 
-controls1 <- "+ ln_total_pop + ln_total_emp + ln_total_emp + ln_total_median_wage + exp_index_econ_activity + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales"
+def_controls <- "+ ln_total_pop + ln_total_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + exp_index_econ_activity"
 
-controls1_twfe <-
-    feols(fml = paste("ln1patents_filed ~ treated", controls1) %>% as.formula(),
+def_controls_twfe <-
+    feols(fml = paste("ln1patents_filed ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 summary(controls1_twfe)
+
+## Additional controls -----------------------------------------------------------
+
+extra_controls <- "+ ln_average_actual_hours + ln1business_bankruptcies + new_housing_price_index + ln_food_services_receipts + log(wages_paid_patenting_ind) + total_avg_tenure + foreign_parties"
+
+add_controls <- paste(def_controls, extra_controls)
+
+add_controls_twfe <-
+    feols(fml = paste("ln1patents_filed ~ treated", add_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+summary(add_controls_twfe)
+
+## See results with modelsummary -----------------------------------------------------------
+
+# Load modelsummary parameters
+
+source("scripts/r/modelsummary/stars.R")
+
+patent_dd_models <- list(baseline_twfe, def_controls_twfe, add_controls_twfe)
+
+modelsummary(patent_dd_models, stars = stars)
