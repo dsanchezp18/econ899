@@ -14,14 +14,23 @@ library(dplyr)
 library(ggplot2)
 library(scales)
 library(patchwork)
+library(lubridate, warn.conflicts = FALSE)
 
-# Define relevant dates
+# Define valid start and end dates
 
-start_date <- as.Date("1976-01-01")
+start_date <- ymd("2002-09-01")
 
-end_date <- as.Date("2021-12-01")
+end_date <- ymd("2021-09-01")
 
-treatment_starts <- as.Date("2016-08-01")
+# Define treatment start date
+
+treatment_start_date <- ymd("2016-08-01")
+
+# Define valid start and end periods
+
+start_period <- interval(start_date, treatment_start_date)/months(1)
+
+end_period <- interval(treatment_start_date, end_date)/months(1)
 
 # Load the data -----------------------------------------------------------
 
@@ -35,6 +44,152 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 df <- readRDS("data/full_dataset.rds")
 
+# Patents -----------------------------------------------------------
+
+## Patents filed per month ---------------------------------------------------------------------
+
+# Grouping data of patents filed per month
+
+patents_filed_per_month <-
+  patents_main %>%
+  group_by(filing_month_year) %>%
+  summarise(n = n())  %>% 
+  ungroup()  %>%
+  arrange(desc(filing_month_year))
+
+# Figure without date restriction
+
+patents_filed_per_month_fig <-
+  patents_filed_per_month %>% 
+  ggplot(aes(x = filing_month_year, y = n)) +
+  geom_line() +
+  labs(x = "Filing date period",
+       y = "Number of patents filed") +
+  scale_x_date(date_breaks = "10 years",
+               date_labels = "%Y") +
+  scale_y_continuous(labels = comma, 
+                     limits = c(0, 5000)) +
+  theme_minimal() +
+  labs(title = "Number of patents filed per month",
+       subtitle = "All available periods",
+       caption = "Note: Data obtained from the Canadian Intellectual Property Office (2023).") +
+  theme(text = element_text(size = 10, family = 'serif'),
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        axis.line.x = element_line(colour = "black"),
+        plot.background = element_rect(fill = "white"),
+        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+        plot.caption = element_text(hjust = 0),
+        panel.grid.major = element_line(linetype = "dashed"),
+        panel.grid.minor = element_line(linetype = "dashed"))
+
+patents_filed_per_month_fig
+
+ggsave(filename = "figures/patents_filed_per_month_fig.png", 
+       plot = patents_filed_per_month_fig,
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
+# Cumulative number of patents filed
+
+patents_filed_per_month_cumulative <-
+  patents_filed_per_month %>%
+  arrange(filing_month_year) %>%
+  mutate(cumulative = cumsum(n))
+
+# Figure without date restriction with cumsum 
+
+patents_filed_per_month_cumulative_fig <-
+  patents_filed_per_month_cumulative %>% 
+  ggplot(aes(x = filing_month_year, y = cumulative)) +
+  geom_line() +
+  labs(x = "Filing date period",
+       y = "Cumulative number of patents filed") +
+  scale_x_date(date_breaks = "10 years",
+               date_labels = "%Y") +
+  scale_y_continuous(labels = comma) +
+  theme_minimal() +
+  labs(title = "Cumulative number of patents filed per month",
+       subtitle = "All available periods",
+       caption = "Note: Data obtained from the Canadian Intellectual Property Office (2023).") +
+  theme(text = element_text(size = 10, family = 'serif'),
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        axis.line.x = element_line(colour = "black"),
+        plot.background = element_rect(fill = "white"),
+        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+        plot.caption = element_text(hjust = 0),
+        panel.grid.major = element_line(linetype = "dashed"),
+        panel.grid.minor = element_line(linetype = "dashed"))
+
+patents_filed_per_month_cumulative_fig
+
+ggsave(filename = "figures/patents_filed_per_month_cumulative_fig.png", 
+       plot = patents_filed_per_month_cumulative_fig,
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
+# Figure in the date range which is relevant
+
+patents_filed_per_month_fig_relevant <-
+  patents_filed_per_month %>%
+  filter(filing_month_year %>% between(start_date, end_date)) %>%
+    ggplot(aes(x = filing_month_year, y = n)) +
+  geom_line() +
+  labs(x = "Filing date period",
+       y = "Number of patents filed") +
+  scale_x_date(date_breaks = "2 years",
+               date_labels = "%Y") +
+  scale_y_continuous(labels = comma, 
+                     limits = c(0, 5000)) +
+  theme_minimal() +
+  theme(text = element_text(size = 10, family = 'serif'),
+        axis.text.x = element_text(angle = 90, hjust = 1),
+        axis.line.x = element_line(colour = "black"),
+        plot.background = element_rect(fill = "white"),
+        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+        plot.caption = element_text(hjust = 0),
+        panel.grid.major = element_line(linetype = "dashed"),
+        panel.grid.minor = element_line(linetype = "dashed"))
+
+patents_filed_per_month_fig_relevant
+
+ggsave(filename = "figures/patents_filed_per_month_fig_relevant.png", 
+       plot = patents_filed_per_month_fig_relevant,
+       width = 17, 
+       height = 10, 
+       units = "cm",
+       dpi = 800)
+
+# Cumulative number of patents filed in the relevant date range
+
+patents_filed_per_month_cumulative_relevant <-
+  patents_filed_per_month_cumulative %>%
+  filter(filing_month_year %>% between(start_date, end_date))
+
+patents_filed_per_month_cumulative_fig_relevant <-
+       patents_filed_per_month_cumulative_relevant %>% 
+       ggplot(aes(x = filing_month_year, y = cumulative)) +
+       geom_line() +
+       labs(x = "Filing date period",
+        y = "Cumulative number of patents filed") +
+       scale_x_date(date_breaks = "2 years",
+                      date_labels = "%Y") +
+       scale_y_continuous(labels = comma) +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+              axis.text.x = element_text(angle = 90, hjust = 1),
+              axis.line.x = element_line(colour = "black"),
+              plot.background = element_rect(fill = "white"),
+              panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+              plot.caption = element_text(hjust = 0),
+              panel.grid.major = element_line(linetype = "dashed"),
+              panel.grid.minor = element_line(linetype = "dashed"))
+
+patents_filed_per_month_cumulative_fig_relevant
+
 # Interested parties -----------------------------------------------------------
 
 ## Interested parties per province and month ---------------------------------------------------------------------
@@ -44,7 +199,7 @@ df <- readRDS("data/full_dataset.rds")
 interested_parties_province_month_fig_all_dates <-
        interested_parties_province_month %>% 
        filter(province_code_clean %in% c("AB", "QC", "ON", "BC")) %>% 
-       ggplot(aes(x = filing_month_year, y = n_interested_parties, group = province_code_clean, color = province_code_clean)) +
+       ggplot(aes(x = filing_month_year, y = interested_parties, group = province_code_clean, color = province_code_clean)) +
        geom_line() +
        labs(title = "Number of interested parties per province and month",
             subtitle = "Largest Canadian provinces",
@@ -65,7 +220,7 @@ interested_parties_province_month_fig_all_dates <-
              plot.caption = element_text(hjust = 0),
              panel.grid.major = element_line(linetype = "dashed"),
              panel.grid.minor = element_line(linetype = "dashed"),
-             legend.pos = "bottom")
+             legend.position = "bottom")
 
 interested_parties_province_month_fig_all_dates
 
@@ -76,13 +231,13 @@ ggsave("figures/interested_parties_province_month_largest_provinces_all_dates.pn
        units = "cm",
        dpi = 800)
 
-# Plot the number of interested parties per province and month. Consider only patents between 1980 and 2021 and largest Canadian provinces
+# For the relevant date range
 
-interested_parties_province_month_fig <-
+interested_parties_province_month_fig_relevant_dates <-
        interested_parties_province_month %>% 
-       filter(filing_month_year  %>% between(start_date, end_date),
+       filter(filing_month_year %>% between(start_date, end_date),
               province_code_clean %in% c("AB", "QC", "ON", "BC")) %>% 
-       ggplot(aes(x = filing_month_year, y = n_interested_parties, group = province_code_clean, color = province_code_clean)) +
+       ggplot(aes(x = filing_month_year, y = interested_parties, group = province_code_clean, color = province_code_clean)) +
        geom_line() +
        labs(title = "Number of interested parties per province and month",
             subtitle = "Largest Canadian provinces",
@@ -92,22 +247,23 @@ interested_parties_province_month_fig <-
             caption = "Note: Data obtained from Innovation, Science and Economic Development Canada.") +
        scale_x_date(date_breaks = "2 year", 
                     date_labels = "%Y") +
-       scale_y_continuous(labels = comma) +
+       scale_y_continuous(labels = comma,
+                          limits = c(0, 2500)) +
        theme_minimal() +
        theme(text = element_text(size = 10, family = 'serif'),
-              axis.text.x = element_text(angle = 90, hjust = 1),
-              axis.line.x = element_line(colour = "black"),
-              plot.background = element_rect(fill = "white"),
-              panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
-              plot.caption = element_text(hjust = 0),
-              panel.grid.major = element_line(linetype = "dashed"),
-              panel.grid.minor = element_line(linetype = "dashed"),
-              legend.pos = "bottom")
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.position = "bottom")
 
-interested_parties_province_month_fig
+interested_parties_province_month_fig_relevant_dates
 
-ggsave("figures/interested_parties_province_month_largest_provinces.png", 
-       plot = interested_parties_province_month_fig, 
+ggsave("figures/interested_parties_province_month_largest_provinces_relevant_dates.png", 
+       plot = interested_parties_province_month_fig_relevant_dates, 
        width = 17, 
        height = 10, 
        units = "cm",
@@ -119,7 +275,7 @@ interested_parties_province_month_log_fig <-
        interested_parties_province_month %>% 
        filter(filing_month_year  %>% between(start_date, end_date),
               province_code_clean %in% c("AB", "QC", "ON", "BC")) %>%
-       mutate(ln_interested_parties = log(n_interested_parties)) %>%
+       mutate(ln_interested_parties = log(interested_parties)) %>%
        ggplot(aes(x = filing_month_year, y = ln_interested_parties, group = province_code_clean, color = province_code_clean)) +
        geom_line() +
        labs(title = "Log of the number of interested parties per province and month",
@@ -140,7 +296,7 @@ interested_parties_province_month_log_fig <-
               plot.caption = element_text(hjust = 0),
               panel.grid.major = element_line(linetype = "dashed"),
               panel.grid.minor = element_line(linetype = "dashed"),
-              legend.pos = "bottom")
+              legend.position = "bottom")
 
 interested_parties_province_month_log_fig
 
@@ -150,6 +306,40 @@ ggsave("figures/interested_parties_province_month_largest_provinces_log.png",
        height = 10, 
        units = "cm",
        dpi = 800)
+
+## Interested parties, common trends ---------------------------------------------------------------------
+
+# Plot the number of interested parties in filed patents by treatment and control groups (AB vs sum of all others)
+
+interested_parties_treatment_control_fig <-
+       interested_parties_province_month %>% 
+       filter(filing_month_year %>% between(start_date, end_date)) %>%
+       mutate(treatment = ifelse(province_code_clean == "AB", "Treatment", "Control")) %>%
+       group_by(filing_month_year, treatment) %>%
+       summarise(patent_parties = sum(interested_parties, na.rm = T)) %>%
+       ungroup() %>% 
+       ggplot(aes(x = filing_month_year, y = log(patent_parties), group = treatment, color = treatment)) +
+       geom_line() +
+       scale_y_continuous(labels = comma) +
+       scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
+       labs(title = "Time series of the number of interested parties in filed patents",
+            subtitle = "Natural log of the number of interested parties in filed patents",
+            color = "Group",
+            x = "Periods before AITC was passed",
+            y = "Ln(Total Interested Parties)") +
+       theme_minimal() +
+       theme(text = element_text(size = 10, family = 'serif'),
+             axis.text.x = element_text(angle = 90, hjust = 1),
+             axis.line.x = element_line(colour = "black"),
+             plot.background = element_rect(fill = "white", color = "white"),
+             panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
+             plot.caption = element_text(hjust = 0),
+             panel.grid.major = element_line(linetype = "dashed"),
+             panel.grid.minor = element_line(linetype = "dashed"),
+             legend.position.inside = c(0.92, 0.15))
+
+interested_parties_treatment_control_fig
+
 
 ## Interested parties AB vs average non-AB ------------------------------------------------------------------------
 
@@ -225,49 +415,6 @@ interested_parties_province_month_ab_log_fig
 
 ggsave("figures/interested_parties_province_month_ab_non_ab_log.png", 
        plot = interested_parties_province_month_ab_log_fig, 
-       width = 17, 
-       height = 10, 
-       units = "cm",
-       dpi = 800)
-
-# Main data (patents at the national level) -----------------------------------------------------------
-
-# Chart the distribution of the number of patents by month-year of filing date
-
-patents_filed_per_month <-
-  patents_main %>%
-  group_by(filing_month_year) %>%
-  summarise(n = n())  %>% 
-  ungroup()  %>%
-  arrange(desc(filing_month_year))
-
-patents_filed_per_month_fig <-
-  patents_filed_per_month %>% 
-  ggplot(aes(x = filing_month_year, y = n)) +
-  geom_line() +
-  labs(title = "Number of patents filed in Canada by filing date",
-       subtitle = "Grouped at the monthly level",
-       x = "Filing date period",
-       y = "Number of patents filed",
-       caption = "Note: Data obtained from Innovation, Science and Economic Development Canada (ISED).") +
-  scale_x_date(date_breaks = "20 years",
-               date_labels = "%Y") +
-  scale_y_continuous(labels = comma, 
-                     limits = c(0, 5000)) +
-  theme_minimal() +
-  theme(text = element_text(size = 10, family = 'serif'),
-        axis.text.x = element_text(angle = 90, hjust = 1),
-        axis.line.x = element_line(colour = "black"),
-        plot.background = element_rect(fill = "white"),
-        panel.border = element_rect(colour = "black", fill = NA, linewidth = 1, linetype = "solid"),
-        plot.caption = element_text(hjust = 0),
-        panel.grid.major = element_line(linetype = "dashed"),
-        panel.grid.minor = element_line(linetype = "dashed"))
-
-patents_filed_per_month_fig
-
-ggsave(filename = "figures/patents_filed_per_month_fig.png", 
-       plot = patents_filed_per_month_fig,
        width = 17, 
        height = 10, 
        units = "cm",
