@@ -305,8 +305,7 @@ df <-
               periods = interval(treatment_start_date, month_year)/months(1),
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
               post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
-              emp_patenting_ind = emp_manufacturing + emp_wholesale_and_retail + emp_media + emp_professional + emp_healthcare,
-              wages_paid_patenting_ind = wages_paid_manufacturing + wages_paid_wholesale_and_retail + wages_paid_media + wages_paid_professional + wages_paid_healthcare) %>%
+              ln1foreign_parties = log(foreign_parties+1)) %>%
        arrange(province_code, month_year)
 
 # Check for duplicates

@@ -30,7 +30,7 @@ treatment_start_date <- ymd("2016-08-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2002-08-01")
+start_date <- ymd("2001-08-01")
 
 end_date <- ymd("2021-08-01")
 
@@ -57,7 +57,8 @@ years_between_dates_end <- interval(treatment_start_date, end_date)/years(1)
 df <- 
     df_full %>%
     filter(month_year %>% between(start_date, end_date), 
-           !(province_code %in% c("MB", "PE")))
+           !(province_code %in% c("NL", "PE"))
+           )
 
 # Create the DID dummy in a modified dataframe
 # Using the interaction operator i from the fixest package
@@ -83,7 +84,7 @@ summary(baseline_twfe)
 
 ## Defendable controls -----------------------------------------------------------
 
-def_controls <- "+ ln_total_pop + ln_total_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + exp_index_econ_activity"
+def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + log(foreign_parties+1)"
 
 def_controls_twfe <-
     feols(fml = paste("ln1patents_filed ~ treated", def_controls) %>% as.formula(),
@@ -92,11 +93,11 @@ def_controls_twfe <-
           cluster = ~ province_code + month_year
     )
 
-summary(controls1_twfe)
+summary(def_controls_twfe)
 
-## Additional controls -----------------------------------------------------------
+## Additional controls -------------------------------------------------------------------
 
-extra_controls <- "+ ln_average_actual_hours + ln1business_bankruptcies + new_housing_price_index + ln_food_services_receipts + log(wages_paid_patenting_ind) + total_avg_tenure + foreign_parties"
+extra_controls <- "+ ln1business_insolvencies + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
 
 add_controls <- paste(def_controls, extra_controls)
 
