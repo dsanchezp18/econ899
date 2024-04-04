@@ -27,4 +27,10 @@ quarterly_demographic_estimates <-
     statcan_download_data("17-10-0009-01", "eng") %>% 
     clean_names()
 
-## Labour Force Survey (LFS) -----------------------------------------------------------
+## Survey of Employment, Payrolls and Hours -----------------------------------------------------------
+
+### Employment for all employees by enterprise size, quarterly, unadjusted for seasonality
+
+employment_by_enterprise_size <- 
+    statcan_download_data("14-10-0214-01", "eng") %>% 
+    clean_names()
