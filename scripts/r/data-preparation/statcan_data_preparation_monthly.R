@@ -491,7 +491,7 @@ seph_employment_prov_monthly <-
 seph_avg_weekly_earnings_prov_monthly <- 
        seph_employment_avg_weekly_earnings_prov_monthly %>% 
        filter(geo != "Canada",
-              estimate == "Average weekly earnings including overtime for all employee",
+              estimate == "Average weekly earnings including overtime for all employees",
               north_american_industry_classification_system_naics == "Industrial aggregate excluding unclassified businesses [11-91N]") %>% 
        select(month_year = ref_date,
               geo,
@@ -892,6 +892,8 @@ explanatory_vars_province_month_panel <-
        left_join(lfs_usual_avg_hours_worked_prov %>% select(month_year, province_code, average_usual_hours, average_usual_hours_males, average_usual_hours_females), by = c("month_year", "province_code")) %>%
        left_join(lfs_actual_total_hours_worked_prov %>% select(month_year, province_code, total_actual_hours), by = c("month_year", "province_code")) %>%
        left_join(lfs_actual_avg_hours_worked_prov %>% select(month_year, province_code, average_actual_hours, average_actual_hours_males, average_actual_hours_females), by = c("month_year", "province_code")) %>%
+       left_join(seph_employment_prov_monthly %>% select(month_year, province_code, employment_seph), by = c("month_year", "province_code")) %>%
+       left_join(seph_avg_weekly_earnings_prov_monthly %>% select(month_year, province_code, avg_weekly_earnings), by = c("month_year", "province_code")) %>%
        left_join(lfs_avg_job_tenure_prov_monthly %>% select(month_year, province_code, total_avg_tenure), by = c("month_year", "province_code")) %>% 
        left_join(ei_claims_prov_monthly %>% select(month_year, province_code, ei_claims), by = c("month_year", "province_code")) %>%
        left_join(cpi_all_items_prov_monthly %>% select(month_year, province_code, cpi), by = c("month_year", "province_code")) %>%

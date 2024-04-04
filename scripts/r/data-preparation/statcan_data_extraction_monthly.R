@@ -1,10 +1,10 @@
-# R Script: Statistics Canada Data Extraction
+# R Script: Statistics Canada Data Extraction - Monthly
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This script downloads data from the Statistics Canada API for later processing 
+# This script downloads monthly data from the Statistics Canada API for later processing 
 
 # Preliminaries -----------------------------------------------------------
 
