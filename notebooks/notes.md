@@ -22,7 +22,7 @@
 
 - all controls (extended controls)
 
--  for patents  and maybe robustness checks with other dep. variables
+- for patents and maybe robustness checks with other dep. variables
 
 - focus on one period that makes sense. 
 
