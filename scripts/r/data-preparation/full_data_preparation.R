@@ -247,10 +247,12 @@ ln1_patents_df <-
 # Dataframe with interested parties and inventors
 
 parties_df <-
-       interested_parties_province_month %>%
+       expand_grid(province_code_clean = provinces, filing_month_year= months) %>%
+       left_join(interested_parties_province_month, by = c("province_code_clean", "filing_month_year")) %>%
        left_join(inventors_province_month, by = c("province_code_clean", "filing_month_year")) %>%
        left_join(owners_province_month, by = c("province_code_clean", "filing_month_year")) %>%
-       left_join(applicants_province_month, by = c("province_code_clean", "filing_month_year")) 
+       left_join(applicants_province_month, by = c("province_code_clean", "filing_month_year")) %>% 
+       replace_na(list(interested_parties = 0, inventors = 0, owners = 0, applicants = 0))
 
 # Log of all parties variables
 

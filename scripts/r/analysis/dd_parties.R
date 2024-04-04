@@ -33,11 +33,116 @@ df_twfe <-
 
 # Baseline DD -----------------------------------------------------------
 
-baseline_twfe <-
-    feols(fml = ln1pa ~ treated,
+baseline_twfe_all_parties <-
+    feols(fml = interested_parties ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
-summary(baseline_twfe)
+baseline_twfe_inventors <-
+    feols(fml = inventors ~ treated,
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+baseline_twfe_applicants <-
+    feols(fml = applicants ~ treated,
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+baseline_twfe_owners <-
+    feols(fml = owners ~ treated,
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+# See results with modelsummary
+
+source("scripts/r/modelsummary/stars.R")
+
+baseline_parties <- list(baseline_twfe_all_parties, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners)
+
+modelsummary(baseline_parties, stars = stars)
+
+# Defendable controls -----------------------------------------------------------
+
+def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + log(foreign_parties+1)"
+
+def_controls_twfe_all_parties <-
+    feols(fml = paste("interested_parties ~ treated", def_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+def_controls_twfe_inventors <-
+    feols(fml = paste("inventors ~ treated", def_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+def_controls_twfe_applicants <-
+    feols(fml = paste("applicants ~ treated", def_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+def_controls_twfe_owners <-
+    feols(fml = paste("owners ~ treated", def_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+# See results with modelsummary
+
+def_controls_parties <- list(def_controls_twfe_all_parties, def_controls_twfe_inventors, def_controls_twfe_applicants, def_controls_twfe_owners)
+
+modelsummary(def_controls_parties, stars = stars)
+
+# Additional controls -------------------------------------------------------------------
+
+extra_controls <- "+ ln1business_insolvencies + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+
+add_controls <- paste(def_controls, extra_controls)
+
+add_controls_twfe_all_parties <-
+    feols(fml = paste("interested_parties ~ treated", add_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+add_controls_twfe_inventors <-
+    feols(fml = paste("inventors ~ treated", add_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+add_controls_twfe_applicants <-
+    feols(fml = paste("applicants ~ treated", add_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+add_controls_twfe_owners <-
+    feols(fml = paste("owners ~ treated", add_controls) %>% as.formula(),
+          fixef = c("province_code", "month_year"), 
+          data = df_twfe,
+          cluster = ~ province_code + month_year
+    )
+
+# See results with modelsummary
+
+add_controls_parties <- list(add_controls_twfe_all_parties, add_controls_twfe_inventors, add_controls_twfe_applicants, add_controls_twfe_owners)
+
+modelsummary(add_controls_parties, stars = stars)
