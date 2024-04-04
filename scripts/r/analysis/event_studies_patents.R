@@ -117,6 +117,8 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+ggsave("figures/es_patents_baseline.png", width = 8, height = 6)
+
 ### Defendable controls ------------------------------------------------------------
 
 ggiplot(es_def_controls,
@@ -128,6 +130,8 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+ggsave("figures/es_patents_def_controls.png", width = 8, height = 6)
+
 ### Additional controls ------------------------------------------------------------
 
 ggiplot(es_add_controls,
@@ -138,3 +142,5 @@ ggiplot(es_add_controls,
 theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/es_patents_add_controls.png", width = 8, height = 6)
