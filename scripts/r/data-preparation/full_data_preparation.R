@@ -267,10 +267,10 @@ ln_parties_df <-
 ln1_parties_df <- 
        parties_df %>% 
        mutate_if(is.integer, ~log(. + 1)) %>% 
-       rename(ln1_interested_parties = interested_parties,
-              ln1_inventors = inventors,
-              ln1_owners = owners,
-              ln1_applicants = applicants)
+       rename(ln1interested_parties = interested_parties,
+              ln1inventors = inventors,
+              ln1owners = owners,
+              ln1applicants = applicants)
 
 # Log of all explanatory variables
 
@@ -292,7 +292,7 @@ ln1_explanatory_df <-
 
 df <- 
        patents_per_province %>%
-       filter(!(province_code %in% c("YT", "NT", "NU"))) %>% 
+       filter(!(province_code %in% c("YT", "NT", "NU", "PE", "NL"))) %>% 
        left_join(ln_patents_df, by = c("province_code", "month_year")) %>%
        left_join(ln1_patents_df, by = c("province_code", "month_year")) %>%
        left_join(parties_df, by = c("province_code" = "province_code_clean", "month_year" = "filing_month_year")) %>%

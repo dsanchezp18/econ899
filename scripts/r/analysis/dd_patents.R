@@ -56,9 +56,7 @@ years_between_dates_end <- interval(treatment_start_date, end_date)/years(1)
 
 df <- 
     df_full %>%
-    filter(month_year %>% between(start_date, end_date), 
-           !(province_code %in% c("NL", "PE"))
-           )
+    filter(month_year %>% between(start_date, end_date))
 
 # Create the DID dummy in a modified dataframe
 # Using the interaction operator i from the fixest package
