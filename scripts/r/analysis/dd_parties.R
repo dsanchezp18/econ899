@@ -34,28 +34,28 @@ df_twfe <-
 # Baseline DD -----------------------------------------------------------
 
 baseline_twfe_all_parties <-
-    feols(fml = interested_parties ~ treated,
+    feols(fml = ln1interested_parties ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_inventors <-
-    feols(fml = inventors ~ treated,
+    feols(fml = ln1inventors ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_applicants <-
-    feols(fml = applicants ~ treated,
+    feols(fml = ln1applicants ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_owners <-
-    feols(fml = owners ~ treated,
+    feols(fml = ln1owners ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -74,28 +74,28 @@ modelsummary(baseline_parties, stars = stars)
 def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + log(foreign_parties+1)"
 
 def_controls_twfe_all_parties <-
-    feols(fml = paste("interested_parties ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1interested_parties ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_inventors <-
-    feols(fml = paste("inventors ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1inventors ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_applicants <-
-    feols(fml = paste("applicants ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1applicants ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_owners <-
-    feols(fml = paste("owners ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1owners ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -114,28 +114,28 @@ extra_controls <- "+ ln1business_insolvencies + ln_electric_power_generation + l
 add_controls <- paste(def_controls, extra_controls)
 
 add_controls_twfe_all_parties <-
-    feols(fml = paste("interested_parties ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1interested_parties ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_inventors <-
-    feols(fml = paste("inventors ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1inventors ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_applicants <-
-    feols(fml = paste("applicants ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1applicants ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_owners <-
-    feols(fml = paste("owners ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1owners ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
