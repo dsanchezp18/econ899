@@ -148,3 +148,178 @@ ggsave("figures/es_patents_add_controls.png", width = 8, height = 6)
 # Patent sections ------------------------------------------------------------
 
 ## Baseline ------------------------------------------------------------
+
+es_baseline_A <- 
+    feols(ln1patents_A ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_B <-
+    feols(ln1patents_B ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_C <-
+    feols(ln1patents_C ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_D <-
+    feols(ln1patents_D ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_E <-
+    feols(ln1patents_E ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_F <-
+    feols(ln1patents_F ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_G <-
+    feols(ln1patents_G ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_H <-
+    feols(ln1patents_H ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+es_baseline_Multiple <-
+    feols(ln1patents_Multiple ~ i(periods, treatment_dummy, ref = -1),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods
+    )
+
+## Defendable controls ------------------------------------------------------------
+
+es_def_controls_A <- 
+    feols(fml = paste("ln1patents_A ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+    
+es_def_controls_B <-
+    feols(fml = paste("ln1patents_B ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+        
+es_def_controls_C <-
+    feols(fml = paste("ln1patents_C ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+    
+es_def_controls_D <-
+    feols(fml = paste("ln1patents_D ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+    
+es_def_controls_E <-
+    feols(fml = paste("ln1patents_E ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_def_controls_F <-
+    feols(fml = paste("ln1patents_F ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+        
+es_def_controls_G <-
+    feols(fml = paste("ln1patents_G ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_def_controls_H <-
+    feols(fml = paste("ln1patents_H ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_def_controls_Multiple <-
+    feols(fml = paste("ln1patents_Multiple ~ i(periods, treatment_dummy, ref = -1)", def_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+## Additional controls ------------------------------------------------------------
+
+es_add_controls_A <- 
+    feols(fml = paste("ln1patents_A ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_B <-
+    feols(fml = paste("ln1patents_B ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_C <-
+    feols(fml = paste("ln1patents_C ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+    
+es_add_controls_D <-
+    feols(fml = paste("ln1patents_D ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_E <-
+    feols(fml = paste("ln1patents_E ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_F <-
+    feols(fml = paste("ln1patents_F ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_G <-
+    feols(fml = paste("ln1patents_G ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_H <-
+    feols(fml = paste("ln1patents_H ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_Multiple <-
+    feols(fml = paste("ln1patents_Multiple ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study,
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
