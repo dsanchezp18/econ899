@@ -26,8 +26,6 @@
 
 - focus on one period that makes sense. 
 
-- event study with no controld
-
 - quarter level study. 
 
 ## Notes about missing data
