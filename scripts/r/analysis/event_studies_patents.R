@@ -323,3 +323,55 @@ es_add_controls_Multiple <-
           data = df_event_study,
           fixef = c("province_code", "periods"),
           cluster = ~ province_code + periods)
+
+# Event study plots ------------------------------------------------------------
+
+## Baseline ------------------------------------------------------------
+
+event_studies_baseline_sections <- list(
+    es_baseline_A, es_baseline_B, es_baseline_C, es_baseline_D, es_baseline_E, es_baseline_F, es_baseline_G, es_baseline_H, es_baseline_Multiple
+)
+
+ggiplot(event_studies_baseline_sections, 
+        geom_style= "ribbon",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 2, scales = "free_y"))
+
+## Defendable controls ------------------------------------------------------------
+
+event_studies_def_controls_sections <- list(
+    es_def_controls_A, es_def_controls_B, es_def_controls_C, es_def_controls_D, es_def_controls_E, es_def_controls_F, es_def_controls_G, es_def_controls_H, es_def_controls_Multiple
+)
+
+ggiplot(event_studies_def_controls_sections, 
+        geom_style= "ribbon",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 2, scales = "free_y"))
+
+## Additional controls ------------------------------------------------------------
+
+event_studies_add_controls_sections <- list(
+    es_add_controls_A, es_add_controls_B, es_add_controls_C, es_add_controls_D, es_add_controls_E, es_add_controls_F, es_add_controls_G, es_add_controls_H, es_add_controls_Multiple
+)
+
+ggiplot(event_studies_add_controls_sections, 
+        geom_style= "ribbon",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 2, scales = "free_y"))
+
+## Only for patents D ------------------------------------------------------------
+
+event_studies_patents_D <- list(es_baseline_D, es_def_controls_D, es_add_controls_D)
+
+ggiplot(event_studies_patents_D, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y"))
