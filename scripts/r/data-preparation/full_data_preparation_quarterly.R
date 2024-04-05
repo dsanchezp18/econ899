@@ -44,9 +44,11 @@ monthly_patents <- readRDS("data/patents/processed/patents_per_province.rds")
 
 monthly_parties <- readRDS("data/patents/processed/interested_parties_province_month.rds")
 
-# Load monthly statcan data 
+# Load monthly explanatory variables data
 
-monthly_statcan <- read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F)
+monthly_explanatory <- 
+       read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F) %>%
+       mutate(electric_power_generation = if_else(electric_power_generation < 0, 0, electric_power_generation)) 
 
 # Quarterly data preparation -----------------------------------------------------------
 
@@ -68,11 +70,11 @@ quarterly_parties <-
     summarise(across(where(is.integer),sum)) %>% 
     ungroup()
 
-## Statistics Canada data, stock variables (employment, population, etc.) -----------------------------------------------------------
+## Explanatory data, stock variables (employment, population, etc.) -----------------------------------------------------------
 
 # Sum all the values of the month in the quarter
 
-quarterly_statcan_stock <-
+quarterly_explanatory_stock <-
     monthly_statcan %>%
     select(-contains("average"), -contains("median"), -contains("avg"), -cpi, -new_housing_price_index) %>% 
     mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
@@ -80,13 +82,42 @@ quarterly_statcan_stock <-
     summarise(across(where(is.numeric),sum)) %>% 
     ungroup()
 
-## Statistics Canada data, averages and medians -----------------------------------------------------------
+## Explanatory data, averages and medians -----------------------------------------------------------
 # Take the value of the last month of the quarter
 
-quarterly_statcan_avg_med <-
+quarterly_explanatory_avg_med <-
     monthly_statcan %>%
-    select(month_year, province_code, contains("average"), contains("median"), contains("avg"), cpi, new_housing_price_index) %>% 
+    select(month_year, province_code, contains("average"), contains("median"), contains("avg"), cpi, new_housing_price_index, new_housing_price_index) %>% 
     mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
     group_by(province_code, quarter_year) %>%
     summarise(across(where(is.numeric),last)) %>% 
     ungroup()
+
+## Taking the logs -----------------------------------------------------------
+
+quarterly_patents_ln1 <-
+    quarterly_patents %>%
+    mutate_at(vars(starts_with("patents_")), ~log(. + 1))  %>%
+    rename_with(~paste0("ln1_", .), starts_with("patents_")) %>%
+    select(-foreign_parties)
+
+quarterly_patents_ln <-
+    quarterly_patents %>%
+    mutate_at(vars(starts_with("patents_")), ~log(.)) %>%
+    rename_with(~paste0("ln_", .), starts_with("patents_")) %>%
+    select(-foreign_parties)
+
+quarterly_parties_ln1 <-
+    quarterly_parties %>%
+    mutate_at(vars(starts_with("interested_parties")), ~log(. + 1))  %>%
+    rename_with(~paste0("ln1_", .), starts_with("interested_parties"))
+
+quarterly_parties_ln <-
+    quarterly_parties %>%
+    mutate_at(vars(starts_with("interested_parties")), ~log(.))  %>%
+    rename_with(~paste0("ln_", .), starts_with("interested_parties"))
+
+quarterly_explanatory_stock_ln <-
+    quarterly_statcan_stock %>%
+    mutate_at(vars(-cpi), ~log(. + 1))  %>%
+    rename_with(~paste0("ln1_", .), -cpi)

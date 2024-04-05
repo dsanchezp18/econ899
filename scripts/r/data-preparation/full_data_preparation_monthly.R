@@ -49,7 +49,9 @@ patents_ipc_sections <- readRDS("data/patents/processed/patent_ipc_sections.rds"
 
 # Load explanatory variables panel dataset
 
-explanatory_province_month_panel_df <- read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F)
+explanatory_province_month_panel_df <- 
+       read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F) %>%
+       mutate(electric_power_generation = if_else(electric_power_generation < 0, 0, electric_power_generation)) 
 
 ## Other data --------------------------------------------------------------------------------------
 
@@ -241,7 +243,7 @@ ln_patents_df <-
 ln1_patents_df <-
        patents_per_province %>%
        mutate_at(vars(starts_with("patents_")), ~log(. + 1))  %>% 
-       rename_with(~paste0("ln1", .), starts_with("patents_")) %>% 
+       rename_with(~paste0("ln1_", .), starts_with("patents_")) %>% 
        select(-foreign_parties)
 
 # Dataframe with interested parties and inventors
@@ -278,17 +280,19 @@ ln1_parties_df <-
 
 ln_explanatory_df <- 
        explanatory_province_month_panel_df %>%
-       mutate(across(!c(month_year, province_code, cpi, exp_index_econ_activity), ~log(.))) %>% 
-       select(-cpi,exp_index_econ_activity) %>% 
+       mutate(across(!c(month_year, province_code, cpi, exp_index_econ_activity, new_housing_price_index), ~log(.))) %>% 
+       select(-cpi,-exp_index_econ_activity, -new_housing_price_index) %>% 
        rename_if(is.numeric, ~paste0("ln_",.))
 
 # Log of all explanatory variables + 1
 
 ln1_explanatory_df <- 
        explanatory_province_month_panel_df %>%
-       mutate(across(!c(month_year, province_code, cpi), ~log(. + 1))) %>% 
-       select(-cpi, exp_index_econ_activity) %>%
-       rename_if(is.numeric, ~paste0("ln1",.))
+       mutate(across(!c(month_year, province_code, cpi, exp_index_econ_activity, new_housing_price_index), ~log(. + 1))) %>% 
+       select(-cpi,-exp_index_econ_activity, -new_housing_price_index) %>% 
+       rename_if(is.numeric, ~paste0("ln1_",.))
+
+# count negative values in explanatory province month panel df with summarise
 
 # Final dataset
 
@@ -307,22 +311,8 @@ df <-
               periods = interval(treatment_start_date, month_year)/months(1),
               treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
               post = if_else(month_year >= treatment_start_date , "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
-              ln1foreign_parties = log(foreign_parties+1)) %>%
+              ln1_foreign_parties = log(foreign_parties+1)) %>%
        arrange(province_code, month_year)
-
-# Check for duplicates
-
-df %>% 
-       group_by(province_code, month_year) %>% 
-       summarise(n = n()) %>% 
-       filter(n > 1)
-
-# Check where does ln_patents not NA
-
-df %>% 
-       select(starts_with("ln_patents_")) %>% 
-       mutate_all(~is.na(.)) %>% 
-       summarise_all(sum)
 
 # Exporting the data --------------------------------------------------------------------------------------
 
