@@ -44,9 +44,13 @@ monthly_patents <- readRDS("data/patents/processed/patents_per_province.rds")
 
 monthly_parties <- readRDS("data/patents/processed/interested_parties_province_month.rds")
 
-# Quarterly data preparation
+# Load monthly statcan data 
 
-# Patents
+monthly_statcan <- read_csv("data/explanatory_vars_province_month_panel.csv", show_col_types = F)
+
+# Quarterly data preparation -----------------------------------------------------------
+
+## Patents -----------------------------------------------------------
 
 quarterly_patents <-
     monthly_patents %>% 
@@ -55,11 +59,34 @@ quarterly_patents <-
     summarise(across(where(is.integer),sum)) %>% 
     ungroup()
 
-# Interested parties
+## Interested parties -----------------------------------------------------------
 
 quarterly_parties <-
     monthly_parties %>% 
     mutate(quarter_year= quarter(filing_month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
     group_by(province_code_clean, quarter_year) %>%
     summarise(across(where(is.integer),sum)) %>% 
+    ungroup()
+
+## Statistics Canada data, stock variables (employment, population, etc.) -----------------------------------------------------------
+
+# Sum all the values of the month in the quarter
+
+quarterly_statcan_stock <-
+    monthly_statcan %>%
+    select(-contains("average"), -contains("median"), -contains("avg"), -cpi, -new_housing_price_index) %>% 
+    mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
+    group_by(province_code, quarter_year) %>%
+    summarise(across(where(is.numeric),sum)) %>% 
+    ungroup()
+
+## Statistics Canada data, averages and medians -----------------------------------------------------------
+# Take the value of the last month of the quarter
+
+quarterly_statcan_avg_med <-
+    monthly_statcan %>%
+    select(month_year, province_code, contains("average"), contains("median"), contains("avg"), cpi, new_housing_price_index) %>% 
+    mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
+    group_by(province_code, quarter_year) %>%
+    summarise(across(where(is.numeric),last)) %>% 
     ungroup()
