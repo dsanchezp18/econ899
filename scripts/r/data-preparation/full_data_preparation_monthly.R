@@ -1,10 +1,10 @@
-# R Script: Full Dataset Preparation
+# R Script: Full Dataset Preparation - Monthly
 # ECON899 MA Paper 
 # SFU Economics
 # Daniel Sanchez
 # Spring 2024 
 
-# This dataset prepares the full dataset for the empirical analysis.
+# This dataset prepares the full dataset for the empirical analysis, at the monthly frequency.
 
 # Preliminaries -----------------------------------------------------------
 
