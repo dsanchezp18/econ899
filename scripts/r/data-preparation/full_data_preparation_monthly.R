@@ -247,7 +247,7 @@ ln1_patents_df <-
 # Dataframe with interested parties and inventors
 
 parties_df <-
-       expand_grid(province_code_clean = provinces, filing_month_year= months) %>%
+       expand_grid(province_code_clean = provinces, filing_month_year = months) %>%
        left_join(interested_parties_province_month, by = c("province_code_clean", "filing_month_year")) %>%
        left_join(inventors_province_month, by = c("province_code_clean", "filing_month_year")) %>%
        left_join(owners_province_month, by = c("province_code_clean", "filing_month_year")) %>%
@@ -324,11 +324,19 @@ df %>%
        mutate_all(~is.na(.)) %>% 
        summarise_all(sum)
 
-# Export the data --------------------------------------------------------------------------------------
+# Exporting the data --------------------------------------------------------------------------------------
 
-# Save the data to an RDS file
+## Intermediate dataframes --------------------------------------------------------------------------------------
 
-saveRDS(interested_parties_province_month, "data/patents/processed/interested_parties_province_month.rds")
+# Export patents per province (total and per section)
+
+saveRDS(patents_per_province, "data/patents/processed/patents_per_province.rds")
+
+# Parties per province and month
+
+saveRDS(parties_df, "data/patents/processed/interested_parties_province_month.rds")
+
+## Final dataframes --------------------------------------------------------------------------------------
 
 # Save the final dataset to an RDS file
 

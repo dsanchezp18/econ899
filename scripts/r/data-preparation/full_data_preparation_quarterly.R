@@ -16,10 +16,19 @@ library(forcats, warn.conflicts = F)
 library(lubridate, warn.conflicts = F)
 library(tidyr, warn.conflicts = F)
 library(janitor, warn.conflicts = F)
+library(stringr, warn.conflicts = F)
 
 # Define a treatment date (month-year the AITC was passed)
 
 treatment_start_date <- ymd("2016-08-01")
+
+# Define a treatment quarter number (quarter the AITC was passed)
+
+treatment_start_quarter <- quarter(treatment_start_date, type =  "year.quarter") %>% str_replace_all("\\.", "Q")
+
+# Define the quarter date with floor_date
+
+treatment_start_quarter_date <- floor_date(treatment_start_date, "quarter")
 
 # Define a treatment period (Alberta)
 
@@ -27,20 +36,30 @@ treatment_group <- "AB"
 
 # Load the data -----------------------------------------------------------
 
-## Explained/Dependent variables -----------------------------------------------------------
+# Load monthly patents data
 
-# Load all the processed patents data (explained variables)
+monthly_patents <- readRDS("data/patents/processed/patents_per_province.rds")
 
-patents_main <- readRDS("data/patents/processed/patents_main.rds") # "Main" data, prepared from the main table downloaded from IP Horizons
+# Load monthly parties data
 
-patents_interested_parties <- readRDS("data/patents/processed/patents_interested_parties.rds") # "Interested parties" data, prepared from the interested parties tables downloaded from IP Horizons
+monthly_parties <- readRDS("data/patents/processed/interested_parties_province_month.rds")
 
-patents_inventors <- readRDS("data/patents/processed/patents_inventors.rds") # Only inventors data, prepared from the interested parties tables downloaded from IP Horizons
+# Quarterly data preparation
 
-patents_owners <- readRDS("data/patents/processed/patents_owners.rds") # Only owners data, prepared from the interested parties tables downloaded from IP Horizons
+# Patents
 
-patents_applicants <- readRDS("data/patents/processed/patents_applicants.rds") # Only applicants data, prepared from the interested parties tables downloaded from IP Horizons
+quarterly_patents <-
+    monthly_patents %>% 
+    mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
+    group_by(province_code, quarter_year) %>%
+    summarise(across(where(is.integer),sum)) %>% 
+    ungroup()
 
-patent_province_mapping <- readRDS("data/patents/processed/patent_province_mapping.rds") # Mapping of patents to provinces based on % of interested parties
+# Interested parties
 
-patents_ipc_sections <- readRDS("data/patents/processed/patent_ipc_sections.rds") # IPC sections data, prepared from the IPC classification tables downloaded from IP Horizons
+quarterly_parties <-
+    monthly_parties %>% 
+    mutate(quarter_year= quarter(filing_month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
+    group_by(province_code_clean, quarter_year) %>%
+    summarise(across(where(is.integer),sum)) %>% 
+    ungroup()
