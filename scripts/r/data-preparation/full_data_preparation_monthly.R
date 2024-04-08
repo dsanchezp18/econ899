@@ -271,10 +271,10 @@ ln_parties_df <-
 ln1_parties_df <- 
        parties_df %>% 
        mutate_if(is.integer, ~log(. + 1)) %>% 
-       rename(ln1interested_parties = interested_parties,
-              ln1inventors = inventors,
-              ln1owners = owners,
-              ln1applicants = applicants)
+       rename(ln1_interested_parties = interested_parties,
+              ln1_inventors = inventors,
+              ln1_owners = owners,
+              ln1_applicants = applicants)
 
 # Log of all explanatory variables
 
