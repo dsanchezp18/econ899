@@ -56,8 +56,9 @@ monthly_explanatory <-
 
 quarterly_patents <-
     monthly_patents %>% 
-    mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
-    group_by(province_code, quarter_year) %>%
+    mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q"),
+            quarter_year_date = floor_date(month_year, "quarter")) %>%
+    group_by(province_code, quarter_year, quarter_year_date) %>%
     summarise(across(where(is.integer),sum)) %>% 
     ungroup()
 
@@ -75,8 +76,8 @@ quarterly_parties <-
 # Sum all the values of the month in the quarter
 
 quarterly_explanatory_stock <-
-    monthly_statcan %>%
-    select(-contains("average"), -contains("median"), -contains("avg"), -cpi, -new_housing_price_index) %>% 
+    monthly_explanatory %>%
+    select(-contains("average"), -contains("median"), -contains("avg"), -cpi, -new_housing_price_index, -exp_index_econ_activity) %>% 
     mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
     group_by(province_code, quarter_year) %>%
     summarise(across(where(is.numeric),sum)) %>% 
@@ -86,8 +87,8 @@ quarterly_explanatory_stock <-
 # Take the value of the last month of the quarter
 
 quarterly_explanatory_avg_med <-
-    monthly_statcan %>%
-    select(month_year, province_code, contains("average"), contains("median"), contains("avg"), cpi, new_housing_price_index, new_housing_price_index) %>% 
+    monthly_explanatory %>%
+    select(month_year, province_code, contains("average"), contains("median"), contains("avg"), cpi, new_housing_price_index, exp_index_econ_activity) %>% 
     mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q")) %>%
     group_by(province_code, quarter_year) %>%
     summarise(across(where(is.numeric),last)) %>% 
@@ -95,11 +96,7 @@ quarterly_explanatory_avg_med <-
 
 ## Taking the logs -----------------------------------------------------------
 
-quarterly_patents_ln1 <-
-    quarterly_patents %>%
-    mutate_at(vars(starts_with("patents_")), ~log(. + 1))  %>%
-    rename_with(~paste0("ln1_", .), starts_with("patents_")) %>%
-    select(-foreign_parties)
+# Patents, ln
 
 quarterly_patents_ln <-
     quarterly_patents %>%
@@ -107,17 +104,88 @@ quarterly_patents_ln <-
     rename_with(~paste0("ln_", .), starts_with("patents_")) %>%
     select(-foreign_parties)
 
-quarterly_parties_ln1 <-
-    quarterly_parties %>%
-    mutate_at(vars(starts_with("interested_parties")), ~log(. + 1))  %>%
-    rename_with(~paste0("ln1_", .), starts_with("interested_parties"))
+# Patents, ln +1 
+
+quarterly_patents_ln1 <-
+    quarterly_patents %>%
+    mutate_at(vars(starts_with("patents_")), ~log(. + 1))  %>%
+    rename_with(~paste0("ln1_", .), starts_with("patents_")) %>%
+    select(-foreign_parties)
+
+# Interested parties, ln
 
 quarterly_parties_ln <-
     quarterly_parties %>%
     mutate_at(vars(starts_with("interested_parties")), ~log(.))  %>%
     rename_with(~paste0("ln_", .), starts_with("interested_parties"))
 
+# Interested parties, ln +1
+
+quarterly_parties_ln1 <-
+    quarterly_parties %>%
+    mutate_at(vars(starts_with("interested_parties")), ~log(. + 1))  %>%
+    rename_with(~paste0("ln1_", .), starts_with("interested_parties"))
+
+# Stock explanatory variables, ln
+
 quarterly_explanatory_stock_ln <-
-    quarterly_statcan_stock %>%
-    mutate_at(vars(-cpi), ~log(. + 1))  %>%
-    rename_with(~paste0("ln1_", .), -cpi)
+    quarterly_explanatory_stock %>%
+    mutate_at(vars(-province_code, -quarter_year), ~log(.)) %>%
+    rename_if(is.numeric, ~paste0("ln_",.))
+
+# Stock explantory variables, ln + 1
+
+quarterly_explanatory_stock_ln1 <-
+    quarterly_explanatory_stock %>%
+    mutate_at(vars(-province_code, -quarter_year), ~log(. + 1)) %>%
+    rename_if(is.numeric, ~paste0("ln1_",.))
+
+# Averages and medians explanatory variables, ln
+
+quarterly_explanatory_avg_med_ln <-
+    quarterly_explanatory_avg_med %>%
+    select(-cpi, -new_housing_price_index, -exp_index_econ_activity) %>% 
+    mutate_at(vars(-province_code, -quarter_year,), ~log(.)) %>%
+    rename_if(is.numeric, ~paste0("ln_",.))
+
+# Averages and medians explanatory variables, ln + 1
+
+quarterly_explanatory_avg_med_ln1 <-
+    quarterly_explanatory_avg_med %>%
+    select(-cpi, -new_housing_price_index, -exp_index_econ_activity) %>% 
+    mutate_at(vars(-province_code, -quarter_year), ~log(. + 1)) %>%
+    rename_if(is.numeric, ~paste0("ln1_",.))
+
+# Final dataset -----------------------------------------------------------
+
+# Join all dataframes together
+
+df <- 
+    quarterly_patents %>% 
+    left_join(quarterly_patents_ln, by = c("province_code", "quarter_year")) %>%
+    left_join(quarterly_patents_ln1, by = c("province_code", "quarter_year")) %>%
+    left_join(quarterly_parties, by = c("province_code" = "province_code_clean", "quarter_year")) %>%
+    left_join(quarterly_parties_ln, by = c("province_code" = "province_code_clean", "quarter_year")) %>%
+    left_join(quarterly_parties_ln1, by = c("province_code" = "province_code_clean", "quarter_year"))  %>% 
+    left_join(quarterly_explanatory_stock, by = c("province_code", "quarter_year")) %>% 
+    left_join(quarterly_explanatory_stock_ln, by = c("province_code", "quarter_year")) %>% 
+    left_join(quarterly_explanatory_stock_ln1, by = c("province_code", "quarter_year")) %>%
+    left_join(quarterly_explanatory_avg_med, by = c("province_code", "quarter_year")) %>%
+    left_join(quarterly_explanatory_avg_med_ln, by = c("province_code", "quarter_year")) %>%
+    left_join(quarterly_explanatory_avg_med_ln1, by = c("province_code", "quarter_year")) %>% 
+    mutate(province_code = as_factor(province_code),
+           periods = interval(treatment_start_date, quarter_year_date)/months(3),
+           treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
+           post = if_else(quarter_year >= treatment_start_quarter, "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
+           ln1_foreign_parties = log(foreign_parties+1)) %>% 
+    arrange(province_code, quarter_year)
+
+# Exporting the data -----------------------------------------------------------
+
+# Export the full dataset to an RDS file
+
+saveRDS(df, "data/full_data_quarterly.rds")
+
+# Export the full dataset to a CSV file (for other software)
+
+write_csv(df, "data/full_data_quarterly.csv")

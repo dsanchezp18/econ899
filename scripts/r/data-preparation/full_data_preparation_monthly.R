@@ -330,8 +330,8 @@ saveRDS(parties_df, "data/patents/processed/interested_parties_province_month.rd
 
 # Save the final dataset to an RDS file
 
-saveRDS(df, "data/full_dataset.rds")
+saveRDS(df, "data/full_dataset_monthly.rds")
 
 # Save the final dataset to a CSV file, for other software
 
-write_csv(df, "data/full_dataset.csv")
+write_csv(df, "data/full_dataset_monthly.csv")
