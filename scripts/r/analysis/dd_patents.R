@@ -22,7 +22,7 @@ library(sandwich, warn.conflicts = FALSE)
 
 # Load full dataset
 
-df_full <- readRDS("data/full_dataset.rds")
+df_full <- readRDS("data/full_dataset_monthly.rds")
 
 # Define treatment start date
 
@@ -72,7 +72,7 @@ df_twfe <-
 # Estimate a model without controls 
 
 baseline_twfe <-
-    feols(fml = ln1patents_filed ~ treated,
+    feols(fml = ln1_patents_filed ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -82,10 +82,10 @@ summary(baseline_twfe)
 
 ## Defendable controls -----------------------------------------------------------
 
-def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + log(foreign_parties+1)"
+def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln1_business_insolvencies + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + ln1_foreign_parties"
 
 def_controls_twfe <-
-    feols(fml = paste("ln1patents_filed ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_filed ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -95,12 +95,12 @@ summary(def_controls_twfe)
 
 ## Additional controls -------------------------------------------------------------------
 
-extra_controls <- "+ ln1business_insolvencies + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+extra_controls <- "+ travellers + vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
 
 add_controls <- paste(def_controls, extra_controls)
 
 add_controls_twfe <-
-    feols(fml = paste("ln1patents_filed ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_filed ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -123,63 +123,63 @@ modelsummary(patent_dd_models, stars = stars)
 ## Baseline -----------------------------------------------------------
 
 baseline_twfe_A <-
-    feols(fml = ln1patents_A ~ treated,
+    feols(fml = ln1_patents_A ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_B <-
-    feols(fml = ln1patents_B ~ treated,
+    feols(fml = ln1_patents_B ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_C <-
-    feols(fml = ln1patents_C ~ treated,
+    feols(fml = ln1_patents_C ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_D <-
-    feols(fml = ln1patents_D ~ treated,
+    feols(fml = ln1_patents_D ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_E <-
-    feols(fml = ln1patents_E ~ treated,
+    feols(fml = ln1_patents_E ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_F <-
-    feols(fml = ln1patents_F ~ treated,
+    feols(fml = ln1_patents_F ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_G <-
-    feols(fml = ln1patents_G ~ treated,
+    feols(fml = ln1_patents_G ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_H <-
-    feols(fml = ln1patents_H ~ treated,
+    feols(fml = ln1_patents_H ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 baseline_twfe_Multiple <-
-    feols(fml = ln1patents_Multiple ~ treated,
+    feols(fml = ln1_patents_Multiple ~ treated,
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -195,63 +195,63 @@ modelsummary(patent_dd_models_sections, stars = stars)
 ## Defendable controls -----------------------------------------------------------
 
 def_controls_twfe_A <-
-    feols(fml = paste("ln1patents_A ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_A ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_B <-
-    feols(fml = paste("ln1patents_B ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_B ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_C <-
-    feols(fml = paste("ln1patents_C ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_C ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_D <-
-    feols(fml = paste("ln1patents_D ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_D ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_E <-
-    feols(fml = paste("ln1patents_E ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_E ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_F <-
-    feols(fml = paste("ln1patents_F ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_F ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_G <-
-    feols(fml = paste("ln1patents_G ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_G ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_H <-
-    feols(fml = paste("ln1patents_H ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_H ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 def_controls_twfe_Multiple <-
-    feols(fml = paste("ln1patents_Multiple ~ treated", def_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_Multiple ~ treated", def_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
@@ -267,72 +267,71 @@ modelsummary(patent_dd_models_sections_def_controls, stars = stars)
 ## Additional controls -----------------------------------------------------------
 
 add_controls_twfe_A <-
-    feols(fml = paste("ln1patents_A ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_A ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_B <-
-    feols(fml = paste("ln1patents_B ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_B ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_C <-
-    feols(fml = paste("ln1patents_C ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_C ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_D <-
-    feols(fml = paste("ln1patents_D ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_D ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_E <-
-    feols(fml = paste("ln1patents_E ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_E ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_F <-
-    feols(fml = paste("ln1patents_F ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_F ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_G <-
-    feols(fml = paste("ln1patents_G ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_G ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_H <-
-    feols(fml = paste("ln1patents_H ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_H ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 add_controls_twfe_Multiple <-
-    feols(fml = paste("ln1patents_Multiple ~ treated", add_controls) %>% as.formula(),
+    feols(fml = paste("ln1_patents_Multiple ~ treated", add_controls) %>% as.formula(),
           fixef = c("province_code", "month_year"), 
           data = df_twfe,
           cluster = ~ province_code + month_year
     )
 
 # See results with modelsummary
-
 patent_dd_models_sections_add_controls <- list(add_controls_twfe_A, add_controls_twfe_B, add_controls_twfe_C, add_controls_twfe_D, 
                                               add_controls_twfe_E, add_controls_twfe_F, add_controls_twfe_G, add_controls_twfe_H, 
                                               add_controls_twfe_Multiple)
-                                            
+                                             
 modelsummary(patent_dd_models_sections_add_controls, stars = stars)
