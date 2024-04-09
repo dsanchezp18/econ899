@@ -117,14 +117,14 @@ quarterly_patents_ln1 <-
 quarterly_parties_ln <-
     quarterly_parties %>%
     mutate_at(vars(starts_with("interested_parties")), ~log(.))  %>%
-    rename_with(~paste0("ln_", .), starts_with("interested_parties"))
+    rename_with(~paste0("ln_", .), starts_with(c("interested_parties", "owners", "inventors", "applicants")))
 
 # Interested parties, ln +1
 
 quarterly_parties_ln1 <-
     quarterly_parties %>%
     mutate_at(vars(starts_with("interested_parties")), ~log(. + 1))  %>%
-    rename_with(~paste0("ln1_", .), starts_with("interested_parties"))
+    rename_with(~paste0("ln1_", .), starts_with(c("interested_parties", "owners", "inventors", "applicants")))
 
 # Stock explanatory variables, ln
 

@@ -20,9 +20,17 @@ start_date <- ymd("2001-08-01")
 
 end_date <- ymd("2021-08-01")
 
+# Get quarter dates with floor_date
+
+start_date_quarter <- floor_date(start_date, "quarter")
+
+end_date_quarter <- floor_date(end_date, "quarter")
+
+treatment_start_date_quarter <- floor_date(treatment_start_date, "quarter")
+
 df <- 
     df_full %>%
-    filter(month_year %>% between(start_date, end_date))
+    filter(quarter_year_date %>% between(start_date_quarter, end_date_quarter))
 
 # Create the DID dummy in a modified dataframe
 # Using the interaction operator i from the fixest package
@@ -35,30 +43,30 @@ df_twfe <-
 
 baseline_twfe_all_parties <-
     feols(fml = ln1_interested_parties ~ treated,
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 baseline_twfe_inventors <-
     feols(fml = ln1_inventors ~ treated,
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 baseline_twfe_applicants <-
     feols(fml = ln1_applicants ~ treated,
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 baseline_twfe_owners <-
     feols(fml = ln1_owners ~ treated,
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 # See results with modelsummary
@@ -75,30 +83,30 @@ def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi
 
 def_controls_twfe_all_parties <-
     feols(fml = paste("ln1_interested_parties ~ treated", def_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 def_controls_twfe_inventors <-
     feols(fml = paste("ln1_inventors ~ treated", def_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 def_controls_twfe_applicants <-
     feols(fml = paste("ln1_applicants ~ treated", def_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 def_controls_twfe_owners <-
     feols(fml = paste("ln1_owners ~ treated", def_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 # See results with modelsummary
@@ -115,30 +123,30 @@ add_controls <- paste(def_controls, extra_controls)
 
 add_controls_twfe_all_parties <-
     feols(fml = paste("ln1_interested_parties ~ treated", add_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 add_controls_twfe_inventors <-
     feols(fml = paste("ln1_inventors ~ treated", add_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 add_controls_twfe_applicants <-
     feols(fml = paste("ln1_applicants ~ treated", add_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 add_controls_twfe_owners <-
     feols(fml = paste("ln1_owners ~ treated", add_controls) %>% as.formula(),
-          fixef = c("province_code", "month_year"), 
+          fixef = c("province_code", "quarter_year"), 
           data = df_twfe,
-          cluster = ~ province_code + month_year
+          cluster = ~ province_code + quarter_year
     )
 
 # See results with modelsummary
