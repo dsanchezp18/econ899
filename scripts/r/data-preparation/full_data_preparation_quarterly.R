@@ -102,7 +102,7 @@ quarterly_patents_ln <-
     quarterly_patents %>%
     mutate_at(vars(starts_with("patents_")), ~log(.)) %>%
     rename_with(~paste0("ln_", .), starts_with("patents_")) %>%
-    select(-foreign_parties)
+    select(-foreign_parties, -quarter_year_date)
 
 # Patents, ln +1 
 
@@ -110,7 +110,7 @@ quarterly_patents_ln1 <-
     quarterly_patents %>%
     mutate_at(vars(starts_with("patents_")), ~log(. + 1))  %>%
     rename_with(~paste0("ln1_", .), starts_with("patents_")) %>%
-    select(-foreign_parties)
+    select(-foreign_parties, -quarter_year_date)
 
 # Interested parties, ln
 
@@ -161,7 +161,8 @@ quarterly_explanatory_avg_med_ln1 <-
 # Join all dataframes together
 
 df <- 
-    quarterly_patents %>% 
+    quarterly_patents %>%
+    filter(!(province_code %in% c("YT", "NT", "NU", "PE", "NL"))) %>% 
     left_join(quarterly_patents_ln, by = c("province_code", "quarter_year")) %>%
     left_join(quarterly_patents_ln1, by = c("province_code", "quarter_year")) %>%
     left_join(quarterly_parties, by = c("province_code" = "province_code_clean", "quarter_year")) %>%
