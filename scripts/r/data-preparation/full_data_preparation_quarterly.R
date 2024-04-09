@@ -175,7 +175,7 @@ df <-
     left_join(quarterly_explanatory_avg_med_ln, by = c("province_code", "quarter_year")) %>%
     left_join(quarterly_explanatory_avg_med_ln1, by = c("province_code", "quarter_year")) %>% 
     mutate(province_code = as_factor(province_code),
-           periods = interval(treatment_start_date, quarter_year_date)/months(3),
+           periods = interval(treatment_start_date_quarter, quarter_year_date)/months(3),
            treatment = if_else(province_code == treatment_group, "Treatment", "Control") %>% as.factor() %>% relevel("Control"),
            post = if_else(quarter_year >= treatment_start_quarter, "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
            ln1_foreign_parties = log(foreign_parties+1)) %>% 
