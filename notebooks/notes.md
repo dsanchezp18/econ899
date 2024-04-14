@@ -31,3 +31,15 @@
 ## Notes about missing data
 
 - No data for territories 
+
+## For writing
+
+- In Canada patents are for the whole country, so its hard to evalute impact in a quasi experiment. But R&D tax credits, do they generate more patents? This could make sense.
+    - Should review some literature on this.
+
+- AITC also targeted movie production. these dont produce patents, argue that.
+
+- AITC implementation date is a bit "fuzzy".
+    - Investments made beginning january 2017
+    - But the program was announced in 2016
+    - And expenses were elegible (maybe) beginning april 2016
