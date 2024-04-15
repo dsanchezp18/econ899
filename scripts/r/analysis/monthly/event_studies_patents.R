@@ -29,13 +29,13 @@ df_full <- readRDS("data/full_dataset_monthly.rds")
 
 # Define treatment start date
 
-treatment_start_date <- ymd("2016-08-01")
+treatment_start_date <- ymd("2016-04-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2001-08-01")
+start_date <- ymd("2001-01-01")
 
-end_date <- ymd("2021-08-01")
+end_date <- ymd("2021-06-01")
 
 # Define valid start and end periods
 
@@ -116,7 +116,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_baseline.png", width = 8, height = 6)
+ggsave("figures/event-studies/monthly/patents_baseline.png", width = 17, height = 10, dpi = 800, units = "cm")
 
 ### Defendable controls ------------------------------------------------------------
 
@@ -129,7 +129,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_def_controls.png", width = 8, height = 6)
+ggsave("figures/event-studies/monthly/patents_def_controls.png", width = 17, height = 10, dpi = 800, units = "cm")
 
 ### Additional controls ------------------------------------------------------------
 
@@ -142,7 +142,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_add_controls.png", width = 8, height = 6)
+ggsave("figures/event-studies/monthly/patents_add_controls.png", width = 17, height = 10, dpi = 800, units = "cm")
 
 # Patent sections ------------------------------------------------------------
 
@@ -364,6 +364,20 @@ ggiplot(event_studies_add_controls_sections,
         pt.pch = 1,
         facet_args = list(ncol = 2, scales = "free_y"))
 
+## Only for patents for E ------------------------------------------------------------
+
+event_studies_patents_E <- list(es_baseline_E, es_def_controls_E, es_add_controls_E)
+
+ggiplot(event_studies_patents_E, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+scale_x_continuous(breaks = periods_for_plot, labels = dates)
+
 ## Only for patents D ------------------------------------------------------------
 
 event_studies_patents_D <- list(es_baseline_D, es_def_controls_D, es_add_controls_D)
@@ -373,4 +387,9 @@ ggiplot(event_studies_patents_D,
         multi_style = "facet",
         ci.width = 0,
         pt.pch = 1,
-        facet_args = list(ncol = 1, scales = "free_y"))
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+scale_x_continuous(breaks = periods_for_plot, labels = dates)
+
+ggsave("figures/event-studies/monthly/patents_D.png", width = 17, height = 10, dpi = 800, units = "cm")

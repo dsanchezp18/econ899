@@ -16,9 +16,9 @@ treatment_start_date <- ymd("2016-08-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2001-08-01")
+start_date <- ymd("2001-01-01")
 
-end_date <- ymd("2021-08-01")
+end_date <- ymd("2021-06-01")
 
 df <- 
     df_full %>%
