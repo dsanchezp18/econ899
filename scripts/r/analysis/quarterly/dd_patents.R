@@ -30,9 +30,9 @@ treatment_start_date <- ymd("2016-04-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2001-08-01")
+start_date <- ymd("2001-04-01")
 
-end_date <- ymd("2021-08-01")
+end_date <- ymd("2021-04-01")
 
 # Get quarter dates with floor_date
 
@@ -41,6 +41,14 @@ start_date_quarter <- floor_date(start_date, "quarter")
 end_date_quarter <- floor_date(end_date, "quarter")
 
 treatment_start_date_quarter <- floor_date(treatment_start_date, "quarter")
+
+# Same but with the quarter formula
+
+start_quarter_q <- quarter(start_date, type =  "year.quarter") %>% str_replace_all("\\.", "Q")
+
+end_quarter_q <- quarter(end_date, type =  "year.quarter") %>% str_replace_all("\\.", "Q")
+
+treatment_start_quarter_q <- quarter(treatment_start_date, type =  "year.quarter") %>% str_replace_all("\\.", "Q")
 
 # Define valid start and end periods
 

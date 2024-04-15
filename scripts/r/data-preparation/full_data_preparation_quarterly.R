@@ -28,7 +28,7 @@ treatment_start_quarter <- quarter(treatment_start_date, type =  "year.quarter")
 
 # Define the quarter date with floor_date
 
-treatment_start_quarter_date <- floor_date(treatment_start_date, "quarter")
+treatment_start_date_quarter <- floor_date(treatment_start_date, "quarter")
 
 # Define a treatment period (Alberta)
 

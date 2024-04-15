@@ -27,13 +27,13 @@ df_full <- readRDS("data/full_data_quarterly.rds")
 
 # Define treatment start date
 
-treatment_start_date <- ymd("2016-08-01")
+treatment_start_date <- ymd("2016-04-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2001-08-01")
+start_date <- ymd("2001-01-01")
 
-end_date <- ymd("2021-08-01")
+end_date <- ymd("2021-06-01")
 
 # Get quarter dates with floor_date
 
@@ -122,7 +122,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_baseline_quarterly.png", width = 8, height = 6)
+ggsave("figures/event-studies/quarterly/patents_baseline.png", width = 17, height = 10, units = "cm", dpi = 800)
 
 ### Defendable controls ------------------------------------------------------------
 
@@ -135,7 +135,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_defendable_quarterly.png", width = 8, height = 6)
+ggsave("figures/event-studies/quarterly/patents_def_controls.png", width = 17, height = 10, units = "cm", dpi = 800)
 
 ### Additional controls ------------------------------------------------------------
 
@@ -148,7 +148,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_additional_quarterly.png", width = 8, height = 6)
+ggsave("figures/event-studies/quarterly/patents_add_controls.png", width = 17, height = 10, units = "cm", dpi = 800)
 
 # Patent sections ------------------------------------------------------------
 
@@ -355,7 +355,12 @@ ggiplot(event_studies_def_controls_sections,
         multi_style = "facet",
         ci.width = 0,
         pt.pch = 1,
-        facet_args = list(ncol = 2, scales = "free_y"))
+        facet_args = list(ncol = 2, scales = "free_y")) + 
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 25, units = "cm", dpi = 800)
 
 ## Additional controls ------------------------------------------------------------
 
@@ -369,6 +374,54 @@ ggiplot(event_studies_add_controls_sections,
         ci.width = 0,
         pt.pch = 1,
         facet_args = list(ncol = 2, scales = "free_y"))
+
+## Only for patents A ------------------------------------------------------------
+
+event_studies_patents_A <- list(es_baseline_A, es_def_controls_A, es_add_controls_A)
+
+ggiplot(event_studies_patents_A, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
+
+# Only for patents C ------------------------------------------------------------
+
+event_studies_patents_C <- list(es_baseline_C, es_def_controls_C, es_add_controls_C)
+
+ggiplot(event_studies_patents_C, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
+
+## Only for patents E ------------------------------------------------------------
+
+event_studies_patents_E <- list(es_baseline_E, es_def_controls_E, es_add_controls_E)
+
+ggiplot(event_studies_patents_E, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
 
 ## Only for patents D ------------------------------------------------------------
 
@@ -384,4 +437,4 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/es_patents_D_quarterly.png", width = 8, height = 6)
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
