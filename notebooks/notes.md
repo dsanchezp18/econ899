@@ -43,3 +43,6 @@
     - Investments made beginning january 2017
     - But the program was announced in 2016
     - And expenses were elegible (maybe) beginning april 2016
+
+- Talk about how patents were separated by section code. This is valuable but should compare to studies in Canada that have done this.
+    - Most use survey data. 

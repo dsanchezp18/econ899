@@ -387,15 +387,16 @@ ggiplot(event_studies_patents_A,
         facet_args = list(ncol = 1, scales = "free_y")) +
 theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
-theme(axis.text.x = element_text(angle = 45, hjust = 1))
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+labs(title = "Patents A: Human Necessities")
 
 ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
 
-# Only for patents C ------------------------------------------------------------
+# Only for patents B ------------------------------------------------------------
 
-event_studies_patents_C <- list(es_baseline_C, es_def_controls_C, es_add_controls_C)
+event_studies_patents_B <- list(es_baseline_B, es_def_controls_B, es_add_controls_B)
 
-ggiplot(event_studies_patents_C, 
+ggiplot(event_studies_patents_B, 
         geom_style= "errorbar",
         multi_style = "facet",
         ci.width = 0,
@@ -403,15 +404,14 @@ ggiplot(event_studies_patents_C,
         facet_args = list(ncol = 1, scales = "free_y")) +
 theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
-theme(axis.text.x = element_text(angle = 45, hjust = 1))
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+labs(title = "Patents B: Performing Operations - Transporting")
 
-ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
+# Only for patents C ------------------------------------------------------------
 
-## Only for patents E ------------------------------------------------------------
+event_studies_patents_C <- list(es_baseline_C, es_def_controls_C, es_add_controls_C)
 
-event_studies_patents_E <- list(es_baseline_E, es_def_controls_E, es_add_controls_E)
-
-ggiplot(event_studies_patents_E, 
+ggiplot(event_studies_patents_C, 
         geom_style= "errorbar",
         multi_style = "facet",
         ci.width = 0,
@@ -435,6 +435,38 @@ ggiplot(event_studies_patents_D,
         facet_args = list(ncol = 1, scales = "free_y")) +
 theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
-theme(axis.text.x = element_text(angle = 45, hjust = 1))
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+labs(title = "Patents D: Textiles - Paper")
 
 ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
+
+## Only for patents E ------------------------------------------------------------
+
+event_studies_patents_E <- list(es_baseline_E, es_def_controls_E, es_add_controls_E)
+
+ggiplot(event_studies_patents_E, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+labs(title = "Patents E: Fixed Constructions")
+
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 10, units = "cm", dpi = 800)
+
+## Only for patents Multiple ------------------------------------------------------------
+
+event_studies_patents_Multiple <- list(es_baseline_Multiple, es_def_controls_Multiple, es_add_controls_Multiple)
+
+ggiplot(event_studies_patents_Multiple, 
+        geom_style= "errorbar",
+        multi_style = "facet",
+        ci.width = 0,
+        pt.pch = 1,
+        facet_args = list(ncol = 1, scales = "free_y")) +
+theme_bw() +
+scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))

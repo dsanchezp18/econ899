@@ -146,6 +146,14 @@ patents_main %>%
   mutate(prop = n / sum(n)) %>%
   arrange(desc(n))
 
+# Mean time for a patent application to be granted 
+
+patents_main %>%
+  filter(!is.na(grant_date), !is.na(filing_date)) %>%
+  mutate(time_to_grant = interval(filing_date, grant_date)/months(1)) %>%
+  group_by(year(filing_date)) %>% 
+  summarise(mean(time_to_grant, na.rm = TRUE))
+
 # Exporting the data ------------------------------------------------------
 
 # Export the data as an RDS file, which is faster to load than a CSV

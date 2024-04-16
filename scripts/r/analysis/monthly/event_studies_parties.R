@@ -29,13 +29,13 @@ df_full <- readRDS("data/full_dataset_monthly.rds")
 
 # Define treatment start date
 
-treatment_start_date <- ymd("2016-08-01")
+treatment_start_date <- ymd("2016-04-01")
 
 # Define valid start and end dates
 
-start_date <- ymd("2001-08-01")
+start_date <- ymd("2001-01-01")
 
-end_date <- ymd("2021-08-01")
+end_date <- ymd("2021-06-01")
 
 # Define valid start and end periods
 
@@ -167,7 +167,7 @@ ggiplot(event_studies_baseline,
         pt.pch = 0,
         facet_args = list(ncol = 1, scales = "free_y")) + 
 theme_bw() + 
-scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+#scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ## Defendable controls ------------------------------------------------------------
