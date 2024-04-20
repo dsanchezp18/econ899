@@ -46,3 +46,7 @@
 
 - Talk about how patents were separated by section code. This is valuable but should compare to studies in Canada that have done this.
     - Most use survey data. 
+
+- Title: 
+    - Offsetting innovation? The impact of the Alberta Investment Tax Credit on intellectual property
+    - Do fiscal incentives affect innovation? Evidence from the Alberta Investment Tax Credit
