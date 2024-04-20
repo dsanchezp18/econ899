@@ -1,0 +1,52 @@
+\documentclass[12pt, a4paper, margin = 1in]{article}
+
+% ======================== Preamble ======================== %
+
+% Packages for title metadata ----------------------
+
+\usepackage{authblk}
+
+% Title metadata ---------------------------------
+
+\title{Do fiscal incentives affect innovation? The effects of the Alberta Investor Tax Credit on patents}
+\author{Daniel Sánchez-Pazmiño \\[1ex] ECON899 MA Paper}
+\affil{Simon Fraser University}
+\date{April 2024}
+
+% Formatting -----------------------------------
+
+\usepackage{setspace} % For double spacing
+\doublespacing
+
+\usepackage[margin = 1in]{geometry} % For setting margins
+
+% Bibiliography -----------------------------------
+
+\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
+
+% Misc packages -----------------------------------
+
+\usepackage{lipsum} % For generating dummy text
+
+% Redefinitions -----------------------------------
+
+% Redefine abstract to not include a title and to display the text in italics
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  \vspace{-1em}\vspace{0pt}
+  \end{center}
+  \quotation\itshape}
+ {\endquotation}
+
+% ======================== Document ======================== %
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    \lipsum[1]
+\end{abstract}
+
+\end{document}
