@@ -1,0 +1,26 @@
+\documentclass[class=article, crop=false]{standalone}
+
+% ======================== Preamble ======================== %
+
+% Packages for file structure ----------------------
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+
+% Bibiliography -----------------------------------
+
+\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
+    \addbibresource{../refs_ma_paper.bib}
+
+% ======================== Document: Empirical Strategy ======================== %
+
+\begin{document}
+\section{Empirical Strategy}
+
+\subsection{Data}
+
+I employ a novel administrative dataset from the Canadian Intellectual Property Office, the IP Horizons Patent Researcher Datasets. These data identify patents in Canada as far back as 1869 and up to 2021 \parencite{patents_cipo_datasets}. The data hold information of all parties involved in a patent application, along with their registered province of origin if the party comes from Canada and the state if the party is recorded in the United States.  
+
+\subsection{Identification Strategy}
+
+\end{document}

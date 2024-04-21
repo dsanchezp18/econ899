@@ -1,6 +1,11 @@
-\documentclass[12pt, a4paper, margin = 1in]{article}
+\documentclass[12pt, a4paper]{article}
 
 % ======================== Preamble ======================== %
+
+% Packages for file structure ----------------------
+
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
 
 % Packages for title metadata ----------------------
 
@@ -24,6 +29,10 @@
 
 \usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
 
+% Packages for fonts ----------------------
+
+\usepackage{libertinus} % Libertinus font for the whole document
+
 % Misc packages -----------------------------------
 
 \usepackage{lipsum} % For generating dummy text
@@ -39,14 +48,23 @@
   \quotation\itshape}
  {\endquotation}
 
-% ======================== Document ======================== %
+% ======================== Document: Main ======================== %
 
 \begin{document}
 
+% Title
+
 \maketitle
 
+% Abstract
 \begin{abstract}
     \lipsum[1]
 \end{abstract}
+
+% Sections ----------------------
+% Importing sections from the sections folder
+
+% Empirical strategy
+\import{sections/}{empirical_strategy}
 
 \end{document}
