@@ -50,6 +50,22 @@
   \quotation\itshape}
  {\endquotation}
 
+ % Tables -----------------------------------
+
+% Modelsummary tables
+
+\usepackage{booktabs}
+\usepackage{siunitx}
+\newcolumntype{d}{S[
+    input-open-uncertainty=,
+    input-close-uncertainty=,
+    parse-numbers = false,
+    table-align-text-pre=false,
+    table-align-text-post=false
+ ]}
+
+\usepackage{threeparttable}
+
 % Packages for file structure ----------------------
 
 \usepackage{subfiles} % Includes the \subfix command which is like here() in R
