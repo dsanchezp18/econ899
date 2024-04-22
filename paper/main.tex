@@ -2,11 +2,6 @@
 
 % ======================== Preamble ======================== %
 
-% Packages for file structure ----------------------
-
-\usepackage[subpreambles=true]{standalone}
-\usepackage{import}
-
 % Packages for title metadata ----------------------
 
 \usepackage{authblk}
@@ -24,10 +19,6 @@
 \doublespacing
 
 \usepackage[margin = 1in]{geometry} % For setting margins
-
-% Bibiliography -----------------------------------
-
-\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
 
 % Packages for fonts ----------------------
 
@@ -48,6 +39,15 @@
   \quotation\itshape}
  {\endquotation}
 
+% Packages for file structure ----------------------
+
+\usepackage{subfiles} % Includes the \subfix command which is like here() in R
+
+% Bibiliography -----------------------------------
+
+\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
+    \addbibresource{\subfix{refs_ma_paper.bib}}
+
 % ======================== Document: Main ======================== %
 
 \begin{document}
@@ -65,6 +65,7 @@
 % Importing sections from the sections folder
 
 % Empirical strategy
-\import{sections/}{empirical_strategy}
+
+% \subfile{\subfix{sections/empirical_strategy}}
 
 \end{document}
