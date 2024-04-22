@@ -16,5 +16,98 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{patents_cipo_datasets}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada (CIPO's IP Horizons)}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
+      \field{annotation}{Last Modified: 2023-06-19}
+      \field{day}{19}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{Patent Researcher Datasets}
+      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
+      \field{type}{Datasets and data dictionary}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{patents_cipo_datasets}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada (CIPO's IP Horizons)}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
+      \field{annotation}{Last Modified: 2023-06-19}
+      \field{day}{19}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{Patent Researcher Datasets}
+      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
+      \field{type}{Datasets and data dictionary}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
