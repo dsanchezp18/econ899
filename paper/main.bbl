@@ -18,15 +18,85 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global}
-    \entry{patents_cipo_datasets}{dataset}{}
+  \datalist[entry]{cms/global//global/global}
+    \entry{abadie_etal10}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{abstract}{Building on an idea in Abadie and Gardeazabal (2003), this article investigates the application of synthetic control methods to comparative case studies. We discuss the advantages of these methods and apply them to study the effects of Proposition 99, a large-scale tobacco control program that California implemented in 1988. We demonstrate that, following Proposition 99, tobacco consumption fell markedly in California relative to a comparable synthetic control region. We estimate that by the year 2000 annual per-capita cigarette sales in California were about 26 packs lower than what they would have been in the absence of Proposition 99. Using new inferential methods proposed in this article, we demonstrate the significance of our estimates. Given that many policy interventions and events of interest in social sciences take place at an aggregate level (countries, regions, cities, etc.) and affect a small number of aggregate units, the potential applicability of synthetic control methods to comparative case studies is very large, especially in situations where traditional regression methods are not appropriate.}
+      \field{day}{1}
+      \field{issn}{0162-1459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{6}
+      \field{number}{490}
+      \field{shorttitle}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}}
+      \field{title}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}: {{Estimating}} the {{Effect}} of {{California}}’s {{Tobacco Control Program}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\WA5YNR3T\Abadie et al. - 2010 - Synthetic Control Methods for Comparative Case Stu.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \keyw{Observational studies,Proposition 99,Tobacco control legislation,Treatment effects}
+    \endentry
+    \entry{canadianintellectualpropertyoffice23}{dataset}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
            family={{Canadian Intellectual Property Office}},
            familyi={C\bibinitperiod}}}%
       }
+      \list{location}{1}{%
+        {IP Horizons}%
+      }
       \list{publisher}{1}{%
-        {Innovation, Science and Economic Development Canada (CIPO's IP Horizons)}%
+        {Innovation, Science and Economic Development Canada}%
       }
       \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
@@ -38,23 +108,19 @@
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
-      \field{annotation}{Last Modified: 2023-06-19}
+      \field{labeltitlesource}{title}
       \field{day}{19}
-      \field{langid}{english}
       \field{month}{6}
-      \field{shorttitle}{Patent Researcher Datasets}
       \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
-      \field{type}{Datasets and data dictionary}
+      \field{type}{Data sets with data dictionaries}
       \field{urlday}{15}
       \field{urlmonth}{12}
       \field{urlyear}{2023}
       \field{year}{2023}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
@@ -62,49 +128,138 @@
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
     \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global}
-    \entry{patents_cipo_datasets}{dataset}{}
+    \entry{statisticscanada24}{dataset}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
-           family={{Canadian Intellectual Property Office}},
-           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Innovation, Science and Economic Development Canada (CIPO's IP Horizons)}%
-      }
-      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410004201-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24b}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410005001-eng
+      \endverb
+    \endentry
+    \entry{lfs_employee_wages}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Table 14-10-0063-01 {{Employee}} Wages by Industry, Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410006301-eng
+      \endverb
+    \endentry
+    \entry{lfs_lfc_table}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
-      \field{annotation}{Last Modified: 2023-06-19}
-      \field{day}{19}
+      \field{abstract}{Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
       \field{langid}{english}
-      \field{month}{6}
-      \field{shorttitle}{Patent Researcher Datasets}
-      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
-      \field{type}{Datasets and data dictionary}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{year}{2023}
+      \field{month}{2}
+      \field{shorttitle}{{{LFS Labour Force Characteristics}}}
+      \field{title}{Table 14-10-0287-03 {{Labour}} Force Characteristics by Province, Monthly, Seasonally Adjusted}
+      \field{type}{Data table}
+      \field{year}{2024}
       \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410028701-eng
       \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\SVEZHYCW\tv.html
       \endverb
     \endentry
   \enddatalist

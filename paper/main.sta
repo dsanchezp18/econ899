@@ -1,5 +1,0 @@
-\standalonepreambles
-\subpreamble{sections/empirical_strategy.tex}
-\usepackage [subpreambles=true]{standalone}\usepackage {import}\usepackage [backend = biber, style = apa, citestyle = apa]{biblatex} \addbibresource {../refs_ma_paper.bib}
-\endsubpreamble
-\endstandalonepreambles

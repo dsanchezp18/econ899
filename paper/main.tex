@@ -2,6 +2,12 @@
 
 % ======================== Preamble ======================== %
 
+% Language ---------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage[american]{babel}
+
 % Packages for title metadata ----------------------
 
 \usepackage{authblk}
@@ -45,8 +51,13 @@
 
 % Bibiliography -----------------------------------
 
-\usepackage[backend = biber, style = apa, citestyle = apa]{biblatex} % Needs to be included so the TeX file compiles on VS Code
-    \addbibresource{\subfix{refs_ma_paper.bib}}
+% Needs to be included so the TeX file compiles on VS Code
+\usepackage[authordate, backend=biber, notitle, dateabbrev = true]{biblatex-chicago}
+%\usepackage[style = chicago-authordate, backend = biber]{biblatex}
+    \addbibresource{\subfix{references.bib}}
+
+\usepackage{url}
+  \urlstyle{same}
 
 % ======================== Document: Main ======================== %
 
@@ -61,10 +72,22 @@
     \lipsum[1]
 \end{abstract}
 
+\clearpage
+
 % Sections ----------------------------------------------------------------
+
+% Institutional background 
+
+\subfile{\subfix{sections/institutional_background}}
 
 % Empirical strategy
 
 \subfile{\subfix{sections/empirical_strategy}}
+
+% References
+
+\textcite{abadie_etal10}
+
+\printbibliography
 
 \end{document}

@@ -18,7 +18,7 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global}
+  \datalist[entry]{cms/global//global/global}
     \entry{patents_cipo_datasets}{dataset}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
@@ -38,23 +38,19 @@
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
-      \field{annotation}{Last Modified: 2023-06-19}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2023-06-19 Datasets and data dictionary}
       \field{day}{19}
-      \field{langid}{english}
       \field{month}{6}
-      \field{shorttitle}{Patent Researcher Datasets}
       \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
-      \field{type}{Datasets and data dictionary}
       \field{urlday}{15}
       \field{urlmonth}{12}
       \field{urlyear}{2023}
       \field{year}{2023}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{urlraw}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
@@ -62,7 +58,7 @@
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
     \endentry
-    \entry{lfs_employee_wages}{dataset}{}
+    \entry{statisticscanada24}{dataset}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
            family={{Statistics Canada}},
@@ -80,99 +76,6 @@
       \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.}
-      \field{annotation}{Last Modified: 2024-02-09}
-      \field{day}{9}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{title}{Table 14-10-0063-01 {{Employee}} Wages by Industry, Monthly, Unadjusted for Seasonality}
-      \field{type}{Data table}
-      \field{urlday}{15}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.25318/1410006301-eng
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006301
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410006301
-      \endverb
-    \endentry
-    \entry{lfs_lfc_table}{dataset}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
-           family={{Statistics Canada}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.}
-      \field{annotation}{Last Modified: 2024-02-09}
-      \field{day}{9}
-      \field{langid}{english}
-      \field{month}{2}
-      \field{shorttitle}{{{LFS Labour Force Characteristics}}}
-      \field{title}{Table 14-10-0287-03 {{Labour}} Force Characteristics by Province, Monthly, Seasonally Adjusted}
-      \field{type}{Data table}
-      \field{urlday}{15}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.25318/1410028701-eng
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\SVEZHYCW\tv.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703
-      \endverb
-    \endentry
-    \entry{statisticscanada24}{dataset}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
-           family={{Statistics Canada}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{3}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{5}
@@ -185,6 +88,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410004201-eng
       \endverb
@@ -207,13 +111,12 @@
       \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{4}
+      \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{4}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{5}
@@ -226,6 +129,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410005001-eng
       \endverb
@@ -234,51 +138,6 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410005001
-      \endverb
-    \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global}
-    \entry{patents_cipo_datasets}{dataset}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
-           family={{Canadian Intellectual Property Office}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Innovation, Science and Economic Development Canada (CIPO's IP Horizons)}%
-      }
-      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Bibliographic, full text and administrative status data (CSV and TXT). Download records (CSV and TXT) of patent applications and granted patents filed with the Canadian Intellectual Property Office (CIPO). Dataset in CSV format with data dictionary and schema description.}
-      \field{annotation}{Last Modified: 2023-06-19}
-      \field{day}{19}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{shorttitle}{Patent Researcher Datasets}
-      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
-      \field{type}{Datasets and data dictionary}
-      \field{urlday}{15}
-      \field{urlmonth}{12}
-      \field{urlyear}{2023}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
-      \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
     \endentry
     \entry{lfs_employee_wages}{dataset}{}
@@ -293,13 +152,12 @@
       \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{1}
+      \field{extraname}{3}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{1}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.}
@@ -315,6 +173,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410006301-eng
       \endverb
@@ -337,13 +196,12 @@
       \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
       \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{2}
+      \field{extraname}{4}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{2}
+      \field{extradate}{4}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.}
@@ -360,6 +218,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410028701-eng
       \endverb
@@ -371,88 +230,6 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703
-      \endverb
-    \endentry
-    \entry{statisticscanada24}{dataset}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
-           family={{Statistics Canada}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{3}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{5}
-      \field{month}{4}
-      \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
-      \field{type}{Data table}
-      \field{urlday}{15}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.25318/1410004201-eng
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410004201
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410004201
-      \endverb
-    \endentry
-    \entry{statisticscanada24b}{dataset}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
-           family={{Statistics Canada}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
-      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
-      \field{extraname}{4}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{extradate}{4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{5}
-      \field{month}{4}
-      \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
-      \field{type}{Data table}
-      \field{urlday}{15}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{doi}
-      \verb 10.25318/1410005001-eng
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410005001
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410005001
       \endverb
     \endentry
   \enddatalist
