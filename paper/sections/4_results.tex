@@ -29,12 +29,12 @@ I display the results of the event study regressions in Figure \ref{fig:event_st
 
 \begin{figure}[h]
     \centering
-    \caption{Event study of the AITC intervention on quarterly patent applications}
+    \caption{Event study plot for quarterly patent applications}
     \label{fig:event_study_patents}
     \includegraphics{\subfix{../../figures/event-studies/quarterly/patents_faceted.png}}
     \begin{minipage}{0.9\textwidth}
         \footnotesize
-        \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each quarter. The points represent the point estimate, while the ribbons represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the quarter before the intervention. Baseline, economic, and additional controls specifications include the controls seen in specifications (1) through (3) in Table \ref{tab:dd_twfe_patents}. 
+        \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each quarter. The points represent the point estimate, while the error bars represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the quarter before the intervention. Baseline, economic, and additional controls specifications include the controls seen in specifications (1) through (3) in Table \ref{tab:dd_twfe_patents}. 
     \end{minipage}
 \end{figure}
 
@@ -42,7 +42,7 @@ Regarding the effect of the policy itself, results point toward statistical insi
 
 \subsection{Patents by section}
 
-In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of the estimation of Equation \ref{eq:dd_model}, allowing for heterogeneity by IPC patent section and including the controls of Specification (3) in Table \ref{tab:dd_twfe_patents}. The results show that the AITC intervention had no statistically significant effect on most of the IPC sections, except sections A and E, corresponding to human necessities and fixed constructions. The effect on section A is positive and significant, while the effect on section E is negative and significant. These two effects are of similar magnitude (between |42.7|\% to |53.0|\%), suggesting an offseting effect of the policy. 
+In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of the estimation of Equation \ref{eq:dd_model}, allowing for heterogeneity by IPC patent section and including the controls of Specification (3) in Table \ref{tab:dd_twfe_patents}. The results show that the AITC intervention had no statistically significant effect on most of the IPC sections, except sections A and E, corresponding to human necessities and fixed constructions. The effect on section A is positive and significant, while the effect on section E is negative and significant. These two effects are of similar magnitude (between 42.7\% to 53.0\% in absolute value), suggesting an offseting effect of the policy. 
    
 \begin{table}[h]
     \centering
@@ -58,6 +58,18 @@ In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of the esti
 \end{threeparttable}
 \end{table}
 
-Because I lose precision on the estimates due to the smaller sample size, I am underpowered to detect small effects on the other sections. The event study regressions in Figure provide additional insight into the effect of the policy on patent applications by IPC section. 
+Because I lose precision on the estimates due to the smaller sample size, I am underpowered to detect small effects on the other sections. The event study regressions in Figure \ref{fig:event_study_patents_section}provide additional insight about the intervention's effect on patent applications by IPC section. 
+
+\begin{figure}[h]
+    \centering
+    \caption{Event study plot for quarterly patent applications by IPC section}
+    \label{fig:event_study_patents_section}
+    \includegraphics{\subfix{../../figures/event-studies/quarterly/patent_sections_faceted.png}}
+    \begin{minipage}{0.9\textwidth}
+        \footnotesize
+        \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each quarter, separating by IPC section. The points represent the point estimate, while the error bars represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the quarter before the intervention. Controls are the same as those in Specification (3) in Table \ref{tab:dd_twfe_patents}. 
+    \end{minipage}
+\end{figure}
+
 \end{document}
 
