@@ -59,7 +59,6 @@ df_descriptive_explained <-
            `Ln +1 Applicants` = ln1_applicants,
            `Ln +1 Owners` = ln1_owners,
            `Ln +1 Total population` = ln_total_pop,
-           `Ln +1 Foreign patent parties` = ln1_foreign_parties,
            `Ln +1 Section A applications` = ln1_patents_A,
            `Ln +1 Section B applications` = ln1_patents_B,
            `Ln +1 Section C applications` = ln1_patents_C,
@@ -89,6 +88,7 @@ df_descriptive_all <-
            `New housing price index` = new_housing_price_index,
            `Ln Food services receipts` = ln_food_services_receipts,
            `Ln Average job tenure` = ln_total_avg_tenure,
+           `Ln +1 Foreign patent parties` = ln1_foreign_parties,
     )
 
 # Descriptive statistics for variables in the sample -----------------------

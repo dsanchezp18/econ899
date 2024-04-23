@@ -6,18 +6,20 @@
 \section{Results}
 \label{sec:results}
 
-%\lipsum[1]
+Table \ref{tab:dd_twfe_patents} presents results the estimation of Equation \ref{eq:dd_model} using patent applications as the explained variable with the province-quarter data. Specification (1) includes a baseline result with no control variables. Specification (2) includes economic controls such as employment, wages, trade and insolvencies. These controls are included to account for factors which may affect the comparability of the treatment and control groups regarding firm activity and overall economic trends which vary across time and provinces. The number of foreign parties in all the province's patent applications is also included, to control for the effects of foreign firms on the number of patent applications. Specification (3) includes additional controls. These are included in the case that the previous controls did not adequately account for differences in trends due to reasons other than economy, or that economic activity is not well captured in standard variables in the Specification (2)
+
+The main result is that the effect of the AITC was an approximately -6.1\% to +2.3\% change in Albertan patent applications. However, this effect is not statistically distinguishable from zero. Standard errors for this coefficient on all three specifications are small compared to those of the controls, showing that $\hat{\beta}$ is estimated with a fairly good level of precision. This implies that it is the small magnitude of the coefficient which drives the low $p$-value of the hypothesis test, leading to the preliminary conclusion that the AITC intervention had no effect on innovation in the studied period. 
 
 \begin{table}[h]
     \centering
+    \label{tab:dd_twfe_patents}
 \begin{threeparttable}
     \caption{Difference-in-differences specifications for quarterly patent applications}
     \label{tab:descriptive_statistics}
     \input{\subfix{../../output/tables/dd_twfe_patents.tex}}
     \begin{tablenotes}
         \small
-        \item \textit{Notes}: Difference-in-differences specifications for the province-quarter panel with patent applications as the dependent variable. Clustered standard errors at the province and quarter level shown in parentheses. All specifications include fixed effects for provinces and quarters.
-        \item ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+        \item \textit{Notes}: Clustered standard errors at the province and quarter level shown in parentheses. All specifications include fixed effects for provinces and quarters. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
     \end{tablenotes}
 \end{threeparttable}
 \end{table}

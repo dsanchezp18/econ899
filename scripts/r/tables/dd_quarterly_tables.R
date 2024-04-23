@@ -38,7 +38,7 @@ explained_vars <- tibble(
 
 # Change the position to the top of the table
 
-attr(explained_vars, 'position') <- 31
+attr(explained_vars, 'position') <- 37
 
 # Create the regressions table
 

@@ -5,7 +5,6 @@ stars <- c('*'= 0.1, '**' = 0.05, '***'= 0.01)
 # For the models with the explanatory variables included, use the following model mapping
 
 explanatory_variables_map <- c(
-  "(Intercept)" = "Intercept",
   treated = "Treatment x Post",
   ln_total_full_emp = "Ln Full-time employment",
   ln_total_median_wage = "Ln Median wage",
@@ -16,8 +15,9 @@ explanatory_variables_map <- c(
   ln_retail_sales = "Ln Retail sales",
   ln_wholesale_sales = "Ln Wholesale sales",
   ln_manufacturing_sales = "Ln Manufacturing sales",
-  ln_travellers = "Ln International travellers",
-  ln_vehicles = "Ln Arriving vehicles",
+  ln1_foreign_parties = "Ln +1 Foreign patent parties",
+  ln1_travellers = "Ln International travellers",
+  ln1_vehicles = "Ln Arriving vehicles",
   ln_electric_power_generation = "Ln Electric power generation",
   ln_average_actual_hours = "Ln Average actual hours",
   new_housing_price_index = "New housing price index",
