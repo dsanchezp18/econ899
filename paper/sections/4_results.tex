@@ -40,5 +40,24 @@ I display the results of the event study regressions in Figure \ref{fig:event_st
 
 Regarding the effect of the policy itself, results point toward statistical insignificance of the policy effect. While there is a small positive effect in 2016Q4, it is unlikely that this is due to the policy, as the effect is not present in the following quarters. There is no evidence of a negative effect of the policy on patent applications, as preliminarily shown by the time series plot in Figure \ref{fig:quarterly_common_trends}.
 
+\subsection{Patents by section}
+
+In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of the estimation of Equation \ref{eq:dd_model}, allowing for heterogeneity by IPC patent section and including the controls of Specification (3) in Table \ref{tab:dd_twfe_patents}. The results show that the AITC intervention had no statistically significant effect on most of the IPC sections, except sections A and E, corresponding to human necessities and fixed constructions. The effect on section A is positive and significant, while the effect on section E is negative and significant. These two effects are of similar magnitude (between |42.7|\% to |53.0|\%), suggesting an offseting effect of the policy. 
+   
+\begin{table}[h]
+    \centering
+    \label{tab:dd_twfe_patents_by_section}
+\begin{threeparttable}
+    \caption{Difference-in-differences results for quarterly patent applications by IPC section}
+    \input{\subfix{../../output/tables/dd_twfe_patents_section.tex}}
+    \begin{tablenotes}
+        \small
+        \item \textit{Notes}: Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included. 
+        \item All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+Because I lose precision on the estimates due to the smaller sample size, I am underpowered to detect small effects on the other sections. The event study regressions in Figure provide additional insight into the effect of the policy on patent applications by IPC section. 
 \end{document}
 

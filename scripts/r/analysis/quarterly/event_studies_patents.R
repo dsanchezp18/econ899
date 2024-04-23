@@ -176,7 +176,6 @@ event_study_plot_faceted_patents
 
 ggsave("figures/event-studies/quarterly/patents_faceted.png", width = 15, height = 17, units = "cm", dpi = 800)
 
-
 # Patent sections ------------------------------------------------------------
 
 ## Baseline ------------------------------------------------------------
@@ -392,7 +391,7 @@ ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", wi
 ## Additional controls ------------------------------------------------------------
 
 event_studies_add_controls_sections <- list(
-    es_add_controls_A, es_add_controls_B, es_add_controls_C, es_add_controls_D, es_add_controls_E, es_add_controls_F, es_add_controls_G, es_add_controls_H, es_add_controls_Multiple
+    es_add_controls_A, es_add_controls_B, es_add_controls_C, es_add_controls_D, es_add_controls_E, es_add_controls_F, es_add_controls_G, es_add_controls_H
 )
 
 ggiplot(event_studies_add_controls_sections, 
