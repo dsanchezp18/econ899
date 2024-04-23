@@ -14,11 +14,10 @@ library(dplyr, warn.conflicts = FALSE)
 library(fixest, warn.conflicts = FALSE)
 library(ggplot2, warn.conflicts = FALSE)
 library(lubridate, warn.conflicts = FALSE)
-library(kableExtra, warn.conflicts = FALSE)
-library(modelsummary, warn.conflicts = FALSE)
 library(forcats, warn.conflicts = FALSE)
 library(tibble, warn.conflicts = FALSE)
 library(sandwich, warn.conflicts = FALSE)
+library(stringr, warn.conflicts = FALSE)
 
 # Load full dataset
 
@@ -82,8 +81,6 @@ baseline_twfe <-
           cluster = ~ province_code + quarter_year
     )
 
-summary(baseline_twfe)
-
 ## Defendable controls -----------------------------------------------------------
 
 def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln1_business_insolvencies + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + ln1_foreign_parties"
@@ -95,11 +92,9 @@ def_controls_twfe <-
           cluster = ~ province_code + quarter_year
     )
 
-summary(def_controls_twfe)
-
 ## Additional controls -------------------------------------------------------------------
 
-extra_controls <- "+ travellers + vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+extra_controls <- "+ ln1_travellers + ln1_vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
 
 add_controls <- paste(def_controls, extra_controls)
 
@@ -109,18 +104,6 @@ add_controls_twfe <-
           data = df_twfe,
           cluster = ~ province_code + quarter_year
     )
-
-summary(add_controls_twfe)
-
-## See results with modelsummary -----------------------------------------------------------
-
-# Load modelsummary parameters
-
-source("scripts/r/modelsummary/stars.R")
-
-patent_dd_models <- list(baseline_twfe, def_controls_twfe, add_controls_twfe)
-
-modelsummary(patent_dd_models, stars = stars)
 
 # Patent sections as DVs -----------------------------------------------------------
 
@@ -189,13 +172,6 @@ baseline_twfe_Multiple <-
           cluster = ~ province_code + quarter_year
     )
 
-# See results with modelsummary 
-patent_dd_models_sections <- list(baseline_twfe_A, baseline_twfe_B, baseline_twfe_C, baseline_twfe_D, 
-                                  baseline_twfe_E, baseline_twfe_F, baseline_twfe_G, baseline_twfe_H, 
-                                  baseline_twfe_Multiple)
-                    
-modelsummary(patent_dd_models_sections, stars = stars)
-
 ## Defendable controls -----------------------------------------------------------
 
 def_controls_twfe_A <-
@@ -261,13 +237,6 @@ def_controls_twfe_Multiple <-
           cluster = ~ province_code + quarter_year
     )
 
-# See results with modelsummary
-patent_dd_models_sections_def_controls <- list(def_controls_twfe_A, def_controls_twfe_B, def_controls_twfe_C, def_controls_twfe_D, 
-                                              def_controls_twfe_E, def_controls_twfe_F, def_controls_twfe_G, def_controls_twfe_H, 
-                                              def_controls_twfe_Multiple)
-                                            
-modelsummary(patent_dd_models_sections_def_controls, stars = stars)
-
 ## Additional controls -----------------------------------------------------------
 
 add_controls_twfe_A <-
@@ -332,10 +301,3 @@ add_controls_twfe_Multiple <-
           data = df_twfe,
           cluster = ~ province_code + quarter_year
     )
-
-# See results with modelsummary
-patent_dd_models_sections_add_controls <- list(add_controls_twfe_A, add_controls_twfe_B, add_controls_twfe_C, add_controls_twfe_D, 
-                                              add_controls_twfe_E, add_controls_twfe_F, add_controls_twfe_G, add_controls_twfe_H, 
-                                              add_controls_twfe_Multiple)
-                                             
-modelsummary(patent_dd_models_sections_add_controls, stars = stars)

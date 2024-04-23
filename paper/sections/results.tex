@@ -1,0 +1,27 @@
+\documentclass[../main.tex]{subfiles}
+
+% ======================== Document: Results ======================== %
+
+\begin{document}
+\section{Results}
+\label{sec:results}
+
+\lipsum[1]
+
+\begin{table}[h]
+    \centering
+\begin{threeparttable}
+    \caption{Difference-in-differences specifications for quarterly patent applications}
+    \label{tab:descriptive_statistics}
+    \input{\subfix{../../output/tables/dd_twfe_patents.tex}}
+    \begin{tablenotes}
+        \small
+        \item \textit{Notes}: Difference-in-differences specifications for the province-quarter panel with patent applications as the dependent variable. Clustered standard errors at the province and quarter level shown in parentheses. All specifications include fixed effects for provinces and quarters.
+        \item ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+
+\end{document}
+
