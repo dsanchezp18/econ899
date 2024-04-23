@@ -150,32 +150,6 @@ theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ggsave("figures/event-studies/quarterly/patents_add_controls.png", width = 17, height = 10, units = "cm", dpi = 800)
 
-### All three together with facets ------------------------------------------------------------
-
-patents_event_studies <- list(`(1) Baseline` = es_baseline,
-                              `(2) Economic controls` = es_def_controls, 
-                              `(3) Additional controls` = es_add_controls)
-
-event_study_plot_faceted_patents <-
-    ggiplot(patents_event_studies,
-            geom_style = "errorbar",
-            multi_style = "facet",
-            ci.width = 0.1,
-            pt.pch = 0,
-            col = c("#0D3692","#0D3692","#0D3692"),
-            facet_args = list(ncol = 1, scales = "free_y")) +
-    theme_bw() +
-    labs(title = "", 
-         x = "Quarter-year",
-         y = "Event study interaction term and 95% C.I.") + 
-    scale_x_continuous(breaks = periods_for_plot, labels = dates) +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        legend.position = "none")
-
-event_study_plot_faceted_patents
-
-ggsave("figures/event-studies/quarterly/patents_faceted.png", width = 15, height = 17, units = "cm", dpi = 800)
-
 # Patent sections ------------------------------------------------------------
 
 ## Baseline ------------------------------------------------------------
@@ -390,16 +364,30 @@ ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", wi
 
 ## Additional controls ------------------------------------------------------------
 
-event_studies_add_controls_sections <- list(
-    es_add_controls_A, es_add_controls_B, es_add_controls_C, es_add_controls_D, es_add_controls_E, es_add_controls_F, es_add_controls_G, es_add_controls_H
+event_studies_add_controls_sections <- list(`A` = es_add_controls_A, 
+                                            `B` = es_add_controls_B, 
+                                            `C` = es_add_controls_C, 
+                                            `D` = es_add_controls_D, 
+                                            `E` = es_add_controls_E, 
+                                            `F` = es_add_controls_F, 
+                                            `G` = es_add_controls_G, 
+                                            `H` = es_add_controls_H
 )
 
 ggiplot(event_studies_add_controls_sections, 
-        geom_style= "ribbon",
+        geom_style= "errorbar",
         multi_style = "facet",
-        ci.width = 0,
+        ci.width = 0.01,
         pt.pch = 1,
-        facet_args = list(ncol = 2, scales = "free_y"))
+        col = rep("#0D3692",9),
+        facet_args = list(ncol = 2, scales = "free_y")) + 
+    theme_bw() +
+    labs(title = "", 
+         x = "Quarter-year",
+         y = "Event study interaction term and 95% C.I.") + 
+    scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
 
 ## Only for patents A ------------------------------------------------------------
 
