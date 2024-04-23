@@ -12,11 +12,11 @@ Table \ref{tab:dd_twfe_patents} presents results the estimation of Equation \ref
 
 The DD estimate for the causal effect of the AITC intervention is the coefficient on Treatment \texttimes Post, showing that the intervention led to an -6.1\% to +2.3\% change in Albertan patent applications. However, the effect is not statistically distinguishable from zero. Standard errors for this coefficient on all three specifications are small compared to those of the controls, showing that $\hat{\beta}$ is estimated with a fairly good level of precision. This implies that it is the small magnitude of $\hat{\beta}$ which drives the low $p$-value of the hypothesis test, leading to the preliminary conclusion that the AITC intervention had no effect on innovation in the studied period. 
 
-\begin{table}[h]
+\begin{table}[htbp!]
     \centering
-    \label{tab:dd_twfe_patents}
 \begin{threeparttable}
     \caption{Difference-in-differences specifications for quarterly patent applications}
+    \label{tab:dd_twfe_patents}
     \input{\subfix{../../output/tables/dd_twfe_patents.tex}}
     \begin{tablenotes}
         \small
@@ -27,7 +27,7 @@ The DD estimate for the causal effect of the AITC intervention is the coefficien
 
 I display the results of the event study regressions in Figure \ref{fig:event_study_patents}. I estimated Equation \ref{eq:event_study} with the same controls as the specifications in Table \ref{tab:dd_twfe_patents}, resulting in panels (1) through (3) plotted in Figure \ref{fig:event_study_patents}. Most importantly these results show that, when controlling for time and province-varying factors, there is not a statistically significant difference between Albertan and control provinces' patent applications before the AITC intervention. This supports the key identifying assumption of the DD design, that the control and treatment groups would have followed the same trend in the absence of the intervention. The baseline model, which does not consider any controls, shows several pre-policy periods where the treatment and control groups diverge, underscoring the importance of including controls in the model. In 2015Q4, there is a positive and significant deviation from the pre-policy trend. 
 
-\begin{figure}[h]
+\begin{figure}[htbp!]
     \centering
     \caption{Event study plot for quarterly patent applications}
     \label{fig:event_study_patents}
@@ -38,29 +38,33 @@ I display the results of the event study regressions in Figure \ref{fig:event_st
     \end{minipage}
 \end{figure}
 
+% Note: need to add a row with the number of identified patent applications to make the table more informative.
+
 Regarding the effect of the policy itself, results point toward statistical insignificance of the policy effect. While there is a small positive effect in 2016Q4, it is unlikely that this is due to the policy, as the effect is not present in the following quarters. There is no evidence of a negative effect of the policy on patent applications, as preliminarily shown by the time series plot in Figure \ref{fig:quarterly_common_trends}.
 
 \subsection{Patents by section}
 
 In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of the estimation of Equation \ref{eq:dd_model}, allowing for heterogeneity by IPC patent section and including the controls of Specification (3) in Table \ref{tab:dd_twfe_patents}. The results show that the AITC intervention had no statistically significant effect on most of the IPC sections, except sections A and E, corresponding to human necessities and fixed constructions. The effect on section A is positive and significant, while the effect on section E is negative and significant. These two effects are of similar magnitude (between 42.7\% to 53.0\% in absolute value), suggesting an offseting effect of the policy. 
    
-\begin{table}[h]
+\begin{table}[htbp!]
     \centering
-    \label{tab:dd_twfe_patents_by_section}
 \begin{threeparttable}
+    \label{tab:dd_twfe_patents_by_section}
     \caption{Difference-in-differences results for quarterly patent applications by IPC section}
     \input{\subfix{../../output/tables/dd_twfe_patents_section.tex}}
     \begin{tablenotes}
-        \small
-        \item \textit{Notes}: Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included. 
-        \item All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+        \footnotesize
+        \item \textit{Notes}: Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included. All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
     \end{tablenotes}
 \end{threeparttable}
 \end{table}
 
-Because I lose precision on the estimates due to the smaller sample size, I am underpowered to detect small effects on the other sections. The event study regressions in Figure \ref{fig:event_study_patents_section}provide additional insight about the intervention's effect on patent applications by IPC section. 
+% Note: need a row with the number of identified patent applications by section to make the table more informative.
+% Should also try to make the table less wide so that it fits within the page.
 
-\begin{figure}[h]
+Given that there is a smaller number of patents per IPC section for all provinces, I am underpowered to detect small effects on the other sections which presented null effects. The event study regressions in Figure \ref{fig:event_study_patents_section} provide additional insight about the intervention's effect on patent applications by IPC section. The figure displays the same coefficients and confidence intervals as those of in Figure \ref{fig:event_study_patents} separating by IPC section and restricting to the additional controls specification. 
+
+\begin{figure}[htbp!]
     \centering
     \caption{Event study plot for quarterly patent applications by IPC section}
     \label{fig:event_study_patents_section}
@@ -71,5 +75,12 @@ Because I lose precision on the estimates due to the smaller sample size, I am u
     \end{minipage}
 \end{figure}
 
-\end{document}
+% need to include definition of human necessity
 
+Human neccessity (A) patents, which include agriculture, medicine and apparel related inventions, show only one significant deviation from the pre-policy trend, five quarters after the intervention (2017Q3). These patents increased by approximately 79\% relative to one period before the intervention. However pre-intervention coefficients are less stable for this section, potentially due to its broad definition.
+
+Fixed constructions (E) patents, which include patents related to buildings, roads, and bridges, do show a significant decrease in most quarters after the intervention. Pre-policy coefficients are stable, and the effect is present in the first quarter after the intervention, suggesting that the policy may have had a negative effect on this type of patent applications. Because the policy did not particularly target this type of innovation, it is possible that this type of innovation may have been crowded out by other types of inventions. 
+
+Other notable results which were not picked up by the DD specification are in the Section D patents, which include patents related to textiles and paper. While less stable than other sections, these patents show the most important increase of all patent sections, the highest increase being 238\% more patent applications 19 quarters after the intervention (Q32020). The pre-policy trend is mostly common across the treatment and control groups (with the exception of 2015Q4, same as in the total patent event study), suggesting that these increases were due to the AITC intervention. The DD may not capture this effect due to increases being present next to quarters without increases. 
+
+\end{document}

@@ -50,3 +50,9 @@
 - Title: 
     - Offsetting innovation? The impact of the Alberta Investment Tax Credit on intellectual property
     - Do fiscal incentives affect innovation? Evidence from the Alberta Investment Tax Credit
+
+- Complications & further research
+    - DD weights weird, event study better
+    - IPC sections to brooad, must be more specific, but lose power
+    - should consider section A more specifically, survey dat.a 
+    - Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
