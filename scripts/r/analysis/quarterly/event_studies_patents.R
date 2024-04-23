@@ -99,7 +99,7 @@ es_add_controls <-
 
 # Periods 
 
-periods_for_plot <- seq(start_period, end_period, by = 2)
+periods_for_plot <- seq(start_period, end_period, by = 4)
 
 # Dates 
 
@@ -174,7 +174,7 @@ event_study_plot_faceted_patents <-
 
 event_study_plot_faceted_patents
 
-ggsave("figures/event-studies/quarterly/patents_faceted.png", width = 17, height = 25, units = "cm", dpi = 800)
+ggsave("figures/event-studies/quarterly/patents_faceted.png", width = 15, height = 17, units = "cm", dpi = 800)
 
 
 # Patent sections ------------------------------------------------------------
@@ -387,7 +387,7 @@ theme_bw() +
 scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 25, units = "cm", dpi = 800)
+ggsave("figures/event-studies/quarterly/patents_def_controls_by_section.png", width = 17, height = 22, units = "cm", dpi = 800)
 
 ## Additional controls ------------------------------------------------------------
 

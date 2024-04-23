@@ -96,7 +96,7 @@ quarterly_common_trends
 
 ggsave("figures/quarterly_common_trends.png", 
         quarterly_common_trends, 
-        width = 17, 
+        width = 15, 
         height = 10,
         units = "cm", 
         dpi = 800)
