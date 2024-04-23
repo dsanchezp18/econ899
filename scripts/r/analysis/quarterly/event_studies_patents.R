@@ -85,7 +85,7 @@ es_def_controls <-
 
 ## Additional controls ------------------------------------------------------------
 
-extra_controls <- "+ travellers + vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+extra_controls <- "+ ln1_travellers + ln1_vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
 
 add_controls <- paste(def_controls, extra_controls)
 
@@ -99,7 +99,7 @@ es_add_controls <-
 
 # Periods 
 
-periods_for_plot <- seq(start_period, end_period, by = 4)
+periods_for_plot <- seq(start_period, end_period, by = 2)
 
 # Dates 
 
@@ -149,6 +149,33 @@ scale_x_continuous(breaks = periods_for_plot, labels = dates) +
 theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ggsave("figures/event-studies/quarterly/patents_add_controls.png", width = 17, height = 10, units = "cm", dpi = 800)
+
+### All three together with facets ------------------------------------------------------------
+
+patents_event_studies <- list(`(1) Baseline` = es_baseline,
+                              `(2) Economic controls` = es_def_controls, 
+                              `(3) Additional controls` = es_add_controls)
+
+event_study_plot_faceted_patents <-
+    ggiplot(patents_event_studies,
+            geom_style = "errorbar",
+            multi_style = "facet",
+            ci.width = 0.1,
+            pt.pch = 0,
+            col = c("#0D3692","#0D3692","#0D3692"),
+            facet_args = list(ncol = 1, scales = "free_y")) +
+    theme_bw() +
+    labs(title = "", 
+         x = "Quarter-year",
+         y = "Event study interaction term and 95% C.I.") + 
+    scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+
+event_study_plot_faceted_patents
+
+ggsave("figures/event-studies/quarterly/patents_faceted.png", width = 17, height = 25, units = "cm", dpi = 800)
+
 
 # Patent sections ------------------------------------------------------------
 

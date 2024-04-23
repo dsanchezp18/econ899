@@ -78,7 +78,7 @@ quarterly_common_trends <-
     geom_vline(xintercept = as.numeric(treatment_start_date_quarter), linetype = "dashed") +
     labs(colour = "",
          x = "Quarter-year",
-         y = "Ln (Patent applications)")+
+         y = "Ln (Patent applications + 1)")+
     theme_minimal() +
     theme(text = element_text(size = 10),
           axis.text.x = element_text(angle = 45, hjust = 1),
@@ -88,7 +88,7 @@ quarterly_common_trends <-
           plot.caption = element_text(hjust = 0),
           panel.grid.major = element_line(linetype = "dashed"),
           panel.grid.minor = element_line(linetype = "dashed"),
-          legend.position = c(0.9, 0.05))
+          legend.position = c(0.9, 0.15))
 
 quarterly_common_trends
 
