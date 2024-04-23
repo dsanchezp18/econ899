@@ -42,7 +42,7 @@ patents_main <- readRDS("data/patents/processed/patents_main.rds")
 
 # Load the final dataset
 
-df <- readRDS("data/full_dataset.rds")
+df <- readRDS("data/full_dataset_monthly.rds")
 
 # Patents -----------------------------------------------------------
 
