@@ -151,9 +151,9 @@ event_studies_add_controls_sections <- list(`Section A patents` = es_add_control
 
 event_study_plot_faceted_patent_sections <-
     ggiplot(event_studies_add_controls_sections, 
-            geom_style= "errorbar",
+            geom_style= "ribbon",
             multi_style = "facet",
-            ci.width = 0.01,
+            ci.width = 0,
             pt.pch = 1,
             col = rep("#0D3692",9),
             facet_args = list(ncol = 2, scales = "free_y")) + 
