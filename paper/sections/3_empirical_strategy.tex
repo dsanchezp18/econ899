@@ -40,7 +40,7 @@ I implement a two-way fixed effects (TWFE) difference-in-differences (DD) design
 
 \begin{equation}
     \label{eq:dd_model}
-    \ln(P_{it} + 1) = \theta_i + \theta_t + \beta + T_{it} + \mathbb{x}_{it}^{'} \gamma + u_{it}
+    \ln(P_{it} + 1) = \theta_i + \theta_t + \beta \ T_{it} + \mathbb{x}_{it}^{'} \gamma + u_{it}
 \end{equation}
 
 where $P_{it}$ is the explained variable; in most specifications, $P_{it}$ is the number of patents filed in a province $i$ and period $t$. $\theta_i$ and $\tau_t$ are sets of province and period fixed effects. I use a natural logarithm transformation along with the addition of one to correct for provinces with small amounts of patent applications on some periods. $T_{it}$ is a binary variable equal to unity for observations for treated observations and zero otherwise. Hence, the estimated parameter $\hat{\beta}$ is the coefficient of interest, which is my estimate for the average treatment effect of the AITC on the explained variable. $\mathbf{x}_{it}$ is a vector of time and province-varying controls, as described in the previous subsection, and $\gamma$ is the associated vector of parameters. $u_{it}$ is a stochastic error term which varies between provinces and periods. For my results, I cluster standard errors at the province and period level. 
@@ -53,7 +53,7 @@ where $P_{it}$ is the explained variable; in most specifications, $P_{it}$ is th
         \input{\subfix{../../output/tables/descriptive_statistics_explained_quarterly.tex}}
         \begin{tablenotes}
             \small
-            \item \textit{Notes}: Calculations based on a balanced panel of $N$ = 656 province-monthly observations from 2001Q1 to 2021Q2. The sample includes all Canadian provinces except Newfoundland and Labrador, Prince Edward Island, Yukon and Nunavut. Treatment group is Alberta, and control group is all remaining provinces. Post-intervention periods are those after April 2016 (2016Q2).
+            \item \textit{Notes}: Calculations based on a balanced panel of $N$ = 656 province-monthly observations from 2001Q1 to 2021Q2. The sample includes all Canadian provinces except Newfoundland and Labrador, Prince Edward Island, Yukon and Nunavut. The treatment group is Alberta, and the control group is made from all remaining provinces. Post-intervention periods are those after April 2016 (2016Q2).
         \end{tablenotes}
     \end{threeparttable}
 
@@ -65,12 +65,12 @@ The key identifying assumption of the DD design is that, absent the AITC interve
 
 \begin{figure}[h]
     \centering
-    \caption{Quarterly time series of patent applications between Alberta and control provinces}
+    \caption{Quarterly time series of patent applications between treatment and control groups}
     \label{fig:quarterly_common_trends}
     \includegraphics{\subfix{../../figures/quarterly_common_trends.png}}
     \begin{minipage}{0.9\textwidth}
         \footnotesize
-        \textit{Notes}: The figure shows the quarterly time series of patent applications between Alberta and control provinces from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016.
+        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016. The treatment group is Alberta, and the control group is made from all remaining provinces except NL, PE, YT and NU. 
     \end{minipage}
 \end{figure}
 
