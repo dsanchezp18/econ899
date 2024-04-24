@@ -36,15 +36,15 @@ dd_twfe_patents <- list(baseline_twfe,
 # Create a dataframe with the explained variable names to be added to the model
 
 explained_vars <- tibble(
-                term = "Explained variable",
-                v1 = "",
-                v2 = "$\\ln(\\text{Patents}+1)$",
-                v3 = ""
+                term = c("Explained variable", "Controls"),
+                v1 = c("", "None"),
+                v2 = c("$\\ln(\\text{Patents}+1)$", "Economic"),
+                v3 = c("", "Economic + Additional")
 )
 
 # Change the position to above goodness of fit statistics
 
-attr(explained_vars, 'position') <- 3
+attr(explained_vars, 'position') <- c(3,4)
 
 # Create the regressions table
 

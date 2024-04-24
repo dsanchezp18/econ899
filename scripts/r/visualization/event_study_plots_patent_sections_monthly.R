@@ -126,7 +126,7 @@ es_add_controls_H <-
 
 # Periods 
 
-periods_for_plot <- seq(start_period, end_period, by = 6)
+periods_for_plot <- seq(start_period, end_period, by = 12)
 
 # Dates 
 
