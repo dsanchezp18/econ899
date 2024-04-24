@@ -1,0 +1,151 @@
+# R Script: Event Study Regressions for patents as DVs
+# ECON899 MA Paper 
+# SFU Economics
+# Daniel Sanchez
+# Spring 2024 
+
+# This script implements event study regressions with patents as dependent variables.
+
+# Preliminaries -----------------------------------------------------------
+
+# Libraries 
+
+library(dplyr, warn.conflicts = FALSE)
+library(fixest, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+library(modelsummary, warn.conflicts = FALSE)
+library(forcats, warn.conflicts = FALSE)
+library(tidyr, warn.conflicts = FALSE)
+library(gridExtra, warn.conflicts = FALSE)
+library(stringr, warn.conflicts = FALSE)
+library(janitor, warn.conflicts = FALSE)
+library(ggplot2, warn.conflicts = FALSE)
+library(patchwork, warn.conflicts = FALSE)
+library(ggfixest, warn.conflicts = FALSE)
+
+# Load the data 
+
+df_full <- readRDS("data/full_data_quarterly.rds")
+
+# Define treatment start date
+
+treatment_start_date <- ymd("2016-04-01")
+
+# Define valid start and end dates
+
+start_date <- ymd("2001-01-01")
+
+end_date <- ymd("2021-06-01")
+
+# Get quarter dates with floor_date
+
+start_date_quarter <- floor_date(start_date, "quarter")
+
+end_date_quarter <- floor_date(end_date, "quarter")
+
+treatment_start_date_quarter <- floor_date(treatment_start_date, "quarter")
+
+# Define valid start and end periods
+
+start_period <- interval(treatment_start_date_quarter, start_date_quarter)/months(3)
+
+end_period <- interval(treatment_start_date_quarter, end_date_quarter)/months(3)
+
+# Data preparation -----------------------------------------------------------
+
+# Filter the data to include only the relevant data (periods and provinces)
+
+df <- 
+    df_full %>%
+    filter(quarter_year_date %>% between(start_date_quarter, end_date_quarter))
+
+# Create a dataframe which has the treatment dummy, equal to 1 whenever the treatment group is Alberta, and the period dummies.
+
+df_event_study <- 
+    df %>% 
+    mutate(treatment_dummy = (treatment == "Treatment"))
+
+# Event study regressions -----------------------------------------------------------
+
+# Estimate the event study regressions for patents as dependent variables - all three specifications
+
+# Define the base controls 
+
+def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + ln1_foreign_parties + ln1_business_insolvencies"
+
+# Define the additional controls
+
+extra_controls <- "+ ln1_travellers + ln1_vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+
+add_controls <- paste(def_controls, extra_controls)
+
+# Additional controls ES regressions ------------------------------------------------------------
+
+es_add_controls_interested_parties <- 
+    feols(fml = paste("pt ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study %>% rename(pt = ln1_interested_parties),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_inventors <-
+    feols(fml = paste("pt ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study %>% rename(pt = ln1_inventors),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_applicants <-
+    feols(fml = paste("pt ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study %>% rename(pt = ln1_applicants),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+es_add_controls_owners <-
+    feols(fml = paste("pt ~ i(periods, treatment_dummy, ref = -1)", add_controls) %>% as.formula(),
+          data = df_event_study %>% rename(pt = ln1_owners),
+          fixef = c("province_code", "periods"),
+          cluster = ~ province_code + periods)
+
+# Event study plot ------------------------------------------------------------
+
+# Periods 
+
+periods_for_plot <- seq(start_period, end_period, by = 4)
+
+# Dates 
+
+dates <- 
+    df_event_study %>%
+    filter(periods %in% periods_for_plot) %>% 
+    pull(quarter_year) %>%
+    unique()
+
+# Named list of event study regressions
+
+patents_event_studies <- list(`(1) Total parties` = es_add_controls_interested_parties,
+                              `(2) Inventors` = es_add_controls_inventors, 
+                              `(3) Applicants` = es_add_controls_applicants,
+                              `(4) Owners` = es_add_controls_owners)
+
+# Plot
+
+event_study_plots_parties <-
+    ggiplot(patents_event_studies,
+            geom_style = "errorbar",
+            multi_style = "facet",
+            ci.width = 0.05,
+            pt.pch = 0,
+            col = rep("#0D3692", 4),
+            facet_args = list(ncol = 1, scales = "free_y")) +
+    theme_bw() +
+    labs(title = "", 
+         x = "Quarter-year",
+         y = "Event study interaction term and 95% C.I.") + 
+    scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "none")
+
+event_study_plots_parties
+
+# Save the plot
+
+ggsave("figures/event-studies/quarterly/parties_faceted.png", event_study_plots_parties, width = 15, height = 17, units = "cm", dpi = 800)

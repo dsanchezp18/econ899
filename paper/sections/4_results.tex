@@ -62,7 +62,7 @@ In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of estimati
 % Note: need a row with the number of identified patent applications by section to make the table more informative.
 % Should also try to make the table less wide so that it fits within the page.
 
-Given that there is a smaller number of patents per IPC section for all provinces, I am underpowered to detect small effects on the other sections. The event study regressions in Figure \ref{fig:event_study_patents_section} provide additional insight about the intervention's effect on patent applications by IPC section. The figure displays the same coefficients and confidence intervals as those of in Figure \ref{fig:event_study_patents} now separating by IPC section and restricting to the additional controls specification.
+Given that there is a smaller number of patents per IPC section for all provinces in every period, I am underpowered to detect small effects on other sections. The event study regressions in Figure \ref{fig:event_study_patents_section} provide additional insight about the intervention's effect on patent applications by IPC section. The figure displays the same coefficients and confidence intervals as those of in Figure \ref{fig:event_study_patents} now separating by IPC section and restricting to the additional controls specification.
 
 \begin{figure}[htbp!]
     \centering
@@ -85,5 +85,14 @@ Other notable results which were not picked up by the DD specification are the S
 
 \subsection{Robustness checks}
 
-Appendix \ref{sec:appendixB} presents the results of the DD specifications and event studies for number of parties in patent applications as explained variables. I consider the total amount of type of parties in patent applications and also separate by specific types: inventors, owners and applicants. 
+Appendix \ref{sec:appendixb} presents the results of the DD specifications and event studies for number of parties in patent applications as explained variables. I consider the total amount of type of parties in patent applications and also separate by specific types: inventors, owners and applicants. 
+
+Table \ref{tab:dd_twfe_patents} shows the results of the DD estimation for all four explained variables. All specifications show a null effect, except the inventors specification, which shows a significant positive effect. Event study plots show that the effect is null for most quarters in post-policy periods for total parties, inventors and applicants, however, pre-policy trends are much less stable for these variables than for owners. Notably, there are negative effects in most pre-policy interaction terms for inventor parties, which may be driving the positive effect in the post-policy period. The positive difference for 2015Q4 is present on all four explained variables, which shows that this difference is not due to the mapping of patents to parties.
+
+The owners specification does show an increasing trend in the last four quarters of the data, and very stable pre-policy trends. This suggests that the AITC may have had a positive effect on the number of owners in patent applications, which may be due to the policy incentivizing firms to apply for patents. Potentially, this effect may be driven by the increases in section A and D patents, as seen in the previous subsections. On all but the last quarter, the interaction terms for applicants shows a negative effect, which may explain the overall null effect of the policy on total parties.
+
+Overall, these results present similar results to the patent applications results. This suggests that my mapping of patents to provinces is not driving the effect to zero, which could be a potential concern, especially due to the elimination of some patents which presented an equal number of parties from different provinces.
+
+Appendix \ref{sec:appendixc} reproduces the DD specifications and event study regression using the province-month panel, constructed as described in Section \ref{sec:empirical_strategy}. 
+
 \end{document}

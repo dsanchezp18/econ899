@@ -8,4 +8,30 @@
 \section{Appendix: Patent parties models}
 \label{sec:appendixb}
 
+\begin{table}[htbp!]
+    \centering
+\begin{threeparttable}
+    \caption{Difference-in-differences specifications for quarterly patent applications}
+    \label{tab:dd_twfe_patents}
+    \input{\subfix{../../output/tables/dd_twfe_parties.tex}}
+    \begin{tablenotes}
+        \small
+        \item \textit{Notes}: All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+    \end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\begin{figure}[htbp!]
+    \centering
+    \caption{Event study plot for quarterly parties in patent parties}
+    \label{fig:event_study_patent_parties}
+    \includegraphics{\subfix{../../figures/event-studies/quarterly/parties_faceted.png}}
+    \begin{minipage}{0.9\textwidth}
+        \footnotesize
+        \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each quarter. The points represent the point estimate, while the error bars represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the quarter before the intervention. Baseline, economic, and additional controls specifications include the controls seen in specifications (1) through (3) in Table \ref{tab:dd_twfe_patents}. 
+    \end{minipage}
+\end{figure}
+
+
+
 \end{document}
