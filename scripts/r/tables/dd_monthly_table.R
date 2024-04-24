@@ -120,4 +120,4 @@ dd_twfe_patents_section_table <-
                  add_rows = explained_vars_section) %>% 
     row_spec(2, bold = T)
 
-save_kable(dd_twfe_patents_section_table, "output/tables/dd_twfe_patents_section.tex")
+save_kable(dd_twfe_patents_section_table, "output/tables/dd_twfe_patents_section_monthly.tex")
