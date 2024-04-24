@@ -159,7 +159,7 @@ event_study_plot_faceted_patent_sections <-
             facet_args = list(ncol = 2, scales = "free_y")) + 
         theme_bw() +
         labs(title = "", 
-            x = "Quarter-year",
+            x = "Month-year",
             y = "Event study interaction term and 95% C.I.") + 
         scale_x_continuous(breaks = periods_for_plot, labels = dates) +
         theme(axis.text.x = element_text(angle = 45, hjust = 1),
