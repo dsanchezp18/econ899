@@ -13,6 +13,12 @@
 source("scripts/r/analysis/monthly/dd_patents.R")
 source("scripts/r/tables/mappings.R")
 
+# Mapping (only for the treated coefficient)
+
+coef_map_treated <- c(
+    treated = "Treatment x Post")
+
+
 # Load required libraries
 
 library(modelsummary, warn.conflicts = FALSE)
@@ -38,7 +44,7 @@ explained_vars <- tibble(
 
 # Change the position to above goodness of fit statistics
 
-attr(explained_vars, 'position') <- 37
+attr(explained_vars, 'position') <- 3
 
 # Create the regressions table
 
@@ -49,9 +55,9 @@ dd_twfe_patents_table <-
                  output = "latex_tabular",
                  escape = F,
                  estimate = "{estimate}{stars}",
-                 coef_map = explanatory_variables_map,
-                 gof_map = goodness_of_fit_map,
-                 add_rows = explained_vars) %>% 
+                 coef_map = coef_map_treated,
+                 add_rows = explained_vars,
+                 gof_map = goodness_of_fit_map) %>% 
     row_spec(2, bold = T)
 
 save_kable(dd_twfe_patents_table, "output/tables/dd_twfe_patents_monthly.tex")
@@ -100,11 +106,6 @@ explained_vars_section <- tibble(
 # Change the position to above goodness of fit statistics
 
 attr(explained_vars_section, 'position') <- c(3,4)
-
-# Mapping (only for the treated coefficient)
-
-coef_map_treated <- c(
-    treated = "Treatment x Post")
 
 # Create the regressions table
 
