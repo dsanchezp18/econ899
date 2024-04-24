@@ -85,7 +85,6 @@ dd_twfe_patents_section <- list(add_controls_twfe_A,
 #                 v9 = "Multiple sections"
 # )
 
-
 explained_vars_section <- tibble(
                 term = "Patent section (IPC)",
                 v1 = "A",
@@ -102,6 +101,11 @@ explained_vars_section <- tibble(
 
 attr(explained_vars_section, 'position') <- c(3,4)
 
+# Mapping (only for the treated coefficient)
+
+coef_map_treated <- c(
+    treated = "Treatment x Post")
+
 # Create the regressions table
 
 dd_twfe_patents_section_table <-
@@ -117,3 +121,43 @@ dd_twfe_patents_section_table <-
     row_spec(2, bold = T)
 
 save_kable(dd_twfe_patents_section_table, "output/tables/dd_twfe_patents_section.tex")
+
+# DD Parties models (Appendix B) ------------------------------------------------
+
+source("scripts/r/analysis/quarterly/dd_parties.R")
+
+# List of models (only additional controls)
+dd_twfe_parties <- list(add_controls_twfe_all_parties,
+                        add_controls_twfe_inventors,
+                        add_controls_twfe_applicants,
+                        add_controls_twfe_owners)
+
+# Created a dataframe with the explained variable names to be added to the model
+
+explained_vars_parties <- tibble(
+                term = "Party type",
+                v1 = "Total",
+                v2 = "Inventors",
+                v3 = "Applicants",
+                v4 = "Owners"
+)
+
+# Change the position to above goodness of fit statistics
+
+attr(explained_vars_parties, 'position') <- 3
+
+# Create the regressions table
+
+dd_twfe_parties_table <-
+    modelsummary(dd_twfe_parties,
+                 stars = stars,
+                 booktabs = T,
+                 output = "latex_tabular",
+                 escape = F,
+                 estimate = "{estimate}{stars}",
+                 coef_map = coef_map_treated,
+                 gof_map = goodness_of_fit_map,
+                 add_rows = explained_vars_parties) %>% 
+    row_spec(2, bold = T)
+
+save_kable(dd_twfe_parties_table, "output/tables/dd_twfe_parties.tex")

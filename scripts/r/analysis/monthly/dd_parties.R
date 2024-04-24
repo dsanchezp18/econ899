@@ -6,6 +6,20 @@
 
 # This script implements difference-in-differences models with two-way fixed effects (TWFE) for patent parties as dependent variables.
 
+# Preliminaries ----------------------------------------------------------------
+
+# Load packages
+
+library(dplyr, warn.conflicts = FALSE)
+library(fixest, warn.conflicts = FALSE)
+library(ggplot2, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+library(forcats, warn.conflicts = FALSE)
+library(tibble, warn.conflicts = FALSE)
+library(sandwich, warn.conflicts = FALSE)
+library(stringr, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+
 # Load full dataset
 
 df_full <- readRDS("data/full_dataset_monthly.rds")

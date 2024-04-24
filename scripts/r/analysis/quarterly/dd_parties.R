@@ -6,6 +6,20 @@
 
 # This script implements difference-in-differences models with two-way fixed effects (TWFE) for patent parties as dependent variables.
 
+# Preliminaries ----------------------------------------------------------------
+
+# Load packages
+
+library(dplyr, warn.conflicts = FALSE)
+library(fixest, warn.conflicts = FALSE)
+library(ggplot2, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+library(forcats, warn.conflicts = FALSE)
+library(tibble, warn.conflicts = FALSE)
+library(sandwich, warn.conflicts = FALSE)
+library(stringr, warn.conflicts = FALSE)
+library(lubridate, warn.conflicts = FALSE)
+
 # Load full dataset
 
 df_full <- readRDS("data/full_data_quarterly.rds")
@@ -69,17 +83,9 @@ baseline_twfe_owners <-
           cluster = ~ province_code + quarter_year
     )
 
-# See results with modelsummary
-
-source("scripts/r/modelsummary/stars.R")
-
-baseline_parties <- list(baseline_twfe_all_parties, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners)
-
-modelsummary(baseline_parties, stars = stars)
-
 # Defendable controls -----------------------------------------------------------
 
-def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + log(foreign_parties+1)"
+def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln1_business_insolvencies + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + ln1_foreign_parties"
 
 def_controls_twfe_all_parties <-
     feols(fml = paste("ln1_interested_parties ~ treated", def_controls) %>% as.formula(),
@@ -109,15 +115,9 @@ def_controls_twfe_owners <-
           cluster = ~ province_code + quarter_year
     )
 
-# See results with modelsummary
-
-def_controls_parties <- list(def_controls_twfe_all_parties, def_controls_twfe_inventors, def_controls_twfe_applicants, def_controls_twfe_owners)
-
-modelsummary(def_controls_parties, stars = stars)
-
 # Additional controls -------------------------------------------------------------------
 
-extra_controls <- "+ ln1_business_insolvencies + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
+extra_controls <- "+ ln1_travellers + ln1_vehicles + ln_electric_power_generation + ln_average_actual_hours + new_housing_price_index + ln_food_services_receipts + ln_total_avg_tenure"
 
 add_controls <- paste(def_controls, extra_controls)
 
@@ -148,9 +148,3 @@ add_controls_twfe_owners <-
           data = df_twfe,
           cluster = ~ province_code + quarter_year
     )
-
-# See results with modelsummary
-
-add_controls_parties <- list(add_controls_twfe_all_parties, add_controls_twfe_inventors, add_controls_twfe_applicants, add_controls_twfe_owners)
-
-modelsummary(add_controls_parties, stars = stars)
