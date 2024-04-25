@@ -36,6 +36,8 @@
 
 - Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
 
+-  Intellectual property is important because it is a way for firms to have innovation assets. 
+
 - Time series of patents filed, and patents granted. In institutional context. 
 
 - Contributions:
