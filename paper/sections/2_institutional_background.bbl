@@ -19,6 +19,70 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{agrawal_etal20}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
+           family={Rosell},
+           familyi={R\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
+           family={Simcoe},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{fullhash}{9a7346946685de68841e00ced9785728}
+      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1257/pol.20140467
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
     \entry{becker15}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
@@ -71,6 +135,196 @@
       \endverb
       \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
     \endentry
+    \entry{brouillete13}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
+           family={Brouillete},
+           familyi={B\bibinitperiod},
+           given={Dany},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{fullhash}{9deb644f8dd317839e46baef864dd674}
+      \strng{bibnamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authorbibnamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authornamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authorfullhash}{9deb644f8dd317839e46baef864dd674}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2015-01-19}
+      \field{eprinttype}{Innovation, Science and Economic Development Canada}
+      \field{langid}{english}
+      \field{number}{Working Paper 2014-06}
+      \field{series}{Working {{Paper Series}}}
+      \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
+      \field{type}{Statistical Reports}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
+      \endverb
+    \endentry
+    \entry{canadarevenueagency15}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
+           family={{Canada Revenue Agency}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Canada Revenue Agency}%
+      }
+      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.}
+      \field{annotation}{Last Modified: 2015-04-07}
+      \field{day}{30}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Evolution of the {{SR}}\&{{ED Program}} – a Historical Perspective}
+      \field{type}{service description}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
+      \endverb
+      \verb{url}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
+      \endverb
+    \endentry
+    \entry{canadarevenueagency23}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
+           family={{Canada Revenue Agency}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Canada Revenue Agency}%
+      }
+      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2023-12-01}
+      \field{day}{22}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+      \verb{url}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+    \endentry
+    \entry{mansfield_switzer85b}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
+           family={Mansfield},
+           familyi={M\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Lorne},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[University of Toronto Press, Canadian Public Policy]}%
+      }
+      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cette étude semble constituer une des premières tentatives pour évaluer les effets des crédits d'impôts consentis par le Canada sur la recherche et le développement commandités par les entreprises. Les résultats obtenus sont fondés sur un échantillon soigneusement choisi de firmes effectuant de la recherche et du développement au Canada, sur une étude économétrique des données sur la recherche et le développement industriels au Canada, et sur d'autres calculs impliquant l'élasticité aux prix de la demande pour la recherche et le développement; ils révèlent que les avantages fiscaux n'ont eu que peu d'effets. Les allocations spéciales pour recherche et développement semblent avoir fait augmenter les dépenses de R \& D d'environ 1 pour cent. et le crédit d'impôt à l'investissement semble les avoir fait augmenter d'environ 2 pour cent. Or, de telles augmentations sont équivalentes à environ 30 pour cent ou 40 pour cent du manque à gagner du gouvernement. /// This study seems to be one of the first attempts to estimate the effects of Canada's R and D tax credits and allowances on company-funded research and development. The results (based on a carefully selected survey of firms carrying out R and D in Canada, an econometric study of Canadian industrial R and D data, and other calculations involving the price elasticity of demand for R and D) indicate that these effects have been modest. The special research allowance seems to have increased R and D expenditures by about 1 per cent, and the investment tax credit seems to have increased them by about 2 per cent. These increases amounted to about 30 or 40 per cent of the revenue losses to the government.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0317-0861}
+      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+      \field{number}{2}
+      \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{11}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 246}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2307/3550705
+      \endverb
+      \verb{eprint}
+      \verb 3550705
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 - How Effective Are Canada's Direct Tax Incentives f.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/3550705
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/3550705
+      \endverb
+    \endentry
     \entry{mansfield_switzer85a}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
@@ -92,8 +346,10 @@
       \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
       \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
       \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -177,7 +433,7 @@
       \verb 3552593
       \endverb
       \verb{file}
-      \verb C:\Users\user\Zotero\storage\DJDI3A5U\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
+      \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\mansfield_effects_of_rd_tax_credits_canada_1984.pdf;C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\Tax Subsidies for R&D in Canadian Provinces.pdf;C\:\\Users\\user\\Zotero\\storage\\DJDI3A5U\\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.jstor.org/stable/3552593
@@ -330,6 +586,70 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{agrawal_etal20}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
+           family={Rosell},
+           familyi={R\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
+           family={Simcoe},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{fullhash}{9a7346946685de68841e00ced9785728}
+      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1257/pol.20140467
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
     \entry{becker15}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
@@ -382,6 +702,196 @@
       \endverb
       \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
     \endentry
+    \entry{brouillete13}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
+           family={Brouillete},
+           familyi={B\bibinitperiod},
+           given={Dany},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{fullhash}{9deb644f8dd317839e46baef864dd674}
+      \strng{bibnamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authorbibnamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authornamehash}{9deb644f8dd317839e46baef864dd674}
+      \strng{authorfullhash}{9deb644f8dd317839e46baef864dd674}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2015-01-19}
+      \field{eprinttype}{Innovation, Science and Economic Development Canada}
+      \field{langid}{english}
+      \field{number}{Working Paper 2014-06}
+      \field{series}{Working {{Paper Series}}}
+      \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
+      \field{type}{Statistical Reports}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
+      \endverb
+    \endentry
+    \entry{canadarevenueagency15}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
+           family={{Canada Revenue Agency}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Canada Revenue Agency}%
+      }
+      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \field{extraname}{1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.}
+      \field{annotation}{Last Modified: 2015-04-07}
+      \field{day}{30}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Evolution of the {{SR}}\&{{ED Program}} – a Historical Perspective}
+      \field{type}{service description}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
+      \endverb
+      \verb{url}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
+      \endverb
+    \endentry
+    \entry{canadarevenueagency23}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
+           family={{Canada Revenue Agency}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Canada Revenue Agency}%
+      }
+      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
+      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2023-12-01}
+      \field{day}{22}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+      \verb{url}
+      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+    \endentry
+    \entry{mansfield_switzer85b}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
+           family={Mansfield},
+           familyi={M\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Lorne},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[University of Toronto Press, Canadian Public Policy]}%
+      }
+      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Cette étude semble constituer une des premières tentatives pour évaluer les effets des crédits d'impôts consentis par le Canada sur la recherche et le développement commandités par les entreprises. Les résultats obtenus sont fondés sur un échantillon soigneusement choisi de firmes effectuant de la recherche et du développement au Canada, sur une étude économétrique des données sur la recherche et le développement industriels au Canada, et sur d'autres calculs impliquant l'élasticité aux prix de la demande pour la recherche et le développement; ils révèlent que les avantages fiscaux n'ont eu que peu d'effets. Les allocations spéciales pour recherche et développement semblent avoir fait augmenter les dépenses de R \& D d'environ 1 pour cent. et le crédit d'impôt à l'investissement semble les avoir fait augmenter d'environ 2 pour cent. Or, de telles augmentations sont équivalentes à environ 30 pour cent ou 40 pour cent du manque à gagner du gouvernement. /// This study seems to be one of the first attempts to estimate the effects of Canada's R and D tax credits and allowances on company-funded research and development. The results (based on a carefully selected survey of firms carrying out R and D in Canada, an econometric study of Canadian industrial R and D data, and other calculations involving the price elasticity of demand for R and D) indicate that these effects have been modest. The special research allowance seems to have increased R and D expenditures by about 1 per cent, and the investment tax credit seems to have increased them by about 2 per cent. These increases amounted to about 30 or 40 per cent of the revenue losses to the government.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0317-0861}
+      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+      \field{number}{2}
+      \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{11}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{241\bibrangedash 246}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.2307/3550705
+      \endverb
+      \verb{eprint}
+      \verb 3550705
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 - How Effective Are Canada's Direct Tax Incentives f.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/3550705
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/3550705
+      \endverb
+    \endentry
     \entry{mansfield_switzer85a}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
@@ -403,8 +913,10 @@
       \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
       \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
       \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{extraname}{2}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
@@ -488,7 +1000,7 @@
       \verb 3552593
       \endverb
       \verb{file}
-      \verb C:\Users\user\Zotero\storage\DJDI3A5U\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
+      \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\mansfield_effects_of_rd_tax_credits_canada_1984.pdf;C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\Tax Subsidies for R&D in Canadian Provinces.pdf;C\:\\Users\\user\\Zotero\\storage\\DJDI3A5U\\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
       \endverb
       \verb{urlraw}
       \verb https://www.jstor.org/stable/3552593

@@ -34,6 +34,23 @@
 
 ## For writing
 
+- Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
+
+- Time series of patents filed, and patents granted. In institutional context. 
+
+- Contributions:
+    - Do R&D tax credits spur innovation products? Patents specifically?
+    - Talk about how patents were separated by section code. This is valuable but should compare to studies in Canada that have done this. Most use survey data. 
+    - One of the most important things is that Canada has one of the most generous R&D tax credits in the world.
+    - IPC division interesting. 
+
+- Mechanism:
+    - Firms do not protect their IP, use papers and also the data.
+    - Patents less common, industrial designs and trademarks more common.
+    - Over the last 10 years, patent filing activity has decreased 2%, while trademarks and industrial designs increased a remarkable 44% and 54%, respectively.
+    - From 2017 to 2019, 5.9% of businesses said that they had IP that they chose not to formally protect. This proportion was higher among firms engaged in research and development (24.4%).
+    - Macro and mckenzie paper saying that Canada struggles with it's R&D ratio. So yeah, maybe AITC does impact R\&D which I do not observe, but that never really creates patents.
+
 - In Canada patents are for the whole country, so its hard to evalute impact in a quasi experiment. But R&D tax credits, do they generate more patents? This could make sense.
     - Should review some literature on this.
 
@@ -42,17 +59,14 @@
 - Other similar papers:
     - Agarwal (SRED in Canada)
     - The impact of regional investment incentives on employment and productivity Daly
-    - Czarnitzki the only paper to actually see innovation output. 
+    - Czarnitzki the only paper to actually see innovation output, also Berube & MOHNEN
+    - Estimating the Incremental Impacts of a Provincial R&D Tax Credit Brouillette 2013, BC no significant change in R\&D spending. 
+    - Inelastic business demand for innovation in Canada. 
 
 - AITC implementation date is a bit "fuzzy".
     - Investments made beginning january 2017
     - But the program was announced in 2016
     - And expenses were elegible (maybe) beginning april 2016
-
-- Talk about how patents were separated by section code. This is valuable but should compare to studies in Canada that have done this.
-    - Most use survey data. 
-
-- One of the most important things is that Canada has one of the most generous R&D tax credits in the world.
 
 - Title: 
     - Offsetting innovation? The impact of the Alberta Investment Tax Credit on intellectual property
@@ -62,4 +76,3 @@
     - DD weights weird, event study better
     - IPC sections to brooad, must be more specific, but lose power
     - should consider section A more specifically, survey dat.a 
-    - Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
