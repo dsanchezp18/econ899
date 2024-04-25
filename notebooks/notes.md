@@ -39,6 +39,11 @@
 
 - AITC also targeted movie production. these dont produce patents, argue that.
 
+- Other similar papers:
+    - Agarwal (SRED in Canada)
+    - The impact of regional investment incentives on employment and productivity Daly
+    - Czarnitzki the only paper to actually see innovation output. 
+
 - AITC implementation date is a bit "fuzzy".
     - Investments made beginning january 2017
     - But the program was announced in 2016
