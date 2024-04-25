@@ -74,5 +74,6 @@
 
 - Complications & further research
     - DD weights weird, event study better
+    - Problem about patent counts. Should see if I fixed it in the beginning, but if not, say that in the short term, patent renewal is not an issue. In future research, better microdata could be used.
     - IPC sections to brooad, must be more specific, but lose power
-    - should consider section A more specifically, survey dat.a 
+    - should consider section A more specifically, survey data. 
