@@ -57,7 +57,7 @@ monthly_explanatory <-
 quarterly_patents <-
     monthly_patents %>% 
     mutate(quarter_year= quarter(month_year, type =  "year.quarter") %>% str_replace_all("\\.", "Q"),
-            quarter_year_date = floor_date(month_year, "quarter")) %>%
+           quarter_year_date = floor_date(month_year, "quarter")) %>%
     group_by(province_code, quarter_year, quarter_year_date) %>%
     summarise(across(where(is.integer),sum)) %>% 
     ungroup()
@@ -116,14 +116,14 @@ quarterly_patents_ln1 <-
 
 quarterly_parties_ln <-
     quarterly_parties %>%
-    mutate_at(vars(starts_with("interested_parties")), ~log(.))  %>%
+    mutate_at(vars(starts_with(c("interested_parties", "owners", "inventors", "applicants"))), ~log(.))  %>%
     rename_with(~paste0("ln_", .), starts_with(c("interested_parties", "owners", "inventors", "applicants")))
 
 # Interested parties, ln +1
 
 quarterly_parties_ln1 <-
     quarterly_parties %>%
-    mutate_at(vars(starts_with("interested_parties")), ~log(. + 1))  %>%
+    mutate_at(vars(starts_with(c("interested_parties", "owners", "inventors", "applicants"))), ~log(. + 1))  %>%
     rename_with(~paste0("ln1_", .), starts_with(c("interested_parties", "owners", "inventors", "applicants")))
 
 # Stock explanatory variables, ln
@@ -180,6 +180,7 @@ df <-
            post = if_else(quarter_year >= treatment_start_quarter, "Post", "Pre") %>% as.factor() %>% relevel("Pre"),
            ln1_foreign_parties = log(foreign_parties+1)) %>% 
     arrange(province_code, quarter_year)
+
 
 # Exporting the data -----------------------------------------------------------
 

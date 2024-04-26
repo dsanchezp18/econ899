@@ -83,6 +83,10 @@ baseline_twfe_owners <-
           cluster = ~ province_code + quarter_year
     )
 
+# baseline_party_models <- dvnames(list(baseline_twfe_all_parties, baseline_twfe_inventors, baseline_twfe_applicants, baseline_twfe_owners))
+
+# modelsummary(baseline_party_models, stars = TRUE)
+
 # Defendable controls -----------------------------------------------------------
 
 def_controls <- "+ ln_total_pop + ln_total_full_emp + ln_total_median_wage + cpi + ln1_business_insolvencies + ln_exports_all_countries + ln_imports_all_countries + ln_retail_sales + ln_wholesale_sales + ln_manufacturing_sales + ln1_foreign_parties"

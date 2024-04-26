@@ -26,7 +26,7 @@ df_full <- readRDS("data/full_dataset_monthly.rds")
 
 # Define treatment start date
 
-treatment_start_date <- ymd("2016-04-01")
+treatment_start_date <- ymd("2017-01-01")
 
 # Define valid start and end dates
 
