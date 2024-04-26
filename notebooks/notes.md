@@ -36,6 +36,16 @@
 
 - Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
 
+- The AITC is not an R&D tax credit, it is an investment tax credit!! The effect is that more investment is made, not necessarily more R&D. This has to be clearly stated.
+
+    - It is fundamentally different from the SR\&ED tax credit.
+
+    - The contribution is then to examine an investment tax credit - a tax credit for investments, and to evaluate if providing more investment capital to firms can spur innovation.
+
+    - Less focus on R&D, more on investment. 
+
+- Need a literature on investment tax credits. See if something similar has ever been done. 
+
 -  Intellectual property is important because it is a way for firms to have innovation assets. 
 
 - Patent counts : try to filter out by accepted patents (granted), patent applications which were not abandonded, etc. 
@@ -85,6 +95,9 @@
     - Do fiscal incentives affect innovation? Evidence from the Alberta Investment Tax Credit
 
 - Complications & further research
+    - I do not observe investment. 
+    - Could be that it is still too short term to observe actual innovation.
+    - If more investment is made, does that mean more R&D? If more R\&D is made, does that mean more patents?
     - DD weights weird, event study better
     - Problem about patent counts. Should see if I fixed it in the beginning, but if not, say that in the short term, patent renewal is not an issue. In future research, better microdata could be used.
     - IPC sections to brooad, must be more specific, but lose power

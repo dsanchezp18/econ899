@@ -199,6 +199,132 @@
       \endverb
       \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
     \endentry
+    \entry{albertaeconomicdevelopmentandtrade17}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
+           family={{Alberta Economic Development and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {Alberta Economic Development}%
+        {Trade}%
+      }
+      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Outlines the key components of the Government of Alberta’s Alberta Jobs Plan, which includews: investment in infrastructure; diversification of the province’s economy; support for small- and...}
+      \field{day}{3}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{Alberta Jobs Plan}
+      \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
+      \endverb
+      \verb{url}
+      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
+      \endverb
+    \endentry
+    \entry{albertaeconomicdevelopmentandtrade19}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
+           family={{Alberta Economic Development and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {Alberta Economic Development}%
+        {Trade}%
+      }
+      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...}
+      \field{day}{29}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+      \endverb
+      \verb{url}
+      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+      \endverb
+    \endentry
+    \entry{albertajobseconomyandtrade16}{legislation}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9d5c0a7d29e7a605891f5955b6a26367}{%
+           family={{Alberta Jobs, Economy and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{fullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{bibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authorbibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authornamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authorfullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
+      \field{day}{16}
+      \field{journaltitle}{SA}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
+      \endverb
+      \verb{urlraw}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+      \verb{url}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+    \endentry
     \entry{beaudry_schiffauerova11}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8440e246499238def57386d06beed5c5}{%
@@ -1031,6 +1157,48 @@
       \field{dateera}{ce}
       \verb{doi}
       \verb 10.34667/tind.49464
+      \endverb
+    \endentry
+    \entry{zabjeck16}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
+           family={Zabjeck},
+           familyi={Z\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{fullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{bibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authorbibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authornamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authorfullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.}
+      \field{day}{8}
+      \field{entrysubtype}{newspaper}
+      \field{journaltitle}{CBC News}
+      \field{langid}{canadian}
+      \field{month}{11}
+      \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
+      \endverb
+      \verb{url}
+      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
       \endverb
     \endentry
   \enddatalist
@@ -1215,6 +1383,132 @@
       \endverb
       \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
     \endentry
+    \entry{albertaeconomicdevelopmentandtrade17}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
+           family={{Alberta Economic Development and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {Alberta Economic Development}%
+        {Trade}%
+      }
+      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Outlines the key components of the Government of Alberta’s Alberta Jobs Plan, which includews: investment in infrastructure; diversification of the province’s economy; support for small- and...}
+      \field{day}{3}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{shorttitle}{Alberta Jobs Plan}
+      \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
+      \endverb
+      \verb{url}
+      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
+      \endverb
+    \endentry
+    \entry{albertaeconomicdevelopmentandtrade19}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
+           family={{Alberta Economic Development and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {Alberta Economic Development}%
+        {Trade}%
+      }
+      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...}
+      \field{day}{29}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+      \endverb
+      \verb{url}
+      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+      \endverb
+    \endentry
+    \entry{albertajobseconomyandtrade16}{legislation}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9d5c0a7d29e7a605891f5955b6a26367}{%
+           family={{Alberta Jobs, Economy and Trade}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{fullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{bibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authorbibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authornamehash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \strng{authorfullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
+      \field{day}{16}
+      \field{journaltitle}{SA}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
+      \endverb
+      \verb{urlraw}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+      \verb{url}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+    \endentry
     \entry{beaudry_schiffauerova11}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8440e246499238def57386d06beed5c5}{%
@@ -2047,6 +2341,48 @@
       \field{dateera}{ce}
       \verb{doi}
       \verb 10.34667/tind.49464
+      \endverb
+    \endentry
+    \entry{zabjeck16}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
+           family={Zabjeck},
+           familyi={Z\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{fullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{bibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authorbibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authornamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \strng{authorfullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.}
+      \field{day}{8}
+      \field{entrysubtype}{newspaper}
+      \field{journaltitle}{CBC News}
+      \field{langid}{canadian}
+      \field{month}{11}
+      \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
+      \endverb
+      \verb{url}
+      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
       \endverb
     \endentry
   \enddatalist
