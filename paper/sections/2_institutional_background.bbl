@@ -372,6 +372,58 @@
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
     \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
@@ -959,50 +1011,6 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
       \endverb
     \endentry
-    \entry{vaver06}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
-           family={Vaver},
-           familyi={V\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{fullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{bibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorbibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authornamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorfullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Canada’s {{Intellectual Property Framework}}: {{A Comparative Overview}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
-    \endentry
     \entry{warda98}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
@@ -1088,6 +1096,35 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+      \endverb
+    \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
       \endverb
     \endentry
     \entry{zabjeck16}{article}{}
@@ -1487,6 +1524,58 @@
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
     \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
@@ -2074,50 +2163,6 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
       \endverb
     \endentry
-    \entry{vaver06}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
-           family={Vaver},
-           familyi={V\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{fullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{bibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorbibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authornamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorfullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Canada’s {{Intellectual Property Framework}}: {{A Comparative Overview}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
-    \endentry
     \entry{warda98}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
@@ -2205,6 +2250,35 @@
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
       \endverb
     \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
+      \endverb
+    \endentry
     \entry{zabjeck16}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
@@ -2248,8 +2322,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{becker15}
-  \missing{worldintellectualpropertyorganization24}
 \endrefsection
 \endinput
 

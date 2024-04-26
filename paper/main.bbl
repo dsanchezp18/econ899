@@ -372,6 +372,58 @@
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
     \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
@@ -513,6 +565,7 @@
       \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -538,6 +591,50 @@
       \endverb
       \verb{url}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
+      \endverb
+    \endentry
+    \entry{canadianintellectualpropertyoffice23}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {IP Horizons}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{6}
+      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
+      \field{type}{Datasets with data dictionaries}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
     \endentry
     \entry{carew_etal06}{article}{}
@@ -587,6 +684,51 @@
       \field{dateera}{ce}
       \field{pages}{93\bibrangedash 116}
       \range{pages}{24}
+    \endentry
+    \entry{insolvency24}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3f087dde90db3cfdd0e7b16c37097a51}{%
+           family={{Innovation, Science and Economic Development Canada}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Open Government Canada}%
+      }
+      \strng{namehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{fullhash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{bibnamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authorbibnamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authornamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authorfullhash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{eprinttype}{Open Government Canada}
+      \field{month}{3}
+      \field{number}{746709f1-c729-44a1-ba84-7be5eadd3664}
+      \field{title}{Historic {{Insolvency Statistics}} - {{Monthly}} (from 1987)}
+      \field{type}{Dataset}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{version}{746709f1-c729-44a1-ba84-7be5eadd3664}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+      \verb{urlraw}
+      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+      \endverb
+      \verb{url}
+      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+      \endverb
     \endentry
     \entry{Investing16}{legislation}{}
       \field{sortinit}{I}
@@ -959,6 +1101,430 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
       \endverb
     \endentry
+    \entry{statisticscanada08}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{11}
+      \field{title}{Table 25-10-0001-01 {{Electric}} Power Statistics, with Data for Years 1950 - 2007}
+      \field{type}{Data table}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510000101-eng
+      \endverb
+    \endentry
+    \entry{retail_trade_sales}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{2}
+      \field{title}{Table 20-10-0008-01 {{Retail}} Trade Sales by Province and Territory, Inactive (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010000801-eng
+      \endverb
+    \endentry
+    \entry{lfs_employee_wages}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Table 14-10-0063-01 {{Employee}} Wages by Industry, Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410006301-eng
+      \endverb
+    \endentry
+    \entry{lfs_lfc_table}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shorttitle}{{{LFS Labour Force Characteristics}}}
+      \field{title}{Table 14-10-0287-03 {{Labour}} Force Characteristics by Province, Monthly, Seasonally Adjusted}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410028701-eng
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\SVEZHYCW\tv.html
+      \endverb
+    \endentry
+    \entry{manufacturing_sales}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{2}
+      \field{title}{Table 16-10-0048-01 {{Manufacturing}} Sales by Industry and Province, Monthly (Dollars Unless Otherwise Noted) (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1610004801-eng
+      \endverb
+    \endentry
+    \entry{wholesale_trade}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{2}
+      \field{title}{Table 20-10-0074-01 {{Wholesale}} Trade, Sales (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010007401-eng
+      \endverb
+    \endentry
+    \entry{cpi}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{2}
+      \field{title}{Table 18-10-0004-01 {{Consumer Price Index}}, Monthly, Not Seasonally Adjusted}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010007401-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24a}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{3}
+      \field{title}{Table 18-10-0205-01 {{New}} Housing Price Index, Monthly}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1810020501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24c}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{3}
+      \field{title}{Table 21-10-0019-01 {{Monthly}} Survey of Food Services and Drinking Places (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2110001901-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24g}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{10}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{4}
+      \field{title}{Table 12-10-0175-01 {{International}} Merchandise Trade by Province, Commodity, and {{Principal Trading Partners}} (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24f}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{11}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{4}
+      \field{title}{Table 25-10-0015-01 {{Electric}} Power Generation, Monthly Generation by Type of Electricity}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{12}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{10}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410004201-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24b}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{13}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{11}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410005001-eng
+      \endverb
+    \endentry
     \entry{vaver06}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
@@ -1088,6 +1654,35 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+      \endverb
+    \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
       \endverb
     \endentry
     \entry{zabjeck16}{article}{}
@@ -1487,6 +2082,58 @@
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
     \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
@@ -1628,6 +2275,7 @@
       \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{1}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -1653,6 +2301,50 @@
       \endverb
       \verb{url}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
+      \endverb
+    \endentry
+    \entry{canadianintellectualpropertyoffice23}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {IP Horizons}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{month}{6}
+      \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
+      \field{type}{Datasets with data dictionaries}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2023}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
     \endentry
     \entry{carew_etal06}{article}{}
@@ -1702,6 +2394,51 @@
       \field{dateera}{ce}
       \field{pages}{93\bibrangedash 116}
       \range{pages}{24}
+    \endentry
+    \entry{insolvency24}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3f087dde90db3cfdd0e7b16c37097a51}{%
+           family={{Innovation, Science and Economic Development Canada}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Open Government Canada}%
+      }
+      \strng{namehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{fullhash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{bibnamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authorbibnamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authornamehash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \strng{authorfullhash}{3f087dde90db3cfdd0e7b16c37097a51}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{eprinttype}{Open Government Canada}
+      \field{month}{3}
+      \field{number}{746709f1-c729-44a1-ba84-7be5eadd3664}
+      \field{title}{Historic {{Insolvency Statistics}} - {{Monthly}} (from 1987)}
+      \field{type}{Dataset}
+      \field{urlday}{15}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{version}{746709f1-c729-44a1-ba84-7be5eadd3664}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+      \verb{urlraw}
+      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+      \endverb
+      \verb{url}
+      \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+      \endverb
     \endentry
     \entry{Investing16}{legislation}{}
       \field{sortinit}{I}
@@ -2074,6 +2811,430 @@
       \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
       \endverb
     \endentry
+    \entry{statisticscanada08}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{11}
+      \field{title}{Table 25-10-0001-01 {{Electric}} Power Statistics, with Data for Years 1950 - 2007}
+      \field{type}{Data table}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510000101-eng
+      \endverb
+    \endentry
+    \entry{retail_trade_sales}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{2}
+      \field{title}{Table 20-10-0008-01 {{Retail}} Trade Sales by Province and Territory, Inactive (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010000801-eng
+      \endverb
+    \endentry
+    \entry{lfs_employee_wages}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Table 14-10-0063-01 {{Employee}} Wages by Industry, Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410006301-eng
+      \endverb
+    \endentry
+    \entry{lfs_lfc_table}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.}
+      \field{annotation}{Last Modified: 2024-02-09}
+      \field{day}{9}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{shorttitle}{{{LFS Labour Force Characteristics}}}
+      \field{title}{Table 14-10-0287-03 {{Labour}} Force Characteristics by Province, Monthly, Seasonally Adjusted}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410028701-eng
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\SVEZHYCW\tv.html
+      \endverb
+    \endentry
+    \entry{manufacturing_sales}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{2}
+      \field{title}{Table 16-10-0048-01 {{Manufacturing}} Sales by Industry and Province, Monthly (Dollars Unless Otherwise Noted) (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1610004801-eng
+      \endverb
+    \endentry
+    \entry{wholesale_trade}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{6}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{2}
+      \field{title}{Table 20-10-0074-01 {{Wholesale}} Trade, Sales (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010007401-eng
+      \endverb
+    \endentry
+    \entry{cpi}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{2}
+      \field{title}{Table 18-10-0004-01 {{Consumer Price Index}}, Monthly, Not Seasonally Adjusted}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2010007401-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24a}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{8}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{3}
+      \field{title}{Table 18-10-0205-01 {{New}} Housing Price Index, Monthly}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1810020501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24c}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{25}
+      \field{month}{3}
+      \field{title}{Table 21-10-0019-01 {{Monthly}} Survey of Food Services and Drinking Places (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2110001901-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24g}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{10}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{4}
+      \field{title}{Table 12-10-0175-01 {{International}} Merchandise Trade by Province, Commodity, and {{Principal Trading Partners}} (x 1,000)}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24f}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{11}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{4}
+      \field{title}{Table 25-10-0015-01 {{Electric}} Power Generation, Monthly Generation by Type of Electricity}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/2510001501-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{12}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{10}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410004201-eng
+      \endverb
+    \endentry
+    \entry{statisticscanada24b}{dataset}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4f0da2b9d24d3592e02834bf767733}{%
+           family={{Statistics Canada}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{fullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{bibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorbibnamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authornamehash}{fe4f0da2b9d24d3592e02834bf767733}
+      \strng{authorfullhash}{fe4f0da2b9d24d3592e02834bf767733}
+      \field{extraname}{13}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{11}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{month}{4}
+      \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+      \field{type}{Data table}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.25318/1410005001-eng
+      \endverb
+    \endentry
     \entry{vaver06}{inbook}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
@@ -2205,6 +3366,35 @@
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
       \endverb
     \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
+      \endverb
+    \endentry
     \entry{zabjeck16}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
@@ -2248,23 +3438,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{becker15}
-  \missing{canadianintellectualpropertyoffice23}
-  \missing{cpi}
-  \missing{insolvency24}
-  \missing{lfs_employee_wages}
-  \missing{lfs_lfc_table}
-  \missing{manufacturing_sales}
-  \missing{retail_trade_sales}
-  \missing{statisticscanada08}
-  \missing{statisticscanada24}
-  \missing{statisticscanada24a}
-  \missing{statisticscanada24b}
-  \missing{statisticscanada24c}
-  \missing{statisticscanada24f}
-  \missing{statisticscanada24g}
-  \missing{wholesale_trade}
-  \missing{worldintellectualpropertyorganization24}
 \endrefsection
 \endinput
 
