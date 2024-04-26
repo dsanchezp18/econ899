@@ -36,15 +36,15 @@ dd_twfe_patents <- list(baseline_twfe,
 # Create a dataframe with the explained variable names to be added to the model
 
 explained_vars <- tibble(
-                term = c("Explained variable", "Controls"),
-                v1 = c("", "None"),
-                v2 = c("$\\ln(\\text{Patents}+1)$", "Economic"),
-                v3 = c("", "Economic + Additional")
+                term = c("Explained variable"),
+                v1 = c(""),
+                v2 = c("$\\ln(\\text{Patents}+1)$"),
+                v3 = c("")
 )
 
 # Change the position to above goodness of fit statistics
 
-attr(explained_vars, 'position') <- c(3,4)
+attr(explained_vars, 'position') <- c(37, 38)
 
 # Create the regressions table
 
@@ -55,7 +55,7 @@ dd_twfe_patents_table <-
                  output = "latex_tabular",
                  escape = F,
                  estimate = "{estimate}{stars}",
-                 coef_map = coef_map_treated,
+                 coef_map = explanatory_variables_map, # Or explanatory_variables_map
                  add_rows = explained_vars,
                  gof_map = goodness_of_fit_map) %>% 
     row_spec(2, bold = T)

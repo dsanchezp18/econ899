@@ -629,7 +629,6 @@
       \field{year}{2023}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
@@ -1524,50 +1523,6 @@
       \verb{doi}
       \verb 10.25318/1410005001-eng
       \endverb
-    \endentry
-    \entry{vaver06}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
-           family={Vaver},
-           familyi={V\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{fullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{bibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorbibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authornamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorfullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Canada’s {{Intellectual Property Framework}}: {{A Comparative Overview}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
     \endentry
     \entry{warda98}{online}{}
       \name{author}{1}{}{%
@@ -2339,7 +2294,6 @@
       \field{year}{2023}
       \field{dateera}{ce}
       \field{urldateera}{ce}
-      \true{nocite}
       \verb{urlraw}
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/canadian-intellectual-property-statistics/patent-data-bibliographic-and-full-text-csv-and-txt
       \endverb
@@ -3234,50 +3188,6 @@
       \verb{doi}
       \verb 10.25318/1410005001-eng
       \endverb
-    \endentry
-    \entry{vaver06}{inbook}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=ea8ff7735088fcb69fef302ecdc3bdea}{%
-           family={Vaver},
-           familyi={V\bibinitperiod},
-           given={David},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{fullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{bibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorbibnamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authornamehash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{authorfullhash}{ea8ff7735088fcb69fef302ecdc3bdea}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{V}
-      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Canada’s {{Intellectual Property Framework}}: {{A Comparative Overview}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
     \endentry
     \entry{warda98}{online}{}
       \name{author}{1}{}{%

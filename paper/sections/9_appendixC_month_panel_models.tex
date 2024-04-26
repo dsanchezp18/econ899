@@ -15,7 +15,7 @@
     \input{\subfix{../../output/tables/dd_twfe_patents_monthly.tex}}
     \begin{tablenotes}
         \small
-        \item \textit{Notes}: Clustered standard errors at the province and monthly level shown in parentheses. Specifications include fixed effects for provinces and months and the controls for their quarterly counterpart in Table \ref{tab:dd_twfe_patents}. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+        \item \textit{Notes}: Clustered standard errors at the province and monthly level shown in parentheses. Specifications include fixed effects for provinces and months and controls for their quarterly counterpart in Table \ref{tab:dd_twfe_patents}. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
     \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -28,7 +28,8 @@
     \input{\subfix{../../output/tables/dd_twfe_patents_section_monthly.tex}}
     \begin{tablenotes}
         \footnotesize
-        \item \textit{Notes}: Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included. All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents_monthly}, not shown for brevity and fixed effects for provinces and monthy. Clustered standard errors at the province and month level shown in parentheses. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
+        \item \textit{Notes}: All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents_monthly}, not shown for brevity and fixed effects for provinces and months. Clustered standard errors at the province and month level shown in parentheses. 
+        \item  Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included.***$p<0.01$, **$p<0.05$, *$p<0.1$.
     \end{tablenotes}
 \end{threeparttable}
 \end{table}
@@ -41,7 +42,7 @@
         \includegraphics{\subfix{../../figures/event-studies/monthly/patents_faceted.png}}
         \begin{minipage}{0.9\textwidth}
             \footnotesize
-            \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each month. The points represent the point estimate, while the error bars represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the month before the intervention. Baseline, economic, and additional controls specifications include the controls seen in specifications (1) through (3) in Table \ref{tab:dd_twfe_patents_monthly}. 
+            \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each month. The points represent the point estimate, while the error bars represent the 95\% confidence cluster-robust interval. The vertical line represents the start of the AITC intervention in January 2017, with the reference level being the month before the intervention. Baseline, economic, and additional controls specifications include the controls seen in specifications (1) through (3) in Table \ref{tab:dd_twfe_patents_monthly}. 
         \end{minipage}
     \end{figure}
     \begin{figure}[htbp!]
@@ -51,7 +52,7 @@
         \includegraphics{\subfix{../../figures/event-studies/monthly/patent_sections_faceted.png}}
         \begin{minipage}{0.9\textwidth}
             \footnotesize
-            \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each month, separating by IPC section. The lines represent point estimates, while the shaded areas represent the 95\% confidence cluster-robust intervals. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016, with the reference level being the quarter before the intervention. Controls are the same as those in Specification (3) in Table \ref{tab:dd_twfe_patents}. 
+            \textit{Notes}: The figure shows the estimated coefficients of the interaction term between period and treatment binary variables in Equation \ref{eq:event_study} for each month, separating by IPC section. The lines represent point estimates, while the shaded areas represent the 95\% confidence cluster-robust intervals. The vertical line represents the start of the AITC intervention in January 2017, with the reference level being the quarter before the intervention. Controls are the same as those in Specification (3) in Table \ref{tab:dd_twfe_patents}. 
         \end{minipage}
     \end{figure}
 \end{landscape}

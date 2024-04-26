@@ -99,7 +99,7 @@ es_add_controls <-
 
 # Periods 
 
-periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods), by = 6)
+periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods), by = 12)
 
 patents_event_studies <- list(`(1) Baseline` = es_baseline,
                               `(2) Economic controls` = es_def_controls, 
@@ -120,5 +120,7 @@ event_study_plot_faceted_patents <-
     scale_x_continuous(breaks = periods_for_plot) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1),
         legend.position = "none")
+
+event_study_plot_faceted_patents
 
 ggsave("figures/event-studies/monthly/patents_faceted.png", width = 22.5, height = 12.5, units = "cm", dpi = 800)

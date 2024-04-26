@@ -156,6 +156,8 @@ event_study_plot_faceted_patent_sections <-
         theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
 
+event_study_plot_faceted_patent_sections
+
 # Save the plot
 
 ggsave("figures/event-studies/monthly/patent_sections_faceted.png", 
