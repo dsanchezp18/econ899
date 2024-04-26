@@ -20,7 +20,7 @@ library(stringr, warn.conflicts = F)
 
 # Define a treatment date (month-year in which agents were eligible to apply for the AITC)
 
-treatment_start_date <- ymd("2016-04-01")
+treatment_start_date <- ymd("2017-01-01")
 
 # Define a treatment quarter number (quarter the AITC was passed)
 

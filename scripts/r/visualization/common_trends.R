@@ -31,6 +31,8 @@ start_date_quarter <- floor_date(start_date, "quarter")
 
 end_date_quarter <- floor_date(end_date, "quarter")
 
+treatment_start_date <- ymd("2017-01-01")
+
 treatment_start_date_quarter <- floor_date(treatment_start_date, "quarter")
 
 # Same but with the quarter formula
@@ -77,7 +79,7 @@ quarterly_common_trends <-
     scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
     geom_vline(xintercept = as.numeric(treatment_start_date_quarter), linetype = "dashed") +
     labs(colour = "",
-         x = "Quarter-year",
+         x = "",
          y = "Ln (Patent applications + 1)")+
     theme_minimal() +
     theme(text = element_text(size = 10),

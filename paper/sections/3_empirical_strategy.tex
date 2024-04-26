@@ -3,7 +3,7 @@
 % ======================== Document: Empirical Strategy ======================== %
 
 \begin{document}
-\section{Empirical Strategy}
+\section{Empirical Approach}
 \label{sec:empirical_strategy}
 
 \subsection{Data}
@@ -36,16 +36,14 @@ For my explanatory variables, I extract province-level data at the monthly frequ
 
 \subsection{Empirical Strategy}
 
-The AITC, as an investor tax credit, did not directly affect innovation inputs such as R\&D expenditures. However, since it directly provided cheaper financing for innovative firms, it may have affected innovation output in the form of patent applications. To estimate the effect of the AITC on patent applications, I implement a two-way fixed effects (TWFE) difference-in-differences (DD) design, where I define treatment and control groups based on the period the program was passed, which was 2017Q1 (January 2017) \parencite{albertaeconomicdevelopmentandtrade17}. While the first investment elegibility date was in 2016Q2 (April 2016)
-
-The treatment group is Alberta, and the treatment period is composed of all periods after 2017Q1. The control group is all remaining Canadian provinces in the sample. Treated observations are those from Alberta after 2017Q1, where I believe the AITC affected Albertan patent applications. The DD design is implemented in a regression framework, according to the general specification below.
+The AITC, as an investor tax credit, did not directly affect innovation inputs such as R\&D expenditures. However, since it directly provided cheaper financing for innovative firms, it may have affected innovation output in the form of patent applications. To estimate the effect of the AITC on patent applications, I implement a two-way fixed effects (TWFE) difference-in-differences (DD) design, where I define treatment and control groups based on the period the program was passed, which was 2017Q1 (January 2017) \parencite{albertaeconomicdevelopmentandtrade17}. While the first investment elegibility date was in 2016Q2 (April 2016), investors could only start funding businesses starting 2017Q1, hence any effect on patent applications would be observed after this period. The treatment group is Alberta, and the treatment period is composed of all periods after 2017Q1. The control group is all remaining Canadian provinces in the sample. Treated observations are those from Alberta after 2017Q1, where I believe the AITC affected Albertan patent applications. The DD design is implemented in a regression framework, according to the general specification below.
 
 \begin{equation}
     \label{eq:dd_model}
     \ln(P_{it} + 1) = \theta_i + \theta_t + \beta \ T_{it} + \mathbb{x}_{it}^{'} \gamma + u_{it}
 \end{equation}
 
-where $P_{it}$ is the explained variable; in most specifications, $P_{it}$ is the number of patents filed in a province $i$ and period $t$. $\theta_i$ and $\tau_t$ are sets of province and period fixed effects. I use a natural logarithm transformation along with the addition of one to correct for provinces with small amounts of patent applications on some periods. $T_{it}$ is a binary variable equal to unity for observations for treated observations and zero otherwise. Hence, the estimated parameter $\hat{\beta}$ is the coefficient of interest, which is my estimate for the average treatment effect of the AITC on the explained variable. $\mathbf{x}_{it}$ is a vector of time and province-varying controls, as described in the previous subsection, and $\gamma$ is the associated vector of parameters. $u_{it}$ is a stochastic error term which varies between provinces and periods. For my results, I cluster standard errors at the province and period level. 
+where $P_{it}$ is the explained variable; in most specifications, $P_{it}$ is the number of patents filed in a province $i$ and period $t$. $\theta_i$ and $\tau_t$ are sets of province and period fixed effects. I use a natural logarithm transformation along with the addition of one to correct for provinces with small amounts of patent applications on some periods. The logarithm will aid give coefficients in the right hand side a percent interpretation. $T_{it}$ is a binary variable equal to unity for observations for treated observations and zero otherwise. Hence, the estimated parameter $\hat{\beta}$ is the coefficient of interest, which is my estimate for the average treatment effect of the AITC on the explained variable. $\mathbf{x}_{it}$ is a vector of time and province-varying controls, as described in the previous subsection, and $\gamma$ is the associated vector of parameters. $u_{it}$ is a stochastic error term, which varies between provinces and periods. I cluster standard errors at the province and period level, as the variance of the error term may be correlated both spatially and temporally.
 
 \begin{table}[htbp!]
     \centering
@@ -61,9 +59,9 @@ where $P_{it}$ is the explained variable; in most specifications, $P_{it}$ is th
 
 \end{table}
 
-Tables \ref{tab:diff_means_quarterly} presents the difference in means between treated and control provinces for the province-quarter panel for all considered explained variables. This presents the simplest version of the DD model, where I compare the average number of patent applications between Alberta and the control provinces before and after the AITC intervention. This simple comparison suggests a small or null effect; the regression analysis described above will provide a more robust DD estimate. 
+Tables \ref{tab:diff_means_quarterly} presents the difference in means between treated and control provinces for all explained variables. This presents the simplest version of the DD estimate, where I compare the average number of patent applications between Alberta and the control provinces before and after the AITC intervention. This simple comparison suggests a small or null effect; the regression analysis described above will provide a more robust estimate, controlling for other factors that may affect patent applications.
 
-The key identifying assumption of the DD design is that, absent the AITC intervention, the trend of patents in Alberta would follow a similar pattern to control provinces. Figure \ref{fig:quarterly_common_trends} shows the quarterly time series of patent applications between Alberta and control provinces from 2001Q1 to 2021Q2. This visual representation of the trends shows that Alberta's patent applications follow a similar pattern to control provinces before the intervention, however, some deviations are present before 2016Q2.
+The key identifying assumption of the DD design is that, absent the AITC intervention, the trend of patent applications in Alberta would follow a similar pattern to that in control provinces. Figure \ref{fig:quarterly_common_trends} shows the quarterly time series of patent applications between Alberta and control provinces from 2001Q1 to 2021Q2. This visual representation of the trends shows that Alberta's patent applications follow a similar pattern to control provinces before the intervention, however, some deviations are present before 2016Q2.
 
 \begin{figure}[h]
     \centering
@@ -72,7 +70,7 @@ The key identifying assumption of the DD design is that, absent the AITC interve
     \includegraphics{\subfix{../../figures/quarterly_common_trends.png}}
     \begin{minipage}{0.9\textwidth}
         \footnotesize
-        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention (first expense eligibility date) in April 2016. The treatment group is Alberta, and the control group is made from all remaining provinces except NL, PE, YT and NU. 
+        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention in 2017Q1. The treatment group is Alberta, and the control group is made from all remaining provinces except NL, PE, YT and NU. 
     \end{minipage}
 \end{figure}
 
@@ -80,16 +78,17 @@ To allay the concern of unobservable factors impacting patent application trends
 
 \begin{equation}
     \label{eq:event_study}
-   \ln(P_{it} + 1) = \theta_i + \tau_t + \mathbb{\beta_t}(t \cdot A_t) + \mathbb{x}_{it}^{'}\gamma + u_{it}
+   \ln(P_{it} + 1) = \theta_i + \tau_t + \beta_t (t \cdot A_t) + \mathbb{x}_{it}^{'}\gamma + u_{it}
 \end{equation}
 
-$\theta_i, \tau_t, \mathbf{x}_{it}, \gamma$ and $u_{it}$ represent the same as in Equation \ref{eq:dd_model}. $t$ is a set of binary variables for each of the periods for which there is data available, with the reference level set to one period before AITC eligibility (March 2016). $A_t$ is a binary variable equal to unity if the observation is mapped to Alberta and zero otherwise. $t\cdot A_t$ is the interaction term between these two variables, and $\beta_t$ is the associated vector of coefficients, which will show the difference between the treatment and control groups in the explained variable for all $t$. For these regressions, I show the values of the interaction terms in event study plots, along with their 95\% confidence intervals. I cluster standard errors at the province and period level.
+$\theta_i, \tau_t, \mathbf{x}_{it}, \gamma$ and $u_{it}$ represent the same as in Equation \ref{eq:dd_model}. $t$ is a set of binary variables for each of the periods for which there is data available, with the reference level set to one period before the AITC program start (2016Q4). $A_t$ is a binary variable equal to unity if the observation is mapped to Alberta and zero otherwise. $t\cdot A_t$ is the interaction term between these two variables, and $\beta_t$ is the associated vector of coefficients, which will show the difference between the treatment and control groups in the explained variable for all $t$. For these regressions, I show the values of the interaction terms in event study plots, along with their 95\% confidence intervals. I cluster standard errors at the province and period level.
 
-Evidence in favour of the identifying assumption will be observed if the interaction terms before April 2016 are not statistically significant. This supports the idea that Alberta had no significant differences in the trend of patent applications to other provinces before the intervention. Thus, I use the event study regressions to provide evidence of the causal identification of the average treatment effect of the AITC on patent applications. In section \ref{sec:results}, I justify the causal identification of the AITC effect by showing that the interaction terms before the intervention are not statistically significant. Further, I use event study regressions in the form of \ref{eq:event_study} examine the effectiveness of the AITC by looking at post-treatment interaction terms, which should show statistically significant differences if the AITC affected Albertan patent applications.
+Evidence in favour of the identifying assumption will be observed if the interaction terms before 2016Q4 are not statistically significant. This supports the idea that Alberta had no significant differences in the trend of patent applications to other provinces before the intervention. Thus, I use the event study regressions to provide evidence of the causal identification of the average treatment effect of the AITC on patent applications. In section \ref{sec:results}, I justify the causal identification of the AITC effect by showing that the interaction terms before the intervention are not statistically significant. Further, I use event study regressions in the form of \ref{eq:event_study} to examine the effectiveness of the AITC by looking at post-treatment interaction terms, which should show statistically significant differences if the AITC affected Albertan patent applications.
 
 \subsection{Patent parties and province-month panel}
 
-I perform two main robustness checks on DD and event study analyses to ensure the validity of my results. First, to the extent that results may be driven by the arbitrary mapping of patents to provinces, I consider the number of Canadian parties involved in a patent application as an alternative explained variable. I separate parties by type (all parties, inventors, owners and applicants\footnote{I do not consider agents as a separate category due to them typically being hired legal professionals, which may not be informative about the innovative capacity of who files for the patent.}.) to understand the effect of the AITC on the innovative capacity of different groups. Table \ref{tab:diff_means_quarterly} also presents the difference in means between treated and control provinces for the province-quarter panel for parties involved in patent applications.
+I perform two main robustness checks on DD and event study analyses to ensure the validity of my results. First, to the extent that results may be driven by my patent-province mapping, I consider the number of Canadian parties involved in a patent application as an alternative explained variable. I separate parties by type (all parties, inventors, owners and applicants\footnote{I do not consider agents as a separate category due to them being hired professionals, which is not informative about the patent application team.}.) to understand the effect of the AITC on the innovative capacity of different groups. Table \ref{tab:diff_means_quarterly} also presents the difference in means between treated and control provinces for parties involved in patent applications.
 
 Second, I reestimate models on a province-month panel, to ensure that the results are not driven by the aggregation of data at the quarterly level. This panel allows for a more granular analysis of the effects of the AITC on patent applications, however, it is susceptible to noise due to the smaller number of observations, especially for the event study regressions. I present descriptive statistics of the monthly data in \ref{sec:appendixa}. 
+
 \end{document}

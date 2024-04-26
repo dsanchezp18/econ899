@@ -19,7 +19,7 @@ library(janitor, warn.conflicts = F)
 
 # Define a treatment date (month-year the AITC was passed)
 
-treatment_start_date <- ymd("2016-04-01")
+treatment_start_date <- ymd("2017-01-01")
 
 # Define a treatment period (Alberta)
 

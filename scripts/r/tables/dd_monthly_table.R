@@ -92,7 +92,7 @@ dd_twfe_patents_section <- list(add_controls_twfe_A,
 # )
 
 explained_vars_section <- tibble(
-                term = "Patent section (IPC)",
+                term = "IPC",
                 v1 = "A",
                 v2 = "B",
                 v3 = "C",

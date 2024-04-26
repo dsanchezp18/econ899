@@ -29,7 +29,7 @@ df_full <- readRDS("data/full_data_quarterly.rds")
 
 # Define treatment start date
 
-treatment_start_date <- ymd("2016-04-01")
+treatment_start_date <- ymd("2017-01-01")
 
 # Define valid start and end dates
 
@@ -134,15 +134,9 @@ es_add_controls_H <-
 
 # Periods 
 
-periods_for_plot <- seq(start_period, end_period, by = 8)
+periods_for_plot <- seq(min(df_twfe$periods), max(df_twfe$periods), by = 4)
 
 # Dates 
-
-dates <- 
-    df_event_study %>%
-    filter(periods %in% periods_for_plot) %>% 
-    pull(quarter_year) %>%
-    unique()
 
 # Draw the event study plot for all sections 
 
@@ -166,11 +160,14 @@ event_study_plot_faceted_patent_sections <-
             facet_args = list(ncol = 2, scales = "free_y")) + 
         theme_bw() +
         labs(title = "", 
-            x = "Quarter-year",
+            x = "Periods to treatment",
             y = "Event study interaction term and 95% C.I.") + 
-        scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+        xlim(min(periods_for_plot), max(periods_for_plot)) +
+        scale_x_continuous(breaks = periods_for_plot) +
         theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
+
+event_study_plot_faceted_patent_sections
 
 # Save the plot
 

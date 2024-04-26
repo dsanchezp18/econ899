@@ -86,7 +86,7 @@ dd_twfe_patents_section <- list(add_controls_twfe_A,
 # )
 
 explained_vars_section <- tibble(
-                term = "Patent section (IPC)",
+                term = "IPC",
                 v1 = "A",
                 v2 = "B",
                 v3 = "C",
@@ -104,7 +104,7 @@ attr(explained_vars_section, 'position') <- c(3,4)
 # Mapping (only for the treated coefficient)
 
 coef_map_treated <- c(
-    treated = "Treatment x Post")
+    treated = "DD")
 
 # Create the regressions table
 
