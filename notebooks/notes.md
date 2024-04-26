@@ -44,6 +44,8 @@
 
 - Time series of patents filed, and patents granted. In institutional context. 
 
+- Argue for patents as a measure of innovation. Present pro and cons. LKiterature
+
 - Table of data sources
 
 - Fix citations
