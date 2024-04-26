@@ -284,37 +284,23 @@
       \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
       \endverb
     \endentry
-    \entry{albertajobseconomyandtrade16}{legislation}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9d5c0a7d29e7a605891f5955b6a26367}{%
-           family={{Alberta Jobs, Economy and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{fullhash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{bibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authorbibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authornamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authorfullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+    \entry{Alberta19a}{legislation}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
-      \field{day}{16}
-      \field{journaltitle}{SA}
+      \field{journaltitle}{Alberta Regulation}
       \field{langid}{english}
-      \field{month}{4}
-      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{month}{5}
+      \field{title}{Alberta {{Investor Tax Credit Regulation}}}
       \field{urlday}{14}
       \field{urlmonth}{4}
       \field{urlyear}{2024}
-      \field{year}{2016}
+      \field{year}{2019}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{file}
       \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
       \endverb
@@ -385,58 +371,6 @@
       \verb https://doi.org/10.1007/s10961-011-9211-1
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
-    \endentry
-    \entry{becker15}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
-           family={Becker},
-           familyi={B\bibinitperiod},
-           given={Bettina},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
-      \field{issn}{1467-6419}
-      \field{journaltitle}{Journal of Economic Surveys}
-      \field{langid}{english}
-      \field{number}{5}
-      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
-      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{29}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{917\bibrangedash 942}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1111/joes.12074
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
     \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
@@ -653,6 +587,32 @@
       \field{dateera}{ce}
       \field{pages}{93\bibrangedash 116}
       \range{pages}{24}
+    \endentry
+    \entry{Investing16}{legislation}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
+      \field{day}{16}
+      \field{journaltitle}{SA}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+      \verb{url}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
     \endentry
     \entry{mansfield_switzer85b}{article}{}
       \name{author}{2}{}{%
@@ -1128,35 +1088,6 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-    \endentry
-    \entry{worldintellectualpropertyorganization24}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
-           family={{World Intellectual Property Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{22}
-      \field{month}{4}
-      \field{number}{v9.8}
-      \field{title}{Guide to the {{International Patent Classification}} (2024)}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.34667/tind.49464
       \endverb
     \endentry
     \entry{zabjeck16}{article}{}
@@ -1468,37 +1399,23 @@
       \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
       \endverb
     \endentry
-    \entry{albertajobseconomyandtrade16}{legislation}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9d5c0a7d29e7a605891f5955b6a26367}{%
-           family={{Alberta Jobs, Economy and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{fullhash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{bibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authorbibnamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authornamehash}{9d5c0a7d29e7a605891f5955b6a26367}
-      \strng{authorfullhash}{9d5c0a7d29e7a605891f5955b6a26367}
+    \entry{Alberta19a}{legislation}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
-      \field{day}{16}
-      \field{journaltitle}{SA}
+      \field{journaltitle}{Alberta Regulation}
       \field{langid}{english}
-      \field{month}{4}
-      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{month}{5}
+      \field{title}{Alberta {{Investor Tax Credit Regulation}}}
       \field{urlday}{14}
       \field{urlmonth}{4}
       \field{urlyear}{2024}
-      \field{year}{2016}
+      \field{year}{2019}
       \field{dateera}{ce}
       \field{urldateera}{ce}
+      \true{nocite}
       \verb{file}
       \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
       \endverb
@@ -1569,58 +1486,6 @@
       \verb https://doi.org/10.1007/s10961-011-9211-1
       \endverb
       \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
-    \endentry
-    \entry{becker15}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
-           family={Becker},
-           familyi={B\bibinitperiod},
-           given={Bettina},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
-      \field{issn}{1467-6419}
-      \field{journaltitle}{Journal of Economic Surveys}
-      \field{langid}{english}
-      \field{number}{5}
-      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
-      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{29}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{917\bibrangedash 942}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1111/joes.12074
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
     \endentry
     \entry{brouillete13}{online}{}
       \name{author}{1}{}{%
@@ -1837,6 +1702,32 @@
       \field{dateera}{ce}
       \field{pages}{93\bibrangedash 116}
       \range{pages}{24}
+    \endentry
+    \entry{Investing16}{legislation}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
+      \field{day}{16}
+      \field{journaltitle}{SA}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
+      \verb{url}
+      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
+      \endverb
     \endentry
     \entry{mansfield_switzer85b}{article}{}
       \name{author}{2}{}{%
@@ -2314,35 +2205,6 @@
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
       \endverb
     \endentry
-    \entry{worldintellectualpropertyorganization24}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
-           family={{World Intellectual Property Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{22}
-      \field{month}{4}
-      \field{number}{v9.8}
-      \field{title}{Guide to the {{International Patent Classification}} (2024)}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.34667/tind.49464
-      \endverb
-    \endentry
     \entry{zabjeck16}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
@@ -2386,6 +2248,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{becker15}
+  \missing{worldintellectualpropertyorganization24}
 \endrefsection
 \endinput
 

@@ -36,6 +36,8 @@
 
 - Patent applications do not necessarily mean innovation. How many of these get granted? Data. In introduction, likely. 
 
+- Small businesses were shown to not have problems patenting. 
+
 - The AITC is not an R&D tax credit, it is an investment tax credit!! The effect is that more investment is made, not necessarily more R&D. This has to be clearly stated.
 
     - It is fundamentally different from the SR\&ED tax credit.
@@ -54,7 +56,9 @@
 
 - Time series of patents filed, and patents granted. In institutional context. 
 
-- Argue for patents as a measure of innovation. Present pro and cons. LKiterature
+- Argue for patents as a measure of innovation. Present pro and cons. Literature
+
+- Change the data to Jan 1st, see what happens. 
 
 - Table of data sources
 
