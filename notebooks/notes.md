@@ -60,6 +60,8 @@
 
 - Change the data to Jan 1st, see what happens. 
 
+- The instability of total patent parties are not a threat to my design. Because it has to do with the size of application teams. 
+
 - Table of data sources
 
 - Fix citations

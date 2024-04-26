@@ -126,16 +126,7 @@ es_add_controls_H <-
 
 # Periods 
 
-periods_for_plot <- seq(start_period, end_period, by = 12)
-
-# Dates 
-
-dates <- 
-    df_event_study %>%
-    filter(periods %in% periods_for_plot) %>% 
-    pull(month_year) %>%
-    unique() %>% 
-    format("%b-%y")
+periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods), by = 6)
 
 # Draw the event study plot for all sections 
 
@@ -159,9 +150,9 @@ event_study_plot_faceted_patent_sections <-
             facet_args = list(ncol = 2, scales = "free_y")) + 
         theme_bw() +
         labs(title = "", 
-            x = "Month-year",
+            x = "Months to treatment",
             y = "Event study interaction term and 95% C.I.") + 
-        scale_x_continuous(breaks = periods_for_plot, labels = dates) +
+        scale_x_continuous(breaks = periods_for_plot) +
         theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
 
