@@ -126,7 +126,7 @@ es_add_controls_H <-
 
 # Periods 
 
-periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods), by = 6)
+periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods), by = 12)
 
 # Draw the event study plot for all sections 
 
