@@ -38,7 +38,15 @@
 
 -  Intellectual property is important because it is a way for firms to have innovation assets. 
 
+- Patent counts : try to filter out by accepted patents (granted), patent applications which were not abandonded, etc. 
+
+- Argue that the 2001-2021 is good since it is not too long to have too many reapplications which might be a problem.
+
 - Time series of patents filed, and patents granted. In institutional context. 
+
+- Table of data sources
+
+- Fix citations
 
 - Contributions:
     - Do R&D tax credits spur innovation products? Patents specifically?
@@ -79,3 +87,4 @@
     - Problem about patent counts. Should see if I fixed it in the beginning, but if not, say that in the short term, patent renewal is not an issue. In future research, better microdata could be used.
     - IPC sections to brooad, must be more specific, but lose power
     - should consider section A more specifically, survey data. 
+    - While effects on employment are of interest, they are difficult to measure because of the effects of the SRED amendments, which typically have a direct effect on the dollar amount of expenditures that can be claimed as credits. 

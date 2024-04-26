@@ -19,6 +19,57 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{abbes_etal22}{online}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
+           family={Abbes},
+           familyi={A\bibinitperiod},
+           given={Chahreddine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1f3f480606ac8b4dcf9e54a17983b9b}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=967d037f8d0ebaf1d6ca6e63e881035d}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ottawa, Ontario}%
+      }
+      \strng{namehash}{be40e51f4dd0cbcd8237f27bb764c95f}
+      \strng{fullhash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{bibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{authorbibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{authornamehash}{be40e51f4dd0cbcd8237f27bb764c95f}
+      \strng{authorfullhash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2022-03-23}
+      \field{day}{23}
+      \field{eprinttype}{Statistics Canada}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{2563-8955}
+      \field{series}{Statistics {{Canada Economic}} and {{Social Reports}}}
+      \field{title}{Patenting Activity of {{Canadian-resident}} Businesses}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.25318/36280001202200300005-eng
+      \endverb
+    \endentry
     \entry{agrawal_etal20}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
@@ -82,6 +133,71 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
       \endverb
       \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
+    \entry{alam_etal22}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7318387a560ee75206c0ef9b2e943123}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md\bibnamedelima Razib},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dff77ead57f02ac9a482f5c3c46f8e9}{%
+           family={Dalziel},
+           familyi={D\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aa1a97a479619e1d50b437e71de35c3}{%
+           family={Cozzarin},
+           familyi={C\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81833e92a9efb380f4181d9cd092c812}
+      \strng{fullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{bibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{authorbibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{authornamehash}{81833e92a9efb380f4181d9cd092c812}
+      \strng{authorfullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using Canadian-invented patents granted by the United States Patent and Trademark Office during the period between 1995 and 2014, we investigate how ownership of Canadian inventions varies across time and by technology, geographic region, quality of invention, and the presence of superstar firms. Our findings show that the gap between Canadian-invented and Canadian-owned technologies has grown since 1995, and that an increasing number of Canadian-invented patents are owned by foreign, primarily US, firms. In terms of technical areas, Canadian-owned patents in biotechnology have declined and there has been sharp growth in both Canadian- and foreign-owned patents in information technology and telecom. Approximately 60\% of Canadian-invented patents originate from Toronto, Ottawa-Gatineau, Montreal, Vancouver, Kitchener-Cambridge-Waterloo (KCW), and Calgary. The quality of Canadian-invented patents increases over time, in part because the number of unassigned patents declines. The quality of foreign-owned patents is higher than the quality of Canadian-owned patents in all CMAs except KCW. At the firm level, while Blackberry and Nortel are responsible for a disproportionate number of Canadian-owned patents, the ownership of foreign-owned patents is more widely distributed. Our findings point to where Canadian innovation vulnerabilities are most severe, where they are worsening, and where there is cause for hope.}
+      \field{day}{1}
+      \field{issn}{0040-1625}
+      \field{journaltitle}{Technological Forecasting and Social Change}
+      \field{month}{2}
+      \field{shortjournal}{Technological Forecasting and Social Change}
+      \field{shorttitle}{Invented Here but Owned Elsewhere}
+      \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{175}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{121367}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.techfore.2021.121367
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+      \endverb
+      \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
     \endentry
     \entry{beaudry_schiffauerova11}{article}{}
       \name{author}{2}{}{%
@@ -320,6 +436,48 @@
       \endverb
       \verb{url}
       \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+    \endentry
+    \entry{canadianintellectualpropertyoffice21}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{annotation}{Last Modified: 2021-06-28}
+      \field{day}{28}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{File a {{Canadian}} Patent Application}
+      \field{title}{Patent Application and Examination}
+      \field{type}{Guides; Forms}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
       \endverb
     \endentry
     \entry{carew_etal06}{article}{}
@@ -606,6 +764,31 @@
       \endverb
       \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
     \endentry
+    \entry{Patent85}{legislation}{}
+      \list{publisher}{1}{%
+        {CanLII}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RSC}
+      \field{langid}{english}
+      \field{title}{Patent {{Act}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
+      \endverb
+      \verb{url}
+      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
+      \endverb
+    \endentry
     \entry{putnam06}{book}{}
       \name{editor}{1}{}{%
         {{un=0,uniquepart=base,hash=20f190a204829c8989e04cbef86cda06}{%
@@ -819,10 +1002,90 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+      \endverb
+    \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{abbes_etal22}{online}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
+           family={Abbes},
+           familyi={A\bibinitperiod},
+           given={Chahreddine},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c1f3f480606ac8b4dcf9e54a17983b9b}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=967d037f8d0ebaf1d6ca6e63e881035d}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Ottawa, Ontario}%
+      }
+      \strng{namehash}{be40e51f4dd0cbcd8237f27bb764c95f}
+      \strng{fullhash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{bibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{authorbibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \strng{authornamehash}{be40e51f4dd0cbcd8237f27bb764c95f}
+      \strng{authorfullhash}{0580d8bcc2342d1a147d7bfb926ef177}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Last Modified: 2022-03-23}
+      \field{day}{23}
+      \field{eprinttype}{Statistics Canada}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{2563-8955}
+      \field{series}{Statistics {{Canada Economic}} and {{Social Reports}}}
+      \field{title}{Patenting Activity of {{Canadian-resident}} Businesses}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.25318/36280001202200300005-eng
+      \endverb
+    \endentry
     \entry{agrawal_etal20}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
@@ -886,6 +1149,71 @@
       \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
       \endverb
       \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
+    \entry{alam_etal22}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7318387a560ee75206c0ef9b2e943123}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md\bibnamedelima Razib},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1dff77ead57f02ac9a482f5c3c46f8e9}{%
+           family={Dalziel},
+           familyi={D\bibinitperiod},
+           given={Margaret},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5aa1a97a479619e1d50b437e71de35c3}{%
+           family={Cozzarin},
+           familyi={C\bibinitperiod},
+           given={Brian\bibnamedelima P.},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{81833e92a9efb380f4181d9cd092c812}
+      \strng{fullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{bibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{authorbibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \strng{authornamehash}{81833e92a9efb380f4181d9cd092c812}
+      \strng{authorfullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Using Canadian-invented patents granted by the United States Patent and Trademark Office during the period between 1995 and 2014, we investigate how ownership of Canadian inventions varies across time and by technology, geographic region, quality of invention, and the presence of superstar firms. Our findings show that the gap between Canadian-invented and Canadian-owned technologies has grown since 1995, and that an increasing number of Canadian-invented patents are owned by foreign, primarily US, firms. In terms of technical areas, Canadian-owned patents in biotechnology have declined and there has been sharp growth in both Canadian- and foreign-owned patents in information technology and telecom. Approximately 60\% of Canadian-invented patents originate from Toronto, Ottawa-Gatineau, Montreal, Vancouver, Kitchener-Cambridge-Waterloo (KCW), and Calgary. The quality of Canadian-invented patents increases over time, in part because the number of unassigned patents declines. The quality of foreign-owned patents is higher than the quality of Canadian-owned patents in all CMAs except KCW. At the firm level, while Blackberry and Nortel are responsible for a disproportionate number of Canadian-owned patents, the ownership of foreign-owned patents is more widely distributed. Our findings point to where Canadian innovation vulnerabilities are most severe, where they are worsening, and where there is cause for hope.}
+      \field{day}{1}
+      \field{issn}{0040-1625}
+      \field{journaltitle}{Technological Forecasting and Social Change}
+      \field{month}{2}
+      \field{shortjournal}{Technological Forecasting and Social Change}
+      \field{shorttitle}{Invented Here but Owned Elsewhere}
+      \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{175}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{121367}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.techfore.2021.121367
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+      \endverb
+      \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
     \endentry
     \entry{beaudry_schiffauerova11}{article}{}
       \name{author}{2}{}{%
@@ -1124,6 +1452,48 @@
       \endverb
       \verb{url}
       \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
+      \endverb
+    \endentry
+    \entry{canadianintellectualpropertyoffice21}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Innovation, Science and Economic Development Canada}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{annotation}{Last Modified: 2021-06-28}
+      \field{day}{28}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{shorttitle}{File a {{Canadian}} Patent Application}
+      \field{title}{Patent Application and Examination}
+      \field{type}{Guides; Forms}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
+      \endverb
+      \verb{url}
+      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
       \endverb
     \endentry
     \entry{carew_etal06}{article}{}
@@ -1410,6 +1780,31 @@
       \endverb
       \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
     \endentry
+    \entry{Patent85}{legislation}{}
+      \list{publisher}{1}{%
+        {CanLII}%
+      }
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{RSC}
+      \field{langid}{english}
+      \field{title}{Patent {{Act}}}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
+      \endverb
+      \verb{url}
+      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
+      \endverb
+    \endentry
     \entry{putnam06}{book}{}
       \name{editor}{1}{}{%
         {{un=0,uniquepart=base,hash=20f190a204829c8989e04cbef86cda06}{%
@@ -1623,6 +2018,35 @@
       \endverb
       \verb{url}
       \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+      \endverb
+    \endentry
+    \entry{worldintellectualpropertyorganization24}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
+           family={{World Intellectual Property Organization}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
+      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{4}
+      \field{number}{v9.8}
+      \field{title}{Guide to the {{International Patent Classification}} (2024)}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.34667/tind.49464
       \endverb
     \endentry
   \enddatalist

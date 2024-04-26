@@ -253,7 +253,6 @@ agents_per_patent <-
     ungroup()  %>% 
     arrange(desc(n_agents))
 
-# All patents only have one agent.
 # 1.5 million patents have only one agent
 # Lose 1 million patents if we restrict to only patents with at least one agent
 # Agents do not have any kind of province mapped to them. 
