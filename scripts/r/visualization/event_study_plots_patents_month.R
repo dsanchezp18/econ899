@@ -128,4 +128,8 @@ event_study_plot_faceted_patents <-
 
 event_study_plot_faceted_patents
 
-ggsave("figures/event-studies/monthly/patents_faceted.png", width = 22.5, height = 12.5, units = "cm", dpi = 800)
+ggsave("figures/event-studies/monthly/patents_faceted.png", 
+        width = 22.5, 
+        height = 12.5, 
+        units = "cm", 
+        dpi = 800)

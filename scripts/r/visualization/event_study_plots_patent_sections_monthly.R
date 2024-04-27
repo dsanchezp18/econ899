@@ -130,15 +130,14 @@ periods_for_plot <- seq(min(df_event_study$periods), max(df_event_study$periods)
 
 # Draw the event study plot for all sections 
 
-event_studies_add_controls_sections <- list(`Section A patents` = es_add_controls_A, 
-                                            `Section B patents` = es_add_controls_B, 
-                                            `Section C patents` = es_add_controls_C,
-                                            `Section D patents` = es_add_controls_D,
-                                            `Section E patents` = es_add_controls_E,
-                                            `Section F patents` = es_add_controls_F,
-                                            `Section G patents` = es_add_controls_G,
-                                            `Section H patents` = es_add_controls_H)
-
+event_studies_add_controls_sections <- list(`Section A: Human Neccessity` =  es_add_controls_A,
+                                            `Section B: Performing Operations` = es_add_controls_B,
+                                            `Section C: Chemistry` = es_add_controls_C,
+                                            `Section D: Textiles` = es_add_controls_D,
+                                            `Section E: Fixed Constructions` = es_add_controls_E,
+                                            `Section F: Mechanical Engineering` = es_add_controls_F,
+                                            `Section G: Physics` = es_add_controls_G,
+                                            `Section H: Electricity` = es_add_controls_H)
 
 event_study_plot_faceted_patent_sections <-
     ggiplot(event_studies_add_controls_sections, 
@@ -147,12 +146,16 @@ event_study_plot_faceted_patent_sections <-
             ci.width = 0,
             pt.pch = 1,
             col = rep("#0D3692",9),
-            facet_args = list(ncol = 2, scales = "free_y")) + 
+            ref.line.par = list(col = "grey20"),
+            facet_args = list(ncol = 2, scales = "free_x")) + 
         theme_bw() +
         labs(title = "", 
-            x = "Months to treatment",
+            x = "Periods to treatment",
             y = "Event study interaction term and 95% C.I.") + 
-        scale_x_continuous(breaks = periods_for_plot) +
+    scale_y_continuous(labels = scales::number_format(accuracy = 0.01)) + 
+    scale_x_continuous(breaks = periods_for_plot, 
+                       limits = c(min(periods_for_plot), max(periods_for_plot)),
+                       expand = c(0,2)) + 
         theme(axis.text.x = element_text(angle = 45, hjust = 1),
             legend.position = "none")
 
