@@ -147,7 +147,7 @@ event_study_plot_faceted_patent_sections <-
             pt.pch = 1,
             col = rep("#0D3692",9),
             ref.line.par = list(col = "grey20"),
-            facet_args = list(ncol = 2, scales = "free_x")) + 
+            facet_args = list(ncol = 2)) + 
         theme_bw() +
         labs(title = "", 
             x = "Periods to treatment",
