@@ -5,7 +5,7 @@ stars <- c('*'= 0.1, '**' = 0.05, '***'= 0.01)
 # For the models with the explanatory variables included, use the following model mapping
 
 explanatory_variables_map <- c(
-  treated = "Treatment x Post",
+  treated = "Treated",
   ln_total_full_emp = "Ln Full-time employment",
   ln_total_median_wage = "Ln Median wage",
   cpi = "CPI",

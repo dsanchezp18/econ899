@@ -51,8 +51,7 @@ dd_twfe_patents_table <-
                  estimate = "{estimate}{stars}",
                  coef_map = explanatory_variables_map,
                  gof_map = goodness_of_fit_map,
-                 add_rows = explained_vars) %>% 
-    row_spec(2, bold = T)
+                 add_rows = explained_vars)
 
 save_kable(dd_twfe_patents_table, "output/tables/dd_twfe_patents.tex")
 
@@ -104,7 +103,7 @@ attr(explained_vars_section, 'position') <- c(3,4)
 # Mapping (only for the treated coefficient)
 
 coef_map_treated <- c(
-    treated = "DD")
+    treated = "Treated")
 
 # Create the regressions table
 
@@ -117,8 +116,7 @@ dd_twfe_patents_section_table <-
                  estimate = "{estimate}{stars}",
                  coef_map = coef_map_treated,
                  gof_map = goodness_of_fit_map,
-                 add_rows = explained_vars_section) %>% 
-    row_spec(2, bold = T)
+                 add_rows = explained_vars_section)
 
 save_kable(dd_twfe_patents_section_table, "output/tables/dd_twfe_patents_section.tex")
 

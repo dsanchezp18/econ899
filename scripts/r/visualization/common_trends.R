@@ -25,6 +25,18 @@ df_monthly <- readRDS("data/full_dataset_monthly.rds")
 
 df_quarterly <- readRDS("data/full_data_quarterly.rds")
 
+# Dates
+
+# Define treatment start date
+
+treatment_start_date <- ymd("2017-01-01")
+
+# Define valid start and end dates
+
+start_date <- ymd("2001-01-01")
+
+end_date <- ymd("2021-06-01")
+
 # Get quarter dates with floor_date
 
 start_date_quarter <- floor_date(start_date, "quarter")
@@ -65,24 +77,40 @@ labels <-
 
 # Plotting the common trends for patents by province and quarter
 
-quarterly_common_trends <-
+ln_applications_by_quarter <- 
     df %>%
-    group_by(quarter_year_date, treatment) %>% 
+    group_by(periods, quarter_year, quarter_year_date, treatment) %>% 
     summarise(patents = sum(patents_filed)) %>%
     mutate(ln1_patents_filed = log(patents + 1)) %>%
-    ungroup() %>% 
-    ggplot(aes(x = quarter_year_date, y = ln1_patents_filed, group = treatment, colour = treatment)) +
-    geom_line() +
-    scale_y_continuous(labels = comma, breaks = seq(1, 10, by = 1)) +
-    scale_x_date(date_labels = "%Y",
-                 date_breaks = "1 years") +
+    ungroup() 
+
+periods_break <- seq(min(ln_applications_by_quarter$periods), max(ln_applications_by_quarter$periods), by = 4)
+
+periods_labels <-
+    df %>% 
+    filter(periods %in% periods_break) %>%
+    select(quarter_year) %>%
+    pull() %>% 
+    unique()
+
+periods_min <- min(ln_applications_by_quarter$periods)
+
+periods_max <- max(ln_applications_by_quarter$periods)
+
+quarterly_common_trends <-
+    ln_applications_by_quarter %>% 
+    ggplot(aes(x = periods, y = ln1_patents_filed, group = treatment, colour = treatment)) +
+    geom_line() + 
+    scale_y_continuous(labels = seq(1, 10, by = 1), breaks = seq(1, 10, by = 1)) +
+    scale_x_continuous(breaks = periods_break, labels = periods_labels, limits = c(periods_min, periods_max)) +
     scale_color_manual(values = c("Treatment" = "#0D3692", "Control" = "#E60F2D")) +
-    geom_vline(xintercept = as.numeric(treatment_start_date_quarter), linetype = "dashed") +
+    geom_vline(xintercept = 0, linetype = "dashed", colour = "grey50") +
     labs(colour = "",
          x = "",
          y = "Ln (Patent applications + 1)")+
     theme_minimal() +
     theme(text = element_text(size = 10),
+          axis.ticks.x = element_line(colour = "gray50"),
           axis.text.x = element_text(angle = 45, hjust = 1),
           axis.line.x = element_line(colour = "black"),
           plot.background = element_rect(fill = "white", color = "white"),
