@@ -19,6 +19,74 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global}
+    \entry{abadie_etal10}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Building on an idea in Abadie and Gardeazabal (2003), this article investigates the application of synthetic control methods to comparative case studies. We discuss the advantages of these methods and apply them to study the effects of Proposition 99, a large-scale tobacco control program that California implemented in 1988. We demonstrate that, following Proposition 99, tobacco consumption fell markedly in California relative to a comparable synthetic control region. We estimate that by the year 2000 annual per-capita cigarette sales in California were about 26 packs lower than what they would have been in the absence of Proposition 99. Using new inferential methods proposed in this article, we demonstrate the significance of our estimates. Given that many policy interventions and events of interest in social sciences take place at an aggregate level (countries, regions, cities, etc.) and affect a small number of aggregate units, the potential applicability of synthetic control methods to comparative case studies is very large, especially in situations where traditional regression methods are not appropriate.}
+      \field{day}{1}
+      \field{issn}{0162-1459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{6}
+      \field{number}{490}
+      \field{shorttitle}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}}
+      \field{title}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}: {{Estimating}} the {{Effect}} of {{California}}’s {{Tobacco Control Program}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\WA5YNR3T\Abadie et al. - 2010 - Synthetic Control Methods for Comparative Case Stu.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \keyw{Observational studies,Proposition 99,Tobacco control legislation,Treatment effects}
+    \endentry
     \entry{abbes_etal22}{online}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
@@ -581,6 +649,63 @@
       \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
       \endverb
     \endentry
+    \entry{caliendo_kopeinig08a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ed806cdd302502931c89bced97a46790}{%
+           family={Caliendo},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=344661e1097f7d731e2058764e21f80b}{%
+           family={Kopeinig},
+           familyi={K\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{fullhash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{bibnamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authorbibnamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authornamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authorfullhash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Propensity score matching (PSM) has become a popular approach to estimate causal treatment effects. It is widely applied when evaluating labour market policies, but empirical examples can be found in very diverse fields of study. Once the researcher has decided to use PSM, he is confronted with a lot of questions regarding its implementation. To begin with, a first decision has to be made concerning the estimation of the propensity score. Following that one has to decide which matching algorithm to choose and determine the region of common support. Subsequently, the matching quality has to be assessed and treatment effects and their standard errors have to be estimated. Furthermore, questions like ‘what to do if there is choice-based sampling?’ or ‘when to measure effects?’ can be important in empirical studies. Finally, one might also want to test the sensitivity of estimated treatment effects with respect to unobserved heterogeneity or failure of the common support condition. Each implementation step involves a lot of decisions and different approaches can be thought of. The aim of this paper is to discuss these implementation issues and give some guidance to researchers who want to use PSM for evaluation purposes.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Some {{Practical Guidance}} for the {{Implementation}} of {{Propensity Score Matching}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{22}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{31\bibrangedash 72}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\4Q6HXDI4\Caliendo and Kopeinig - 2008 - Some Practical Guidance for the Implementation of .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \keyw{Evaluation,Implementation,Propensity score matching,Sensitivity analysis,Treatment effects}
+    \endentry
     \entry{canadarevenueagency15}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
@@ -708,6 +833,50 @@
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
       \endverb
     \endentry
+    \entry{canadianintellectualpropertyoffice22}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Gatineau, Quebec}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Publication information / bibliographic Record.}
+      \field{eprinttype}{Innovation, Science and Economic Development Canada}
+      \field{issn}{1702-935X}
+      \field{langid}{english}
+      \field{number}{31}
+      \field{series}{Annual {{Reports}}}
+      \field{shorttitle}{Annual Report / {{Canadian Intellectual Property Office}}.}
+      \field{title}{2021−2022 {{Annual Report Canadian Intellectual Property Office}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://publications.gc.ca/site/eng/9.505720/publication.html
+      \endverb
+      \verb{url}
+      \verb https://publications.gc.ca/site/eng/9.505720/publication.html
+      \endverb
+    \endentry
     \entry{canadianintellectualpropertyoffice23}{dataset}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
@@ -726,7 +895,7 @@
       \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -931,6 +1100,68 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
       \endverb
       \keyw{Innovation,Policy evaluation,Public subsidies,R&D,Tax credit}
+    \endentry
+    \entry{graham_mowrey04}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8de55c94f1a0ef0ffdbd65a136bb79ea}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Stuart\bibnamedelimb J.\bibnamedelimi H.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbe8494e00fd99c34756776ab682f0e7}{%
+           family={Mowrey},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{fullhash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{bibnamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authorbibnamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authornamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authorfullhash}{a12bca4ecb518046e9d717aedc395af0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article examines the role of ‘continuations’ (procedural revisions of patent applications) in software patents and overall patenting in the United States during 1987–1999. The research represents the first effort of which we are aware to analyze data on continuations in software or any other patent class, providing information on the effects of 1995 changes in the US patent law intended to curb ‘submarine patenting’. The analysis of all US patents shows that the use of continuations grew steadily during 1987–1995, with particularly rapid growth in software patenting. Sharp reversals in these growth rates after 1995 suggest that changes in the US patent law were effective. Prior to the 1995 changes in the patent law, continuation applications were used more intensively by large packaged-software firms than by other patentees, and both software and non-software patents subject to continuation tend to experience longer examination delays and to be more valuable.}
+      \field{day}{1}
+      \field{issn}{1043-8599}
+      \field{journaltitle}{Economics of Innovation and New Technology}
+      \field{month}{7}
+      \field{number}{5}
+      \field{shorttitle}{Submarines in Software?}
+      \field{title}{Submarines in Software? Continuations in {{US}} Software Patenting in the 1980s and 1990s}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{13}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{443\bibrangedash 456}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/1043859042000188700
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\82VLUJ9V\Graham and Mowrey - 2004 - Submarines in software continuations in US softwa.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/1043859042000188700
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/1043859042000188700
+      \endverb
+      \keyw{Intellectual property strategy,Patent continuations,Patents,Software,Submarine patents}
     \endentry
     \entry{guceri18}{article}{}
       \name{author}{1}{}{%
@@ -1404,6 +1635,59 @@
       \verb https://doi.org/10.1007/s10797-007-9039-7
       \endverb
       \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
+    \endentry
+    \entry{moser13}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8cfb7ab7f52ce54f90b5fa1caecba480}{%
+           family={Moser},
+           familyi={M\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{fullhash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{bibnamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authorbibnamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authornamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authorfullhash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprinttype}{jstor}
+      \field{issn}{0895-3309}
+      \field{journaltitle}{The Journal of Economic Perspectives}
+      \field{number}{1}
+      \field{shorttitle}{Patents and {{Innovation}}}
+      \field{title}{Patents and {{Innovation}}: {{Evidence}} from {{Economic History}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{27}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{23\bibrangedash 44}
+      \range{pages}{22}
+      \verb{eprint}
+      \verb 41825460
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\5J83QVAW\Moser - 2013 - Patents and Innovation Evidence from Economic His.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/41825460
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/41825460
+      \endverb
     \endentry
     \entry{Patent85}{legislation}{}
       \list{publisher}{1}{%
@@ -2308,6 +2592,74 @@
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global}
+    \entry{abadie_etal10}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=da499bff747c5f6cd0ec9185c820ba4d}{%
+           family={Abadie},
+           familyi={A\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b45c00701af03c6c0ab37b49f5d375c5}{%
+           family={Diamond},
+           familyi={D\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be94165c21f502aeaed11e611358d6be}{%
+           family={Hainmueller},
+           familyi={H\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{bd5b50178614500025771572867fc86c}
+      \strng{fullhash}{bb1c0d171effadee95d0232167198de0}
+      \strng{bibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authorbibnamehash}{bb1c0d171effadee95d0232167198de0}
+      \strng{authornamehash}{bd5b50178614500025771572867fc86c}
+      \strng{authorfullhash}{bb1c0d171effadee95d0232167198de0}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Building on an idea in Abadie and Gardeazabal (2003), this article investigates the application of synthetic control methods to comparative case studies. We discuss the advantages of these methods and apply them to study the effects of Proposition 99, a large-scale tobacco control program that California implemented in 1988. We demonstrate that, following Proposition 99, tobacco consumption fell markedly in California relative to a comparable synthetic control region. We estimate that by the year 2000 annual per-capita cigarette sales in California were about 26 packs lower than what they would have been in the absence of Proposition 99. Using new inferential methods proposed in this article, we demonstrate the significance of our estimates. Given that many policy interventions and events of interest in social sciences take place at an aggregate level (countries, regions, cities, etc.) and affect a small number of aggregate units, the potential applicability of synthetic control methods to comparative case studies is very large, especially in situations where traditional regression methods are not appropriate.}
+      \field{day}{1}
+      \field{issn}{0162-1459}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{6}
+      \field{number}{490}
+      \field{shorttitle}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}}
+      \field{title}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}: {{Estimating}} the {{Effect}} of {{California}}’s {{Tobacco Control Program}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{105}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\WA5YNR3T\Abadie et al. - 2010 - Synthetic Control Methods for Comparative Case Stu.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1198/jasa.2009.ap08746
+      \endverb
+      \keyw{Observational studies,Proposition 99,Tobacco control legislation,Treatment effects}
+    \endentry
     \entry{abbes_etal22}{online}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
@@ -2870,6 +3222,63 @@
       \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
       \endverb
     \endentry
+    \entry{caliendo_kopeinig08a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ed806cdd302502931c89bced97a46790}{%
+           family={Caliendo},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=344661e1097f7d731e2058764e21f80b}{%
+           family={Kopeinig},
+           familyi={K\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{fullhash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{bibnamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authorbibnamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authornamehash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \strng{authorfullhash}{6bb0913b3eb639a151cb637e794eb2e1}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Propensity score matching (PSM) has become a popular approach to estimate causal treatment effects. It is widely applied when evaluating labour market policies, but empirical examples can be found in very diverse fields of study. Once the researcher has decided to use PSM, he is confronted with a lot of questions regarding its implementation. To begin with, a first decision has to be made concerning the estimation of the propensity score. Following that one has to decide which matching algorithm to choose and determine the region of common support. Subsequently, the matching quality has to be assessed and treatment effects and their standard errors have to be estimated. Furthermore, questions like ‘what to do if there is choice-based sampling?’ or ‘when to measure effects?’ can be important in empirical studies. Finally, one might also want to test the sensitivity of estimated treatment effects with respect to unobserved heterogeneity or failure of the common support condition. Each implementation step involves a lot of decisions and different approaches can be thought of. The aim of this paper is to discuss these implementation issues and give some guidance to researchers who want to use PSM for evaluation purposes.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Some {{Practical Guidance}} for the {{Implementation}} of {{Propensity Score Matching}}}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{22}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{31\bibrangedash 72}
+      \range{pages}{42}
+      \verb{doi}
+      \verb 10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\4Q6HXDI4\Caliendo and Kopeinig - 2008 - Some Practical Guidance for the Implementation of .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.2007.00527.x
+      \endverb
+      \keyw{Evaluation,Implementation,Propensity score matching,Sensitivity analysis,Treatment effects}
+    \endentry
     \entry{canadarevenueagency15}{online}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
@@ -2997,6 +3406,50 @@
       \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
       \endverb
     \endentry
+    \entry{canadianintellectualpropertyoffice22}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
+           family={{Canadian Intellectual Property Office}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Gatineau, Quebec}%
+      }
+      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
+      \field{extraname}{2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Publication information / bibliographic Record.}
+      \field{eprinttype}{Innovation, Science and Economic Development Canada}
+      \field{issn}{1702-935X}
+      \field{langid}{english}
+      \field{number}{31}
+      \field{series}{Annual {{Reports}}}
+      \field{shorttitle}{Annual Report / {{Canadian Intellectual Property Office}}.}
+      \field{title}{2021−2022 {{Annual Report Canadian Intellectual Property Office}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://publications.gc.ca/site/eng/9.505720/publication.html
+      \endverb
+      \verb{url}
+      \verb https://publications.gc.ca/site/eng/9.505720/publication.html
+      \endverb
+    \endentry
     \entry{canadianintellectualpropertyoffice23}{dataset}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
@@ -3015,7 +3468,7 @@
       \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
       \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{extraname}{2}
+      \field{extraname}{3}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
@@ -3220,6 +3673,68 @@
       \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
       \endverb
       \keyw{Innovation,Policy evaluation,Public subsidies,R&D,Tax credit}
+    \endentry
+    \entry{graham_mowrey04}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8de55c94f1a0ef0ffdbd65a136bb79ea}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={Stuart\bibnamedelimb J.\bibnamedelimi H.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fbe8494e00fd99c34756776ab682f0e7}{%
+           family={Mowrey},
+           familyi={M\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{fullhash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{bibnamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authorbibnamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authornamehash}{a12bca4ecb518046e9d717aedc395af0}
+      \strng{authorfullhash}{a12bca4ecb518046e9d717aedc395af0}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This article examines the role of ‘continuations’ (procedural revisions of patent applications) in software patents and overall patenting in the United States during 1987–1999. The research represents the first effort of which we are aware to analyze data on continuations in software or any other patent class, providing information on the effects of 1995 changes in the US patent law intended to curb ‘submarine patenting’. The analysis of all US patents shows that the use of continuations grew steadily during 1987–1995, with particularly rapid growth in software patenting. Sharp reversals in these growth rates after 1995 suggest that changes in the US patent law were effective. Prior to the 1995 changes in the patent law, continuation applications were used more intensively by large packaged-software firms than by other patentees, and both software and non-software patents subject to continuation tend to experience longer examination delays and to be more valuable.}
+      \field{day}{1}
+      \field{issn}{1043-8599}
+      \field{journaltitle}{Economics of Innovation and New Technology}
+      \field{month}{7}
+      \field{number}{5}
+      \field{shorttitle}{Submarines in Software?}
+      \field{title}{Submarines in Software? Continuations in {{US}} Software Patenting in the 1980s and 1990s}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{13}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{443\bibrangedash 456}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/1043859042000188700
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\82VLUJ9V\Graham and Mowrey - 2004 - Submarines in software continuations in US softwa.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/1043859042000188700
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/1043859042000188700
+      \endverb
+      \keyw{Intellectual property strategy,Patent continuations,Patents,Software,Submarine patents}
     \endentry
     \entry{guceri18}{article}{}
       \name{author}{1}{}{%
@@ -3693,6 +4208,59 @@
       \verb https://doi.org/10.1007/s10797-007-9039-7
       \endverb
       \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
+    \endentry
+    \entry{moser13}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8cfb7ab7f52ce54f90b5fa1caecba480}{%
+           family={Moser},
+           familyi={M\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {American Economic Association}%
+      }
+      \strng{namehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{fullhash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{bibnamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authorbibnamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authornamehash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \strng{authorfullhash}{8cfb7ab7f52ce54f90b5fa1caecba480}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprinttype}{jstor}
+      \field{issn}{0895-3309}
+      \field{journaltitle}{The Journal of Economic Perspectives}
+      \field{number}{1}
+      \field{shorttitle}{Patents and {{Innovation}}}
+      \field{title}{Patents and {{Innovation}}: {{Evidence}} from {{Economic History}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{27}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{23\bibrangedash 44}
+      \range{pages}{22}
+      \verb{eprint}
+      \verb 41825460
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\5J83QVAW\Moser - 2013 - Patents and Innovation Evidence from Economic His.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/41825460
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/41825460
+      \endverb
     \endentry
     \entry{Patent85}{legislation}{}
       \list{publisher}{1}{%
