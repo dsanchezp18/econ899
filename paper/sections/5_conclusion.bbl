@@ -1,0 +1,1649 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{agrawal_etal20}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
+           family={Rosell},
+           familyi={R\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
+           family={Simcoe},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{fullhash}{9a7346946685de68841e00ced9785728}
+      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1257/pol.20140467
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
+    \entry{bernstein86b}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a9245ac6fe1fd0aa3934a9e5a46677f7}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jeffrey\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[University of Toronto Press, Canadian Public Policy]}%
+      }
+      \strng{namehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{fullhash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{bibnamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authorbibnamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authornamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authorfullhash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{On sait que le rendement industriel est influencé par les investissements en recherche et développement. En conséquence, les pays occidentaux industralisés, dont le Canada, cherchent à stimuler les dépenses de recherche et de développement par le moyen d'incitations fiscales offertes à l'industrie. L'auteur de cet article a voulu évaluer les effets directs et indirects des incitations fiscales sur les dépenses de recherche et de développement au moyen d'une étude économétrique de la production et des investissements d'entreprises canadiennes. Les résultats montrent qu'en l'absence de croissance économique, le crédit d'impôt pour investissements de recherche et de développement et les allocations spéciales se soldent par 0,80 \$ de dépenses additionnelles en R\&D pour chaque dollar d'impôts auquel renonce le gouvernement. Si la production économique augmente, les dépenses supplémentaires au titre de la recherche et du développement dépassent les coûts encourus par le gouvernement. En outre, le crédit fiscal pour immobilisations industrielles est un incitatif indirect qui provoque une augmentation des dépenses de R\&D pouvant atteindre environ 10 pour cent de l'augmentation obtenue per les incitations directes. /// Industrial performance is influenced by the rate of investment in research and development (R\&D). Western developed countries, and Canada in particular, have attempted to stimulate industrial R\&D expenditures through the use of tax incentives. The purpose of this paper is to estimate the effects of both direct and indirect tax incentives on R\&D expenditures. The results are based on an econometric study of production and investment of Canadian firms. The results show that when there is no growth in the economy the R\&D investment tax credit and special allowance generate about \$.80 of additional R\&D expenditures per dollar of foregone tax revenues to the government. When ouput expands, the additional R\&D expenditures increase by more than the dollar cost to the government. In addition, the business fixed investment tax credit is an indirect incentive which causes R\&D expenditures to increase by about 10 per cent of the increase obtained for the direct incentives.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0317-0861}
+      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+      \field{number}{3}
+      \field{title}{The {{Effect}} of {{Direct}} and {{Indirect Tax Incentives}} on {{Canadian Industrial R}}\&{{D Expenditures}}}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{438\bibrangedash 448}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.2307/3550607
+      \endverb
+      \verb{eprint}
+      \verb 3550607
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\2VMPVH3C\Bernstein - 1986 - The Effect of Direct and Indirect Tax Incentives o.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/3550607
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/3550607
+      \endverb
+    \endentry
+    \entry{berube_mohnen09}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d04969275492cdffdeee8cd7bacf1ffc}{%
+           family={Bérubé},
+           familyi={B\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4b6cc7853fb34406bac8eac21c3874}{%
+           family={Mohnen},
+           familyi={M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Canadian Economics Association]}%
+      }
+      \strng{namehash}{e951030e343920ef36bc286c585cec17}
+      \strng{fullhash}{e951030e343920ef36bc286c585cec17}
+      \strng{bibnamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authorbibnamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authornamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authorfullhash}{e951030e343920ef36bc286c585cec17}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper looks at the effectiveness of R\&D grants for Canadian plants that already benefit from R\&D tax credits. Using a non-parametric matching estimator and data from the 2005 Survey of Innovation from Statistics Canada, we find that firms that benefited from both policy measures introduced more new products than their counterparts that only benefited from R\&D tax incentives. They also made more world-first product innovations and were more successful in commercializing their innovations. The paper gives also a detailed step-by-step explanation of how to apply the non-parametric matching technique. /// Cette étude examine l'efficacité des subventions à la recherche-développement pour les établissements canadiens qui bénéficient déjà de crédits d'impôt à la recherche. En utilisant un estimateur non-paramétrique d'appariement, nous trouvons que les établissements qui bénéficient des deux mesures de soutien à la recherche introduisent plus de nouveaux produits sur le marché que celles qui ne bénéficient que des crédits d'impôt. Elles réussissent aussi à mettre plus de premières mondiales sur le marché et à mieux commercialiser leurs nouveaux produits. Nous exposons aussi en détail les étapes à suivre pour une estimation non-paramétrique d'appariement.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0008-4085}
+      \field{journaltitle}{The Canadian Journal of Economics / Revue canadienne d'Economique}
+      \field{number}{1}
+      \field{title}{Are {{Firms That Receive R}}\&{{D Subsidies More Innovative}}?}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{206\bibrangedash 225}
+      \range{pages}{20}
+      \verb{eprint}
+      \verb 25478346
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\SX6NIGTF\Bérubé and Mohnen - 2009 - Are Firms That Receive R&D Subsidies More Innovati.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/25478346
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/25478346
+      \endverb
+    \endentry
+    \entry{chen_etal21}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=76448b761ad64dd0746ba4b504382a50}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=892c41ce40f285cae08989f905645362}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhikuo},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=563837c3a13d57c25444aa0ae3ac2e64}{%
+           family={Suárez\bibnamedelima Serrato},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb59aa3b4e241c8c5c8182cf65e14dc9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Daniel\bibnamedelima Yi},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c35b2dbc0f66c34d1c746b31fb212190}
+      \strng{fullhash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{bibnamehash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{authorbibnamehash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{authornamehash}{c35b2dbc0f66c34d1c746b31fb212190}
+      \strng{authorfullhash}{90b35a7ed171a0cab1af396883aa41e9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a Chinese policy that awards substantial tax cuts to firms with R\&D investment over a threshold or "notch." Quasi-experimental variation and administrative tax data show a significant increase in reported R\&D that is partly driven by firms relabeling expenses as R\&D. Structural estimates show relabeling accounts for 24.2 percent of reported R\&D and that doubling R\&D would increase productivity by 9 percent. Policy simulations show that firm selection and relabeling determine the cost-effectiveness of stimulating R\&D, that notch-based policies are more effective than tax credits when relabeling is prevalent, and that modest spill-overs justify the program from a welfare perspective.}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Notching {{R}}\&{{D Investment}} with {{Corporate Income Tax Cuts}} in {{China}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{111}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2065\bibrangedash 2100}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1257/aer.20191758
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\88M9DMYA\Chen et al. - 2021 - Notching R&D Investment with Corporate Income Tax .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257%2Faer.20191758
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257%2Faer.20191758
+      \endverb
+      \keyw{Capacity Business Taxes and Subsidies including sales and value-added (VAT) Industrialization,Capital,Capital Total Factor and Multifactor Productivity,Choice of Technology Management of Technological Innovation and R&D Socialist Enterprises and Their Transitions Socialist Institutions and Their Transitions: Public Economics,Cost,Firm Behavior: Empirical Analysis Production,Manufacturing and Service Industries}
+    \endentry
+    \entry{czarnitzki_etal11}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=858d0b3e1d37c3da69beea59f9ef541e}{%
+           family={Czarnitzki},
+           familyi={C\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3a00435b2eb415b73d8a056d5097ffa}{%
+           family={Hanel},
+           familyi={H\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b3873570c52d61684d6618716f5fecf}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Julio\bibnamedelima Miguel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f1cd8389736a1ec5909fa953b46459bf}
+      \strng{fullhash}{c4462d5ab010a80467343726f5933551}
+      \strng{bibnamehash}{c4462d5ab010a80467343726f5933551}
+      \strng{authorbibnamehash}{c4462d5ab010a80467343726f5933551}
+      \strng{authornamehash}{f1cd8389736a1ec5909fa953b46459bf}
+      \strng{authorfullhash}{c4462d5ab010a80467343726f5933551}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This study examines the effect of R\&D tax credits on innovation activities of Canadian manufacturing firms. Over the 1997–1999 period the Federal and Provincial R\&D tax credit programs were used by more than one third of all manufacturing firms and by close to two thirds of firms in high-technology sectors. We investigate the average effect of R\&D tax credits on a series of innovation indicators such as: number of new products, sales with new products, originality of innovation, etc. using a non-parametric matching approach. Compared to a hypothetical situation in the absence of R\&D tax credits, recipients of tax credits show significantly better scores on most but not all performance indicators. We therefore conclude that tax credits lead to additional innovation output.}
+      \field{day}{1}
+      \field{issn}{0048-7333}
+      \field{journaltitle}{Research Policy}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{Research Policy}
+      \field{shorttitle}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation}
+      \field{title}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation: {{A}} Microeconometric Study on {{Canadian}} Firms}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{40}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 229}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.respol.2010.09.017
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
+      \endverb
+      \keyw{Innovation,Policy evaluation,Public subsidies,R&D,Tax credit}
+    \endentry
+    \entry{guceri18}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dee062963174f44e7087a82a84595234}{%
+           family={Guceri},
+           familyi={G\bibinitperiod},
+           given={Irem},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dee062963174f44e7087a82a84595234}
+      \strng{fullhash}{dee062963174f44e7087a82a84595234}
+      \strng{bibnamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authorbibnamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authornamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authorfullhash}{dee062963174f44e7087a82a84595234}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper evaluates the effect of tax incentives for research and development (R\&D) on R\&D spending and employment of R\&D staff in a quasi-experimental setting. To do this, I exploit an exogenous reform in UK R\&D tax policy, which changed the definition of an SME from firms with fewer than 250 employees to those with fewer than 500 employees. I use the UK Business Enterprise Research and Development Survey (BERD), for which companies do not have an incentive to relabel their ordinary employees or spending as R\&D. I find that R\&D tax incentives help to increase R\&D spending at the company level; this translates to a user cost elasticity between −0.88 and −1.18. Further, the additional R\&D generated through the tax relief can be attributed entirely to an increase in the number of R\&D employees in the companies’ workforce. Together, these results challenge a common narrative on the role of R\&D tax incentives.}
+      \field{day}{1}
+      \field{issn}{1573-6970}
+      \field{journaltitle}{International Tax and Public Finance}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{Int Tax Public Finance}
+      \field{shorttitle}{Will the Real {{R}}\&{{D}} Employees Please Stand Up?}
+      \field{title}{Will the Real {{R}}\&{{D}} Employees Please Stand up? {{Effects}} of Tax Breaks on Firm-Level Outcomes}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{25}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 63}
+      \range{pages}{63}
+      \verb{doi}
+      \verb 10.1007/s10797-017-9438-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\MR5VEAW8\Guceri - 2018 - Will the real R&D employees please stand up Effec.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10797-017-9438-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10797-017-9438-3
+      \endverb
+      \keyw{Difference-in-differences,H25,O30,Quasi-experiment,R&D,Tax credits}
+    \endentry
+    \entry{guceri_liu19}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dee062963174f44e7087a82a84595234}{%
+           family={Guceri},
+           familyi={G\bibinitperiod},
+           given={Irem},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa3e4da50b3416b1a04c39a932b2344c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{fullhash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{bibnamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authorbibnamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authornamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authorfullhash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We exploit a 2008 UK policy reform that increased the tax incentives for R\&D in medium-sized enterprises relative to large ones, to overcome the endogeneity of exposure to such tax credits. We estimate a difference-in-difference design on the universe of corporation tax filings in the United Kingdom, combined with other datasets. We find a positive and significant impact of tax credits for R\&D, implying a user-cost elasticity estimate of around −1.6. This magnitude implies around \$1 in additional private R\&D spending per dollar foregone in tax revenue.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{Effectiveness of {{Fiscal Incentives}} for {{R}}\&{{D}}}
+      \field{title}{Effectiveness of {{Fiscal Incentives}} for {{R}}\&{{D}}: {{Quasi-experimental Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{266\bibrangedash 291}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1257/pol.20170403
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\ZVFNCA2K\Guceri and Liu - 2019 - Effectiveness of Fiscal Incentives for R&D Quasi-.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20170403
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20170403
+      \endverb
+      \keyw{and Scope,Business Taxes and Subsidies including sales and value-added (VAT),Diversification,Firm Performance: Size,Fiscal Policies and Behavior of Economic Agents: Firm,Management of Technological Innovation and R&D,Tax Law}
+    \endentry
+    \entry{lyon89}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3f3e158fd9aefcd90ca6d3a07e5f55c}{%
+           family={Lyon},
+           familyi={L\bibinitperiod},
+           given={Andrew\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{fullhash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{bibnamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authorbibnamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authornamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authorfullhash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A change in the tax law that increases investment incentives for new assets may result in excess returns on new investment, causing firm value to increase. Alternatively, because the investment incentives apply only to new investments, the value of existing assets that compete with these investments may decline. In general, investment incentives have a theoretically ambiguous effect on firm value. Cross-sectional tests examine the changes in firm value to repeated changes of the investment tax credit. Changes in firm value are found to be positively related to the expected receipt of investment tax credits. No evidence is found to support a relationship between expected changes in the value of a firm's existing assets and changes in firm value.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{title}{The Effect of the Investment Tax Credit on the Value of the Firm}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{38}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{227\bibrangedash 247}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/0047-2727(89)90027-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TJRUC377\Lyon - 1989 - The effect of the investment tax credit on the val.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272789900273
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272789900273
+      \endverb
+    \endentry
+    \entry{mansfield_switzer85a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
+           family={Mansfield},
+           familyi={M\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Lorne},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In Canada, as in many other countries that have adopted R\&D tax credits and allowances, there has been considerable controversy over their effectiveness in increasing company-financed research and development. This study seems to be one of the first systematic attempts to estimate the effects of Canada's R\&D tax credits and allowances. The results present a very consistent picture. The survey results, the econometric results, and some simple calculations based on rough measures of the price elasticity of demand for R\&D all suggest that the special research allowance increased R\&D expenditures by about 1 percent and that the investment tax credit increased them by about 2 percent. These increases seem to be appreciably less than the revenue losses to the government.}
+      \field{day}{1}
+      \field{issn}{0048-7333}
+      \field{journaltitle}{Research Policy}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Research Policy}
+      \field{title}{The Effects of {{R}}\&{{D}} Tax Credits and Allowances in {{Canada}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{14}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{97\bibrangedash 107}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/0048-7333(85)90017-4
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\LCPHUGIC\Mansfield and Switzer - 1985 - The effects of R&D tax credits and allowances in C.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
+      \endverb
+    \endentry
+    \entry{pereira94}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=33c9d58ac30495e30380424109e47919}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Alfredo\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{33c9d58ac30495e30380424109e47919}
+      \strng{fullhash}{33c9d58ac30495e30380424109e47919}
+      \strng{bibnamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authorbibnamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authornamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authorfullhash}{33c9d58ac30495e30380424109e47919}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the overall efficiency effects of ITCs in the context of a disaggregated dynamic general equilibrium simulation model of the U.S. economy. This model postulates forward-looking investment decisions, and allows for optimal government borrowing and financial crowding out. Simulation results confirm the conventional wisdom that ITCs are distortionary, but challenge the equally conventional wisdom that ITCs necessarily spur investment and GDP. In addition, results point to an important policy trade-off. Introducing ITCs without neutralizing their budgetary effects would lead to low efficiency losses but would reduce investment and GDP due to financial crowding out. In turn, imposition of ITCs while blocking their budgetary effects would lead to relatively large efficiency losses while minimizing the negative impact on investment and GDP.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{title}{On the Effects of Investment Tax Credits on Economic Efficiency and Growth}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{54}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{437\bibrangedash 461}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0047-2727(94)90045-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272794900450
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272794900450
+      \endverb
+    \endentry
+    \entry{rao16}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a57189ee8dda33fdc8bc0c2146794618}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Nirupama},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{fullhash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{bibnamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authorbibnamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authornamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authorfullhash}{a57189ee8dda33fdc8bc0c2146794618}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper examines the impact of the U.S. federal R\&D tax credit between 1981–1991 using confidential IRS data from corporate tax returns. The empirical analysis makes two key advances on previous work. First, it implements a new instrumental variables (IV) strategy based on tax changes that directly addresses the simultaneity of R\&D spending and marginal credit rates. Second, the analysis makes use of new restricted-access IRS corporate return data describing R\&D expenditures. Estimates imply that a10\% reduction in the user cost of R\&D leads the average firm to increase its research intensity—the ratio of R\&D spending to sales—by 19.8\% in the short-run. Long-run estimates imply that the average firm faces adjustment costs and increases spending over time, though small and young firms show evidence of reversing initial increases. Analysis of the components of qualified research shows that wages and supplies account for the bulk of the increase in research spending. Elasticities of qualified and total research intensities from a smaller sample suggest firms respond to user cost changes largely by increasing their qualified spending, meaning that the type of R\&D the federal credit deems qualified research is an important margin on which the credit affects firm behavior.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{8}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{shorttitle}{Do Tax Credits Stimulate {{R}}\&{{D}} Spending?}
+      \field{title}{Do Tax Credits Stimulate {{R}}\&{{D}} Spending? {{The}} Effect of the {{R}}\&{{D}} Tax Credit in Its First Decade}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{140}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2016.05.003
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\FXG9BNIE\S0047272716300482.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047272716300482
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047272716300482
+      \endverb
+      \keyw{Business tax,R&D,Tax credits}
+    \endentry
+    \entry{slattery_zidar20}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3295665df522438e9b4e1af2fa96f25d}{%
+           family={Slattery},
+           familyi={S\bibinitperiod},
+           given={Cailin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
+           family={Zidar},
+           familyi={Z\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{fullhash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{bibnamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authorbibnamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authornamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authorfullhash}{26eb645509f434c0ed7fc483340dd5ee}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This essay describes and evaluates state and local business tax incentives in the United States. In 2014, states spent between 5 USD and 216 USD per capita on incentives for firms in the form of firm-specific subsidies and general tax credits, which mostly target investment, job creation, and research and development. States with higher per capita incentives tend to have higher state corporate tax rates. Recipients of firm-specific incentives are usually large establishments in manufacturing, technology, and high-skilled service industries, and the average discretionary subsidy is 178M USD for 1,500 promised jobs. Firms tend to accept subsidy deals from places that are richer, larger, and more urban than the average county, and poor places provide larger incentives and spend more per job. Comparing winning and runner-up locations for each deal, we find that average employment within the three-digit industry of the deal increases by roughly 1,500 jobs. While we find some evidence of direct employment gains from attracting a firm, we do not find strong evidence that firm-specific tax incentives increase broader economic growth at the state and local level.}
+      \field{issn}{0895-3309}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Evaluating {{State}} and {{Local Business Incentives}}}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{34}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{90\bibrangedash 118}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1257/jep.34.2.90
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\9BCLILSB\Slattery and Zidar - 2020 - Evaluating State and Local Business Incentives.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.34.2.90
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.34.2.90
+      \endverb
+      \keyw{and Revenue,Business Taxes and Subsidies including sales and value-added (VAT),Fiscal Policies and Behavior of Economic Agents: Firm,Other Spatial Production and Pricing Analysis,State and Local Taxation,Subsidies}
+    \endentry
+    \entry{xie_etal19}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5a3cd743395464a084bdf98a3877c590}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Xuemei},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7684de12cd5ce2de7cf8563861b30cb2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5fd5f7fcfc67b45433764c78dc9f036}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b47f3c66640763278a31edf0ef4abefc}
+      \strng{fullhash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{bibnamehash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{authorbibnamehash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{authornamehash}{b47f3c66640763278a31edf0ef4abefc}
+      \strng{authorfullhash}{cc44115268096f0adbe5a81de9b59de0}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Non-R\&D innovation increasingly plays a critical role in explaining firms’ new product performance. Yet, there has been little research on the consequences and contingent mechanisms of non-R\&D innovation for firms embedded in collaborative network environments. To address this research gap, we investigated a conceptual framework of non-R\&D innovation using data drawn from Chinese manufacturing firms. First, we found that non-R\&D innovation positively affects firms’ new product performance. Second, we discovered that high R\&D intensity positively strengthens the impact of firms’ non-R\&D innovation on new product performance. Third, we provided critical analysis of the role of non-R\&D innovation in promoting new product performance, accomplished by enhancing R\&D investment while simultaneously improving the degree of network embeddedness. Our findings extend both the non-R\&D innovation literature and open innovation literature while providing managers with several key recommendations.}
+      \field{issn}{1467-9310}
+      \field{journaltitle}{R\&D Management}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Non-{{R}}\&{{D}} Innovation and Firms’ New Product Performance}
+      \field{title}{Non-{{R}}\&{{D}} Innovation and Firms’ New Product Performance: The Joint Moderating Effect of {{R}}\&{{D}} Intensity and Network Embeddedness}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{49}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{748\bibrangedash 761}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/radm.12369
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\user\\Zotero\\storage\\VJW9F7UH\\Xie et al. - 2019 - Non-R&D innovation and firms’ new product performa.pdf;C\:\\Users\\user\\Zotero\\storage\\UNH4WM6F\\radm.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/radm.12369
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/radm.12369
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{agrawal_etal20}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Ajay},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
+           family={Rosell},
+           familyi={R\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
+           family={Simcoe},
+           familyi={S\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{fullhash}{9a7346946685de68841e00ced9785728}
+      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
+      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
+      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 21}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1257/pol.20140467
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+      \endverb
+      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \endentry
+    \entry{becker15}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Bettina},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
+      \field{issn}{1467-6419}
+      \field{journaltitle}{Journal of Economic Surveys}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{29}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{917\bibrangedash 942}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1111/joes.12074
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+      \endverb
+      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \endentry
+    \entry{bernstein86b}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a9245ac6fe1fd0aa3934a9e5a46677f7}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jeffrey\bibnamedelima I.},
+           giveni={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[University of Toronto Press, Canadian Public Policy]}%
+      }
+      \strng{namehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{fullhash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{bibnamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authorbibnamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authornamehash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \strng{authorfullhash}{a9245ac6fe1fd0aa3934a9e5a46677f7}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{On sait que le rendement industriel est influencé par les investissements en recherche et développement. En conséquence, les pays occidentaux industralisés, dont le Canada, cherchent à stimuler les dépenses de recherche et de développement par le moyen d'incitations fiscales offertes à l'industrie. L'auteur de cet article a voulu évaluer les effets directs et indirects des incitations fiscales sur les dépenses de recherche et de développement au moyen d'une étude économétrique de la production et des investissements d'entreprises canadiennes. Les résultats montrent qu'en l'absence de croissance économique, le crédit d'impôt pour investissements de recherche et de développement et les allocations spéciales se soldent par 0,80 \$ de dépenses additionnelles en R\&D pour chaque dollar d'impôts auquel renonce le gouvernement. Si la production économique augmente, les dépenses supplémentaires au titre de la recherche et du développement dépassent les coûts encourus par le gouvernement. En outre, le crédit fiscal pour immobilisations industrielles est un incitatif indirect qui provoque une augmentation des dépenses de R\&D pouvant atteindre environ 10 pour cent de l'augmentation obtenue per les incitations directes. /// Industrial performance is influenced by the rate of investment in research and development (R\&D). Western developed countries, and Canada in particular, have attempted to stimulate industrial R\&D expenditures through the use of tax incentives. The purpose of this paper is to estimate the effects of both direct and indirect tax incentives on R\&D expenditures. The results are based on an econometric study of production and investment of Canadian firms. The results show that when there is no growth in the economy the R\&D investment tax credit and special allowance generate about \$.80 of additional R\&D expenditures per dollar of foregone tax revenues to the government. When ouput expands, the additional R\&D expenditures increase by more than the dollar cost to the government. In addition, the business fixed investment tax credit is an indirect incentive which causes R\&D expenditures to increase by about 10 per cent of the increase obtained for the direct incentives.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0317-0861}
+      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+      \field{number}{3}
+      \field{title}{The {{Effect}} of {{Direct}} and {{Indirect Tax Incentives}} on {{Canadian Industrial R}}\&{{D Expenditures}}}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{1986}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{438\bibrangedash 448}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.2307/3550607
+      \endverb
+      \verb{eprint}
+      \verb 3550607
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\2VMPVH3C\Bernstein - 1986 - The Effect of Direct and Indirect Tax Incentives o.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/3550607
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/3550607
+      \endverb
+    \endentry
+    \entry{berube_mohnen09}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d04969275492cdffdeee8cd7bacf1ffc}{%
+           family={Bérubé},
+           familyi={B\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c4b6cc7853fb34406bac8eac21c3874}{%
+           family={Mohnen},
+           familyi={M\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Wiley, Canadian Economics Association]}%
+      }
+      \strng{namehash}{e951030e343920ef36bc286c585cec17}
+      \strng{fullhash}{e951030e343920ef36bc286c585cec17}
+      \strng{bibnamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authorbibnamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authornamehash}{e951030e343920ef36bc286c585cec17}
+      \strng{authorfullhash}{e951030e343920ef36bc286c585cec17}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper looks at the effectiveness of R\&D grants for Canadian plants that already benefit from R\&D tax credits. Using a non-parametric matching estimator and data from the 2005 Survey of Innovation from Statistics Canada, we find that firms that benefited from both policy measures introduced more new products than their counterparts that only benefited from R\&D tax incentives. They also made more world-first product innovations and were more successful in commercializing their innovations. The paper gives also a detailed step-by-step explanation of how to apply the non-parametric matching technique. /// Cette étude examine l'efficacité des subventions à la recherche-développement pour les établissements canadiens qui bénéficient déjà de crédits d'impôt à la recherche. En utilisant un estimateur non-paramétrique d'appariement, nous trouvons que les établissements qui bénéficient des deux mesures de soutien à la recherche introduisent plus de nouveaux produits sur le marché que celles qui ne bénéficient que des crédits d'impôt. Elles réussissent aussi à mettre plus de premières mondiales sur le marché et à mieux commercialiser leurs nouveaux produits. Nous exposons aussi en détail les étapes à suivre pour une estimation non-paramétrique d'appariement.}
+      \field{eprinttype}{jstor}
+      \field{issn}{0008-4085}
+      \field{journaltitle}{The Canadian Journal of Economics / Revue canadienne d'Economique}
+      \field{number}{1}
+      \field{title}{Are {{Firms That Receive R}}\&{{D Subsidies More Innovative}}?}
+      \field{urlday}{25}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{42}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{206\bibrangedash 225}
+      \range{pages}{20}
+      \verb{eprint}
+      \verb 25478346
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\SX6NIGTF\Bérubé and Mohnen - 2009 - Are Firms That Receive R&D Subsidies More Innovati.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/25478346
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/25478346
+      \endverb
+    \endentry
+    \entry{chen_etal21}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=76448b761ad64dd0746ba4b504382a50}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=892c41ce40f285cae08989f905645362}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhikuo},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=563837c3a13d57c25444aa0ae3ac2e64}{%
+           family={Suárez\bibnamedelima Serrato},
+           familyi={S\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Juan\bibnamedelima Carlos},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bb59aa3b4e241c8c5c8182cf65e14dc9}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Daniel\bibnamedelima Yi},
+           giveni={D\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c35b2dbc0f66c34d1c746b31fb212190}
+      \strng{fullhash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{bibnamehash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{authorbibnamehash}{90b35a7ed171a0cab1af396883aa41e9}
+      \strng{authornamehash}{c35b2dbc0f66c34d1c746b31fb212190}
+      \strng{authorfullhash}{90b35a7ed171a0cab1af396883aa41e9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study a Chinese policy that awards substantial tax cuts to firms with R\&D investment over a threshold or "notch." Quasi-experimental variation and administrative tax data show a significant increase in reported R\&D that is partly driven by firms relabeling expenses as R\&D. Structural estimates show relabeling accounts for 24.2 percent of reported R\&D and that doubling R\&D would increase productivity by 9 percent. Policy simulations show that firm selection and relabeling determine the cost-effectiveness of stimulating R\&D, that notch-based policies are more effective than tax credits when relabeling is prevalent, and that modest spill-overs justify the program from a welfare perspective.}
+      \field{issn}{0002-8282}
+      \field{journaltitle}{American Economic Review}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Notching {{R}}\&{{D Investment}} with {{Corporate Income Tax Cuts}} in {{China}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{111}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2065\bibrangedash 2100}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1257/aer.20191758
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\88M9DMYA\Chen et al. - 2021 - Notching R&D Investment with Corporate Income Tax .pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257%2Faer.20191758
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257%2Faer.20191758
+      \endverb
+      \keyw{Capacity Business Taxes and Subsidies including sales and value-added (VAT) Industrialization,Capital,Capital Total Factor and Multifactor Productivity,Choice of Technology Management of Technological Innovation and R&D Socialist Enterprises and Their Transitions Socialist Institutions and Their Transitions: Public Economics,Cost,Firm Behavior: Empirical Analysis Production,Manufacturing and Service Industries}
+    \endentry
+    \entry{czarnitzki_etal11}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=858d0b3e1d37c3da69beea59f9ef541e}{%
+           family={Czarnitzki},
+           familyi={C\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a3a00435b2eb415b73d8a056d5097ffa}{%
+           family={Hanel},
+           familyi={H\bibinitperiod},
+           given={Petr},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b3873570c52d61684d6618716f5fecf}{%
+           family={Rosa},
+           familyi={R\bibinitperiod},
+           given={Julio\bibnamedelima Miguel},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f1cd8389736a1ec5909fa953b46459bf}
+      \strng{fullhash}{c4462d5ab010a80467343726f5933551}
+      \strng{bibnamehash}{c4462d5ab010a80467343726f5933551}
+      \strng{authorbibnamehash}{c4462d5ab010a80467343726f5933551}
+      \strng{authornamehash}{f1cd8389736a1ec5909fa953b46459bf}
+      \strng{authorfullhash}{c4462d5ab010a80467343726f5933551}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This study examines the effect of R\&D tax credits on innovation activities of Canadian manufacturing firms. Over the 1997–1999 period the Federal and Provincial R\&D tax credit programs were used by more than one third of all manufacturing firms and by close to two thirds of firms in high-technology sectors. We investigate the average effect of R\&D tax credits on a series of innovation indicators such as: number of new products, sales with new products, originality of innovation, etc. using a non-parametric matching approach. Compared to a hypothetical situation in the absence of R\&D tax credits, recipients of tax credits show significantly better scores on most but not all performance indicators. We therefore conclude that tax credits lead to additional innovation output.}
+      \field{day}{1}
+      \field{issn}{0048-7333}
+      \field{journaltitle}{Research Policy}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{Research Policy}
+      \field{shorttitle}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation}
+      \field{title}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation: {{A}} Microeconometric Study on {{Canadian}} Firms}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{40}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{217\bibrangedash 229}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.respol.2010.09.017
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
+      \endverb
+      \keyw{Innovation,Policy evaluation,Public subsidies,R&D,Tax credit}
+    \endentry
+    \entry{guceri18}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dee062963174f44e7087a82a84595234}{%
+           family={Guceri},
+           familyi={G\bibinitperiod},
+           given={Irem},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dee062963174f44e7087a82a84595234}
+      \strng{fullhash}{dee062963174f44e7087a82a84595234}
+      \strng{bibnamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authorbibnamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authornamehash}{dee062963174f44e7087a82a84595234}
+      \strng{authorfullhash}{dee062963174f44e7087a82a84595234}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper evaluates the effect of tax incentives for research and development (R\&D) on R\&D spending and employment of R\&D staff in a quasi-experimental setting. To do this, I exploit an exogenous reform in UK R\&D tax policy, which changed the definition of an SME from firms with fewer than 250 employees to those with fewer than 500 employees. I use the UK Business Enterprise Research and Development Survey (BERD), for which companies do not have an incentive to relabel their ordinary employees or spending as R\&D. I find that R\&D tax incentives help to increase R\&D spending at the company level; this translates to a user cost elasticity between −0.88 and −1.18. Further, the additional R\&D generated through the tax relief can be attributed entirely to an increase in the number of R\&D employees in the companies’ workforce. Together, these results challenge a common narrative on the role of R\&D tax incentives.}
+      \field{day}{1}
+      \field{issn}{1573-6970}
+      \field{journaltitle}{International Tax and Public Finance}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shortjournal}{Int Tax Public Finance}
+      \field{shorttitle}{Will the Real {{R}}\&{{D}} Employees Please Stand Up?}
+      \field{title}{Will the Real {{R}}\&{{D}} Employees Please Stand up? {{Effects}} of Tax Breaks on Firm-Level Outcomes}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{25}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 63}
+      \range{pages}{63}
+      \verb{doi}
+      \verb 10.1007/s10797-017-9438-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\MR5VEAW8\Guceri - 2018 - Will the real R&D employees please stand up Effec.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10797-017-9438-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10797-017-9438-3
+      \endverb
+      \keyw{Difference-in-differences,H25,O30,Quasi-experiment,R&D,Tax credits}
+    \endentry
+    \entry{guceri_liu19}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=dee062963174f44e7087a82a84595234}{%
+           family={Guceri},
+           familyi={G\bibinitperiod},
+           given={Irem},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa3e4da50b3416b1a04c39a932b2344c}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{fullhash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{bibnamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authorbibnamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authornamehash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \strng{authorfullhash}{7340d9dfd395ce5d3d48caf433335fd2}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We exploit a 2008 UK policy reform that increased the tax incentives for R\&D in medium-sized enterprises relative to large ones, to overcome the endogeneity of exposure to such tax credits. We estimate a difference-in-difference design on the universe of corporation tax filings in the United Kingdom, combined with other datasets. We find a positive and significant impact of tax credits for R\&D, implying a user-cost elasticity estimate of around −1.6. This magnitude implies around \$1 in additional private R\&D spending per dollar foregone in tax revenue.}
+      \field{issn}{1945-7731}
+      \field{journaltitle}{American Economic Journal: Economic Policy}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{1}
+      \field{shorttitle}{Effectiveness of {{Fiscal Incentives}} for {{R}}\&{{D}}}
+      \field{title}{Effectiveness of {{Fiscal Incentives}} for {{R}}\&{{D}}: {{Quasi-experimental Evidence}}}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{11}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{266\bibrangedash 291}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1257/pol.20170403
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\ZVFNCA2K\Guceri and Liu - 2019 - Effectiveness of Fiscal Incentives for R&D Quasi-.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20170403
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20170403
+      \endverb
+      \keyw{and Scope,Business Taxes and Subsidies including sales and value-added (VAT),Diversification,Firm Performance: Size,Fiscal Policies and Behavior of Economic Agents: Firm,Management of Technological Innovation and R&D,Tax Law}
+    \endentry
+    \entry{lyon89}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c3f3e158fd9aefcd90ca6d3a07e5f55c}{%
+           family={Lyon},
+           familyi={L\bibinitperiod},
+           given={Andrew\bibnamedelima B.},
+           giveni={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{fullhash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{bibnamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authorbibnamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authornamehash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \strng{authorfullhash}{c3f3e158fd9aefcd90ca6d3a07e5f55c}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A change in the tax law that increases investment incentives for new assets may result in excess returns on new investment, causing firm value to increase. Alternatively, because the investment incentives apply only to new investments, the value of existing assets that compete with these investments may decline. In general, investment incentives have a theoretically ambiguous effect on firm value. Cross-sectional tests examine the changes in firm value to repeated changes of the investment tax credit. Changes in firm value are found to be positively related to the expected receipt of investment tax credits. No evidence is found to support a relationship between expected changes in the value of a firm's existing assets and changes in firm value.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{3}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{title}{The Effect of the Investment Tax Credit on the Value of the Firm}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{38}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{227\bibrangedash 247}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1016/0047-2727(89)90027-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\TJRUC377\Lyon - 1989 - The effect of the investment tax credit on the val.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272789900273
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272789900273
+      \endverb
+    \endentry
+    \entry{mansfield_switzer85a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
+           family={Mansfield},
+           familyi={M\bibinitperiod},
+           given={Edwin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
+           family={Switzer},
+           familyi={S\bibinitperiod},
+           given={Lorne},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In Canada, as in many other countries that have adopted R\&D tax credits and allowances, there has been considerable controversy over their effectiveness in increasing company-financed research and development. This study seems to be one of the first systematic attempts to estimate the effects of Canada's R\&D tax credits and allowances. The results present a very consistent picture. The survey results, the econometric results, and some simple calculations based on rough measures of the price elasticity of demand for R\&D all suggest that the special research allowance increased R\&D expenditures by about 1 percent and that the investment tax credit increased them by about 2 percent. These increases seem to be appreciably less than the revenue losses to the government.}
+      \field{day}{1}
+      \field{issn}{0048-7333}
+      \field{journaltitle}{Research Policy}
+      \field{month}{4}
+      \field{number}{2}
+      \field{shortjournal}{Research Policy}
+      \field{title}{The Effects of {{R}}\&{{D}} Tax Credits and Allowances in {{Canada}}}
+      \field{urlday}{14}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{14}
+      \field{year}{1985}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{97\bibrangedash 107}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/0048-7333(85)90017-4
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\LCPHUGIC\Mansfield and Switzer - 1985 - The effects of R&D tax credits and allowances in C.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
+      \endverb
+    \endentry
+    \entry{pereira94}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=33c9d58ac30495e30380424109e47919}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Alfredo\bibnamedelima M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{33c9d58ac30495e30380424109e47919}
+      \strng{fullhash}{33c9d58ac30495e30380424109e47919}
+      \strng{bibnamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authorbibnamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authornamehash}{33c9d58ac30495e30380424109e47919}
+      \strng{authorfullhash}{33c9d58ac30495e30380424109e47919}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper explores the overall efficiency effects of ITCs in the context of a disaggregated dynamic general equilibrium simulation model of the U.S. economy. This model postulates forward-looking investment decisions, and allows for optimal government borrowing and financial crowding out. Simulation results confirm the conventional wisdom that ITCs are distortionary, but challenge the equally conventional wisdom that ITCs necessarily spur investment and GDP. In addition, results point to an important policy trade-off. Introducing ITCs without neutralizing their budgetary effects would lead to low efficiency losses but would reduce investment and GDP due to financial crowding out. In turn, imposition of ITCs while blocking their budgetary effects would lead to relatively large efficiency losses while minimizing the negative impact on investment and GDP.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{title}{On the Effects of Investment Tax Credits on Economic Efficiency and Growth}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{54}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{437\bibrangedash 461}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/0047-2727(94)90045-0
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272794900450
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0047272794900450
+      \endverb
+    \endentry
+    \entry{rao16}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a57189ee8dda33fdc8bc0c2146794618}{%
+           family={Rao},
+           familyi={R\bibinitperiod},
+           given={Nirupama},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{fullhash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{bibnamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authorbibnamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authornamehash}{a57189ee8dda33fdc8bc0c2146794618}
+      \strng{authorfullhash}{a57189ee8dda33fdc8bc0c2146794618}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper examines the impact of the U.S. federal R\&D tax credit between 1981–1991 using confidential IRS data from corporate tax returns. The empirical analysis makes two key advances on previous work. First, it implements a new instrumental variables (IV) strategy based on tax changes that directly addresses the simultaneity of R\&D spending and marginal credit rates. Second, the analysis makes use of new restricted-access IRS corporate return data describing R\&D expenditures. Estimates imply that a10\% reduction in the user cost of R\&D leads the average firm to increase its research intensity—the ratio of R\&D spending to sales—by 19.8\% in the short-run. Long-run estimates imply that the average firm faces adjustment costs and increases spending over time, though small and young firms show evidence of reversing initial increases. Analysis of the components of qualified research shows that wages and supplies account for the bulk of the increase in research spending. Elasticities of qualified and total research intensities from a smaller sample suggest firms respond to user cost changes largely by increasing their qualified spending, meaning that the type of R\&D the federal credit deems qualified research is an important margin on which the credit affects firm behavior.}
+      \field{day}{1}
+      \field{issn}{0047-2727}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{month}{8}
+      \field{shortjournal}{Journal of Public Economics}
+      \field{shorttitle}{Do Tax Credits Stimulate {{R}}\&{{D}} Spending?}
+      \field{title}{Do Tax Credits Stimulate {{R}}\&{{D}} Spending? {{The}} Effect of the {{R}}\&{{D}} Tax Credit in Its First Decade}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{140}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.jpubeco.2016.05.003
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\FXG9BNIE\S0047272716300482.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047272716300482
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0047272716300482
+      \endverb
+      \keyw{Business tax,R&D,Tax credits}
+    \endentry
+    \entry{slattery_zidar20}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3295665df522438e9b4e1af2fa96f25d}{%
+           family={Slattery},
+           familyi={S\bibinitperiod},
+           given={Cailin},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c77ec0c2f1c248c1ce8111764ecbb62}{%
+           family={Zidar},
+           familyi={Z\bibinitperiod},
+           given={Owen},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{fullhash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{bibnamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authorbibnamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authornamehash}{26eb645509f434c0ed7fc483340dd5ee}
+      \strng{authorfullhash}{26eb645509f434c0ed7fc483340dd5ee}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This essay describes and evaluates state and local business tax incentives in the United States. In 2014, states spent between 5 USD and 216 USD per capita on incentives for firms in the form of firm-specific subsidies and general tax credits, which mostly target investment, job creation, and research and development. States with higher per capita incentives tend to have higher state corporate tax rates. Recipients of firm-specific incentives are usually large establishments in manufacturing, technology, and high-skilled service industries, and the average discretionary subsidy is 178M USD for 1,500 promised jobs. Firms tend to accept subsidy deals from places that are richer, larger, and more urban than the average county, and poor places provide larger incentives and spend more per job. Comparing winning and runner-up locations for each deal, we find that average employment within the three-digit industry of the deal increases by roughly 1,500 jobs. While we find some evidence of direct employment gains from attracting a firm, we do not find strong evidence that firm-specific tax incentives increase broader economic growth at the state and local level.}
+      \field{issn}{0895-3309}
+      \field{journaltitle}{Journal of Economic Perspectives}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{2}
+      \field{title}{Evaluating {{State}} and {{Local Business Incentives}}}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2024}
+      \field{volume}{34}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{90\bibrangedash 118}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1257/jep.34.2.90
+      \endverb
+      \verb{file}
+      \verb C:\Users\user\Zotero\storage\9BCLILSB\Slattery and Zidar - 2020 - Evaluating State and Local Business Incentives.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.34.2.90
+      \endverb
+      \verb{url}
+      \verb https://www.aeaweb.org/articles?id=10.1257/jep.34.2.90
+      \endverb
+      \keyw{and Revenue,Business Taxes and Subsidies including sales and value-added (VAT),Fiscal Policies and Behavior of Economic Agents: Firm,Other Spatial Production and Pricing Analysis,State and Local Taxation,Subsidies}
+    \endentry
+    \entry{xie_etal19}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5a3cd743395464a084bdf98a3877c590}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Xuemei},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7684de12cd5ce2de7cf8563861b30cb2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5fd5f7fcfc67b45433764c78dc9f036}{%
+           family={Jiao},
+           familyi={J\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b47f3c66640763278a31edf0ef4abefc}
+      \strng{fullhash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{bibnamehash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{authorbibnamehash}{cc44115268096f0adbe5a81de9b59de0}
+      \strng{authornamehash}{b47f3c66640763278a31edf0ef4abefc}
+      \strng{authorfullhash}{cc44115268096f0adbe5a81de9b59de0}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Non-R\&D innovation increasingly plays a critical role in explaining firms’ new product performance. Yet, there has been little research on the consequences and contingent mechanisms of non-R\&D innovation for firms embedded in collaborative network environments. To address this research gap, we investigated a conceptual framework of non-R\&D innovation using data drawn from Chinese manufacturing firms. First, we found that non-R\&D innovation positively affects firms’ new product performance. Second, we discovered that high R\&D intensity positively strengthens the impact of firms’ non-R\&D innovation on new product performance. Third, we provided critical analysis of the role of non-R\&D innovation in promoting new product performance, accomplished by enhancing R\&D investment while simultaneously improving the degree of network embeddedness. Our findings extend both the non-R\&D innovation literature and open innovation literature while providing managers with several key recommendations.}
+      \field{issn}{1467-9310}
+      \field{journaltitle}{R\&D Management}
+      \field{langid}{english}
+      \field{number}{5}
+      \field{shorttitle}{Non-{{R}}\&{{D}} Innovation and Firms’ New Product Performance}
+      \field{title}{Non-{{R}}\&{{D}} Innovation and Firms’ New Product Performance: The Joint Moderating Effect of {{R}}\&{{D}} Intensity and Network Embeddedness}
+      \field{urlday}{16}
+      \field{urlmonth}{4}
+      \field{urlyear}{2024}
+      \field{volume}{49}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{748\bibrangedash 761}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/radm.12369
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\user\\Zotero\\storage\\VJW9F7UH\\Xie et al. - 2019 - Non-R&D innovation and firms’ new product performa.pdf;C\:\\Users\\user\\Zotero\\storage\\UNH4WM6F\\radm.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/radm.12369
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/radm.12369
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
