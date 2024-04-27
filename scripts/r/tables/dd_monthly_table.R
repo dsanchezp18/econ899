@@ -16,7 +16,7 @@ source("scripts/r/tables/mappings.R")
 # Mapping (only for the treated coefficient)
 
 coef_map_treated <- c(
-    treated = "Treatment x Post")
+    treated = "Treated")
 
 
 # Load required libraries
@@ -117,7 +117,6 @@ dd_twfe_patents_section_table <-
                  estimate = "{estimate}{stars}",
                  coef_map = coef_map_treated,
                  gof_map = goodness_of_fit_map,
-                 add_rows = explained_vars_section) %>% 
-    row_spec(2, bold = T)
+                 add_rows = explained_vars_section)
 
 save_kable(dd_twfe_patents_section_table, "output/tables/dd_twfe_patents_section_monthly.tex")

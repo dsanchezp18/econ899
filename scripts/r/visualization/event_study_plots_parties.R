@@ -127,17 +127,27 @@ event_study_plots_parties <-
             ci.width = 0.05,
             pt.pch = 0,
             col = rep("#0D3692", 4),
-            facet_args = list(ncol = 1, scales = "free_y")) +
+            ref.line.par = list(col = "grey20"),
+            facet_args = list(ncol = 1, scales = "free_x")) +
     theme_bw() +
     labs(title = "", 
          x = "Periods to treatment",
-         y = "Event study interaction term and 95% C.I.") + 
-    scale_x_continuous(breaks = periods_for_plot) +
+         y = "Event study interaction term and 95% C.I.") +
+    scale_y_continuous(labels = scales::number_format(accuracy = 0.01)) +
+    scale_x_continuous(breaks = periods_for_plot, 
+                       limits = c(min(periods_for_plot), max(periods_for_plot)),
+                       expand = c(0,2))
     theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        legend.position = "none")
+          axis.ticks.x = element_line(color = "grey50"),
+          legend.position = "none")
 
 event_study_plots_parties
 
 # Save the plot
 
-ggsave("figures/event-studies/quarterly/parties_faceted.png", event_study_plots_parties, width = 15, height = 17, units = "cm", dpi = 800)
+ggsave("figures/event-studies/quarterly/parties_faceted.png", 
+        plot = event_study_plots_parties, 
+        width = 15, 
+        height = 15, 
+        units = "cm", 
+        dpi = 800)

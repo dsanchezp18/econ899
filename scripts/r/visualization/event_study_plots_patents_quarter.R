@@ -121,7 +121,7 @@ event_study_plot_faceted_patents <-
             multi_style = "facet",
             ci.width = 0.2,
             pt.pch = 0,
-            col = c("#0D3692","#0D3692","#0D3692"),
+            col = rep("#0D3692", 3),
             ref.line.par = list(col = "grey20"),
             facet_args = list(ncol = 1, scales = "free_x")) +
     theme_bw() +
