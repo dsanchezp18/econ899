@@ -174,7 +174,6 @@
       \field{type}{Data table}
       \field{year}{2008}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510000101-eng
       \endverb
@@ -205,7 +204,6 @@
       \field{type}{Data table}
       \field{year}{2023}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010000801-eng
       \endverb
@@ -240,7 +238,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410006301-eng
       \endverb
@@ -276,7 +273,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410028701-eng
       \endverb
@@ -311,7 +307,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1610004801-eng
       \endverb
@@ -343,7 +338,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010007401-eng
       \endverb
@@ -375,7 +369,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010007401-eng
       \endverb
@@ -407,7 +400,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1810020501-eng
       \endverb
@@ -439,7 +431,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2110001901-eng
       \endverb
@@ -471,7 +462,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510001501-eng
       \endverb
@@ -503,7 +493,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510001501-eng
       \endverb
@@ -535,7 +524,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410004201-eng
       \endverb
@@ -567,7 +555,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410005001-eng
       \endverb
@@ -729,7 +716,6 @@
       \field{type}{Data table}
       \field{year}{2008}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510000101-eng
       \endverb
@@ -760,7 +746,6 @@
       \field{type}{Data table}
       \field{year}{2023}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010000801-eng
       \endverb
@@ -795,7 +780,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410006301-eng
       \endverb
@@ -831,7 +815,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410028701-eng
       \endverb
@@ -866,7 +849,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1610004801-eng
       \endverb
@@ -898,7 +880,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010007401-eng
       \endverb
@@ -930,7 +911,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2010007401-eng
       \endverb
@@ -962,7 +942,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1810020501-eng
       \endverb
@@ -994,7 +973,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2110001901-eng
       \endverb
@@ -1026,7 +1004,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510001501-eng
       \endverb
@@ -1058,7 +1035,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/2510001501-eng
       \endverb
@@ -1090,7 +1066,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410004201-eng
       \endverb
@@ -1122,7 +1097,6 @@
       \field{type}{Data table}
       \field{year}{2024}
       \field{dateera}{ce}
-      \true{nocite}
       \verb{doi}
       \verb 10.25318/1410005001-eng
       \endverb

@@ -8,7 +8,7 @@
 
 \subsection{Patent applications}
 
-Table \ref{tab:dd_twfe_patents} presents results the estimation of Equation \ref{eq:dd_model} using patent applications as the explained variable. Specification (1) includes a baseline result with no control variables. Specification (2) includes economic controls included to account for factors which may affect the comparability of the treatment and control groups regarding firm activity and overall economic trends which vary across time and provinces. The number of foreign parties in all the province's patent applications is also included, to control for foreign influences. Specification (3) considers additional controls, which are included in case that the previous ones did not account for differences in trends due to reasons other than economy, or that economic activity is not well captured by standard economic variables in Specification (2). 
+Table \ref{tab:dd_twfe_patents} presents results of the estimation of Equation \ref{eq:dd_model} using patent applications as the explained variable. Specification (1) includes a baseline result with no control variables. Specification (2) includes economic controls included to account for factors which may affect the comparability of the treatment and control groups regarding firm activity and overall economic trends which vary across time and provinces. The number of foreign parties in all the province's patent applications is also included, to control for foreign influences. Specification (3) considers additional controls, which are included in case that the previous ones did not account for differences in trends due to reasons other than economy, or that economic activity is not well captured by standard economic variables in Specification (2). 
 
 The DD estimate for the effect of the AITC intervention is the coefficient on Treatment \texttimes Post, showing that the intervention led to an -9.9\% to +1.1\% change in Albertan patent applications. The baseline and additional controls specifications show a negative effect, while the other specification show a positive one. However, none of these are statistically significant. Standard errors for this coefficient on all three specifications are small compared to those of the controls, showing that $\hat{\beta}$ is estimated with a fairly good level of precision. This implies that it is the small magnitude of $\hat{\beta}$ which drives the low $p$-value of the hypothesis test, leading to the preliminary conclusion that the AITC intervention had no effect on innovation in the studied period. 
 
@@ -25,7 +25,7 @@ The DD estimate for the effect of the AITC intervention is the coefficient on Tr
 \end{threeparttable}
 \end{table}
 
-I display the results of the event study regressions in Figure \ref{fig:event_study_patents}, which plots the $\hat{\beta}_t$ interaction coefficients in \ref{eq:event_study} with the same controls as the specifications in Table \ref{tab:dd_twfe_patents}. For specifications (2) annd (3) there is no significant difference in patent applications between treatment control provinces for most periods before the intervention. This supports the key identifying assumption of the DD design, supporting causal evidence of a null effect as identified above by the DD estimates. 
+I display the results of the event study regressions in Figure \ref{fig:event_study_patents}, which plots the $\hat{\beta}_t$ interaction coefficients in \ref{eq:event_study} with the same controls as the specifications in Table \ref{tab:dd_twfe_patents}. For specifications (2) and (3) there is no significant difference in patent applications between treatment control provinces for most periods before the intervention. This supports the key identifying assumption of the DD design, supporting causal evidence of a null effect as identified above by the DD estimates. 
 
 The baseline model does show several pre-policy periods where the treatment and control groups diverge, underscoring the importance of including controls in the model. However, in all specifications, 2014Q1 (-10 periods to treatment) presents a statistically significant difference in patent applications between the treatment and control groups. This can be due to random noise or to a temporary real effect. Since it is only one period, it does not greatly threaten the causal identification of $\hat{\beta}$. 
 \begin{figure}[htbp!]
@@ -41,7 +41,7 @@ The baseline model does show several pre-policy periods where the treatment and 
 
 % Note: need to add a row with the number of identified patent applications to make the table more informative.
 
-Regarding the effect of the policy itself, results point toward an overall null effect in the event study plots as well. While there is a small positive effect in 2017Q3, the effect is not present in the following quarters. There is also no evidence of a negative effect of the policy on patent applications, which was the the preliminary finding in Figure \ref{fig:quarterly_common_trends}.
+Regarding the effect of the policy itself, results point toward an overall null effect in the event study plots as well. While there is a small positive effect in 2017Q3, the effect is not present in the following quarters. There is also no evidence of a negative effect of the policy on patent applications, which was the preliminary finding in Figure \ref{fig:quarterly_common_trends}.
 
 \subsection{Patents by IPC section}
 
@@ -55,7 +55,7 @@ In Table \ref{tab:dd_twfe_patents_by_section}, I present the results of estimati
     \input{\subfix{../../output/tables/dd_twfe_patents_section.tex}}
     \begin{tablenotes}
         \footnotesize
-        \item \textit{Notes:} All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. 
+        \item \textit{Notes:} All specifications include controls in Specification (3) of Table \ref{tab:dd_twfe_patents}, not shown for brevity, and fixed effects for provinces and quarters. Clustered standard errors at the province and quarter level shown in parentheses. 
         \item Sections of the IPC are A: Human Necessities, B: Performing Operations; Transporting, C: Chemistry; Metallurgy, D: Textiles; Paper, E: Fixed Constructions, F: Mechanical Engineering; G: Physics, H: Electricity. Patents with multiple sections are not included. ***$p<0.01$, **$p<0.05$, *$p<0.1$.
     \end{tablenotes}
 \end{threeparttable}
@@ -85,7 +85,7 @@ Human necessity (A) patents, which include agriculture, medicine and apparel-rel
 
 A notable result, which was not picked up by the DD framework, is the effect on Section D patents. Section D includes inventions related to textiles and paper. While less stable than other sections in the post-policy trend, these patents show the most important increases, the highest being 215\% more patent applications 17 quarters after the intervention. In the pre-policy periods, the differences are not statistically significant, which implies that the increases in textile and paper applications can be attributed to the AITC. The DD may not capture this effect due to increases being present next to quarters without increases. 
 
-In general, the event study plots show much less stability in pretrends than with total patent applications, which difficults the interpretation of the results. However, the event study plots show how section A patents saw positive differences when section E patents saw negative differences, which may be driving the null effect on total patents. Further, Section D patents show a positive effect which is not captured by the DD specification, and may also be offset by the section E negative effect.
+In general, the event study plots show much less stability in pretrends than with total patent applications, which complicates interpretability. However, the event study plots show how section A patents saw positive differences when section E patents saw negative differences, which may be driving the null effect on total patents. Further, Section D patents show a positive effect which is not captured by the DD specification, and may also be offset by the section E negative effect.
 
 \subsection{Robustness checks}
 
