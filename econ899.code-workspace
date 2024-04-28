@@ -27,7 +27,17 @@
 					"xelatex",
 					"xelatex"
 				]
-			}],
+			},
+			//{
+			//	"name": "xelatex -> biber -> xelatex*2",
+			//	"tools": [
+			//		"xelatex",
+			//		"biber",
+		//			"xelatex",
+			//		"xelatex"
+			//	]
+		//	},
+		],
 			"latex-workshop.latex.tools": [
 				{
 					"name": "xelatex",
@@ -46,7 +56,15 @@
 					  "%DOCFILE%"
 					],
 					"env": {}
-				  }
+				  },
+				  //{
+					//"name": "biber",
+					//"command": "biber",
+					//"args": [
+					//  "%DOCFILE%"
+					//],
+				//	"env": {}
+				 // }
 			]
 	}
 }

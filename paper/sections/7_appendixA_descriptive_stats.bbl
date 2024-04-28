@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,5 +16,472 @@
   {}
 \endgroup
 
-\endinput
+\datalist[entry]{cms/global//global/global}
+  \entry{canadianintellectualpropertyoffice23}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Canadian Intellectual Property Office}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Innovation, Science and Economic Development Canada}}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{{{IP Horizons Patent Researcher Datasets}}}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-offic
+    \verb e/en/canadian-intellectual-property-statistics/patent-data-bibliograp
+    \verb hic-and-full-text-csv-and-txt
+    \endverb
+    \list{location}{1}{%
+      {IP Horizons}%
+    }
+    \field{type}{Datasets with Data Dictionaries}
+    \field{annotation}{%
+    year: 2023 Date modified:~2023-06-19%
+    }
+    \field{year}{2023}
+    \field{urlday}{15}
+    \field{urlmonth}{12}
+    \field{urlyear}{2023}
+  \endentry
 
+  \entry{insolvency24}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={{Innovation, Science and Economic Development Canada}},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Open Government Canada}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.25318/2510001501-eng
+    \endverb
+    \field{number}{746709f1-c729-44a1-ba84-7be5eadd3664}
+    \field{title}{Historic {{Insolvency Statistics}} - {{Monthly}} (from 1987)}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+    \endverb
+    \field{type}{Dataset}
+    \field{eprinttype}{Open Government Canada}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24g}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{1}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2510001501-eng
+    \endverb
+    \field{title}{Table 12-10-0175-01 {{International}} Merchandise Trade by Province, Commodity, and {{Principal Trading Partners}} (x 1,000)}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24b}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{2}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/1410005001-eng
+    \endverb
+    \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{lfs_employee_wages}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{3}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Average hourly and weekly wage rate, and median hourly and weekly wage rate by North American Industry Classification System (NAICS), type of work, sex, and age group, last 5 months.%
+    }
+    \verb{doi}
+    \verb 10.25318/1410006301-eng
+    \endverb
+    \field{title}{Table 14-10-0063-01 {{Employee}} Wages by Industry, Monthly, Unadjusted for Seasonality}
+    \field{langid}{english}
+    \field{type}{Data Table}
+    \field{annotation}{%
+    Last Modified: 2024-02-09%
+    }
+    \field{month}{02}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{lfs_lfc_table}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2024}
+    \field{extradate}{4}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Number of persons in the labour force (employment and unemployment), unemployment rate, participation rate and employment rate by province, sex and age group. Data are presented for 12 months earlier, previous month and current month, as well as year-over-year and month-to-month level change and percentage change. Data are also available for the standard error of the estimate, the standard error of the month-to-month change and the standard error of the year-over-year change.%
+    }
+    \verb{doi}
+    \verb 10.25318/1410028701-eng
+    \endverb
+    \field{shorttitle}{{{LFS Labour Force Characteristics}}}
+    \field{title}{Table 14-10-0287-03 {{Labour}} Force Characteristics by Province, Monthly, Seasonally Adjusted}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\SVEZHYCW\tv.html
+    \endverb
+    \field{type}{Data Table}
+    \field{annotation}{%
+    Last Modified: 2024-02-09%
+    }
+    \field{month}{02}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{manufacturing_sales}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{5}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/1610004801-eng
+    \endverb
+    \field{title}{Table 16-10-0048-01 {{Manufacturing}} Sales by Industry and Province, Monthly (Dollars Unless Otherwise Noted) (x 1,000)}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{cpi}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{6}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2010007401-eng
+    \endverb
+    \field{title}{Table 18-10-0004-01 {{Consumer Price Index}}, Monthly, Not Seasonally Adjusted}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24a}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{7}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/1810020501-eng
+    \endverb
+    \field{title}{Table 18-10-0205-01 {{New}} Housing Price Index, Monthly}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{retail_trade_sales}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2010000801-eng
+    \endverb
+    \field{title}{Table 20-10-0008-01 {{Retail}} Trade Sales by Province and Territory, Inactive (x 1,000)}
+    \field{type}{Data Table}
+    \field{year}{2023}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{wholesale_trade}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{8}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2010007401-eng
+    \endverb
+    \field{title}{Table 20-10-0074-01 {{Wholesale}} Trade, Sales (x 1,000)}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24c}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{9}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2110001901-eng
+    \endverb
+    \field{title}{Table 21-10-0019-01 {{Monthly}} Survey of Food Services and Drinking Places (x 1,000)}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24e}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{10}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2410005201-eng
+    \endverb
+    \field{title}{Table 24-10-0005-01 {{International}} Travellers Entering or Returning to {{Canada}}, by Province of Entry, Seasonally Adjusted}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24d}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{11}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2410005201-eng
+    \endverb
+    \field{title}{Table 24-10-0052-01 {{Vehicles}} Entering {{Canada}} by Land, by Vehicle Type and Licence Plate}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada08}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2510000101-eng
+    \endverb
+    \field{title}{Table 25-10-0001-01 {{Electric}} Power Statistics, with Data for Years 1950 - 2007}
+    \field{type}{Data Table}
+    \field{year}{2008}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24f}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{12}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2510001501-eng
+    \endverb
+    \field{title}{Table 25-10-0015-01 {{Electric}} Power Generation, Monthly Generation by Type of Electricity}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+\enddatalist
+\endinput

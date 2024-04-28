@@ -61,6 +61,9 @@
     \field{pages}{493\bibrangedash 505}
     \field{shorttitle}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}}
     \field{title}{Synthetic {{Control Methods}} for {{Comparative Case Studies}}: {{Estimating}} the {{Effect}} of {{California}}'s {{Tobacco Control Program}}}
+    \verb{url}
+    \verb https://doi.org/10.1198/jasa.2009.ap08746
+    \endverb
     \field{volume}{105}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\WA5YNR3T\Abadie et al. - 2010 - Syntheti
@@ -166,6 +169,9 @@
     \field{number}{2}
     \field{pages}{323\bibrangedash 351}
     \field{title}{A {{Model}} of {{Growth Through Creative Destruction}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/2951599
+    \endverb
     \field{volume}{60}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\YRBAR359\Aghion and Howitt - 1992 - A Mo
@@ -219,6 +225,9 @@
     \field{number}{2}
     \field{pages}{1\bibrangedash 21}
     \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+    \endverb
     \field{volume}{12}
     \field{langid}{english}
     \verb{file}
@@ -273,6 +282,9 @@
     \field{pages}{121367}
     \field{shorttitle}{Invented Here but Owned Elsewhere}
     \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+    \endverb
     \field{volume}{175}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
@@ -307,6 +319,10 @@
     ...boosting investment in Alberta's small and medium sized businesses, drive innovation, diversify the economy...%
     }
     \field{title}{Reinstate the {{Alberta Investment Tax Credit}} (2023)}
+    \verb{url}
+    \verb https://www.abchamber.ca/wp-content/uploads/2023/06/Reinstate-the-Alb
+    \verb erta-Investment-Tax-Credit-2023.pdf
+    \endverb
     \field{langid}{american}
     \field{year}{2023}
     \field{urlday}{16}
@@ -336,6 +352,10 @@
     Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...%
     }
     \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
+    \verb{url}
+    \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guid
+    \verb elines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+    \endverb
     \field{langid}{english}
     \field{month}{01}
     \field{year}{2019}
@@ -367,6 +387,11 @@
     }
     \field{shorttitle}{Alberta Jobs Plan}
     \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
+    \verb{url}
+    \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/
+    \verb resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-i
+    \verb nvestor-tax-credit-aitc-fact-sheet.pdf
+    \endverb
     \field{langid}{english}
     \field{month}{01}
     \field{year}{2017}
@@ -382,6 +407,10 @@
     \field{sortinit}{A}
     \field{sortinithash}{A}
     \field{title}{Alberta {{Investor Tax Credit Regulation}}}
+    \verb{url}
+    \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Act
+    \verb s&isbncln=9780779843091&display=html
+    \endverb
     \field{langid}{english}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
@@ -438,6 +467,10 @@
     \field{number}{5}
     \field{pages}{725\bibrangedash 740}
     \field{title}{A {{Longitudinal Study}} of the {{Impact}} of {{R}}\&{{D}}, {{Patents}}, and {{Product Innovation}} on {{Firm Performance}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-5885.2010.0074
+    \verb 7.x
+    \endverb
     \field{volume}{27}
     \field{langid}{english}
     \verb{file}
@@ -486,6 +519,9 @@
     \field{pages}{665\bibrangedash 679}
     \field{shorttitle}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}?}
     \field{title}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}? {{A}} Study of Nanotechnology Patenting}
+    \verb{url}
+    \verb https://doi.org/10.1007/s10961-011-9211-1
+    \endverb
     \field{volume}{36}
     \field{langid}{english}
     \verb{file}
@@ -529,6 +565,9 @@
     \field{pages}{917\bibrangedash 942}
     \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
     \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+    \endverb
     \field{volume}{29}
     \field{langid}{english}
     \verb{file}
@@ -575,6 +614,9 @@
     \field{number}{3}
     \field{pages}{438\bibrangedash 448}
     \field{title}{The {{Effect}} of {{Direct}} and {{Indirect Tax Incentives}} on {{Canadian Industrial R}}\&{{D Expenditures}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3550607
+    \endverb
     \field{volume}{12}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\2VMPVH3C\Bernstein - 1986 - The Effect o
@@ -624,6 +666,9 @@
     \field{number}{1}
     \field{pages}{206\bibrangedash 225}
     \field{title}{Are {{Firms That Receive R}}\&{{D Subsidies More Innovative}}?}
+    \verb{url}
+    \verb https://www.jstor.org/stable/25478346
+    \endverb
     \field{volume}{42}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\SX6NIGTF\Bérubé and Mohnen - 2009 - Ar
@@ -677,6 +722,9 @@
     \field{number}{3}
     \field{pages}{163\bibrangedash 184}
     \field{title}{A {{Toolkit}} of {{Policies}} to {{Promote Innovation}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257/jep.33.3.163
+    \endverb
     \field{volume}{33}
     \field{langid}{english}
     \verb{file}
@@ -716,6 +764,13 @@
     \field{number}{Working Paper 2014-06}
     \field{series}{Working {{Paper Series}}}
     \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/econ
+    \verb omic-research/research-papers/estimating-incremental-impacts-provinci
+    \verb al-rd-tax-credit-business-rd-expenditures-using-natural/estimating-in
+    \verb cremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-u
+    \verb sing
+    \endverb
     \field{langid}{english}
     \field{type}{Statistical {{Reports}}}
     \field{annotation}{%
@@ -772,6 +827,9 @@
     \field{isbn}{978-0-230-28082-3}
     \field{pages}{24\bibrangedash 29}
     \field{title}{Creative Destruction}
+    \verb{url}
+    \verb https://doi.org/10.1057/9780230280823_5
+    \endverb
     \field{langid}{english}
     \list{location}{1}{%
       {London}%
@@ -816,6 +874,10 @@
     \field{number}{1}
     \field{pages}{31\bibrangedash 72}
     \field{title}{Some {{Practical Guidance}} for the {{Implementation}} of {{Propensity Score Matching}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-6419.2007.0052
+    \verb 7.x
+    \endverb
     \field{volume}{22}
     \field{langid}{english}
     \verb{file}
@@ -844,8 +906,12 @@
     \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{howpublished}{https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html}
     \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
+    \verb{url}
+    \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-
+    \verb experimental-development-tax-incentive-program/sred-updates/definitio
+    \verb n-history.html
+    \endverb
     \field{langid}{english}
     \field{journaltitle}{Canada Revenue Agency}
     \field{annotation}{%
@@ -876,8 +942,12 @@
     \field{abstract}{%
     The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.%
     }
-    \field{howpublished}{https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html}
     \field{title}{Evolution of the {{SR}}\&{{ED Program}} -- a Historical Perspective}
+    \verb{url}
+    \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-
+    \verb experimental-development-tax-incentive-program/evolution-program-a-hi
+    \verb storical-perspective.html
+    \endverb
     \field{langid}{english}
     \field{type}{Service Description}
     \field{journaltitle}{Canada Revenue Agency}
@@ -917,6 +987,9 @@
     \field{series}{Annual {{Reports}}}
     \field{shorttitle}{Annual Report / {{Canadian Intellectual Property Office}}.}
     \field{title}{2021-2022 {{Annual Report Canadian Intellectual Property Office}}}
+    \verb{url}
+    \verb https://publications.gc.ca/site/eng/9.505720/publication.html
+    \endverb
     \field{langid}{english}
     \list{location}{1}{%
       {Gatineau, Quebec}%
@@ -924,39 +997,6 @@
     \field{eprinttype}{Innovation, Science and Economic Development Canada}
     \field{year}{2022}
     \field{urlday}{27}
-    \field{urlmonth}{04}
-    \field{urlyear}{2024}
-  \endentry
-
-  \entry{canadianintellectualpropertyoffice21}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=C}{%
-         family={{Canadian Intellectual Property Office}},
-         familyi={C\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {{Innovation, Science and Economic Development Canada}}%
-    }
-    \strng{namehash}{C2}
-    \strng{fullhash}{C2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{shorttitle}
-    \field{labelyear}{2021}
-    \field{labeldatesource}{}
-    \field{sortinit}{C}
-    \field{sortinithash}{C}
-    \field{howpublished}{https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start}
-    \field{shorttitle}{File a {{Canadian}} Patent Application}
-    \field{title}{Patent Application and Examination}
-    \field{langid}{english}
-    \field{type}{Guides; {{Forms}}}
-    \field{annotation}{%
-    Last Modified: 2021-06-28%
-    }
-    \field{month}{06}
-    \field{year}{2021}
-    \field{urlday}{26}
     \field{urlmonth}{04}
     \field{urlyear}{2024}
   \endentry
@@ -979,16 +1019,60 @@
     \field{labeldatesource}{}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \field{title}{Patent Researcher Datasets: {{Bibliographic}}, Full Text and Administrative Status Data ({{CSV}} and {{TXT}})}
+    \field{title}{{{IP Horizons Patent Researcher Datasets}}}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-offic
+    \verb e/en/canadian-intellectual-property-statistics/patent-data-bibliograp
+    \verb hic-and-full-text-csv-and-txt
+    \endverb
     \list{location}{1}{%
       {IP Horizons}%
     }
     \field{type}{Datasets with Data Dictionaries}
-    \field{month}{06}
+    \field{annotation}{%
+    year: 2023 Date modified:~2023-06-19%
+    }
     \field{year}{2023}
     \field{urlday}{15}
     \field{urlmonth}{12}
     \field{urlyear}{2023}
+  \endentry
+
+  \entry{canadianintellectualpropertyoffice21}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Canadian Intellectual Property Office}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Innovation, Science and Economic Development Canada}}%
+    }
+    \strng{namehash}{C2}
+    \strng{fullhash}{C2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{shorttitle}{File a {{Canadian}} Patent Application}
+    \field{title}{Patent Application and Examination}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-offic
+    \verb e/en/patents/patent-application-and-examination/file-canadian-patent-
+    \verb application-you-start
+    \endverb
+    \field{langid}{english}
+    \field{type}{Guides; {{Forms}}}
+    \field{annotation}{%
+    Last Modified: 2021-06-28%
+    }
+    \field{month}{06}
+    \field{year}{2021}
+    \field{urlday}{26}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
   \endentry
 
   \entry{carew_etal06}{article}{}
@@ -1078,6 +1162,9 @@
     \field{number}{7}
     \field{pages}{2065\bibrangedash 2100}
     \field{title}{Notching {{R}}\&{{D Investment}} with {{Corporate Income Tax Cuts}} in {{China}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257%2Faer.20191758
+    \endverb
     \field{volume}{111}
     \field{langid}{english}
     \verb{file}
@@ -1133,6 +1220,9 @@
     \field{pages}{217\bibrangedash 229}
     \field{shorttitle}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation}
     \field{title}{Evaluating the Impact of {{R}}\&{{D}} Tax Credits on Innovation: {{A}} Microeconometric Study on {{Canadian}} Firms}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0048733310002076
+    \endverb
     \field{volume}{40}
     \field{journaltitle}{Research Policy}
     \field{month}{03}
@@ -1140,24 +1230,6 @@
     \field{urlday}{16}
     \field{urlmonth}{04}
     \field{urlyear}{2024}
-  \endentry
-
-  \entry{GitHubCopilot}{misc}{}
-    \list{publisher}{1}{%
-      {GitHub, Inc.}%
-    }
-    \field{labeltitlesource}{title}
-    \field{labeldatesource}{nodate}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{abstract}{%
-    Large language model%
-    }
-    \field{note}{Type: Large language model tex.version: 1.156.0.0}
-    \field{title}{{GitHub} {Copilot}}
-    \verb{url}
-    \verb https://docs.github.com/en/copilot
-    \endverb
   \endentry
 
   \entry{graham_mowrey04}{article}{}
@@ -1198,6 +1270,9 @@
     \field{pages}{443\bibrangedash 456}
     \field{shorttitle}{Submarines in Software?}
     \field{title}{Submarines in Software? Continuations in {{US}} Software Patenting in the 1980s and 1990s}
+    \verb{url}
+    \verb https://doi.org/10.1080/1043859042000188700
+    \endverb
     \field{volume}{13}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\82VLUJ9V\Graham and Mowrey - 2004 - Subm
@@ -1268,6 +1343,9 @@
     \field{pages}{1033\bibrangedash 1082}
     \field{series}{Handbook of the {{Economics}} of {{Innovation}}, {{Volume}} 2}
     \field{title}{Chapter 24 - {{Measuring}} the {{Returns}} to {{R}}\&{{D}}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0169721810020083
+    \endverb
     \field{volume}{2}
     \field{month}{01}
     \field{year}{2010}
@@ -1311,6 +1389,9 @@
     \field{pages}{449\bibrangedash 469}
     \field{shorttitle}{How Effective Are Fiscal Incentives for {{R}}\&{{D}}?}
     \field{title}{How Effective Are Fiscal Incentives for {{R}}\&{{D}}? {{A}} Review of the Evidence}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0048733399000852
+    \endverb
     \field{volume}{29}
     \field{journaltitle}{Research Policy}
     \field{month}{04}
@@ -1343,9 +1424,11 @@
     \endverb
     \field{number}{746709f1-c729-44a1-ba84-7be5eadd3664}
     \field{title}{Historic {{Insolvency Statistics}} - {{Monthly}} (from 1987)}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=2510001501
+    \endverb
     \field{type}{Dataset}
     \field{eprinttype}{Open Government Canada}
-    \field{month}{03}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -1362,6 +1445,10 @@
     The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.%
     }
     \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+    \verb{url}
+    \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Act
+    \verb s&isbncln=9780779843091&display=html
+    \endverb
     \field{langid}{english}
     \field{month}{04}
     \field{year}{2016}
@@ -1455,6 +1542,9 @@
     \endverb
     \field{pages}{3\bibrangedash 69}
     \field{title}{Chapter 1 - {{The Facts}} of {{Economic Growth}}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S1574004816000033
+    \endverb
     \field{volume}{2}
     \field{month}{01}
     \field{year}{2016}
@@ -1493,6 +1583,9 @@
     \field{number}{4}
     \field{pages}{759\bibrangedash 784}
     \field{title}{R \& {{D-Based Models}} of {{Economic Growth}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/2138581
+    \endverb
     \field{volume}{103}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\AC8ZUYCD\Jones - 1995 - R & D-Based Mode
@@ -1546,6 +1639,9 @@
     \field{pages}{405\bibrangedash 432}
     \field{shorttitle}{How to {{Count Patents}} and {{Value Intellectual Property}}}
     \field{title}{How to {{Count Patents}} and {{Value Intellectual Property}}: {{The Uses}} of {{Patent Renewal}} and {{Application Data}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1467-6451.00081
+    \endverb
     \field{volume}{46}
     \field{langid}{english}
     \verb{file}
@@ -1596,6 +1692,9 @@
     \field{pages}{441\bibrangedash 465}
     \field{shorttitle}{Patent {{Quality}} and {{Research Productivity}}}
     \field{title}{Patent {{Quality}} and {{Research Productivity}}: {{Measuring Innovation}} with {{Multiple Indicators}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3590103
+    \endverb
     \field{volume}{114}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\GZ6E7TSD\Lanjouw and Schankerman - 2004
@@ -1636,6 +1735,9 @@
     \field{number}{2}
     \field{pages}{227\bibrangedash 247}
     \field{title}{The Effect of the Investment Tax Credit on the Value of the Firm}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0047272789900273
+    \endverb
     \field{volume}{38}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\TJRUC377\Lyon - 1989 - The effect of the
@@ -1689,6 +1791,9 @@
     \field{number}{2}
     \field{pages}{241\bibrangedash 246}
     \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3550705
+    \endverb
     \field{volume}{11}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 -
@@ -1736,6 +1841,9 @@
     \field{number}{2}
     \field{pages}{97\bibrangedash 107}
     \field{title}{The Effects of {{R}}\&{{D}} Tax Credits and Allowances in {{Canada}}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
+    \endverb
     \field{volume}{14}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\LCPHUGIC\Mansfield and Switzer - 1985 -
@@ -1805,6 +1913,9 @@
     \field{number}{5}
     \field{pages}{563\bibrangedash 581}
     \field{title}{Measuring Tax Incentives for {{R}}\&{{D}}}
+    \verb{url}
+    \verb https://doi.org/10.1007/s10797-007-9039-7
+    \endverb
     \field{volume}{15}
     \field{langid}{english}
     \verb{file}
@@ -1852,6 +1963,9 @@
     \field{number}{1}
     \field{pages}{29\bibrangedash 44}
     \field{title}{Tax {{Subsidies}} for {{R}}\&{{D}} in {{Canadian Provinces}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3552593
+    \endverb
     \field{volume}{31}
     \verb{file}
     \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innova
@@ -1898,6 +2012,9 @@
     \field{pages}{23\bibrangedash 44}
     \field{shorttitle}{Patents and {{Innovation}}}
     \field{title}{Patents and {{Innovation}}: {{Evidence}} from {{Economic History}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/41825460
+    \endverb
     \field{volume}{27}
     \verb{file}
     \verb C:\Users\user\Zotero\storage\5J83QVAW\Moser - 2013 - Patents and Inno
@@ -1938,6 +2055,9 @@
     \field{number}{2}
     \field{pages}{18\bibrangedash 28}
     \field{title}{An {{Economic Theory}} of {{Technological Change}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/1823649
+    \endverb
     \field{volume}{59}
     \verb{file}
     \verb C\:\\Users\\user\\Zotero\\storage\\D48KVRSU\\an economic theory of te
@@ -1962,6 +2082,10 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{title}{Patent {{Act}}}
+    \verb{url}
+    \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985
+    \verb -c-p-4.html#document
+    \endverb
     \field{langid}{english}
     \field{year}{1985}
     \field{urlday}{26}
@@ -1998,6 +2122,9 @@
     \field{pages}{77\bibrangedash 99}
     \field{shorttitle}{Patent Statistics as Indicators of Innovative Activities}
     \field{title}{Patent Statistics as Indicators of Innovative Activities: {{Possibilities}} and Problems}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF02020142
+    \endverb
     \field{volume}{7}
     \field{langid}{english}
     \verb{file}
@@ -2039,6 +2166,9 @@
     \field{number}{3}
     \field{pages}{437\bibrangedash 461}
     \field{title}{On the Effects of Investment Tax Credits on Economic Efficiency and Growth}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/0047272794900450
+    \endverb
     \field{volume}{54}
     \field{journaltitle}{Journal of Public Economics}
     \field{month}{07}
@@ -2104,6 +2234,9 @@
     \field{pages}{307\bibrangedash 330}
     \field{shorttitle}{The Impact of Patent Rights on International Trade}
     \field{title}{The Impact of Patent Rights on International Trade: Evidence from {{Canada}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
+    \endverb
     \field{volume}{35}
     \field{langid}{english}
     \verb{file}
@@ -2151,6 +2284,9 @@
     \field{number}{2}
     \field{pages}{90\bibrangedash 118}
     \field{title}{Evaluating {{State}} and {{Local Business Incentives}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257/jep.34.2.90
+    \endverb
     \field{volume}{34}
     \field{langid}{english}
     \verb{file}
@@ -2186,7 +2322,6 @@
     \endverb
     \field{title}{Table 12-10-0175-01 {{International}} Merchandise Trade by Province, Commodity, and {{Principal Trading Partners}} (x 1,000)}
     \field{type}{Data Table}
-    \field{month}{04}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2214,7 +2349,6 @@
     \endverb
     \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
     \field{type}{Data Table}
-    \field{month}{04}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2242,7 +2376,6 @@
     \endverb
     \field{title}{Table 14-10-0050-01 {{Job}} Tenure by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
     \field{type}{Data Table}
-    \field{month}{04}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2344,7 +2477,6 @@
     \endverb
     \field{title}{Table 16-10-0048-01 {{Manufacturing}} Sales by Industry and Province, Monthly (Dollars Unless Otherwise Noted) (x 1,000)}
     \field{type}{Data Table}
-    \field{month}{02}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2372,7 +2504,6 @@
     \endverb
     \field{title}{Table 18-10-0004-01 {{Consumer Price Index}}, Monthly, Not Seasonally Adjusted}
     \field{type}{Data Table}
-    \field{month}{02}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2400,7 +2531,6 @@
     \endverb
     \field{title}{Table 18-10-0205-01 {{New}} Housing Price Index, Monthly}
     \field{type}{Data Table}
-    \field{month}{03}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2427,7 +2557,6 @@
     \endverb
     \field{title}{Table 20-10-0008-01 {{Retail}} Trade Sales by Province and Territory, Inactive (x 1,000)}
     \field{type}{Data Table}
-    \field{month}{02}
     \field{year}{2023}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2455,7 +2584,6 @@
     \endverb
     \field{title}{Table 20-10-0074-01 {{Wholesale}} Trade, Sales (x 1,000)}
     \field{type}{Data Table}
-    \field{month}{02}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2483,7 +2611,60 @@
     \endverb
     \field{title}{Table 21-10-0019-01 {{Monthly}} Survey of Food Services and Drinking Places (x 1,000)}
     \field{type}{Data Table}
-    \field{month}{03}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24e}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{11}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2410005201-eng
+    \endverb
+    \field{title}{Table 24-10-0005-01 {{International}} Travellers Entering or Returning to {{Canada}}, by Province of Entry, Seasonally Adjusted}
+    \field{type}{Data Table}
+    \field{year}{2024}
+    \field{urlday}{15}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{statisticscanada24d}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={{Statistics Canada}},
+         familyi={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2024}
+    \field{extradate}{12}
+    \field{labeldatesource}{}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \verb{doi}
+    \verb 10.25318/2410005201-eng
+    \endverb
+    \field{title}{Table 24-10-0052-01 {{Vehicles}} Entering {{Canada}} by Land, by Vehicle Type and Licence Plate}
+    \field{type}{Data Table}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2510,7 +2691,6 @@
     \endverb
     \field{title}{Table 25-10-0001-01 {{Electric}} Power Statistics, with Data for Years 1950 - 2007}
     \field{type}{Data Table}
-    \field{month}{11}
     \field{year}{2008}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2529,7 +2709,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{11}
+    \field{extradate}{13}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2538,7 +2718,6 @@
     \endverb
     \field{title}{Table 25-10-0015-01 {{Electric}} Power Generation, Monthly Generation by Type of Electricity}
     \field{type}{Data Table}
-    \field{month}{04}
     \field{year}{2024}
     \field{urlday}{15}
     \field{urlmonth}{01}
@@ -2596,6 +2775,9 @@
     \field{number}{88F0006XPB}
     \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
     \field{title}{Measuring the {{Attractiveness}} of {{R}}\&{{D Tax Incentives}}: {{Canada}} and {{Major Industrial Countries}} - {{ARCHIVED}}}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+    \endverb
     \verb{file}
     \verb C:\Users\user\Zotero\storage\SH7KFVPR\Warda - 2000 - Measuring the At
     \verb tractiveness of R&D Tax Incentives.pdf
@@ -2628,6 +2810,9 @@
     \field{number}{88F0006X1997009}
     \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
     \field{title}{R\&{{D Tax Treatment}} in {{Canada}}: {{A Provincial Comparison}} - {{ARCHIVED}}}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+    \endverb
     \field{type}{Working {{Paper}}}
     \field{month}{09}
     \field{year}{1998}
@@ -2703,6 +2888,9 @@
     \field{pages}{748\bibrangedash 761}
     \field{shorttitle}{Non-{{R}}\&{{D}} Innovation and Firms' New Product Performance}
     \field{title}{Non-{{R}}\&{{D}} Innovation and Firms' New Product Performance: The Joint Moderating Effect of {{R}}\&{{D}} Intensity and Network Embeddedness}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/radm.12369
+    \endverb
     \field{volume}{49}
     \field{langid}{english}
     \verb{file}
@@ -2738,6 +2926,10 @@
     With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.%
     }
     \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
+    \verb{url}
+    \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-in
+    \verb vestment-with-tax-credits-1.3841927
+    \endverb
     \field{langid}{canadian}
     \field{journaltitle}{CBC News}
     \field{month}{11}

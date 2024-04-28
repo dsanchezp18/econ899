@@ -5,7 +5,7 @@
 % ======================== Document: Appendix A: Descriptive Statistics ======================== %
 
 \begin{document}
-\section{Appendix: Descriptive statistics for province-month panel}
+\section{Appendix: Data sources and descriptive statistics for province-month panel}
 \label{sec:appendixa}
 
 \begin{table}[h]
@@ -20,6 +20,21 @@
         \end{tablenotes}
     \end{threeparttable}
   \end{table}
+
+  \begin{landscape}
+    \begin{table}[h]
+        \centering
+        \begin{threeparttable}
+            \caption{Data sources}
+            \label{tab:data_sources}
+            \input{\subfix{../../output/tables/data_sources.tex}}
+            \begin{tablenotes}
+                \small
+                \item \textit{Notes}: The IP Horizons Patent Researcher data compose three tables: \texttt{PT\_Main}, \texttt{PT\_Interested\_Party} and \texttt{PT\_IPC\_Classification.}. \texttt{PT\_Main} is the master table that contains the basic information on patent applications filed, with a common identifier (\enquote{patent number}) to link to other tables. Data from Statistics Canada were extracted using the \textit{statcanR} R package. 
+            \end{tablenotes}
+        \end{threeparttable}
+      \end{table}
+    \end{landscape}
 
 \begin{table}[h]
     \centering
