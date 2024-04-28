@@ -2328,33 +2328,6 @@
     \field{urlyear}{2024}
   \endentry
 
-  \entry{statisticscanada24}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=S}{%
-         family={{Statistics Canada}},
-         familyi={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{S1}
-    \strng{fullhash}{S1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelyear}{2024}
-    \field{extradate}{2}
-    \field{labeldatesource}{}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.25318/1410004201-eng
-    \endverb
-    \field{title}{Table 14-10-0042-01 {{Average}} Usual and Actual Hours Worked in a Reference Week by Type of Work (Full- and Part-Time), Monthly, Unadjusted for Seasonality}
-    \field{type}{Data Table}
-    \field{year}{2024}
-    \field{urlday}{15}
-    \field{urlmonth}{01}
-    \field{urlyear}{2024}
-  \endentry
-
   \entry{statisticscanada24b}{misc}{}
     \name{author}{1}{}{%
       {{hash=S}{%
@@ -2367,7 +2340,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{3}
+    \field{extradate}{2}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2394,7 +2367,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{4}
+    \field{extradate}{3}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2429,7 +2402,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{shorttitle}
     \field{labelyear}{2024}
-    \field{extradate}{5}
+    \field{extradate}{4}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2468,7 +2441,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{6}
+    \field{extradate}{5}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2495,7 +2468,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{7}
+    \field{extradate}{6}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2522,7 +2495,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{8}
+    \field{extradate}{7}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2575,7 +2548,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{9}
+    \field{extradate}{8}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2602,7 +2575,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{10}
+    \field{extradate}{9}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2629,7 +2602,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{11}
+    \field{extradate}{10}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2656,7 +2629,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{12}
+    \field{extradate}{11}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
@@ -2709,7 +2682,7 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelyear}{2024}
-    \field{extradate}{13}
+    \field{extradate}{12}
     \field{labeldatesource}{}
     \field{sortinit}{S}
     \field{sortinithash}{S}
