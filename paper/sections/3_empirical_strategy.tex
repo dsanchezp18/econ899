@@ -12,20 +12,7 @@ I employ a novel administrative dataset from the Canadian Intellectual Property 
 
 With these data, I compute quarterly patent application counts at the province level from 2001Q1 to 2021Q2. This period, spanning January 2001 to June 2021, corresponds to the modern Canadian institutional context, as reviewed in Section \ref{sec:institutional_background}, when most provinces had implemented their SR\&ED programs. I assign patents to provinces based on where the majority of parties from patent applications report their location\footnote{Patent applications without information of party locations or with an equal number of interested parties from two provinces are dropped from the sample.}. Further, I drop Newfoundland and Labrador (NL), Prince Edward Island (PE), Yukon (YU) and Nunavut (NU) due to missing observations on explanatory variables.
 
-Patent application counts are my main explained variable. Further, I separate patents by their International Patent Classification (IPC) section as separate explained variables for some models. For explanatory variables, I extract province-level data at the monthly frequency from Statistics Canada and aggregate it at the quarterly frequency. These include data from the Labour Force Survey (LFS), such as labour force characteristics, employment wages, among others. I also consider the consumer price index, international merchandise exports and imports, retail, wholesale and manufacturing trade sales, food services receipts, the new housing price index and electric power generation. I also include the number of business insolvencies as reported by \textcite{insolvency24} and the number of foreign parties involved in patent applications from the IP Horizons data. I aggregate data at the quarterly level by summing all variables except the consumer and new housing indices, which I average over months. Table \ref{tab:data_sources} in Appendix \ref{sec:appendixa} provides a detailed account of my data sources. Table \ref{tab:descriptive_statistics} presents descriptive statistics for the main explained variable and all explanatory variables. 
-
-\begin{table}[H]
-    \centering
-    \begin{threeparttable}
-        \caption{Descriptive statistics for the province-quarter sample}
-        \label{tab:descriptive_statistics}
-        \input{\subfix{../../output/tables/descriptive_statistics_quarterly.tex}}
-        \begin{tablenotes}
-            \small
-            \item \textit{Notes}: All statistics based on a balanced panel of $N$ = 656 province-quarter observations. The sample includes all Canadian provinces except NL, PE, YU and NU.
-        \end{tablenotes}
-    \end{threeparttable}
-  \end{table}
+Patent application counts are my main explained variable. Further, I separate patents by their International Patent Classification (IPC) section as separate explained variables for some models. For explanatory variables, I extract province-level data at the monthly frequency from Statistics Canada and aggregate it at the quarterly frequency. These include data from the Labour Force Survey (LFS), such as labour force characteristics, employment wages, among others. I also consider the consumer price index, international merchandise exports and imports, retail, wholesale and manufacturing trade sales, food services receipts, the new housing price index and electric power generation. I also include the number of business insolvencies as reported by \textcite{insolvency24} and the number of foreign parties involved in patent applications from the IP Horizons data. I aggregate data at the quarterly level by summing all variables except the consumer and new housing indices, which I average over months. I present descriptive statistics for the sample along with a detailed account of my data sources in Appendix \ref{sec:appendixa}.
 
 \subsection{Identification Strategy}
 
@@ -46,7 +33,7 @@ Table \ref{tab:diff_means_quarterly} in Appendix \ref{sec:appendixa} presents th
     \includegraphics{\subfix{../../figures/quarterly_common_trends.png}}
     \begin{minipage}{0.9\textwidth}
         \footnotesize
-        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups. The vertical line represents the start of the AITC intervention in 2017Q1. The treatment group is Alberta, and the control group consists of all remaining provinces except NL, PE, YT and NU. 
+        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention in 2017Q1. The treatment group is Alberta, and the control group consists of all remaining provinces except NL, PE, YT and NU. 
     \end{minipage}
 \end{figure}
 
