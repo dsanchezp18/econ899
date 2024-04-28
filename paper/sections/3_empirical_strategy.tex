@@ -11,7 +11,10 @@
 I employ a novel administrative dataset from the Canadian Intellectual Property Office, the IP Horizons Patent researcher datasets \parencite*{canadianintellectualpropertyoffice23}. The data identify patent applications in Canada from 1869 to August 2021, including all involved parties and the application filing data. Parties can be mapped to provinces based on their location, which can be in Canada or other countries. 
 
 With these data, I compute quarterly patent application counts at the province level from 2001Q1 to 2021Q2. This period, spanning January 2001 to June 2021, corresponds to the modern Canadian institutional context, as reviewed in Section \ref{sec:institutional_background}, when most provinces had implemented their SR\&ED programs. I assign patents to provinces based on where the majority of parties from patent applications report their location\footnote{Patent applications without information of party locations or with an equal number of interested parties from two provinces are dropped from the sample.}. Further, I drop Newfoundland and Labrador (NL), Prince Edward Island (PE), Yukon (YU) and Nunavut (NU) due to missing observations on explanatory variables.
-\begin{table}[htbp!]
+
+Patent application counts are my main explained variable. Further, I separate patents by their International Patent Classification (IPC) section as separate explained variables for some models. For explanatory variables, I extract province-level data at the monthly frequency from Statistics Canada and aggregate it at the quarterly frequency. These include data from the Labour Force Survey (LFS), such as labour force characteristics, employment wages, among others. I also consider the consumer price index, international merchandise exports and imports, retail, wholesale and manufacturing trade sales, food services receipts, the new housing price index and electric power generation. I also include the number of business insolvencies as reported by \textcite{insolvency24} and the number of foreign parties involved in patent applications from the IP Horizons data. I aggregate data at the quarterly level by summing all variables except the consumer and new housing indices, which I average over months. Table \ref{tab:data_sources} in Appendix \ref{sec:appendixa} provides a detailed account of my data sources. Table \ref{tab:descriptive_statistics} presents descriptive statistics for the main explained variable and all explanatory variables. 
+
+\begin{table}[H]
     \centering
     \begin{threeparttable}
         \caption{Descriptive statistics for the province-quarter sample}
@@ -19,13 +22,13 @@ With these data, I compute quarterly patent application counts at the province l
         \input{\subfix{../../output/tables/descriptive_statistics_quarterly.tex}}
         \begin{tablenotes}
             \small
-            \item \textit{Notes}: All statistics based on a balanced panel of $N$ = 656 province-quarter observations from 2001Q1 to 2021Q2. The sample includes all Canadian provinces except NL, PE, YU and NU.
+            \item \textit{Notes}: All statistics based on a balanced panel of $N$ = 656 province-quarter observations. The sample includes all Canadian provinces except NL, PE, YU and NU.
         \end{tablenotes}
     \end{threeparttable}
   \end{table}
-Patent application counts are my main explained variable. Further, I separate patents by their International Patent Classification (IPC) section as separate explained variables for some models. For explanatory variables, I extract province-level data at the monthly frequency from Statistics Canada and aggregate it at the quarterly frequency. These include data from the Labour Force Survey (LFS), such as labour force characteristics, employment wages, among others. I also consider the consumer price index, international merchandise exports and imports, retail, wholesale and manufacturing trade sales, food services receipts, the new housing price index and electric power generation. I also include the number of business insolvencies as reported by \textcite{insolvency24} and the number of foreign parties involved in patent applications from the IP Horizons data. I aggregate data at the quarterly level by summing all variables except the consumer and new housing indices, which I average over months. Table \ref{tab:data_sources} in Appendix \ref{sec:appendixa} provides a detailed account of my data sources. Table \ref{tab:descriptive_statistics} presents descriptive statistics for the main explained variable and all explanatory variables. 
 
 \subsection{Identification Strategy}
+
 The AITC, as an investor tax credit, did not directly affect innovation inputs such as R\&D expenditures. However, since it provided access to financing for innovative firms, it may have affected innovation in the form of patent applications. To estimate this effect, I implement a two-way fixed effects (TWFE) difference-in-differences (DD) design, where I define treatment and control groups based on when the program was passed (2017Q1). While the first investment eligibility date was in 2016, businesses only started receiving AITC funding after 2017Q1, hence any effect would only be observed then. The treatment group is Alberta, and the treatment period is composed of all periods after 2017Q1. The control group is all remaining Canadian provinces in the sample. Treated observations are those from Alberta after 2017Q1, where the AITC may have affected Albertan patent applications. The DD design is implemented in a regression framework according to Equation \ref{eq:dd_model} below.
 
 \begin{equation}
@@ -36,7 +39,6 @@ The AITC, as an investor tax credit, did not directly affect innovation inputs s
 where $P_{it}$ is patent applications in a province $i$ and period $t$. $\theta_i$ and $\tau_t$ are sets of province and period fixed effects. I use a natural logarithm transformation with the addition of one to correct for provinces with small amounts of patent applications on some periods. The logarithm will give percent interpretations to the coefficients on the right-hand side. $T_{it}$ is a binary variable equal to unity for observations for treated observations and zero otherwise. Hence, the estimated parameter $\hat{\beta}$ is the coefficient of interest, which is my estimate for the effect of the AITC on $P_{it}$. $\mathbf{x}_{it}$ is a vector of time and province-varying controls, as described in the previous subsection, and $\gamma$ is the associated vector of parameters. $u_{it}$ is a province and time-varying error term. I cluster standard errors at the province and period level, as the variance of the error term may be spatially and temporally correlated.
 
 Table \ref{tab:diff_means_quarterly} in Appendix \ref{sec:appendixa} presents the difference in means between treated and control provinces for all explained variables. This presents the simplest version of the DD estimate, where I compare the average number of patent applications between Alberta and the control provinces before and after the AITC intervention. This simple comparison suggests a small or null effect; the regression analysis described above will provide a more robust estimate, controlling for other factors that may affect patent applications.
-
 \begin{figure}[htbp!]
     \centering
     \caption{Quarterly time series of patent applications between treatment and control groups}
@@ -44,7 +46,7 @@ Table \ref{tab:diff_means_quarterly} in Appendix \ref{sec:appendixa} presents th
     \includegraphics{\subfix{../../figures/quarterly_common_trends.png}}
     \begin{minipage}{0.9\textwidth}
         \footnotesize
-        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups from 2001Q1 to 2021Q2. The vertical line represents the start of the AITC intervention in 2017Q1. The treatment group is Alberta, and the control group consists of all remaining provinces except NL, PE, YT and NU. 
+        \textit{Notes}: The figure shows the quarterly time series of patent applications between the treatment and control groups. The vertical line represents the start of the AITC intervention in 2017Q1. The treatment group is Alberta, and the control group consists of all remaining provinces except NL, PE, YT and NU. 
     \end{minipage}
 \end{figure}
 
