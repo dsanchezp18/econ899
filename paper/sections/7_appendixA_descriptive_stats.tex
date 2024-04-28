@@ -5,23 +5,23 @@
 % ======================== Document: Appendix A: Descriptive Statistics ======================== %
 
 \begin{document}
-\section{Appendix: Data sources and descriptive statistics for province-month panel}
+\section{Appendix: Data sources and additional descriptive statistics}
 \label{sec:appendixa}
 
-\begin{table}[h]
+\begin{table}[htbp!]
     \centering
     \begin{threeparttable}
-        \caption{Descriptive statistics for variables in the province-month panel}
-        \label{tab:descriptive_statistics_monthly}
-        \input{\subfix{../../output/tables/descriptive_statistics_monthly.tex}}
+        \caption{Differences in means between treated and control provinces in province-quarter panel}
+        \label{tab:diff_means_quarterly}
+        \input{\subfix{../../output/tables/descriptive_statistics_explained_quarterly.tex}}
         \begin{tablenotes}
             \small
-            \item \textit{Notes}: All statistics based on a balanced panel of $N$ = 1,968 province-monthly observations from January 2001 to June 2021. The sample includes all Canadian provinces except NL, PE, YT, and NU.
+            \item \textit{Notes}: Calculations based on a balanced panel of $N$ = 656 province-monthly observations from 2001Q1 to 2021Q2. The sample includes all Canadian provinces except NL, PE, YU and NU. The treatment group is Alberta, and the control group consists of all remaining provinces. Post-intervention periods are those after 2017Q1. 
         \end{tablenotes}
     \end{threeparttable}
-  \end{table}
+\end{table}
 
-  \begin{landscape}
+\begin{landscape}
     \begin{table}[h]
         \centering
         \begin{threeparttable}
@@ -35,6 +35,19 @@
         \end{threeparttable}
       \end{table}
     \end{landscape}
+
+\begin{table}[h]
+    \centering
+    \begin{threeparttable}
+        \caption{Descriptive statistics for variables in the province-month panel}
+        \label{tab:descriptive_statistics_monthly}
+        \input{\subfix{../../output/tables/descriptive_statistics_monthly.tex}}
+        \begin{tablenotes}
+            \small
+            \item \textit{Notes}: All statistics based on a balanced panel of $N$ = 1,968 province-monthly observations from January 2001 to June 2021. The sample includes all Canadian provinces except NL, PE, YT, and NU.
+        \end{tablenotes}
+    \end{threeparttable}
+  \end{table}
 
 \begin{table}[h]
     \centering
