@@ -1142,6 +1142,24 @@
     \field{urlyear}{2024}
   \endentry
 
+  \entry{GitHubCopilot}{misc}{}
+    \list{publisher}{1}{%
+      {GitHub, Inc.}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labeldatesource}{nodate}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Large language model%
+    }
+    \field{note}{Type: Large language model tex.version: 1.156.0.0}
+    \field{title}{{GitHub} {Copilot}}
+    \verb{url}
+    \verb https://docs.github.com/en/copilot
+    \endverb
+  \endentry
+
   \entry{graham_mowrey04}{article}{}
     \name{author}{2}{}{%
       {{hash=GSJH}{%

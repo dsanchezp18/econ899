@@ -71,10 +71,12 @@
 % Bibiliography -----------------------------------
 
 % Needs to be included so the TeX file compiles on VS Code
-\usepackage[authordate, backend = bibtex]{biblatex-chicago}
 %\usepackage[reflist, style = windycity, backend = biber]{biblatex}
-%\usepackage[backend = bibtex, style = windycity]{biblatex}    
+%\usepackage[backend = bibtex, style = windycity]{biblatex}
+\usepackage[authordate, backend = bibtex]{biblatex-chicago}    
     \addbibresource{\subfix{references.bib}}
+    \addbibresource{\subfix{GH.bib}}
+    \nocite{GitHubCopilot}
 
 \usepackage{url}
   \urlstyle{same}
