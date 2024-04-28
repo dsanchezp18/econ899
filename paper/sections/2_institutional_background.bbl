@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,2312 +16,918 @@
   {}
 \endgroup
 
+\datalist[entry]{cms/global//global/global}
+  \entry{abbes_etal22}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=AC}{%
+         family={Abbes},
+         familyi={A\bibinitperiod},
+         given={Chahreddine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=BJ}{%
+         family={Baldwin},
+         familyi={B\bibinitperiod},
+         given={John},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LD}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={Danny},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Statistics Canada}%
+    }
+    \strng{namehash}{ACBJLD1}
+    \strng{fullhash}{ACBJLD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \verb{doi}
+    \verb 10.25318/36280001202200300005-eng
+    \endverb
+    \field{number}{2563-8955}
+    \field{series}{Statistics {{Canada Economic}} and {{Social Reports}}}
+    \field{title}{Patenting Activity of {{Canadian-resident}} Businesses}
+    \field{langid}{english}
+    \list{location}{1}{%
+      {Ottawa, Ontario}%
+    }
+    \field{annotation}{%
+    Last Modified: 2022-03-23%
+    }
+    \field{eprinttype}{Statistics Canada}
+    \field{month}{03}
+    \field{year}{2022}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global}
-    \entry{abbes_etal22}{online}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
-           family={Abbes},
-           familyi={A\bibinitperiod},
-           given={Chahreddine},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c1f3f480606ac8b4dcf9e54a17983b9b}{%
-           family={Baldwin},
-           familyi={B\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=967d037f8d0ebaf1d6ca6e63e881035d}{%
-           family={Leung},
-           familyi={L\bibinitperiod},
-           given={Danny},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \strng{namehash}{be40e51f4dd0cbcd8237f27bb764c95f}
-      \strng{fullhash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{bibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{authorbibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{authornamehash}{be40e51f4dd0cbcd8237f27bb764c95f}
-      \strng{authorfullhash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2022-03-23}
-      \field{day}{23}
-      \field{eprinttype}{Statistics Canada}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{2563-8955}
-      \field{series}{Statistics {{Canada Economic}} and {{Social Reports}}}
-      \field{title}{Patenting Activity of {{Canadian-resident}} Businesses}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.25318/36280001202200300005-eng
-      \endverb
-    \endentry
-    \entry{agrawal_etal20}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
-           family={Agrawal},
-           familyi={A\bibinitperiod},
-           given={Ajay},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
-           family={Rosell},
-           familyi={R\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
-           family={Simcoe},
-           familyi={S\bibinitperiod},
-           given={Timothy},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
-      \strng{fullhash}{9a7346946685de68841e00ced9785728}
-      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
-      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
-      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
-      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
-      \field{issn}{1945-7731}
-      \field{journaltitle}{American Economic Journal: Economic Policy}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{number}{2}
-      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{12}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 21}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1257/pol.20140467
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
-      \endverb
-      \verb{url}
-      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
-      \endverb
-      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
-    \endentry
-    \entry{alam_etal22}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=7318387a560ee75206c0ef9b2e943123}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Md\bibnamedelima Razib},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1dff77ead57f02ac9a482f5c3c46f8e9}{%
-           family={Dalziel},
-           familyi={D\bibinitperiod},
-           given={Margaret},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5aa1a97a479619e1d50b437e71de35c3}{%
-           family={Cozzarin},
-           familyi={C\bibinitperiod},
-           given={Brian\bibnamedelima P.},
-           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{81833e92a9efb380f4181d9cd092c812}
-      \strng{fullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{bibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{authorbibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{authornamehash}{81833e92a9efb380f4181d9cd092c812}
-      \strng{authorfullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Using Canadian-invented patents granted by the United States Patent and Trademark Office during the period between 1995 and 2014, we investigate how ownership of Canadian inventions varies across time and by technology, geographic region, quality of invention, and the presence of superstar firms. Our findings show that the gap between Canadian-invented and Canadian-owned technologies has grown since 1995, and that an increasing number of Canadian-invented patents are owned by foreign, primarily US, firms. In terms of technical areas, Canadian-owned patents in biotechnology have declined and there has been sharp growth in both Canadian- and foreign-owned patents in information technology and telecom. Approximately 60\% of Canadian-invented patents originate from Toronto, Ottawa-Gatineau, Montreal, Vancouver, Kitchener-Cambridge-Waterloo (KCW), and Calgary. The quality of Canadian-invented patents increases over time, in part because the number of unassigned patents declines. The quality of foreign-owned patents is higher than the quality of Canadian-owned patents in all CMAs except KCW. At the firm level, while Blackberry and Nortel are responsible for a disproportionate number of Canadian-owned patents, the ownership of foreign-owned patents is more widely distributed. Our findings point to where Canadian innovation vulnerabilities are most severe, where they are worsening, and where there is cause for hope.}
-      \field{day}{1}
-      \field{issn}{0040-1625}
-      \field{journaltitle}{Technological Forecasting and Social Change}
-      \field{month}{2}
-      \field{shortjournal}{Technological Forecasting and Social Change}
-      \field{shorttitle}{Invented Here but Owned Elsewhere}
-      \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{175}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{121367}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.techfore.2021.121367
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
-      \endverb
-      \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
-    \endentry
-    \entry{albertaeconomicdevelopmentandtrade17}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
-           family={{Alberta Economic Development and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {Alberta Economic Development}%
-        {Trade}%
-      }
-      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Outlines the key components of the Government of Alberta’s Alberta Jobs Plan, which includews: investment in infrastructure; diversification of the province’s economy; support for small- and...}
-      \field{day}{3}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{shorttitle}{Alberta Jobs Plan}
-      \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
-      \endverb
-      \verb{url}
-      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
-      \endverb
-    \endentry
-    \entry{albertaeconomicdevelopmentandtrade19}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
-           family={{Alberta Economic Development and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {Alberta Economic Development}%
-        {Trade}%
-      }
-      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \field{extraname}{2}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...}
-      \field{day}{29}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
-      \endverb
-      \verb{url}
-      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
-      \endverb
-    \endentry
-    \entry{Alberta19a}{legislation}{}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Alberta Regulation}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Alberta {{Investor Tax Credit Regulation}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
-      \endverb
-      \verb{urlraw}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-      \verb{url}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-    \endentry
-    \entry{beaudry_schiffauerova11}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=8440e246499238def57386d06beed5c5}{%
-           family={Beaudry},
-           familyi={B\bibinitperiod},
-           given={Catherine},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=416013c06170b910f164c539ad3958e0}{%
-           family={Schiffauerova},
-           familyi={S\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{fullhash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{bibnamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authorbibnamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authornamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authorfullhash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{In this study we explore the patent ownership for the innovations created by Canadian nanotechnology inventors. We find that although there is a great innovative potential and inventive productivity among Canadian researchers, a lot of the intellectual property actually leaves the country: Around 50\% of the nanotechnology patents invented by Canadian inventors are owned by foreign assignees. We also note the predominance of private companies among the patent owners. Almost one-third of all the Canadian-invented nanotechnology patents is assigned to a single American firm, Xerox Corporation. Furthermore, we explore the role of Canadian nanotechnology star inventors. The results show that the fruits of their great inventive productivity are collected outside Canada.}
-      \field{day}{1}
-      \field{issn}{1573-7047}
-      \field{journaltitle}{The Journal of Technology Transfer}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{6}
-      \field{shortjournal}{J Technol Transf}
-      \field{shorttitle}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}?}
-      \field{title}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}? {{A}} Study of Nanotechnology Patenting}
-      \field{urlday}{23}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{volume}{36}
-      \field{year}{2011}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{665\bibrangedash 679}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1007/s10961-011-9211-1
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\BEQ8XWPC\Beaudry and Schiffauerova - 2011 - Is Canadian intellectual property leaving Canada .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10961-011-9211-1
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10961-011-9211-1
-      \endverb
-      \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
-    \endentry
-    \entry{becker15}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
-           family={Becker},
-           familyi={B\bibinitperiod},
-           given={Bettina},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
-      \field{issn}{1467-6419}
-      \field{journaltitle}{Journal of Economic Surveys}
-      \field{langid}{english}
-      \field{number}{5}
-      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
-      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{29}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{917\bibrangedash 942}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1111/joes.12074
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
-    \endentry
-    \entry{brouillete13}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
-           family={Brouillete},
-           familyi={B\bibinitperiod},
-           given={Dany},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{fullhash}{9deb644f8dd317839e46baef864dd674}
-      \strng{bibnamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authorbibnamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authornamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authorfullhash}{9deb644f8dd317839e46baef864dd674}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2015-01-19}
-      \field{eprinttype}{Innovation, Science and Economic Development Canada}
-      \field{langid}{english}
-      \field{number}{Working Paper 2014-06}
-      \field{series}{Working {{Paper Series}}}
-      \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
-      \field{type}{Statistical Reports}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2013}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
-      \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
-      \endverb
-    \endentry
-    \entry{canadarevenueagency15}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
-           family={{Canada Revenue Agency}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Canada Revenue Agency}%
-      }
-      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.}
-      \field{annotation}{Last Modified: 2015-04-07}
-      \field{day}{30}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{Evolution of the {{SR}}\&{{ED Program}} – a Historical Perspective}
-      \field{type}{service description}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
-      \endverb
-      \verb{url}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
-      \endverb
-    \endentry
-    \entry{canadarevenueagency23}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
-           family={{Canada Revenue Agency}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Canada Revenue Agency}%
-      }
-      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2023-12-01}
-      \field{day}{22}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
-      \endverb
-      \verb{url}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
-      \endverb
-    \endentry
-    \entry{canadianintellectualpropertyoffice21}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
-           family={{Canadian Intellectual Property Office}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Innovation, Science and Economic Development Canada}%
-      }
-      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{annotation}{Last Modified: 2021-06-28}
-      \field{day}{28}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{shorttitle}{File a {{Canadian}} Patent Application}
-      \field{title}{Patent Application and Examination}
-      \field{type}{Guides; Forms}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
-      \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
-      \endverb
-    \endentry
-    \entry{carew_etal06}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=82a96100239d06934aa0c29fdca1d9d5}{%
-           family={Carew},
-           familyi={C\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef7b19034cd5bfc1c3d2b62e468ae064}{%
-           family={Florkowski},
-           familyi={F\bibinitperiod},
-           given={Wojciech\bibnamedelima J},
-           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=eaabeaf442c5ac06da82e557cfd02626}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Elwin\bibnamedelima G},
-           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{94511eb7835fc843475064b9e3b448f9}
-      \strng{fullhash}{d25a9186b245abce6599915cccf61c18}
-      \strng{bibnamehash}{d25a9186b245abce6599915cccf61c18}
-      \strng{authorbibnamehash}{d25a9186b245abce6599915cccf61c18}
-      \strng{authornamehash}{94511eb7835fc843475064b9e3b448f9}
-      \strng{authorfullhash}{d25a9186b245abce6599915cccf61c18}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1553-8362}
-      \field{journaltitle}{International journal of fruit science}
-      \field{number}{1}
-      \field{shortjournal}{International journal of fruit science}
-      \field{title}{Apple Industry Performance, Intellectual Property Rights and Innovation: A {{Canada-US}} Comparison}
-      \field{volume}{6}
-      \field{year}{2006}
-      \field{dateera}{ce}
-      \field{pages}{93\bibrangedash 116}
-      \range{pages}{24}
-    \endentry
-    \entry{Investing16}{legislation}{}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
-      \field{day}{16}
-      \field{journaltitle}{SA}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-      \verb{url}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-    \endentry
-    \entry{mansfield_switzer85b}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
-           family={Mansfield},
-           familyi={M\bibinitperiod},
-           given={Edwin},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
-           family={Switzer},
-           familyi={S\bibinitperiod},
-           given={Lorne},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {[University of Toronto Press, Canadian Public Policy]}%
-      }
-      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Cette étude semble constituer une des premières tentatives pour évaluer les effets des crédits d'impôts consentis par le Canada sur la recherche et le développement commandités par les entreprises. Les résultats obtenus sont fondés sur un échantillon soigneusement choisi de firmes effectuant de la recherche et du développement au Canada, sur une étude économétrique des données sur la recherche et le développement industriels au Canada, et sur d'autres calculs impliquant l'élasticité aux prix de la demande pour la recherche et le développement; ils révèlent que les avantages fiscaux n'ont eu que peu d'effets. Les allocations spéciales pour recherche et développement semblent avoir fait augmenter les dépenses de R \& D d'environ 1 pour cent. et le crédit d'impôt à l'investissement semble les avoir fait augmenter d'environ 2 pour cent. Or, de telles augmentations sont équivalentes à environ 30 pour cent ou 40 pour cent du manque à gagner du gouvernement. /// This study seems to be one of the first attempts to estimate the effects of Canada's R and D tax credits and allowances on company-funded research and development. The results (based on a carefully selected survey of firms carrying out R and D in Canada, an econometric study of Canadian industrial R and D data, and other calculations involving the price elasticity of demand for R and D) indicate that these effects have been modest. The special research allowance seems to have increased R and D expenditures by about 1 per cent, and the investment tax credit seems to have increased them by about 2 per cent. These increases amounted to about 30 or 40 per cent of the revenue losses to the government.}
-      \field{eprinttype}{jstor}
-      \field{issn}{0317-0861}
-      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
-      \field{number}{2}
-      \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{11}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{241\bibrangedash 246}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.2307/3550705
-      \endverb
-      \verb{eprint}
-      \verb 3550705
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 - How Effective Are Canada's Direct Tax Incentives f.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.jstor.org/stable/3550705
-      \endverb
-      \verb{url}
-      \verb https://www.jstor.org/stable/3550705
-      \endverb
-    \endentry
-    \entry{mansfield_switzer85a}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
-           family={Mansfield},
-           familyi={M\bibinitperiod},
-           given={Edwin},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
-           family={Switzer},
-           familyi={S\bibinitperiod},
-           given={Lorne},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In Canada, as in many other countries that have adopted R\&D tax credits and allowances, there has been considerable controversy over their effectiveness in increasing company-financed research and development. This study seems to be one of the first systematic attempts to estimate the effects of Canada's R\&D tax credits and allowances. The results present a very consistent picture. The survey results, the econometric results, and some simple calculations based on rough measures of the price elasticity of demand for R\&D all suggest that the special research allowance increased R\&D expenditures by about 1 percent and that the investment tax credit increased them by about 2 percent. These increases seem to be appreciably less than the revenue losses to the government.}
-      \field{day}{1}
-      \field{issn}{0048-7333}
-      \field{journaltitle}{Research Policy}
-      \field{month}{4}
-      \field{number}{2}
-      \field{shortjournal}{Research Policy}
-      \field{title}{The Effects of {{R}}\&{{D}} Tax Credits and Allowances in {{Canada}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{14}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{97\bibrangedash 107}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/0048-7333(85)90017-4
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\LCPHUGIC\Mansfield and Switzer - 1985 - The effects of R&D tax credits and allowances in C.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
-      \endverb
-    \endentry
-    \entry{mckenzie05}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d09528a75372aaa02f7b8985a84ca3c8}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Kenneth\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {[University of Toronto Press, Canadian Public Policy]}%
-      }
-      \strng{namehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{fullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{bibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorbibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authornamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorfullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Cet article expose la variabilité du taux effectif de l'impôt pour la Recherche et le Développement (R\&D) dans les dix provinces canadiennes. Nous montrons que, bien que toutes les provinces bénéficient d'une subvention fiscale assez substantielle, pour R\&D, la variation d'une province à l'autre est considérable, allant d'un taux de subvention effectif d'environ 40\% en Alberta à un taux supérieur à 200\% au Québec. /// This paper documents the variation in effective tax rates for R\&D in Canada's ten provinces. It is shown that while a sizable tax subsidy for R\&D exists in every province, the variation across provinces is significant, ranging from an effective subsidy rate of about 40 percent in Alberta to over 200 percent in Quebec.}
-      \field{eprinttype}{jstor}
-      \field{issn}{0317-0861}
-      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
-      \field{number}{1}
-      \field{title}{Tax {{Subsidies}} for {{R}}\&{{D}} in {{Canadian Provinces}}}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{31}
-      \field{year}{2005}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{29\bibrangedash 44}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.2307/3552593
-      \endverb
-      \verb{eprint}
-      \verb 3552593
-      \endverb
-      \verb{file}
-      \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\mansfield_effects_of_rd_tax_credits_canada_1984.pdf;C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\Tax Subsidies for R&D in Canadian Provinces.pdf;C\:\\Users\\user\\Zotero\\storage\\DJDI3A5U\\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.jstor.org/stable/3552593
-      \endverb
-      \verb{url}
-      \verb https://www.jstor.org/stable/3552593
-      \endverb
-    \endentry
-    \entry{mckenzie08}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d09528a75372aaa02f7b8985a84ca3c8}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Kenneth\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{fullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{bibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorbibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authornamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorfullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A methodology for measuring the user cost of intangible R\&D capital is developed. In contrast to the way in which the Hall–Jorgenson–King–Fullerton (HJKF) approach to measuring the user cost of capital, and the related notion of the effective marginal tax rate on capital, is typically applied to intangible R\&D capital, the methodology takes explicit account of the microeconomic foundations of R\&D in order to aggregate the user costs of the various inputs used in the production of R\&D. Illustrative calculations are presented for Canadian provinces which show that relative to the methodology developed here, the standard approach substantially overstates the tax subsidy offered to intangible R\&D capital.}
-      \field{day}{1}
-      \field{issn}{1573-6970}
-      \field{journaltitle}{International Tax and Public Finance}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{5}
-      \field{shortjournal}{Int Tax Public Finance}
-      \field{title}{Measuring Tax Incentives for {{R}}\&{{D}}}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{15}
-      \field{year}{2008}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{563\bibrangedash 581}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1007/s10797-007-9039-7
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\YDT9VUM5\McKenzie - 2008 - Measuring tax incentives for R&D.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10797-007-9039-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10797-007-9039-7
-      \endverb
-      \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
-    \endentry
-    \entry{Patent85}{legislation}{}
-      \list{publisher}{1}{%
-        {CanLII}%
-      }
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{RSC}
-      \field{langid}{english}
-      \field{title}{Patent {{Act}}}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
-      \endverb
-      \verb{url}
-      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
-      \endverb
-    \endentry
-    \entry{putnam06}{book}{}
-      \name{editor}{1}{}{%
-        {{un=0,uniquepart=base,hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{fullhash}{20f190a204829c8989e04cbef86cda06}
-      \strng{bibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
-    \endentry
-    \entry{rafiquzzaman02}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=206d9a950f97827b82f27c957e88fb6a}{%
-           family={Rafiquzzaman},
-           familyi={R\bibinitperiod},
-           given={Mohammed},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{fullhash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{bibnamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authorbibnamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authornamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authorfullhash}{206d9a950f97827b82f27c957e88fb6a}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The extent to which Canadian manufacturing exports are sensitive to national differences in patent rights are examined. The conclusion is that, overall, Canadians tend to export more to those countries where their patent rights are highly safeguarded. Stronger patent protection induces Canadians to export relatively more to high-income countries than to low-income countries. In addition, the effect of stronger patent rights is to increase exports to those countries that pose a strong threat of imitation and to reduce exports to those countries that pose the weakest threat of imitation. JEL Classification: F13; O34 Impact de la propriété des brevets sur le commerce international: résultats pour le Canada. Ce mémoire examine jusqu’à quel point les exportations manufacturières canadiennes sont sensibles aux différences dans la propriété des brevets entre pays. L’étude conclut que les Canadiens tendent à exporter davantage vers les pays où la propriété des brevets est hautement protégée.Il appert que la plus forte protection de la propriété des brevets tend à faire que les Canadiens exportent relativement plus vers les pays à hauts revenus que vers ceux à plus faibles revenus. De plus, il appert que l’effet de la plus forte protection des brevets est d’accroître les exportations vers les pays qui posent une forte menace d’imitation et de réduire les exportations vers les pays qui posent la plus faible menace d’imitation.}
-      \field{issn}{1540-5982}
-      \field{journaltitle}{Canadian Journal of Economics/Revue canadienne d'économique}
-      \field{langid}{english}
-      \field{number}{2}
-      \field{shorttitle}{The Impact of Patent Rights on International Trade}
-      \field{title}{The Impact of Patent Rights on International Trade: Evidence from {{Canada}}}
-      \field{urlday}{23}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{volume}{35}
-      \field{year}{2002}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{307\bibrangedash 330}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1111/1540-5982.00132
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\QUIJP2Y3\Rafiquzzaman - 2002 - The impact of patent rights on international trade.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
-      \endverb
-    \endentry
-    \entry{warda98}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
-           family={Warda},
-           familyi={W\bibinitperiod},
-           given={Jacek},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{fullhash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{bibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorbibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authornamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorfullhash}{b92afb3740fe30eec15725939f550cb9}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{25}
-      \field{month}{9}
-      \field{number}{88F0006X1997009}
-      \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
-      \field{title}{R\&{{D Tax Treatment}} in {{Canada}}: {{A Provincial Comparison}} - {{ARCHIVED}}}
-      \field{type}{Working Paper}
-      \field{urlday}{15}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
-      \field{year}{1998}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-    \endentry
-    \entry{warda00}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
-           family={Warda},
-           familyi={W\bibinitperiod},
-           given={Jacek},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{fullhash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{bibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorbibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authornamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorfullhash}{b92afb3740fe30eec15725939f550cb9}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{month}{6}
-      \field{number}{88F0006XPB}
-      \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
-      \field{title}{Measuring the {{Attractiveness}} of {{R}}\&{{D Tax Incentives}}: {{Canada}} and {{Major Industrial Countries}} - {{ARCHIVED}}}
-      \field{type}{Working Paper}
-      \field{urlday}{15}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
-      \field{year}{2000}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\SH7KFVPR\Warda - 2000 - Measuring the Attractiveness of R&D Tax Incentives.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-    \endentry
-    \entry{worldintellectualpropertyorganization24}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
-           family={{World Intellectual Property Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{22}
-      \field{month}{4}
-      \field{number}{v9.8}
-      \field{title}{Guide to the {{International Patent Classification}} (2024)}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.34667/tind.49464
-      \endverb
-    \endentry
-    \entry{zabjeck16}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
-           family={Zabjeck},
-           familyi={Z\bibinitperiod},
-           given={Alexandra},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{fullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{bibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authorbibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authornamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authorfullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.}
-      \field{day}{8}
-      \field{entrysubtype}{newspaper}
-      \field{journaltitle}{CBC News}
-      \field{langid}{canadian}
-      \field{month}{11}
-      \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
-      \endverb
-      \verb{url}
-      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
-      \endverb
-    \endentry
-  \enddatalist
-  \datalist[entry]{apa/global//global/global}
-    \entry{abbes_etal22}{online}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=e56bbd3d0487079939b035bb11202d17}{%
-           family={Abbes},
-           familyi={A\bibinitperiod},
-           given={Chahreddine},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c1f3f480606ac8b4dcf9e54a17983b9b}{%
-           family={Baldwin},
-           familyi={B\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=967d037f8d0ebaf1d6ca6e63e881035d}{%
-           family={Leung},
-           familyi={L\bibinitperiod},
-           given={Danny},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \strng{namehash}{be40e51f4dd0cbcd8237f27bb764c95f}
-      \strng{fullhash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{bibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{authorbibnamehash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \strng{authornamehash}{be40e51f4dd0cbcd8237f27bb764c95f}
-      \strng{authorfullhash}{0580d8bcc2342d1a147d7bfb926ef177}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2022-03-23}
-      \field{day}{23}
-      \field{eprinttype}{Statistics Canada}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{number}{2563-8955}
-      \field{series}{Statistics {{Canada Economic}} and {{Social Reports}}}
-      \field{title}{Patenting Activity of {{Canadian-resident}} Businesses}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.25318/36280001202200300005-eng
-      \endverb
-    \endentry
-    \entry{agrawal_etal20}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=d379b2563b45b79c2a7d0703c88b412a}{%
-           family={Agrawal},
-           familyi={A\bibinitperiod},
-           given={Ajay},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bbae8d02e1ab0e90afec20f2787c19e7}{%
-           family={Rosell},
-           familyi={R\bibinitperiod},
-           given={Carlos},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9695ee8efbb30e92a173dce2ade6ac2c}{%
-           family={Simcoe},
-           familyi={S\bibinitperiod},
-           given={Timothy},
-           giveni={T\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{2ae00f8102957e13f7ecb189f63aba08}
-      \strng{fullhash}{9a7346946685de68841e00ced9785728}
-      \strng{bibnamehash}{9a7346946685de68841e00ced9785728}
-      \strng{authorbibnamehash}{9a7346946685de68841e00ced9785728}
-      \strng{authornamehash}{2ae00f8102957e13f7ecb189f63aba08}
-      \strng{authorfullhash}{9a7346946685de68841e00ced9785728}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.}
-      \field{issn}{1945-7731}
-      \field{journaltitle}{American Economic Journal: Economic Policy}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{number}{2}
-      \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{12}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1\bibrangedash 21}
-      \range{pages}{21}
-      \verb{doi}
-      \verb 10.1257/pol.20140467
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Credits and Small Firm R&D Spending.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
-      \endverb
-      \verb{url}
-      \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
-      \endverb
-      \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
-    \endentry
-    \entry{alam_etal22}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=7318387a560ee75206c0ef9b2e943123}{%
-           family={Alam},
-           familyi={A\bibinitperiod},
-           given={Md\bibnamedelima Razib},
-           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1dff77ead57f02ac9a482f5c3c46f8e9}{%
-           family={Dalziel},
-           familyi={D\bibinitperiod},
-           given={Margaret},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=5aa1a97a479619e1d50b437e71de35c3}{%
-           family={Cozzarin},
-           familyi={C\bibinitperiod},
-           given={Brian\bibnamedelima P.},
-           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{81833e92a9efb380f4181d9cd092c812}
-      \strng{fullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{bibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{authorbibnamehash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \strng{authornamehash}{81833e92a9efb380f4181d9cd092c812}
-      \strng{authorfullhash}{2b7349aa5c6471c1eb5fc1dd31ebee8f}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Using Canadian-invented patents granted by the United States Patent and Trademark Office during the period between 1995 and 2014, we investigate how ownership of Canadian inventions varies across time and by technology, geographic region, quality of invention, and the presence of superstar firms. Our findings show that the gap between Canadian-invented and Canadian-owned technologies has grown since 1995, and that an increasing number of Canadian-invented patents are owned by foreign, primarily US, firms. In terms of technical areas, Canadian-owned patents in biotechnology have declined and there has been sharp growth in both Canadian- and foreign-owned patents in information technology and telecom. Approximately 60\% of Canadian-invented patents originate from Toronto, Ottawa-Gatineau, Montreal, Vancouver, Kitchener-Cambridge-Waterloo (KCW), and Calgary. The quality of Canadian-invented patents increases over time, in part because the number of unassigned patents declines. The quality of foreign-owned patents is higher than the quality of Canadian-owned patents in all CMAs except KCW. At the firm level, while Blackberry and Nortel are responsible for a disproportionate number of Canadian-owned patents, the ownership of foreign-owned patents is more widely distributed. Our findings point to where Canadian innovation vulnerabilities are most severe, where they are worsening, and where there is cause for hope.}
-      \field{day}{1}
-      \field{issn}{0040-1625}
-      \field{journaltitle}{Technological Forecasting and Social Change}
-      \field{month}{2}
-      \field{shortjournal}{Technological Forecasting and Social Change}
-      \field{shorttitle}{Invented Here but Owned Elsewhere}
-      \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{175}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{121367}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.techfore.2021.121367
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
-      \endverb
-      \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
-    \endentry
-    \entry{albertaeconomicdevelopmentandtrade17}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
-           family={{Alberta Economic Development and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {Alberta Economic Development}%
-        {Trade}%
-      }
-      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \field{extraname}{1}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Outlines the key components of the Government of Alberta’s Alberta Jobs Plan, which includews: investment in infrastructure; diversification of the province’s economy; support for small- and...}
-      \field{day}{3}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{shorttitle}{Alberta Jobs Plan}
-      \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
-      \endverb
-      \verb{url}
-      \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-investor-tax-credit-aitc-fact-sheet.pdf
-      \endverb
-    \endentry
-    \entry{albertaeconomicdevelopmentandtrade19}{misc}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=5fd84a7658f987d1a6da31d35e7d2040}{%
-           family={{Alberta Economic Development and Trade}},
-           familyi={A\bibinitperiod}}}%
-      }
-      \list{organization}{2}{%
-        {Alberta Economic Development}%
-        {Trade}%
-      }
-      \strng{namehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{fullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{bibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorbibnamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authornamehash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \strng{authorfullhash}{5fd84a7658f987d1a6da31d35e7d2040}
-      \field{extraname}{2}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...}
-      \field{day}{29}
-      \field{langid}{english}
-      \field{month}{1}
-      \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
-      \endverb
-      \verb{url}
-      \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guidelines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
-      \endverb
-    \endentry
-    \entry{Alberta19a}{legislation}{}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Alberta Regulation}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{title}{Alberta {{Investor Tax Credit Regulation}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2019}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
-      \endverb
-      \verb{urlraw}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-      \verb{url}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-    \endentry
-    \entry{beaudry_schiffauerova11}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=8440e246499238def57386d06beed5c5}{%
-           family={Beaudry},
-           familyi={B\bibinitperiod},
-           given={Catherine},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=416013c06170b910f164c539ad3958e0}{%
-           family={Schiffauerova},
-           familyi={S\bibinitperiod},
-           given={Andrea},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{fullhash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{bibnamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authorbibnamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authornamehash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \strng{authorfullhash}{927513389c6590f4a7e3bc0b5e394dc6}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{In this study we explore the patent ownership for the innovations created by Canadian nanotechnology inventors. We find that although there is a great innovative potential and inventive productivity among Canadian researchers, a lot of the intellectual property actually leaves the country: Around 50\% of the nanotechnology patents invented by Canadian inventors are owned by foreign assignees. We also note the predominance of private companies among the patent owners. Almost one-third of all the Canadian-invented nanotechnology patents is assigned to a single American firm, Xerox Corporation. Furthermore, we explore the role of Canadian nanotechnology star inventors. The results show that the fruits of their great inventive productivity are collected outside Canada.}
-      \field{day}{1}
-      \field{issn}{1573-7047}
-      \field{journaltitle}{The Journal of Technology Transfer}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{6}
-      \field{shortjournal}{J Technol Transf}
-      \field{shorttitle}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}?}
-      \field{title}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}? {{A}} Study of Nanotechnology Patenting}
-      \field{urlday}{23}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{volume}{36}
-      \field{year}{2011}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{665\bibrangedash 679}
-      \range{pages}{15}
-      \verb{doi}
-      \verb 10.1007/s10961-011-9211-1
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\BEQ8XWPC\Beaudry and Schiffauerova - 2011 - Is Canadian intellectual property leaving Canada .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10961-011-9211-1
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10961-011-9211-1
-      \endverb
-      \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
-    \endentry
-    \entry{becker15}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d6de6b3cf446b34eeb66fe9bd13824b0}{%
-           family={Becker},
-           familyi={B\bibinitperiod},
-           given={Bettina},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{fullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{bibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorbibnamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authornamehash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \strng{authorfullhash}{d6de6b3cf446b34eeb66fe9bd13824b0}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.}
-      \field{issn}{1467-6419}
-      \field{journaltitle}{Journal of Economic Surveys}
-      \field{langid}{english}
-      \field{number}{5}
-      \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
-      \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
-      \field{urlday}{15}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{29}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{917\bibrangedash 942}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1111/joes.12074
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Policies and Private R&d Investment A .pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
-      \endverb
-      \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
-    \endentry
-    \entry{brouillete13}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=9deb644f8dd317839e46baef864dd674}{%
-           family={Brouillete},
-           familyi={B\bibinitperiod},
-           given={Dany},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{fullhash}{9deb644f8dd317839e46baef864dd674}
-      \strng{bibnamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authorbibnamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authornamehash}{9deb644f8dd317839e46baef864dd674}
-      \strng{authorfullhash}{9deb644f8dd317839e46baef864dd674}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2015-01-19}
-      \field{eprinttype}{Innovation, Science and Economic Development Canada}
-      \field{langid}{english}
-      \field{number}{Working Paper 2014-06}
-      \field{series}{Working {{Paper Series}}}
-      \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
-      \field{type}{Statistical Reports}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2013}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
-      \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/economic-research/research-papers/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using-natural/estimating-incremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-using
-      \endverb
-    \endentry
-    \entry{canadarevenueagency15}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
-           family={{Canada Revenue Agency}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Canada Revenue Agency}%
-      }
-      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \field{extraname}{1}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.}
-      \field{annotation}{Last Modified: 2015-04-07}
-      \field{day}{30}
-      \field{langid}{english}
-      \field{month}{3}
-      \field{title}{Evolution of the {{SR}}\&{{ED Program}} – a Historical Perspective}
-      \field{type}{service description}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2015}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
-      \endverb
-      \verb{url}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/evolution-program-a-historical-perspective.html
-      \endverb
-    \endentry
-    \entry{canadarevenueagency23}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=e0ae33e2c406aefe01869963360cb1ab}{%
-           family={{Canada Revenue Agency}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Canada Revenue Agency}%
-      }
-      \strng{namehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{fullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{bibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorbibnamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authornamehash}{e0ae33e2c406aefe01869963360cb1ab}
-      \strng{authorfullhash}{e0ae33e2c406aefe01869963360cb1ab}
-      \field{extraname}{2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Last Modified: 2023-12-01}
-      \field{day}{22}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
-      \endverb
-      \verb{url}
-      \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-experimental-development-tax-incentive-program/sred-updates/definition-history.html
-      \endverb
-    \endentry
-    \entry{canadianintellectualpropertyoffice21}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d0e0fc816bebc0f76c6d202fe632b3b2}{%
-           family={{Canadian Intellectual Property Office}},
-           familyi={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Innovation, Science and Economic Development Canada}%
-      }
-      \strng{namehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{fullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{bibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorbibnamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authornamehash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \strng{authorfullhash}{d0e0fc816bebc0f76c6d202fe632b3b2}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{annotation}{Last Modified: 2021-06-28}
-      \field{day}{28}
-      \field{langid}{english}
-      \field{month}{6}
-      \field{shorttitle}{File a {{Canadian}} Patent Application}
-      \field{title}{Patent Application and Examination}
-      \field{type}{Guides; Forms}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
-      \endverb
-      \verb{url}
-      \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/patents/patent-application-and-examination/file-canadian-patent-application-you-start
-      \endverb
-    \endentry
-    \entry{carew_etal06}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=82a96100239d06934aa0c29fdca1d9d5}{%
-           family={Carew},
-           familyi={C\bibinitperiod},
-           given={Richard},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ef7b19034cd5bfc1c3d2b62e468ae064}{%
-           family={Florkowski},
-           familyi={F\bibinitperiod},
-           given={Wojciech\bibnamedelima J},
-           giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=eaabeaf442c5ac06da82e557cfd02626}{%
-           family={Smith},
-           familyi={S\bibinitperiod},
-           given={Elwin\bibnamedelima G},
-           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{94511eb7835fc843475064b9e3b448f9}
-      \strng{fullhash}{d25a9186b245abce6599915cccf61c18}
-      \strng{bibnamehash}{d25a9186b245abce6599915cccf61c18}
-      \strng{authorbibnamehash}{d25a9186b245abce6599915cccf61c18}
-      \strng{authornamehash}{94511eb7835fc843475064b9e3b448f9}
-      \strng{authorfullhash}{d25a9186b245abce6599915cccf61c18}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1553-8362}
-      \field{journaltitle}{International journal of fruit science}
-      \field{number}{1}
-      \field{shortjournal}{International journal of fruit science}
-      \field{title}{Apple Industry Performance, Intellectual Property Rights and Innovation: A {{Canada-US}} Comparison}
-      \field{volume}{6}
-      \field{year}{2006}
-      \field{dateera}{ce}
-      \field{pages}{93\bibrangedash 116}
-      \range{pages}{24}
-    \endentry
-    \entry{Investing16}{legislation}{}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.}
-      \field{day}{16}
-      \field{journaltitle}{SA}
-      \field{langid}{english}
-      \field{month}{4}
-      \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \true{nocite}
-      \verb{urlraw}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-      \verb{url}
-      \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Acts&isbncln=9780779843091&display=html
-      \endverb
-    \endentry
-    \entry{mansfield_switzer85b}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
-           family={Mansfield},
-           familyi={M\bibinitperiod},
-           given={Edwin},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
-           family={Switzer},
-           familyi={S\bibinitperiod},
-           given={Lorne},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {[University of Toronto Press, Canadian Public Policy]}%
-      }
-      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{1}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Cette étude semble constituer une des premières tentatives pour évaluer les effets des crédits d'impôts consentis par le Canada sur la recherche et le développement commandités par les entreprises. Les résultats obtenus sont fondés sur un échantillon soigneusement choisi de firmes effectuant de la recherche et du développement au Canada, sur une étude économétrique des données sur la recherche et le développement industriels au Canada, et sur d'autres calculs impliquant l'élasticité aux prix de la demande pour la recherche et le développement; ils révèlent que les avantages fiscaux n'ont eu que peu d'effets. Les allocations spéciales pour recherche et développement semblent avoir fait augmenter les dépenses de R \& D d'environ 1 pour cent. et le crédit d'impôt à l'investissement semble les avoir fait augmenter d'environ 2 pour cent. Or, de telles augmentations sont équivalentes à environ 30 pour cent ou 40 pour cent du manque à gagner du gouvernement. /// This study seems to be one of the first attempts to estimate the effects of Canada's R and D tax credits and allowances on company-funded research and development. The results (based on a carefully selected survey of firms carrying out R and D in Canada, an econometric study of Canadian industrial R and D data, and other calculations involving the price elasticity of demand for R and D) indicate that these effects have been modest. The special research allowance seems to have increased R and D expenditures by about 1 per cent, and the investment tax credit seems to have increased them by about 2 per cent. These increases amounted to about 30 or 40 per cent of the revenue losses to the government.}
-      \field{eprinttype}{jstor}
-      \field{issn}{0317-0861}
-      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
-      \field{number}{2}
-      \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{11}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{241\bibrangedash 246}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.2307/3550705
-      \endverb
-      \verb{eprint}
-      \verb 3550705
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 - How Effective Are Canada's Direct Tax Incentives f.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.jstor.org/stable/3550705
-      \endverb
-      \verb{url}
-      \verb https://www.jstor.org/stable/3550705
-      \endverb
-    \endentry
-    \entry{mansfield_switzer85a}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=18e16017f01403e8312974fc7ba2d1c5}{%
-           family={Mansfield},
-           familyi={M\bibinitperiod},
-           given={Edwin},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ee5f9353bfdffcd359f99871b987e0db}{%
-           family={Switzer},
-           familyi={S\bibinitperiod},
-           given={Lorne},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{fullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{bibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorbibnamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authornamehash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \strng{authorfullhash}{f06692ee10d865ff226b3ee7b4ecdaf3}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradate}{2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{In Canada, as in many other countries that have adopted R\&D tax credits and allowances, there has been considerable controversy over their effectiveness in increasing company-financed research and development. This study seems to be one of the first systematic attempts to estimate the effects of Canada's R\&D tax credits and allowances. The results present a very consistent picture. The survey results, the econometric results, and some simple calculations based on rough measures of the price elasticity of demand for R\&D all suggest that the special research allowance increased R\&D expenditures by about 1 percent and that the investment tax credit increased them by about 2 percent. These increases seem to be appreciably less than the revenue losses to the government.}
-      \field{day}{1}
-      \field{issn}{0048-7333}
-      \field{journaltitle}{Research Policy}
-      \field{month}{4}
-      \field{number}{2}
-      \field{shortjournal}{Research Policy}
-      \field{title}{The Effects of {{R}}\&{{D}} Tax Credits and Allowances in {{Canada}}}
-      \field{urlday}{14}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{14}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{97\bibrangedash 107}
-      \range{pages}{11}
-      \verb{doi}
-      \verb 10.1016/0048-7333(85)90017-4
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\LCPHUGIC\Mansfield and Switzer - 1985 - The effects of R&D tax credits and allowances in C.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/0048733385900174
-      \endverb
-    \endentry
-    \entry{mckenzie05}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d09528a75372aaa02f7b8985a84ca3c8}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Kenneth\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {[University of Toronto Press, Canadian Public Policy]}%
-      }
-      \strng{namehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{fullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{bibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorbibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authornamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorfullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Cet article expose la variabilité du taux effectif de l'impôt pour la Recherche et le Développement (R\&D) dans les dix provinces canadiennes. Nous montrons que, bien que toutes les provinces bénéficient d'une subvention fiscale assez substantielle, pour R\&D, la variation d'une province à l'autre est considérable, allant d'un taux de subvention effectif d'environ 40\% en Alberta à un taux supérieur à 200\% au Québec. /// This paper documents the variation in effective tax rates for R\&D in Canada's ten provinces. It is shown that while a sizable tax subsidy for R\&D exists in every province, the variation across provinces is significant, ranging from an effective subsidy rate of about 40 percent in Alberta to over 200 percent in Quebec.}
-      \field{eprinttype}{jstor}
-      \field{issn}{0317-0861}
-      \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
-      \field{number}{1}
-      \field{title}{Tax {{Subsidies}} for {{R}}\&{{D}} in {{Canadian Provinces}}}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{31}
-      \field{year}{2005}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{29\bibrangedash 44}
-      \range{pages}{16}
-      \verb{doi}
-      \verb 10.2307/3552593
-      \endverb
-      \verb{eprint}
-      \verb 3552593
-      \endverb
-      \verb{file}
-      \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\mansfield_effects_of_rd_tax_credits_canada_1984.pdf;C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits\\Tax Subsidies for R&D in Canadian Provinces.pdf;C\:\\Users\\user\\Zotero\\storage\\DJDI3A5U\\McKenzie - 2005 - Tax Subsidies for R&D in Canadian Provinces.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www.jstor.org/stable/3552593
-      \endverb
-      \verb{url}
-      \verb https://www.jstor.org/stable/3552593
-      \endverb
-    \endentry
-    \entry{mckenzie08}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d09528a75372aaa02f7b8985a84ca3c8}{%
-           family={McKenzie},
-           familyi={M\bibinitperiod},
-           given={Kenneth\bibnamedelima J.},
-           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{fullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{bibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorbibnamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authornamehash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \strng{authorfullhash}{d09528a75372aaa02f7b8985a84ca3c8}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A methodology for measuring the user cost of intangible R\&D capital is developed. In contrast to the way in which the Hall–Jorgenson–King–Fullerton (HJKF) approach to measuring the user cost of capital, and the related notion of the effective marginal tax rate on capital, is typically applied to intangible R\&D capital, the methodology takes explicit account of the microeconomic foundations of R\&D in order to aggregate the user costs of the various inputs used in the production of R\&D. Illustrative calculations are presented for Canadian provinces which show that relative to the methodology developed here, the standard approach substantially overstates the tax subsidy offered to intangible R\&D capital.}
-      \field{day}{1}
-      \field{issn}{1573-6970}
-      \field{journaltitle}{International Tax and Public Finance}
-      \field{langid}{english}
-      \field{month}{10}
-      \field{number}{5}
-      \field{shortjournal}{Int Tax Public Finance}
-      \field{title}{Measuring Tax Incentives for {{R}}\&{{D}}}
-      \field{urlday}{25}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{volume}{15}
-      \field{year}{2008}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{563\bibrangedash 581}
-      \range{pages}{19}
-      \verb{doi}
-      \verb 10.1007/s10797-007-9039-7
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\YDT9VUM5\McKenzie - 2008 - Measuring tax incentives for R&D.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1007/s10797-007-9039-7
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1007/s10797-007-9039-7
-      \endverb
-      \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
-    \endentry
-    \entry{Patent85}{legislation}{}
-      \list{publisher}{1}{%
-        {CanLII}%
-      }
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{RSC}
-      \field{langid}{english}
-      \field{title}{Patent {{Act}}}
-      \field{urlday}{26}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{1985}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
-      \endverb
-      \verb{url}
-      \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985-c-p-4.html#document
-      \endverb
-    \endentry
-    \entry{putnam06}{book}{}
-      \name{editor}{1}{}{%
-        {{un=0,uniquepart=base,hash=20f190a204829c8989e04cbef86cda06}{%
-           family={Putnam},
-           familyi={P\bibinitperiod},
-           given={Jonathan\bibnamedelima D},
-           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Ottawa, Ontario}%
-      }
-      \list{publisher}{1}{%
-        {Industry Canada}%
-      }
-      \strng{namehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{fullhash}{20f190a204829c8989e04cbef86cda06}
-      \strng{bibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorbibnamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editornamehash}{20f190a204829c8989e04cbef86cda06}
-      \strng{editorfullhash}{20f190a204829c8989e04cbef86cda06}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{editor}
-      \field{labeltitlesource}{title}
-      \field{isbn}{1-55238-147-1}
-      \field{title}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
-      \field{year}{2006}
-      \field{dateera}{ce}
-    \endentry
-    \entry{rafiquzzaman02}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=206d9a950f97827b82f27c957e88fb6a}{%
-           family={Rafiquzzaman},
-           familyi={R\bibinitperiod},
-           given={Mohammed},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{fullhash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{bibnamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authorbibnamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authornamehash}{206d9a950f97827b82f27c957e88fb6a}
-      \strng{authorfullhash}{206d9a950f97827b82f27c957e88fb6a}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{The extent to which Canadian manufacturing exports are sensitive to national differences in patent rights are examined. The conclusion is that, overall, Canadians tend to export more to those countries where their patent rights are highly safeguarded. Stronger patent protection induces Canadians to export relatively more to high-income countries than to low-income countries. In addition, the effect of stronger patent rights is to increase exports to those countries that pose a strong threat of imitation and to reduce exports to those countries that pose the weakest threat of imitation. JEL Classification: F13; O34 Impact de la propriété des brevets sur le commerce international: résultats pour le Canada. Ce mémoire examine jusqu’à quel point les exportations manufacturières canadiennes sont sensibles aux différences dans la propriété des brevets entre pays. L’étude conclut que les Canadiens tendent à exporter davantage vers les pays où la propriété des brevets est hautement protégée.Il appert que la plus forte protection de la propriété des brevets tend à faire que les Canadiens exportent relativement plus vers les pays à hauts revenus que vers ceux à plus faibles revenus. De plus, il appert que l’effet de la plus forte protection des brevets est d’accroître les exportations vers les pays qui posent une forte menace d’imitation et de réduire les exportations vers les pays qui posent la plus faible menace d’imitation.}
-      \field{issn}{1540-5982}
-      \field{journaltitle}{Canadian Journal of Economics/Revue canadienne d'économique}
-      \field{langid}{english}
-      \field{number}{2}
-      \field{shorttitle}{The Impact of Patent Rights on International Trade}
-      \field{title}{The Impact of Patent Rights on International Trade: Evidence from {{Canada}}}
-      \field{urlday}{23}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
-      \field{volume}{35}
-      \field{year}{2002}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{307\bibrangedash 330}
-      \range{pages}{24}
-      \verb{doi}
-      \verb 10.1111/1540-5982.00132
-      \endverb
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\QUIJP2Y3\Rafiquzzaman - 2002 - The impact of patent rights on international trade.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
-      \endverb
-    \endentry
-    \entry{warda98}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
-           family={Warda},
-           familyi={W\bibinitperiod},
-           given={Jacek},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{fullhash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{bibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorbibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authornamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorfullhash}{b92afb3740fe30eec15725939f550cb9}
-      \field{extraname}{1}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{25}
-      \field{month}{9}
-      \field{number}{88F0006X1997009}
-      \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
-      \field{title}{R\&{{D Tax Treatment}} in {{Canada}}: {{A Provincial Comparison}} - {{ARCHIVED}}}
-      \field{type}{Working Paper}
-      \field{urlday}{15}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
-      \field{year}{1998}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-    \endentry
-    \entry{warda00}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b92afb3740fe30eec15725939f550cb9}{%
-           family={Warda},
-           familyi={W\bibinitperiod},
-           given={Jacek},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{fullhash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{bibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorbibnamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authornamehash}{b92afb3740fe30eec15725939f550cb9}
-      \strng{authorfullhash}{b92afb3740fe30eec15725939f550cb9}
-      \field{extraname}{2}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{1}
-      \field{month}{6}
-      \field{number}{88F0006XPB}
-      \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
-      \field{title}{Measuring the {{Attractiveness}} of {{R}}\&{{D Tax Incentives}}: {{Canada}} and {{Major Industrial Countries}} - {{ARCHIVED}}}
-      \field{type}{Working Paper}
-      \field{urlday}{15}
-      \field{urlmonth}{2}
-      \field{urlyear}{2024}
-      \field{year}{2000}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb C:\Users\user\Zotero\storage\SH7KFVPR\Warda - 2000 - Measuring the Attractiveness of R&D Tax Incentives.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-      \verb{url}
-      \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
-      \endverb
-    \endentry
-    \entry{worldintellectualpropertyorganization24}{online}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4c054fc51a257ddd2724164785846a4c}{%
-           family={{World Intellectual Property Organization}},
-           familyi={W\bibinitperiod}}}%
-      }
-      \strng{namehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{fullhash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{bibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorbibnamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authornamehash}{4c054fc51a257ddd2724164785846a4c}
-      \strng{authorfullhash}{4c054fc51a257ddd2724164785846a4c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{day}{22}
-      \field{month}{4}
-      \field{number}{v9.8}
-      \field{title}{Guide to the {{International Patent Classification}} (2024)}
-      \field{year}{2024}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.34667/tind.49464
-      \endverb
-    \endentry
-    \entry{zabjeck16}{article}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=3c86df5e5c5e154a79d042f5b966d8e1}{%
-           family={Zabjeck},
-           familyi={Z\bibinitperiod},
-           given={Alexandra},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{fullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{bibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authorbibnamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authornamehash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \strng{authorfullhash}{3c86df5e5c5e154a79d042f5b966d8e1}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.}
-      \field{day}{8}
-      \field{entrysubtype}{newspaper}
-      \field{journaltitle}{CBC News}
-      \field{langid}{canadian}
-      \field{month}{11}
-      \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
-      \field{urlday}{16}
-      \field{urlmonth}{4}
-      \field{urlyear}{2024}
-      \field{year}{2016}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
-      \endverb
-      \verb{url}
-      \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-investment-with-tax-credits-1.3841927
-      \endverb
-    \endentry
-  \enddatalist
-\endrefsection
+  \entry{agrawal_etal20}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AA}{%
+         family={Agrawal},
+         familyi={A\bibinitperiod},
+         given={Ajay},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RC}{%
+         family={Rosell},
+         familyi={R\bibinitperiod},
+         given={Carlos},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Simcoe},
+         familyi={S\bibinitperiod},
+         given={Timothy},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{Capital and Ownership Structure,Financial Risk and Risk Management,Firm Behavior: Empirical Analysis Financing Policy,Goodwill Business Taxes and Subsidies including sales and value-added (VAT) Firm Performance: Size Diversification and Scope Management of Technological Innovation and R&D Technological Change: Government Policy,Value of Firms}
+    \strng{namehash}{AARCST1}
+    \strng{fullhash}{AARCST1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2020}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    In 2004, Canada changed the eligibility rules for its Scientific Research and Experimental Development (SRED) tax credit, which provides tax incentives for R\&D conducted by small private firms. Difference-in-difference estimates show a 17 percent increase in total R\&D among eligible firms. The impact was larger for firms that took the tax credits as refunds because they had no current tax liability. Contract R\&D expenditures were more elastic than the R\&D wage bill. The response was also greater for firms that invested in R\&D capital before the policy change.%
+    }
+    \verb{doi}
+    \verb 10.1257/pol.20140467
+    \endverb
+    \field{issn}{1945-7731}
+    \field{number}{2}
+    \field{pages}{1\bibrangedash 21}
+    \field{title}{Tax {{Credits}} and {{Small Firm R}}\&{{D Spending}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257/pol.20140467
+    \endverb
+    \field{volume}{12}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\8RZXU526\Agrawal et al. - 2020 - Tax Cre
+    \verb dits and Small Firm R&D Spending.pdf
+    \endverb
+    \field{journaltitle}{American Economic Journal: Economic Policy}
+    \field{month}{05}
+    \field{year}{2020}
+    \field{urlday}{15}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{alam_etal22}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AMR}{%
+         family={Alam},
+         familyi={A\bibinitperiod},
+         given={Md\bibnamedelima Razib},
+         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Dalziel},
+         familyi={D\bibinitperiod},
+         given={Margaret},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=CBP}{%
+         family={Cozzarin},
+         familyi={C\bibinitperiod},
+         given={Brian\bibnamedelima P.},
+         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \keyw{Canada,CIPO,Domestic-ownership,Foreign-ownership,Intellectual property,Inventions,Patents,USPTO,WIPO}
+    \strng{namehash}{AMRDMCBP1}
+    \strng{fullhash}{AMRDMCBP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2022}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Using Canadian-invented patents granted by the United States Patent and Trademark Office during the period between 1995 and 2014, we investigate how ownership of Canadian inventions varies across time and by technology, geographic region, quality of invention, and the presence of superstar firms. Our findings show that the gap between Canadian-invented and Canadian-owned technologies has grown since 1995, and that an increasing number of Canadian-invented patents are owned by foreign, primarily US, firms. In terms of technical areas, Canadian-owned patents in biotechnology have declined and there has been sharp growth in both Canadian- and foreign-owned patents in information technology and telecom. Approximately 60\% of Canadian-invented patents originate from Toronto, Ottawa-Gatineau, Montreal, Vancouver, Kitchener-Cambridge-Waterloo (KCW), and Calgary. The quality of Canadian-invented patents increases over time, in part because the number of unassigned patents declines. The quality of foreign-owned patents is higher than the quality of Canadian-owned patents in all CMAs except KCW. At the firm level, while Blackberry and Nortel are responsible for a disproportionate number of Canadian-owned patents, the ownership of foreign-owned patents is more widely distributed. Our findings point to where Canadian innovation vulnerabilities are most severe, where they are worsening, and where there is cause for hope.%
+    }
+    \verb{doi}
+    \verb 10.1016/j.techfore.2021.121367
+    \endverb
+    \field{issn}{0040-1625}
+    \field{pages}{121367}
+    \field{shorttitle}{Invented Here but Owned Elsewhere}
+    \field{title}{Invented Here but Owned Elsewhere: {{The}} Widening Gap between Domestic and Foreign Patent Ownership in {{Canada}}}
+    \verb{url}
+    \verb https://www.sciencedirect.com/science/article/pii/S0040162521007988
+    \endverb
+    \field{volume}{175}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\WTAWTM8Z\S0040162521007988.html
+    \endverb
+    \field{journaltitle}{Technological Forecasting and Social Change}
+    \field{month}{02}
+    \field{year}{2022}
+    \field{urlday}{26}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{albertaeconomicdevelopmentandtrade19}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Alberta Economic Development and Trade}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Alberta Economic Development and Trade}}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Program guidelines for the Alberta Investor Tax Credit, a tax credit to encourage investment in non-traditional sectors with strong job-creation potential. Includes an overview of the program,...%
+    }
+    \field{title}{Alberta {{Investor Tax Credit}} ({{AITC}}) Guidelines - {{Alberta Investor Tax Credit}} ({{AITC}}) Guidelines - {{Open Government}}}
+    \verb{url}
+    \verb https://open.alberta.ca/publications/alberta-investor-tax-credit-guid
+    \verb elines/resource/52099bb1-5365-49c5-ae8d-694560130ce4
+    \endverb
+    \field{langid}{english}
+    \field{month}{01}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{albertaeconomicdevelopmentandtrade17}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=A}{%
+         family={{Alberta Economic Development and Trade}},
+         familyi={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Alberta Economic Development and Trade}}%
+    }
+    \strng{namehash}{A1}
+    \strng{fullhash}{A1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2017}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{abstract}{%
+    Outlines the key components of the Government of Alberta's Alberta Jobs Plan, which includews: investment in infrastructure; diversification of the province's economy; support for small- and...%
+    }
+    \field{shorttitle}{Alberta Jobs Plan}
+    \field{title}{Alberta {{Investor Tax Credit}} [{{Fact Sheet}}]}
+    \verb{url}
+    \verb https://open.alberta.ca/dataset/70a7a3d9-5b54-40ed-9d0f-4d26f92c2bd9/
+    \verb resource/c2f27300-ab6b-41e2-ad62-d40f702735b8/download/2016-alberta-i
+    \verb nvestor-tax-credit-aitc-fact-sheet.pdf
+    \endverb
+    \field{langid}{english}
+    \field{month}{01}
+    \field{year}{2017}
+    \field{urlday}{14}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Alberta19a}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2019}
+    \field{labeldatesource}{}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{Alberta {{Investor Tax Credit Regulation}}}
+    \verb{url}
+    \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Act
+    \verb s&isbncln=9780779843091&display=html
+    \endverb
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\5IYC4Y4A\sa-2016-c-i-10.5.html
+    \endverb
+    \field{month}{05}
+    \field{year}{2019}
+    \field{urlday}{14}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{beaudry_schiffauerova11}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BC}{%
+         family={Beaudry},
+         familyi={B\bibinitperiod},
+         given={Catherine},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Schiffauerova},
+         familyi={S\bibinitperiod},
+         given={Andrea},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Canada,Cluster,Innovation,L69,Nanotechnology,O31,Patents,R12,R30,Star scientists}
+    \strng{namehash}{BCSA1}
+    \strng{fullhash}{BCSA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2011}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this study we explore the patent ownership for the innovations created by Canadian nanotechnology inventors. We find that although there is a great innovative potential and inventive productivity among Canadian researchers, a lot of the intellectual property actually leaves the country: Around 50\% of the nanotechnology patents invented by Canadian inventors are owned by foreign assignees. We also note the predominance of private companies among the patent owners. Almost one-third of all the Canadian-invented nanotechnology patents is assigned to a single American firm, Xerox Corporation. Furthermore, we explore the role of Canadian nanotechnology star inventors. The results show that the fruits of their great inventive productivity are collected outside Canada.%
+    }
+    \verb{doi}
+    \verb 10.1007/s10961-011-9211-1
+    \endverb
+    \field{issn}{1573-7047}
+    \field{number}{6}
+    \field{pages}{665\bibrangedash 679}
+    \field{shorttitle}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}?}
+    \field{title}{Is {{Canadian}} Intellectual Property Leaving {{Canada}}? {{A}} Study of Nanotechnology Patenting}
+    \verb{url}
+    \verb https://doi.org/10.1007/s10961-011-9211-1
+    \endverb
+    \field{volume}{36}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\BEQ8XWPC\Beaudry and Schiffauerova - 201
+    \verb 1 - Is Canadian intellectual property leaving Canada .pdf
+    \endverb
+    \field{journaltitle}{The Journal of Technology Transfer}
+    \field{month}{12}
+    \field{year}{2011}
+    \field{urlday}{23}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{becker15}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BB}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Bettina},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{Innovation policy,Public funding,Research and development,Research and development policy}
+    \strng{namehash}{BB1}
+    \strng{fullhash}{BB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The importance of R\&D investment in explaining economic growth is well documented in the literature. Policies by modern governments increasingly recognise the benefits of supporting R\&D investment. Government funding has, however, become an increasingly scarce resource in times of financial crisis and economic austerity. Hence, it is important that available funds are used and targeted effectively. This paper offers the first systematic review and critical discussion of what the R\&D literature has to say currently about the effectiveness of major public R\&D policies in increasing private R\&D investment. Public policies are considered within three categories, R\&D tax credits and direct subsidies, support of the university research system and the formation of high-skilled human capital, and support of formal R\&D cooperations across a variety of institutions. Crucially, the large body of more recent literature observes a shift away from the earlier findings that public subsidies often crowd-out private R\&D to finding that subsidies typically stimulate private R\&D. Tax credits are also much more unanimously than previously found to have positive effects. University research, high-skilled human capital, and R\&D cooperation also typically increase private R\&D. Recent work indicates that accounting for non-linearities is one area of research that may refine existing results.%
+    }
+    \verb{doi}
+    \verb 10.1111/joes.12074
+    \endverb
+    \field{issn}{1467-6419}
+    \field{number}{5}
+    \field{pages}{917\bibrangedash 942}
+    \field{shorttitle}{Public {{R}}\&d {{Policies}} and {{Private R}}\&d {{Investment}}}
+    \field{title}{Public {{R}}\&{{D Policies}} and {{Private R}}\&{{D Investment}}: {{A Survey}} of the {{Empirical Evidence}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/joes.12074
+    \endverb
+    \field{volume}{29}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\TZBY28VW\Becker - 2015 - Public R&d Poli
+    \verb cies and Private R&d Investment A .pdf
+    \endverb
+    \field{journaltitle}{Journal of Economic Surveys}
+    \field{year}{2015}
+    \field{urlday}{15}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{brouillete13}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BD}{%
+         family={Brouillete},
+         familyi={B\bibinitperiod},
+         given={Dany},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Innovation, Science and Economic Development Canada}}%
+    }
+    \strng{namehash}{BD1}
+    \strng{fullhash}{BD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2013}
+    \field{labeldatesource}{}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{number}{Working Paper 2014-06}
+    \field{series}{Working {{Paper Series}}}
+    \field{title}{Estimating the {{Incremental Impacts}} of a {{Provincial R}}\&{{D Tax Credit}} on {{Business R}}\&{{D Expenditures Using}} a {{Natural Experiment}} in {{British Columbia}}}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/economic-analysis-statistics/en/econ
+    \verb omic-research/research-papers/estimating-incremental-impacts-provinci
+    \verb al-rd-tax-credit-business-rd-expenditures-using-natural/estimating-in
+    \verb cremental-impacts-provincial-rd-tax-credit-business-rd-expenditures-u
+    \verb sing
+    \endverb
+    \field{langid}{english}
+    \field{type}{Statistical {{Reports}}}
+    \field{annotation}{%
+    Last Modified: 2015-01-19%
+    }
+    \field{eprinttype}{Innovation, Science and Economic Development Canada}
+    \field{year}{2013}
+    \field{urlday}{16}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{canadarevenueagency23}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Canada Revenue Agency}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2023}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{title}{A Brief History of the Definition of {{SR}}\&{{ED}} - {{Scientific Research}} and {{Experimental Development}} ({{SR}}\&{{ED}}) Tax Incentives}
+    \verb{url}
+    \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-
+    \verb experimental-development-tax-incentive-program/sred-updates/definitio
+    \verb n-history.html
+    \endverb
+    \field{langid}{english}
+    \field{journaltitle}{Canada Revenue Agency}
+    \field{annotation}{%
+    Last Modified: 2023-12-01%
+    }
+    \field{month}{06}
+    \field{year}{2023}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{canadarevenueagency15}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Canada Revenue Agency}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The Government of Canada provides tax incentives to encourage Canadian companies of all sizes and in all industry sectors to conduct scientific research and experimental development (SR\&ED). These tax incentives come in three forms: an income tax deduction, an investment tax credit (ITC), and, in certain circumstances, a refund.%
+    }
+    \field{title}{Evolution of the {{SR}}\&{{ED Program}} -- a Historical Perspective}
+    \verb{url}
+    \verb https://www.canada.ca/en/revenue-agency/services/scientific-research-
+    \verb experimental-development-tax-incentive-program/evolution-program-a-hi
+    \verb storical-perspective.html
+    \endverb
+    \field{langid}{english}
+    \field{type}{Service Description}
+    \field{journaltitle}{Canada Revenue Agency}
+    \field{annotation}{%
+    Last Modified: 2015-04-07%
+    }
+    \field{month}{03}
+    \field{year}{2015}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{canadianintellectualpropertyoffice21}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={{Canadian Intellectual Property Office}},
+         familyi={C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {{Innovation, Science and Economic Development Canada}}%
+    }
+    \strng{namehash}{C2}
+    \strng{fullhash}{C2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2021}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{shorttitle}{File a {{Canadian}} Patent Application}
+    \field{title}{Patent Application and Examination}
+    \verb{url}
+    \verb https://ised-isde.canada.ca/site/canadian-intellectual-property-offic
+    \verb e/en/patents/patent-application-and-examination/file-canadian-patent-
+    \verb application-you-start
+    \endverb
+    \field{langid}{english}
+    \field{type}{Guides; {{Forms}}}
+    \field{annotation}{%
+    Last Modified: 2021-06-28%
+    }
+    \field{month}{06}
+    \field{year}{2021}
+    \field{urlday}{26}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{carew_etal06}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CR}{%
+         family={Carew},
+         familyi={C\bibinitperiod},
+         given={Richard},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=FWJ}{%
+         family={Florkowski},
+         familyi={F\bibinitperiod},
+         given={Wojciech\bibnamedelima J},
+         giveni={W\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=SEG}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Elwin\bibnamedelima G},
+         giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Taylor \& Francis}%
+    }
+    \strng{namehash}{CRFWJSEG1}
+    \strng{fullhash}{CRFWJSEG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{issn}{1553-8362}
+    \field{number}{1}
+    \field{pages}{93\bibrangedash 116}
+    \field{title}{Apple Industry Performance, Intellectual Property Rights and Innovation: A {{Canada-US}} Comparison}
+    \field{volume}{6}
+    \field{journaltitle}{International journal of fruit science}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Investing16}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{abstract}{%
+    The Investing in a Diversified Alberta Economy Act establishes the Alberta Investor Tax Credit, and the Alberta Capital Investment Tax Credit. It includes the relevant administrative and enforcement provisions related to the issuance of the tax credits.%
+    }
+    \field{title}{Investing in a {{Diversified Alberta Economy Act}}, {{SA}} 2016, c {{I-10}}.5}
+    \verb{url}
+    \verb https://kings-printer.alberta.ca/1266.cfm?page=i10p5.cfm&leg_type=Act
+    \verb s&isbncln=9780779843091&display=html
+    \endverb
+    \field{langid}{english}
+    \field{month}{04}
+    \field{year}{2016}
+    \field{urlday}{14}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{mansfield_switzer85b}{article}{}
+    \name{author}{2}{}{%
+      {{hash=ME}{%
+         family={Mansfield},
+         familyi={M\bibinitperiod},
+         given={Edwin},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Switzer},
+         familyi={S\bibinitperiod},
+         given={Lorne},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {[University of Toronto Press, Canadian Public Policy]}%
+    }
+    \strng{namehash}{MESL1}
+    \strng{fullhash}{MESL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Cette {\'e}tude semble constituer une des premi{\`e}res tentatives pour {\'e}valuer les effets des cr{\'e}dits d'imp{\^o}ts consentis par le Canada sur la recherche et le d{\'e}veloppement commandit{\'e}s par les entreprises. Les r{\'e}sultats obtenus sont fond{\'e}s sur un {\'e}chantillon soigneusement choisi de firmes effectuant de la recherche et du d{\'e}veloppement au Canada, sur une {\'e}tude {\'e}conom{\'e}trique des donn{\'e}es sur la recherche et le d{\'e}veloppement industriels au Canada, et sur d'autres calculs impliquant l'{\'e}lasticit{\'e} aux prix de la demande pour la recherche et le d{\'e}veloppement; ils r{\'e}v{\`e}lent que les avantages fiscaux n'ont eu que peu d'effets. Les allocations sp{\'e}ciales pour recherche et d{\'e}veloppement semblent avoir fait augmenter les d{\'e}penses de R \& D d'environ 1 pour cent. et le cr{\'e}dit d'imp{\^o}t {\`a} l'investissement semble les avoir fait augmenter d'environ 2 pour cent. Or, de telles augmentations sont {\'e}quivalentes {\`a} environ 30 pour cent ou 40 pour cent du manque {\`a} gagner du gouvernement. /// This study seems to be one of the first attempts to estimate the effects of Canada's R and D tax credits and allowances on company-funded research and development. The results (based on a carefully selected survey of firms carrying out R and D in Canada, an econometric study of Canadian industrial R and D data, and other calculations involving the price elasticity of demand for R and D) indicate that these effects have been modest. The special research allowance seems to have increased R and D expenditures by about 1 per cent, and the investment tax credit seems to have increased them by about 2 per cent. These increases amounted to about 30 or 40 per cent of the revenue losses to the government.%
+    }
+    \verb{doi}
+    \verb 10.2307/3550705
+    \endverb
+    \verb{eprint}
+    \verb 3550705
+    \endverb
+    \field{issn}{0317-0861}
+    \field{number}{2}
+    \field{pages}{241\bibrangedash 246}
+    \field{title}{How {{Effective Are Canada}}'s {{Direct Tax Incentives}} for {{R}} and {{D}}?}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3550705
+    \endverb
+    \field{volume}{11}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\9SB5D3TK\Mansfield and Switzer - 1985 -
+    \verb How Effective Are Canada's Direct Tax Incentives f.pdf
+    \endverb
+    \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+    \field{eprinttype}{jstor}
+    \field{year}{1985}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{mckenzie08}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MKJ}{%
+         family={McKenzie},
+         familyi={M\bibinitperiod},
+         given={Kenneth\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \keyw{Cost of capital,Effective marginal tax rate,H2,O3,Research and development,Tax incentives,Technological change}
+    \strng{namehash}{MKJ1}
+    \strng{fullhash}{MKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2008}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    A methodology for measuring the user cost of intangible R\&D capital is developed. In contrast to the way in which the Hall--Jorgenson--King--Fullerton (HJKF) approach to measuring the user cost of capital, and the related notion of the effective marginal tax rate on capital, is typically applied to intangible R\&D capital, the methodology takes explicit account of the microeconomic foundations of R\&D in order to aggregate the user costs of the various inputs used in the production of R\&D. Illustrative calculations are presented for Canadian provinces which show that relative to the methodology developed here, the standard approach substantially overstates the tax subsidy offered to intangible R\&D capital.%
+    }
+    \verb{doi}
+    \verb 10.1007/s10797-007-9039-7
+    \endverb
+    \field{issn}{1573-6970}
+    \field{number}{5}
+    \field{pages}{563\bibrangedash 581}
+    \field{title}{Measuring Tax Incentives for {{R}}\&{{D}}}
+    \verb{url}
+    \verb https://doi.org/10.1007/s10797-007-9039-7
+    \endverb
+    \field{volume}{15}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\YDT9VUM5\McKenzie - 2008 - Measuring tax
+    \verb  incentives for R&D.pdf
+    \endverb
+    \field{journaltitle}{International Tax and Public Finance}
+    \field{month}{10}
+    \field{year}{2008}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{mckenzie05}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MKJ}{%
+         family={McKenzie},
+         familyi={M\bibinitperiod},
+         given={Kenneth\bibnamedelima J.},
+         giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {[University of Toronto Press, Canadian Public Policy]}%
+    }
+    \strng{namehash}{MKJ1}
+    \strng{fullhash}{MKJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2005}
+    \field{labeldatesource}{}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Cet article expose la variabilit{\'e} du taux effectif de l'imp{\^o}t pour la Recherche et le D{\'e}veloppement (R\&D) dans les dix provinces canadiennes. Nous montrons que, bien que toutes les provinces b{\'e}n{\'e}ficient d'une subvention fiscale assez substantielle, pour R\&D, la variation d'une province {\`a} l'autre est consid{\'e}rable, allant d'un taux de subvention effectif d'environ 40\% en Alberta {\`a} un taux sup{\'e}rieur {\`a} 200\% au Qu{\'e}bec. /// This paper documents the variation in effective tax rates for R\&D in Canada's ten provinces. It is shown that while a sizable tax subsidy for R\&D exists in every province, the variation across provinces is significant, ranging from an effective subsidy rate of about 40 percent in Alberta to over 200 percent in Quebec.%
+    }
+    \verb{doi}
+    \verb 10.2307/3552593
+    \endverb
+    \verb{eprint}
+    \verb 3552593
+    \endverb
+    \field{issn}{0317-0861}
+    \field{number}{1}
+    \field{pages}{29\bibrangedash 44}
+    \field{title}{Tax {{Subsidies}} for {{R}}\&{{D}} in {{Canadian Provinces}}}
+    \verb{url}
+    \verb https://www.jstor.org/stable/3552593
+    \endverb
+    \field{volume}{31}
+    \verb{file}
+    \verb C\:\\Users\\user\\OneDrive\\Documentos\\sfu\\ECON899 MA Paper\\innova
+    \verb tion paper\\literature\\Canada\\rd credits\\mansfield_effects_of_rd_t
+    \verb ax_credits_canada_1984.pdf;C\:\\Users\\user\\OneDrive\\Documentos\\sf
+    \verb u\\ECON899 MA Paper\\innovation paper\\literature\\Canada\\rd credits
+    \verb \\Tax Subsidies for R&D in Canadian Provinces.pdf;C\:\\Users\\user\\Z
+    \verb otero\\storage\\DJDI3A5U\\McKenzie - 2005 - Tax Subsidies for R&D in
+    \verb Canadian Provinces.pdf
+    \endverb
+    \field{journaltitle}{Canadian Public Policy / Analyse de Politiques}
+    \field{eprinttype}{jstor}
+    \field{year}{2005}
+    \field{urlday}{25}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{Patent85}{misc}{}
+    \list{publisher}{1}{%
+      {CanLII}%
+    }
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1985}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{Patent {{Act}}}
+    \verb{url}
+    \verb https://www.canlii.org/en/ca/laws/stat/rsc-1985-c-p-4/latest/rsc-1985
+    \verb -c-p-4.html#document
+    \endverb
+    \field{langid}{english}
+    \field{year}{1985}
+    \field{urlday}{26}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{putnam06}{book}{}
+    \name{editor}{1}{}{%
+      {{hash=PJD}{%
+         family={Putnam},
+         familyi={P\bibinitperiod},
+         given={Jonathan\bibnamedelima D},
+         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Industry Canada}%
+    }
+    \strng{namehash}{PJD1}
+    \strng{fullhash}{PJD1}
+    \field{labelnamesource}{editor}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2006}
+    \field{labeldatesource}{}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{isbn}{1-55238-147-1}
+    \field{title}{Intellectual {{Property}} and {{Innovation}} in the {{Knowledge-Based Economy}}}
+    \list{location}{1}{%
+      {Ottawa, Ontario}%
+    }
+    \field{year}{2006}
+  \endentry
+
+  \entry{rafiquzzaman02}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RM}{%
+         family={Rafiquzzaman},
+         familyi={R\bibinitperiod},
+         given={Mohammed},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RM1}
+    \strng{fullhash}{RM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{2002}
+    \field{labeldatesource}{}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    The extent to which Canadian manufacturing exports are sensitive to national differences in patent rights are examined. The conclusion is that, overall, Canadians tend to export more to those countries where their patent rights are highly safeguarded. Stronger patent protection induces Canadians to export relatively more to high-income countries than to low-income countries. In addition, the effect of stronger patent rights is to increase exports to those countries that pose a strong threat of imitation and to reduce exports to those countries that pose the weakest threat of imitation. JEL Classification: F13; O34 Impact de la propri{\'e}t{\'e} des brevets sur le commerce international: r{\'e}sultats pour le Canada. Ce m{\'e}moire examine jusqu'{\`a} quel point les exportations manufacturi{\`e}res canadiennes sont sensibles aux diff{\'e}rences dans la propri{\'e}t{\'e} des brevets entre pays. L'{\'e}tude conclut que les Canadiens tendent {\`a} exporter davantage vers les pays o{\`u} la propri{\'e}t{\'e} des brevets est hautement prot{\'e}g{\'e}e.Il appert que la plus forte protection de la propri{\'e}t{\'e} des brevets tend {\`a} faire que les Canadiens exportent relativement plus vers les pays {\`a} hauts revenus que vers ceux {\`a} plus faibles revenus. De plus, il appert que l'effet de la plus forte protection des brevets est d'accro{\^i}tre les exportations vers les pays qui posent une forte menace d'imitation et de r{\'e}duire les exportations vers les pays qui posent la plus faible menace d'imitation.%
+    }
+    \verb{doi}
+    \verb 10.1111/1540-5982.00132
+    \endverb
+    \field{issn}{1540-5982}
+    \field{number}{2}
+    \field{pages}{307\bibrangedash 330}
+    \field{shorttitle}{The Impact of Patent Rights on International Trade}
+    \field{title}{The Impact of Patent Rights on International Trade: Evidence from {{Canada}}}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/1540-5982.00132
+    \endverb
+    \field{volume}{35}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\QUIJP2Y3\Rafiquzzaman - 2002 - The impac
+    \verb t of patent rights on international trade.pdf
+    \endverb
+    \field{journaltitle}{Canadian Journal of Economics/Revue canadienne d'{\'e}conomique}
+    \field{year}{2002}
+    \field{urlday}{23}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{warda00}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WJ}{%
+         family={Warda},
+         familyi={W\bibinitperiod},
+         given={Jacek},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJ1}
+    \strng{fullhash}{WJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2000}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{88F0006XPB}
+    \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
+    \field{title}{Measuring the {{Attractiveness}} of {{R}}\&{{D Tax Incentives}}: {{Canada}} and {{Major Industrial Countries}} - {{ARCHIVED}}}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+    \endverb
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\SH7KFVPR\Warda - 2000 - Measuring the At
+    \verb tractiveness of R&D Tax Incentives.pdf
+    \endverb
+    \field{type}{Working {{Paper}}}
+    \field{month}{06}
+    \field{year}{2000}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{warda98}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=WJ}{%
+         family={Warda},
+         familyi={W\bibinitperiod},
+         given={Jacek},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WJ1}
+    \strng{fullhash}{WJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{1998}
+    \field{labeldatesource}{}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{88F0006X1997009}
+    \field{series}{Business {{Special Surveys}} and {{Technology Statistics Division Working Papers}}}
+    \field{title}{R\&{{D Tax Treatment}} in {{Canada}}: {{A Provincial Comparison}} - {{ARCHIVED}}}
+    \verb{url}
+    \verb https://www150.statcan.gc.ca/n1/en/catalogue/88F0006X1997009
+    \endverb
+    \field{type}{Working {{Paper}}}
+    \field{month}{09}
+    \field{year}{1998}
+    \field{urlday}{15}
+    \field{urlmonth}{02}
+    \field{urlyear}{2024}
+  \endentry
+
+  \entry{zabjeck16}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ZA}{%
+         family={Zabjeck},
+         familyi={Z\bibinitperiod},
+         given={Alexandra},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ZA1}
+    \strng{fullhash}{ZA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{abstract}{%
+    With no end to Alberta's economic slump in sight, the NDP government wants to create the province's first investor tax credit programs, which it says will kickstart investment outside traditional oil and gas sectors.%
+    }
+    \field{title}{Alberta Wants to Kickstart Investment with Tax Credits}
+    \verb{url}
+    \verb https://www.cbc.ca/news/canada/edmonton/alberta-wants-to-kickstart-in
+    \verb vestment-with-tax-credits-1.3841927
+    \endverb
+    \field{langid}{canadian}
+    \field{journaltitle}{CBC News}
+    \field{month}{11}
+    \field{year}{2016}
+    \field{urlday}{16}
+    \field{urlmonth}{04}
+    \field{urlyear}{2024}
+  \endentry
+\enddatalist
 \endinput
-

@@ -1286,6 +1286,52 @@
     \field{urlyear}{2024}
   \endentry
 
+  \entry{griliches88}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GZ}{%
+         family={Griliches},
+         familyi={G\bibinitperiod},
+         given={Zvi},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \keyw{and Total Factor,Capital,Productivity and Growth: Theory and Data,Productivity Studies: Labor,Research and Development}
+    \strng{namehash}{GZ1}
+    \strng{fullhash}{GZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{shorttitle}
+    \field{labelyear}{1988}
+    \field{labeldatesource}{}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Around 1974-75, output growth and associated productivity measures dropped sharply in the United States and in most other western industrialized nations and continued at rather low rates for most of the rest of the 1970s. During the late 1960s, the growth in research and development (R\&D) investment slowed down markedly (in constant dollars) and did not really recover until the late 1970s. Basic research was especially hard hit, showing a substantial absolute decline during the same period. Whether this slowdown in the investment in new technologies can account for the observed productivity slowdown is a fascinating question. I shall argue below that it cannot, at least not yet, since its effects take a long time to work themselves through the innovation and diffusion processes. The oil price hikes of the early and late 1970s and their macro-consequences are, therefore, the most likely direct causes of these pervasive declines in the growth rate of productivity.%
+    }
+    \verb{doi}
+    \verb 10.1257/jep.2.4.9
+    \endverb
+    \field{issn}{0895-3309}
+    \field{number}{4}
+    \field{pages}{9\bibrangedash 21}
+    \field{shorttitle}{Productivity {{Puzzles}} and {{R}}\&{{D}}}
+    \field{title}{Productivity {{Puzzles}} and {{R}}\&{{D}}: {{Another Nonexplanation}}}
+    \verb{url}
+    \verb https://www.aeaweb.org/articles?id=10.1257/jep.2.4.9
+    \endverb
+    \field{volume}{2}
+    \field{langid}{english}
+    \verb{file}
+    \verb C:\Users\user\Zotero\storage\KJ9NCCAL\Griliches - 1988 - Productivity
+    \verb  Puzzles and R&D Another Nonexplanati.pdf
+    \endverb
+    \field{journaltitle}{Journal of Economic Perspectives}
+    \field{month}{12}
+    \field{year}{1988}
+    \field{urlday}{23}
+    \field{urlmonth}{01}
+    \field{urlyear}{2024}
+  \endentry
+
   \entry{hall_etal10}{incollection}{}
     \name{author}{3}{}{%
       {{hash=HB}{%
