@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[a4,12pt]{article}
 
 % ======================== Preamble ======================== %
 
@@ -10,13 +10,15 @@
 % Packages for title metadata ----------------------
 
 \usepackage{authblk}
+\usepackage{titlesec}
 
 % Title metadata ---------------------------------
 
-\title{Do investment tax credits foster innovation? The Alberta Investor Tax Credit and patent applications}
-\author{Daniel Sánchez Pazmiño \\[1ex] ECON899 MA Paper}
+\title{ ¿Los créditos tributarios a la inversión fomentan la innovación? El Alberta Investor Tax Credit y solicitudes de patentes \\[1ex]
+\large Original: Do investment tax credits foster innovation? The Alberta Investor Tax Credit and patent applications}
+\author{Daniel Sánchez Pazmiño}
 \affil{Simon Fraser University}
-\date{April 2024}
+\date{Abril 2024}
 
 % Formatting -----------------------------------
 
@@ -91,72 +93,12 @@
 
 % Abstract
 \begin{abstract}
-    The idea that positive knowledge spillover from research efforts disincentivizes its private sector investment has led to widespread support for fiscal incentives to promote innovation. Although the literature on research and development (R\&D) tax credits is extensive, alternative innovation policy has been understudied. Using a two-way fixed effects difference-in-differences estimator, I investigate the impact of the Alberta Investor Tax Credit (AITC), which offered a tax credit for investments in innovative businesses. Estimates show that after the AITC implementation, patent applications from Albertan parties did not increase significantly, suggesting that the intervention was unsuccessful in fostering innovation. 
+    El derrame de conocimiento generado por los esfuerzos de investigación desincentiva la inversión del sector privado en la misma, lo que ha motivado un gran apoyo a las soluciones públicas para promover la innovación. Si bien la literatura sobre créditos tributarios a gastos de investigación y desarrollo (I+D) es extensa, otras políticas no han recibido la misma atención. Utilizando un estimador de diferencia-en-diferencias de efectos fijos de doble vía, investigo el impacto del Alberta Investor Tax Credit (AITC), que ofrecia un crédito tributario a negocios innovadores de Alberta, Canadá. Las estimaciones muestran que después de la implementación del AITC, las solicitudes a patentes de partes interesadas de Alberta no incrementaron de manera significativa, sugiriendo que la intervención no tuvo éxito aumentando la innovación.  
 \end{abstract}
-
-
-\clearpage
 
 % Sections ----------------------------------------------------------------
 
-% Introduction
-
-\subfile{\subfix{sections/1_introduction}}
-
-% Institutional background 
-
-\subfile{\subfix{sections/2_institutional_background}}
-
-% Empirical strategy
-
-\subfile{\subfix{sections/3_empirical_strategy}}
-
-% Results 
-
-\subfile{\subfix{sections/4_results}}
-
-% Conclusion
-
-\subfile{\subfix{sections/5_conclusion}}
-
-% Acknowledgements
-
 \subfile{\subfix{sections/6_acknowledgements}}
-
-\clearpage
-
-% References
-
-\printbibliography
-
-\clearpage
-
-% Appendices ----------------------------------------------------------------
-
-\setcounter{section}{0}
-\renewcommand{\thesection}{\Alph{section}}
-\renewcommand{\thetable}{\thesection.\arabic{table}}
-\renewcommand{\thefigure}{\thesection.\arabic{figure}}
-
-% Appendix A: Data sources and other descriptive statistics
-
-\subfile{\subfix{sections/7_appendixA_descriptive_stats}}
-
-\clearpage
-
-% Appendix B: interested parties
-
-\subfile{\subfix{sections/8_appendixB_parties_models}}
-
-\clearpage
-
-% Appendix C: Monthly panels
-
-\subfile{\subfix{sections/9_appendixC_month_panel_models}}
-
-% Appendix D: IPC Sections
-
-\subfile{\subfix{sections/10_appendixD_ipc_sections}}
 
 \clearpage
 
